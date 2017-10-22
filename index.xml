@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shineright Studio</title>
+    <link>https://casd82.github.io/</link>
+    <description>Recent content on Shineright Studio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Yu Chao (趙佑) © 2017</copyright>
+    <lastBuildDate>Sun, 22 Oct 2017 17:57:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://casd82.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kQq</title>
+      <link>https://casd82.github.io/kqq/</link>
+      <pubDate>Sun, 22 Oct 2017 17:57:18 +0800</pubDate>
+      
+      <guid>https://casd82.github.io/kqq/</guid>
+      <description>Yo Ho Ho</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://casd82.github.io/projects/</link>
+      <pubDate>Sun, 22 Oct 2017 17:56:58 +0800</pubDate>
+      
+      <guid>https://casd82.github.io/projects/</guid>
+      <description>Game kQq - A Physics Puzzle Game
+Tall as the Sky - A Simple Shooter Game
+App Recordable Launchpad
+iMessage Sticker kQq iMessage Sticker
+Open Source Projects Below are the open source projects I&amp;rsquo;ve contributed to:
+Systers&amp;rsquo; PowerUp iOS - An educational game app</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://casd82.github.io/about/</link>
+      <pubDate>Sat, 21 Oct 2017 23:32:39 +0800</pubDate>
+      
+      <guid>https://casd82.github.io/about/</guid>
+      <description>Shineright Studio is</description>
+    </item>
+    
+    <item>
+      <title>Test Post 1</title>
+      <link>https://casd82.github.io/posts/first-post/</link>
+      <pubDate>Sat, 21 Oct 2017 23:32:39 +0800</pubDate>
+      
+      <guid>https://casd82.github.io/posts/first-post/</guid>
+      <description>Hello world! Hello world! Hello world!</description>
+    </item>
+    
+    <item>
+      <title>Test Post 2</title>
+      <link>https://casd82.github.io/posts/second-post/</link>
+      <pubDate>Sat, 21 Oct 2017 23:32:39 +0800</pubDate>
+      
+      <guid>https://casd82.github.io/posts/second-post/</guid>
+      <description>Try not to get yourself killed out there! Ok, but I don&amp;rsquo;t want a banana. Well, it&amp;rsquo;s in the refridgerator.</description>
+    </item>
+    
+  </channel>
+</rss>
