@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2017</copyright>
-    <lastBuildDate>Sun, 29 Oct 2017 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 29 Aug 2018 12:23:50 +0800</lastBuildDate>
     
 	<atom:link href="https://casd82.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>iOS Tuner App Using Audiokit</title>
+      <link>https://casd82.github.io/posts/ios-tuner-app-using-audiokit/</link>
+      <pubDate>Wed, 29 Aug 2018 12:23:50 +0800</pubDate>
+      
+      <guid>https://casd82.github.io/posts/ios-tuner-app-using-audiokit/</guid>
+      <description>I made an iOS Tuner &amp;amp; Metronome App last couple of months due to boredom. Suffering from boredom again this month, I decided to write an article on how I implement it.
+
+In this article, I will show:
+ How to sample audio from the microphone using AudioKit. How to calculate the notes from raw frequencies (of the sampled audio).  
+I will not delve into how I implement the views since the code is quite bulky and tedious.</description>
+    </item>
     
     <item>
       <title>Shineright Studio starts...again and again!</title>
