@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2017</copyright>
-    <lastBuildDate>Wed, 29 Aug 2018 12:23:50 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Sep 2018 17:20:39 +0800</lastBuildDate>
     
 	<atom:link href="https://casd82.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Self-Publish a Graphical Novel With Amazon KDP</title>
+      <link>https://casd82.github.io/posts/self-publish-a-graphical-novel-with-amazon-kdp/</link>
+      <pubDate>Sun, 23 Sep 2018 17:20:39 +0800</pubDate>
+      
+      <guid>https://casd82.github.io/posts/self-publish-a-graphical-novel-with-amazon-kdp/</guid>
+      <description>I just self-published my very first graphical novel Inter-dimensional Time recently, using Amazon&amp;rsquo;s KDP (Kindle Direct Publish) platform. In this article, I am going to share my experience with Amazon KDP, and briefly go through the process of self-publishing.
+Introduction Amazon KDP is arguably the cheapest and most convenient self-publishing service out there. It requires no service fee and lets you publish your book in both eBook and paperback formats.</description>
+    </item>
     
     <item>
       <title>iOS Tuner App Using Audiokit</title>
@@ -108,6 +118,9 @@ The reason why I switched to Hugo on GitHub is quite simple.</description>
       <guid>https://casd82.github.io/articles/</guid>
       <description>This page includes all the articles published on this blog.
 Posts September 2018
+Self-Publish a Graphical Novel with Amazon KDP
+
+August 2018
 iOS Tuner App Using AudioKit
 
 October 2017
@@ -120,9 +133,7 @@ My Experience in Google Summer of Code 2017
 GSoC 2017 Conclusion
 
 August 2017
-Animate Nodes Using SKAction in iOS Sprite Kit
-
-July 2017</description>
+Animate Nodes Using SKAction in iOS Sprite Kit</description>
     </item>
     
     <item>
