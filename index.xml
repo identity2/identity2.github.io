@@ -98,6 +98,15 @@ Platforms Windows, macOS</description>
     </item>
     
     <item>
+      <title>Stirling&#39;s Formula - Approximation of n!</title>
+      <link>https://casd82.github.io/posts/stirling-formula/</link>
+      <pubDate>Mon, 30 Oct 2017 20:00:00 +0800</pubDate>
+      
+      <guid>https://casd82.github.io/posts/stirling-formula/</guid>
+      <description>I.Introduction: The Coin Tossing Problem Whenever you have difficulty deciding something, for example, whether to attend the lectures of a course or not, the most common thing to do in this scenario is to toss a coin and see whether the heads or tails of the coin is facing up when they land. Assume that the coin you toss is uniform, meaning that the chance of the heads to land facing up is equal to the chance of the tails to land facing up.</description>
+    </item>
+    
+    <item>
       <title>Shineright Studio starts...again and again!</title>
       <link>https://casd82.github.io/posts/shineright-studio-starts-again-and-again/</link>
       <pubDate>Sun, 29 Oct 2017 20:00:00 +0800</pubDate>
@@ -117,23 +126,16 @@ The reason why I switched to Hugo on GitHub is quite simple.</description>
       
       <guid>https://casd82.github.io/articles/</guid>
       <description>This page includes all the articles published on this blog.
-Posts September 2018
-Self-Publish a Graphic Novel with Amazon KDP
-
-August 2018
-iOS Tuner App Using AudioKit
-
-October 2017
-Shineright Studio Starts&amp;hellip;again and again!
-Customized 2D Following Camera in Godot
+Game Dev Customized 2D Following Camera in Godot
 Camera Moving &amp;amp; Scene Scrolling in Metal Slug 3
-
-September 2017
-My Experience in Google Summer of Code 2017
-GSoC 2017 Conclusion
-
-August 2017
-Animate Nodes Using SKAction in iOS Sprite Kit</description>
+A Brief Review of Godot Engine
+2D Fireworks Effect with Unity Particle System
+kQq: Mobile to Standalone
+Zero Budget Marketing for Indies
+Mobile Game: Portrait or Landscape
+Music Syncing in Rhythm Games
+Recording and Playing Audio in Unity
+iOS App Dev iOS Tuner App Using AudioKit</description>
     </item>
     
     <item>
