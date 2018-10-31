@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Shine Right Homepage</title>
-    <link>https://casd82.github.io/posts/</link>
-    <description>Recent content in Posts on Shine Right Homepage</description>
+    <title>Posts on Shine Right Blog</title>
+    <link>https://YuChaoGithub.github.io/posts/</link>
+    <description>Recent content in Posts on Shine Right Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2017</copyright>
     <lastBuildDate>Sun, 23 Sep 2018 17:20:39 +0800</lastBuildDate>
     
-	<atom:link href="https://casd82.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://YuChaoGithub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Self-Publish a Graphic Novel With Amazon KDP</title>
-      <link>https://casd82.github.io/posts/self-publish-a-graphic-novel-with-amazon-kdp/</link>
+      <link>https://YuChaoGithub.github.io/posts/self-publish-a-graphic-novel-with-amazon-kdp/</link>
       <pubDate>Sun, 23 Sep 2018 17:20:39 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/self-publish-a-graphic-novel-with-amazon-kdp/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/self-publish-a-graphic-novel-with-amazon-kdp/</guid>
       <description>I just self-published my very first graphic novel Inter-dimensional Time recently, using Amazon&amp;rsquo;s KDP (Kindle Direct Publish) platform. In this article, I am going to share my experience with Amazon KDP, and briefly go through the process of self-publishing.
 Introduction Amazon KDP is arguably the cheapest and most convenient self-publishing service out there. It requires no service fee and lets you publish your book in both eBook and paperback formats.</description>
     </item>
     
     <item>
       <title>iOS Tuner App Using Audiokit</title>
-      <link>https://casd82.github.io/posts/ios-tuner-app-using-audiokit/</link>
+      <link>https://YuChaoGithub.github.io/posts/ios-tuner-app-using-audiokit/</link>
       <pubDate>Wed, 29 Aug 2018 12:23:50 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/ios-tuner-app-using-audiokit/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/ios-tuner-app-using-audiokit/</guid>
       <description>I made an iOS Tuner &amp;amp; Metronome App last couple of months due to boredom. Suffering from boredom again this month, I decided to write an article on how I implement it.
 
 In this article, I will show:
@@ -37,19 +37,19 @@ I will not delve into how I implement the views since the code is quite bulky an
     
     <item>
       <title>Stirling&#39;s Formula - Approximation of n!</title>
-      <link>https://casd82.github.io/posts/stirling-formula/</link>
+      <link>https://YuChaoGithub.github.io/posts/stirling-formula/</link>
       <pubDate>Mon, 30 Oct 2017 20:00:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/stirling-formula/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/stirling-formula/</guid>
       <description>I.Introduction: The Coin Tossing Problem Whenever you have difficulty deciding something, for example, whether to attend the lectures of a course or not, the most common thing to do in this scenario is to toss a coin and see whether the heads or tails of the coin is facing up when they land. Assume that the coin you toss is uniform, meaning that the chance of the heads to land facing up is equal to the chance of the tails to land facing up.</description>
     </item>
     
     <item>
       <title>Shineright Studio starts...again and again!</title>
-      <link>https://casd82.github.io/posts/shineright-studio-starts-again-and-again/</link>
+      <link>https://YuChaoGithub.github.io/posts/shineright-studio-starts-again-and-again/</link>
       <pubDate>Sun, 29 Oct 2017 20:00:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/shineright-studio-starts-again-and-again/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/shineright-studio-starts-again-and-again/</guid>
       <description>Hello world, again!
 
 Well, I&amp;rsquo;ve been moving my blog around different platforms quite a bit this year. Within only 8 months I&amp;rsquo;ve switched from Google&amp;rsquo;s Blogger to a self hosted Ghost blog on an AWS server, and now, I moved all my articles on my AWS server to this new blog, using Hugo static page generator, hosted on GitHub.
@@ -59,10 +59,10 @@ The reason why I switched to Hugo on GitHub is quite simple.</description>
     
     <item>
       <title>Customized 2D Following Camera in Godot</title>
-      <link>https://casd82.github.io/posts/customized-2d-following-camera-in-godot/</link>
+      <link>https://YuChaoGithub.github.io/posts/customized-2d-following-camera-in-godot/</link>
       <pubDate>Sun, 15 Oct 2017 16:40:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/customized-2d-following-camera-in-godot/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/customized-2d-following-camera-in-godot/</guid>
       <description>Two weeks ago, I wrote an article about some camera moving schemes used in Metal Slug 3. In this article, I will show you how to actually implement such a camera.
 
 I will be using the open source Godot Engine with GDScript since I believe any programmer with could understand GDScript quite easily, so let&amp;rsquo;s get started.
@@ -73,10 +73,10 @@ First, lets define some variables we&amp;rsquo;ll use later.
     
     <item>
       <title>Camera Moving Scene Scrolling in Metal Slug 3</title>
-      <link>https://casd82.github.io/posts/camera-moving-scene-scrolling-in-metal-slug-3/</link>
+      <link>https://YuChaoGithub.github.io/posts/camera-moving-scene-scrolling-in-metal-slug-3/</link>
       <pubDate>Sun, 01 Oct 2017 17:01:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/camera-moving-scene-scrolling-in-metal-slug-3/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/camera-moving-scene-scrolling-in-metal-slug-3/</guid>
       <description>I&amp;rsquo;ve started to work on my first 2D side scrolling platformer recently. However, before diving into designing my own game, I did some quick research on various topics about 2D platformers. One of them is camera controlling (aka. scene scrolling).
 
 I find some interesting camera controlling technique used in the Metal Slug series, so I would like to share my observations and analysis of how and when to apply those camera controlling schemes.</description>
@@ -84,10 +84,10 @@ I find some interesting camera controlling technique used in the Metal Slug seri
     
     <item>
       <title>My Experience in Google Summer of Code 2017</title>
-      <link>https://casd82.github.io/posts/my-experience-in-google-summer-of-code-2017/</link>
+      <link>https://YuChaoGithub.github.io/posts/my-experience-in-google-summer-of-code-2017/</link>
       <pubDate>Sun, 10 Sep 2017 15:10:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/my-experience-in-google-summer-of-code-2017/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/my-experience-in-google-summer-of-code-2017/</guid>
       <description>I&amp;rsquo;ve already posted an article about Google Summer of Code 2017. However, the post is mainly about the project itself. For this article, I&amp;rsquo;d like to share my experience and thoughts for the whole GSoC period.
 Google Summer of Code 2017 was an extremely exciting and rewarding experience for me. I was very lucky to be accepted by Systers (Anita Borg Institute) for working on the PowerUp-iOS project.
 
@@ -96,10 +96,10 @@ Before heading straight into the actual GSoC period, I would like to write brief
     
     <item>
       <title>GSoC 2017 Conclusion</title>
-      <link>https://casd82.github.io/posts/gsoc-2017-conclusion/</link>
+      <link>https://YuChaoGithub.github.io/posts/gsoc-2017-conclusion/</link>
       <pubDate>Mon, 04 Sep 2017 11:37:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/gsoc-2017-conclusion/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/gsoc-2017-conclusion/</guid>
       <description>(This is an overview and conclusion for my summer internship (Google Summer of Code 2017) in Systers on the PowerUp-iOS project. The original article is posted on systers&amp;rsquo; Blogger. Here is the Link.)
 Overview PowerUp is an educational mobile game app aiming at providing adolescent girls with reproductive health knowledge, empowering them with better self esteem, and teaching them conflict resolution skills in social life.
 
@@ -108,67 +108,67 @@ It is a choose-your-own-adventure game which the players have to navigate an ava
     
     <item>
       <title>Animate Nodes Using SKAction in iOS Sprite Kit</title>
-      <link>https://casd82.github.io/posts/animate-nodes-using-skaction-in-ios-sprite-kit/</link>
+      <link>https://YuChaoGithub.github.io/posts/animate-nodes-using-skaction-in-ios-sprite-kit/</link>
       <pubDate>Sun, 06 Aug 2017 22:35:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/animate-nodes-using-skaction-in-ios-sprite-kit/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/animate-nodes-using-skaction-in-ios-sprite-kit/</guid>
       <description>Apple&amp;rsquo;s Sprite Kit is a really well-designed and convenient framework for iOS game development. In this article, I will briefly introduce Sprite Kit Action (SKAction in short), which is the bread and butter for animating nodes in Sprite Kit.
 The Basics In Sprite Kit, every node can run an SKAction by calling the run(_:) function. run(_:) takes an SKAction as its parameter, and will perform the action immediately after the call.</description>
     </item>
     
     <item>
       <title>A Brief Review of Godot Engine</title>
-      <link>https://casd82.github.io/posts/a-brief-review-of-godot/</link>
+      <link>https://YuChaoGithub.github.io/posts/a-brief-review-of-godot/</link>
       <pubDate>Sun, 23 Jul 2017 15:11:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/a-brief-review-of-godot/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/a-brief-review-of-godot/</guid>
       <description>After finishing 2 of my projects in Unity, I was planning to try out something different and hopefully, more suitable for me to use. I did a quick research on some modern cross platform game engines: Godot, Cocos2d-x, Atomic, Love2D, Phaser, and of course, Unreal. I finally decided to look more into Godot Engine. In this article, I will write briefly about the features, the special node-scene system, as well as the pros and cons of Godot Engine.</description>
     </item>
     
     <item>
       <title>Build &amp; Test Automation for Xcode Projects Using Travis CI</title>
-      <link>https://casd82.github.io/posts/build-test-automation-for-xcode-projects-using-travis-ci/</link>
+      <link>https://YuChaoGithub.github.io/posts/build-test-automation-for-xcode-projects-using-travis-ci/</link>
       <pubDate>Sat, 08 Jul 2017 18:47:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/build-test-automation-for-xcode-projects-using-travis-ci/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/build-test-automation-for-xcode-projects-using-travis-ci/</guid>
       <description>Testing your code is a vital process in app development, since it could reveal bugs and mistakes before the users actually use it. However, testing your app whenever you make a commit can be tedious and time-consuming. This is where Continuous Integration (CI) comes to rescue.
 Continuous Integration Continuous Integration is the process of building and testing your app automatically, saving precious time for the developers. In this article, I will demonstrate how to integrate Travis CI to your XCode projects (to be specific, iOS/macOS/tvOS/watchOS projects) on GitHub.</description>
     </item>
     
     <item>
       <title>SQLite Database Singleton Class for iOS in Swift 3</title>
-      <link>https://casd82.github.io/posts/sqlite-database-singleton-class-for-ios-in-swift-3/</link>
+      <link>https://YuChaoGithub.github.io/posts/sqlite-database-singleton-class-for-ios-in-swift-3/</link>
       <pubDate>Sun, 25 Jun 2017 10:50:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/sqlite-database-singleton-class-for-ios-in-swift-3/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/sqlite-database-singleton-class-for-ios-in-swift-3/</guid>
       <description>Writing code for database querying or updating can be tedious, error-prone, and hard to manage. Therefore, abstracting the database operations into a globally accessible model class may be a nice solution. In this article, I will show you how to write a singleton class which wraps the database operations. I will use FMDB (SQLite) with Swift 3 to demonstrate, but it is just about the same for every languages and frameworks.</description>
     </item>
     
     <item>
       <title>GSoC 2017 With Systers on PowerUp Project</title>
-      <link>https://casd82.github.io/posts/gsoc-2017-with-systers-on-powerup-project/</link>
+      <link>https://YuChaoGithub.github.io/posts/gsoc-2017-with-systers-on-powerup-project/</link>
       <pubDate>Sun, 21 May 2017 20:37:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/gsoc-2017-with-systers-on-powerup-project/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/gsoc-2017-with-systers-on-powerup-project/</guid>
       <description>I&amp;rsquo;ve always wanted to participate in Google Summer of Code (GSoC) someday. Fortunately, this year, I got selected by Systers, an Anita Borg Institute community for a mobile game project &amp;ndash; PowerUp. In this article, I&amp;rsquo;ll write about how I chose which project to contribute, how I wrote my proposal, and what is the PowerUp project about.
 Selecting Organizations When selecting which organizations to contribute, I focus mostly on what am I capable of doing, what interests me the most, and which projects would enhance my portfolio for my dream career.</description>
     </item>
     
     <item>
       <title>The Art of Game Design - Book Review</title>
-      <link>https://casd82.github.io/posts/the-art-of-game-design-book-review/</link>
+      <link>https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/</link>
       <pubDate>Mon, 01 May 2017 12:37:09 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/the-art-of-game-design-book-review/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/</guid>
       <description>Finally finished reading the famous &amp;ldquo;The Art of Game Design: A Book of Lenses&amp;rdquo; by Jesse Schell. Jesse Schell is a professor at CMU ETC (which happens to be my dream graduate school :D) and an experienced game designer. Throughout the book, he often explains some abstract concepts by his actual experience in game designing (especially from the game Pirates of the Caribbean: Battle for Buccaneer Gold and Toontown Online which he designed) and performance art (he was a juggler during his teenage years).</description>
     </item>
     
     <item>
       <title>2D Fireworks Effect with Unity Particle System</title>
-      <link>https://casd82.github.io/posts/2d-fireworks-effect-with-unity-particle-system/</link>
+      <link>https://YuChaoGithub.github.io/posts/2d-fireworks-effect-with-unity-particle-system/</link>
       <pubDate>Sun, 16 Apr 2017 18:43:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/2d-fireworks-effect-with-unity-particle-system/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/2d-fireworks-effect-with-unity-particle-system/</guid>
       <description>Using particle systems is a wonderful way to improve the juiciness as well as the aesthetics of your game.
 
 When making my rhythm game Boots-Cuts, I used the particle system in Unity to display a little firework effect whenever a music note is hit on-beat.
@@ -178,19 +178,19 @@ Texture and Material First, we&amp;rsquo;ll have to import the the graphics whic
     
     <item>
       <title>kQq: Mobile to Standalone</title>
-      <link>https://casd82.github.io/posts/kqq-mobile-to-standalone/</link>
+      <link>https://YuChaoGithub.github.io/posts/kqq-mobile-to-standalone/</link>
       <pubDate>Sun, 02 Apr 2017 22:13:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/kqq-mobile-to-standalone/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/kqq-mobile-to-standalone/</guid>
       <description>I&amp;rsquo;ve published my first game kQq on iOS App Store and Google Play in February. Though the sales were far from success, I&amp;rsquo;ve learned a lot (or rather I like to use this excuse as self-consolation&amp;hellip;). Thinking that this game would also work on standalone platforms and that I would gain some precious experiences by porting the game to standalone platforms, I started working on the redesign of the project and published a Steam Greenlight page for it.</description>
     </item>
     
     <item>
       <title>Zero Budget Marketing for Indies</title>
-      <link>https://casd82.github.io/posts/zero-budget-marketing-for-indies/</link>
+      <link>https://YuChaoGithub.github.io/posts/zero-budget-marketing-for-indies/</link>
       <pubDate>Sun, 26 Mar 2017 22:45:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/zero-budget-marketing-for-indies/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/zero-budget-marketing-for-indies/</guid>
       <description>Marketing is an annoying and boring task&amp;hellip;at least for most of the indie game developers. However, you have to admit, marketing helps. It raises awareness among the potential audiences and possibly boosts the sales of your game.
 
 The problem is, indies have limited budget, so it is impossible to practice the marketing skills which AAA companies use.
@@ -200,10 +200,10 @@ As I went through the process of developing and publishing my first mobile game 
     
     <item>
       <title>Mobile Game: Portrait or Landscape</title>
-      <link>https://casd82.github.io/posts/mobile-game-portrait-or-landscape/</link>
+      <link>https://YuChaoGithub.github.io/posts/mobile-game-portrait-or-landscape/</link>
       <pubDate>Mon, 20 Mar 2017 21:43:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/mobile-game-portrait-or-landscape/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/mobile-game-portrait-or-landscape/</guid>
       <description>Modern mobile devices usually have a rectangular screen which one side is wider than the other. This results in a crucial design problem: which screen orientation is the best for mobile games?
 
 This seems to be a rather simple and unimportant issue. However, whether the game is in portrait or in landscape could significantly influence the experience of the players.
@@ -213,10 +213,10 @@ Overall, to determine whether a portrait or landscape screen suits your game bet
     
     <item>
       <title>Music Syncing in Rhythm Games</title>
-      <link>https://casd82.github.io/posts/music-syncing-in-rhythm-games/</link>
+      <link>https://YuChaoGithub.github.io/posts/music-syncing-in-rhythm-games/</link>
       <pubDate>Sun, 12 Mar 2017 23:12:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/music-syncing-in-rhythm-games/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/music-syncing-in-rhythm-games/</guid>
       <description>Recently, I&amp;rsquo;ve started my beatbox rhythm game project Boots-Cut using Unity. When prototyping the basic game mechanics, I found that it is quite tricky to sync the music notes with the music correctly. However, there are very little articles on the web concerning this subject. So, I will try to point out some important tips when developing a rhythm game (especially in Unity) in this article.
 
 Among all, I found the following three points with most importance:</description>
@@ -224,10 +224,10 @@ Among all, I found the following three points with most importance:</description
     
     <item>
       <title>Recording and Playing Audio in Unity</title>
-      <link>https://casd82.github.io/posts/recording-and-playing-audio-in-unity/</link>
+      <link>https://YuChaoGithub.github.io/posts/recording-and-playing-audio-in-unity/</link>
       <pubDate>Sun, 05 Mar 2017 13:31:00 +0800</pubDate>
       
-      <guid>https://casd82.github.io/posts/recording-and-playing-audio-in-unity/</guid>
+      <guid>https://YuChaoGithub.github.io/posts/recording-and-playing-audio-in-unity/</guid>
       <description>Just published my Recordable Launchpad app on the iOS App Store and Google Play! Actually, the project was created accidentally when I was testing out Unity In-App Purchase, Google Admob Unity SDK, the &amp;ldquo;Prepare iOS for Recording&amp;rdquo; checkbox, and Audio Latency.
 
 Since integrating Unity In-App Purchase and Google Admob are rather straightforward, I would be writing mostly about (the more troublesome parts, which are)
