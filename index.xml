@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shine Right Blog</title>
+    <title>Shine Right Homepage</title>
     <link>https://YuChaoGithub.github.io/</link>
-    <description>Recent content on Shine Right Blog</description>
+    <description>Recent content on Shine Right Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Yu Chao (趙佑) © 2017</copyright>
+    <copyright>Yu Chao (趙佑) © 2018</copyright>
     <lastBuildDate>Sat, 10 Nov 2018 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -159,9 +159,10 @@ It is proved in researches of various fields of science that good music could ca
       <pubDate>Sun, 12 Nov 2017 15:38:45 +0800</pubDate>
       
       <guid>https://YuChaoGithub.github.io/knights-rubbish/</guid>
-      <description>A &amp;ldquo;real life doodle&amp;rdquo;-styled platformer fighter (co-op arcade) game featuring our beloved character Keshia Erasia and his friends. They had risen from the rubbish and they seek for adventures. Exciting, eh?
+      <description>A co-op platformer fighter game made with real photos, featuring our beloved character Keshia Erasia and his friends. They have risen from the rubbish and they seek for adventures. Exciting, eh?
 Release Date Sometime in 2019.
-Play On Steam, itch.io. (Store page not ready yet.)
+Store Page Steam (Not ready yet.)
+itch.io
 The Knights Keshia Erasia
 Wendy Floopy
 Ranawato Plato
@@ -169,8 +170,8 @@ Othox Codox
 Sirurueruerue Senyesuensuesue &amp;amp; Sugsesugsem Sosas
 
 and more&amp;hellip;
-Source Code View On GitHub
-The source code is for reference or research purposes, please purchase the game if you want to play it.</description>
+Other Links Game Manual
+Source Code View On GitHub</description>
     </item>
     
     <item>
