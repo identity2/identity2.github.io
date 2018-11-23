@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2018</copyright>
-    <lastBuildDate>Sat, 10 Nov 2018 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 23 Nov 2018 11:40:19 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Knights Rubbish Released</title>
+      <link>https://YuChaoGithub.github.io/posts/knights-rubbish-released/</link>
+      <pubDate>Fri, 23 Nov 2018 11:40:19 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/posts/knights-rubbish-released/</guid>
+      <description>My second game project Knights Rubbish has released!
+
+Originally I was just doing some experiments with Godot Engine and trying to implement the barebones of a platformer, but then the project grew larger and larger as I combined it with other mechanics I was testing. After a year and couple of months, Knights Rubbish was born!
+Real Photos as Game Graphics One of the coolest features in Knights Rubbish is that most of its graphics are made with processed photos.</description>
+    </item>
     
     <item>
       <title>Knights Rubbish - Keshia Erasia</title>

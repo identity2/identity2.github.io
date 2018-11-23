@@ -49,224 +49,22 @@
 
 <article class="c-article p-list-article">
   <header>
-    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/a-brief-review-of-godot/">A Brief Review of Godot Engine</a></h2>
+    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/recording-and-playing-audio-in-unity/">Recording and Playing Audio in Unity</a></h2>
     <p class="c-article__meta">
       Posted on
-      <time datetime="2017-07-23T15:11:00&#43;08:00">
-        Jul 23, 2017
+      <time datetime="2017-03-05T13:31:00&#43;08:00">
+        Mar 5, 2017
       </time>
     </p>
   </header>
   <div class="c-article__summary">
-    After finishing 2 of my projects in Unity, I was planning to try out something different and hopefully, more suitable for me to use. I did a quick research on some modern cross platform game engines: Godot, Cocos2d-x, Atomic, Love2D, Phaser, and of course, Unreal. I finally decided to look more into Godot Engine. In this article, I will write briefly about the features, the special node-scene system, as well as the pros and cons of Godot Engine.
+    Just published my Recordable Launchpad app on the iOS App Store and Google Play! Actually, the project was created accidentally when I was testing out Unity In-App Purchase, Google Admob Unity SDK, the &ldquo;Prepare iOS for Recording&rdquo; checkbox, and Audio Latency.
+
+Since integrating Unity In-App Purchase and Google Admob are rather straightforward, I would be writing mostly about (the more troublesome parts, which are)
+ Serializing and Deserializing AudioClips Getting Rid of Audio Latency Prepare iOS for Recording and iPhoneSpeakerFix  in this article.
   </div>
   
-  <a href="https://YuChaoGithub.github.io/posts/a-brief-review-of-godot/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/build-test-automation-for-xcode-projects-using-travis-ci/">Build &amp; Test Automation for Xcode Projects Using Travis CI</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-07-08T18:47:00&#43;08:00">
-        Jul 8, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Testing your code is a vital process in app development, since it could reveal bugs and mistakes before the users actually use it. However, testing your app whenever you make a commit can be tedious and time-consuming. This is where Continuous Integration (CI) comes to rescue.
-Continuous Integration Continuous Integration is the process of building and testing your app automatically, saving precious time for the developers. In this article, I will demonstrate how to integrate Travis CI to your XCode projects (to be specific, iOS/macOS/tvOS/watchOS projects) on GitHub.
-  </div>
-  
-  <a href="https://YuChaoGithub.github.io/posts/build-test-automation-for-xcode-projects-using-travis-ci/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/sqlite-database-singleton-class-for-ios-in-swift-3/">SQLite Database Singleton Class for iOS in Swift 3</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-06-25T10:50:00&#43;08:00">
-        Jun 25, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Writing code for database querying or updating can be tedious, error-prone, and hard to manage. Therefore, abstracting the database operations into a globally accessible model class may be a nice solution. In this article, I will show you how to write a singleton class which wraps the database operations. I will use FMDB (SQLite) with Swift 3 to demonstrate, but it is just about the same for every languages and frameworks.
-  </div>
-  
-  <a href="https://YuChaoGithub.github.io/posts/sqlite-database-singleton-class-for-ios-in-swift-3/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/gsoc-2017-with-systers-on-powerup-project/">GSoC 2017 With Systers on PowerUp Project</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-05-21T20:37:00&#43;08:00">
-        May 21, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    I&rsquo;ve always wanted to participate in Google Summer of Code (GSoC) someday. Fortunately, this year, I got selected by Systers, an Anita Borg Institute community for a mobile game project &ndash; PowerUp. In this article, I&rsquo;ll write about how I chose which project to contribute, how I wrote my proposal, and what is the PowerUp project about.
-Selecting Organizations When selecting which organizations to contribute, I focus mostly on what am I capable of doing, what interests me the most, and which projects would enhance my portfolio for my dream career.
-  </div>
-  
-  <a href="https://YuChaoGithub.github.io/posts/gsoc-2017-with-systers-on-powerup-project/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/">The Art of Game Design - Book Review</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-05-01T12:37:09&#43;08:00">
-        May 1, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Finally finished reading the famous &ldquo;The Art of Game Design: A Book of Lenses&rdquo; by Jesse Schell. Jesse Schell is a professor at CMU ETC (which happens to be my dream graduate school :D) and an experienced game designer. Throughout the book, he often explains some abstract concepts by his actual experience in game designing (especially from the game Pirates of the Caribbean: Battle for Buccaneer Gold and Toontown Online which he designed) and performance art (he was a juggler during his teenage years).
-  </div>
-  
-  <a href="https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/2d-fireworks-effect-with-unity-particle-system/">2D Fireworks Effect with Unity Particle System</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-04-16T18:43:00&#43;08:00">
-        Apr 16, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Using particle systems is a wonderful way to improve the juiciness as well as the aesthetics of your game.
-
-When making my rhythm game Boots-Cuts, I used the particle system in Unity to display a little firework effect whenever a music note is hit on-beat.
-In this article, I&rsquo;ll demonstrate how to make such an effect.
-Texture and Material First, we&rsquo;ll have to import the the graphics which we would like the particle systems to emit (aka.
-  </div>
-  
-  <a href="https://YuChaoGithub.github.io/posts/2d-fireworks-effect-with-unity-particle-system/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/kqq-mobile-to-standalone/">kQq: Mobile to Standalone</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-04-02T22:13:00&#43;08:00">
-        Apr 2, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    I&rsquo;ve published my first game kQq on iOS App Store and Google Play in February. Though the sales were far from success, I&rsquo;ve learned a lot (or rather I like to use this excuse as self-consolation&hellip;). Thinking that this game would also work on standalone platforms and that I would gain some precious experiences by porting the game to standalone platforms, I started working on the redesign of the project and published a Steam Greenlight page for it.
-  </div>
-  
-  <a href="https://YuChaoGithub.github.io/posts/kqq-mobile-to-standalone/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/zero-budget-marketing-for-indies/">Zero Budget Marketing for Indies</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-03-26T22:45:00&#43;08:00">
-        Mar 26, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Marketing is an annoying and boring task&hellip;at least for most of the indie game developers. However, you have to admit, marketing helps. It raises awareness among the potential audiences and possibly boosts the sales of your game.
-
-The problem is, indies have limited budget, so it is impossible to practice the marketing skills which AAA companies use.
-
-As I went through the process of developing and publishing my first mobile game &ndash; kQq, I learned some basic marketing skills by reading tons of marketing articles as well as trying everything possible.
-  </div>
-  
-  <a href="https://YuChaoGithub.github.io/posts/zero-budget-marketing-for-indies/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/mobile-game-portrait-or-landscape/">Mobile Game: Portrait or Landscape</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-03-20T21:43:00&#43;08:00">
-        Mar 20, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Modern mobile devices usually have a rectangular screen which one side is wider than the other. This results in a crucial design problem: which screen orientation is the best for mobile games?
-
-This seems to be a rather simple and unimportant issue. However, whether the game is in portrait or in landscape could significantly influence the experience of the players.
-
-Overall, to determine whether a portrait or landscape screen suits your game better, you should ask yourself these questions:
-  </div>
-  
-  <a href="https://YuChaoGithub.github.io/posts/mobile-game-portrait-or-landscape/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://YuChaoGithub.github.io/posts/music-syncing-in-rhythm-games/">Music Syncing in Rhythm Games</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-03-12T23:12:00&#43;08:00">
-        Mar 12, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Recently, I&rsquo;ve started my beatbox rhythm game project Boots-Cut using Unity. When prototyping the basic game mechanics, I found that it is quite tricky to sync the music notes with the music correctly. However, there are very little articles on the web concerning this subject. So, I will try to point out some important tips when developing a rhythm game (especially in Unity) in this article.
-
-Among all, I found the following three points with most importance:
-  </div>
-  
-  <a href="https://YuChaoGithub.github.io/posts/music-syncing-in-rhythm-games/" class="c-article__btn p-list-article__btn">Read more</a></li>
+  <a href="https://YuChaoGithub.github.io/posts/recording-and-playing-audio-in-unity/" class="c-article__btn p-list-article__btn">Read more</a></li>
   
 </article>
 
@@ -275,16 +73,14 @@ Among all, I found the following three points with most importance:
   <div class="c-pagination__ctrl">
     <div class="c-pagination__newer">
       
-      <a href="/posts/">Newer</a>
+      <a href="/posts/page/2/">Newer</a>
       
     </div>
     <div class="c-pagination__older">
       
-      <a href="/posts/page/3/">Older</a>
-      
     </div>
   </div>
-  <span class="c-pagination__count p-pagination__count">Page 2 of 3</span>
+  <span class="c-pagination__count p-pagination__count">Page 3 of 3</span>
 </nav>
 
 
