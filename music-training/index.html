@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Knights Rubbish Released</title>
-  <meta property="og:title" content="Knights Rubbish Released" />
-  <meta name="twitter:title" content="Knights Rubbish Released" />
+  <title>Music Training</title>
+  <meta property="og:title" content="Music Training" />
+  <meta name="twitter:title" content="Music Training" />
   
 
   
 
   <meta name="author" content="Yu Chao"/>
   <meta property="og:site_name" content="Shine Right Homepage" />
-  <meta property="og:url" content="https://YuChaoGithub.github.io/posts/knights-rubbish-released/" />
+  <meta property="og:url" content="https://YuChaoGithub.github.io/music-training/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -86,16 +86,9 @@
 
 <article class="p-article">
   <header>
-    <h1>Knights Rubbish Released</h1>
+    <h1>Music Training</h1>
     
     <div>
-      
-      <div class="c-time">
-        Posted on
-        <time datetime="2018-11-23T11:40:19&#43;08:00">
-          Nov 23, 2018
-        </time>
-      </div>
       
 
       
@@ -107,73 +100,39 @@
 
 
 <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/bNIsr0Maho4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+  <iframe src="//www.youtube.com/embed/Nijk6YPtKZE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
  </div>
 
 
 <p><br /></p>
 
-<p>My second game project <a href="/knights-rubbish">Knights Rubbish</a> has released!</p>
+<p>A Sight Reading, Sight Singing, Interval Dictation, and Chord Progression Dictation training app.</p>
+
+<h2 id="download-on">Download On</h2>
+
+<p><a href="https://itunes.apple.com/us/app/id1451196113">App Store (iOS)</a></p>
+
+<h2 id="description">Description</h2>
+
+<p>You can train multiple music theory skills including Sight Reading, Sight Singing, Interval Dictation, and Chord Progression Dictation with this app!</p>
 
 <p><br /></p>
 
-<p>Originally I was just doing some experiments with Godot Engine and trying to implement the barebones of a platformer, but then the project grew larger and larger as I combined it with other mechanics I was testing. After a year and couple of months, Knights Rubbish was born!</p>
-
-<h2 id="real-photos-as-game-graphics">Real Photos as Game Graphics</h2>
-
-<p>One of the coolest features in Knights Rubbish is that most of its graphics are made with processed photos. Whenever I needed game graphics for objects in the game, I simply picked up my phone, took pictures of some random items at my home and editted them using Affinity Photo. This gave Knights Rubbish a bizarre 2D photo-realistic feel, which unexpectedly, is super decent!</p>
+<p>&ldquo;Sight Reading, Sight Singing, Interval Dictation and Chord Progression Dictation are all crucial skills for us human beings. Image if you are stranded on a desert island disk with nothing to eat, nothing to drink, nothing to do. An alien aircraft suddenly lands on the disk you&rsquo;re on to make some home movies for the folks back home. It turns out that the movie they are filming is a musical. Then, if you have trained your music skills diligently with this app, the alien film crew might recruit you and give you some exotic food and drinks. You will no longer starve!&rdquo;</p>
 
 <p><br /></p>
 
-<p>Another unexpected thing is that I thought editting photos for game graphics costs less time then drawing game graphics by hand. I was wrong. Editting photos is as time-consuming and more tedious than drawing. However, evaluating my art skills, maybe I&rsquo;ll never be able to create photo-realistic game art.</p>
+<p>Thanks for reading!</p>
 
-<h2 id="platformer-fighter-with-local-co-op">Platformer Fighter with Local Co-op</h2>
-
-<p>I really enjoyed the fun of cooperating with a friend and fight through mobs and bosses of a game when I was a kid, so I planned to make Knights Rubbish a local co-op action platformer. When designing the mechanics of Knights Rubbish, I did research on three of my past favorite games for reference: Metal Slug, Super Smash Bros, and Maplestory.</p>
-
-<p><br /></p>
-
-<p>The camera movement of Metal Slug is smooth and well-designed, so I watched some gameplay videos of it and learned how to position and move the camera according to the characters&rsquo; position on screen (especially when there are two player-controlled characters on screen). I wrote two articles on camera movements while I was doing this research:</p>
+<h2 id="features">Features</h2>
 
 <ul>
-<li><a href="/posts/camera-moving-scene-scrolling-in-metal-slug-3">Camera Moving &amp; Scene Scrolling in Metal Slug 3</a></li>
-<li><a href="/posts/customized-2d-following-camera-in-godot">Customized 2D Following Camera in Godot</a></li>
+<li>Nice app description.</li>
 </ul>
 
-<p><br /></p>
+<h2 id="source-code">Source Code</h2>
 
-<p>Super Smash Bros is famous for its intuitive yet comprehensive combo-casting system, so I designed Knights Rubbish&rsquo;s combo system accordingly:</p>
-
-<ul>
-<li><strong>[Up + Skill]</strong> for upward movement.</li>
-<li><strong>[Down + Skill]</strong> for defensive skill.</li>
-<li><strong>[Left/Right + Skill]</strong> for horizontal or ranged attack.</li>
-<li><strong>[Skill]</strong> for basic skill.</li>
-</ul>
-
-<p>The difference is that instead of &ldquo;Attack-key Combos&rdquo; (or charged attacks) in Smash Bros, the <strong>[Attack]</strong> key in Knights Rubbish only defines one simple attack move. I designed it this way because I consider that charged attacks are fun due to the demonstration of skills between two more advanced players, however, Knights Rubbish is only a casual game where two players cooperate against enemies. Therefore, the addition of Attack-key Combos would only increase the complexity of Knights Rubbishh, not providing the game with more fun.</p>
-
-<p><br /></p>
-
-<p>Maplestory is enjoyable due to the variety of mobs and the sense of satisfaction after defeating bosses (with friends). I studied some enemy behaviors and boss designs of the game and came up with several bosses and over 20 mobs for Knights Rubbish. They were all implemented with simple state machines so that the code base is easier to manage.</p>
-
-<h2 id="made-with-godot">Made with Godot</h2>
-
-<p>Godot is such a powerful and wonderful project for game developers, especially for hobbyists and indies. It is opensource, free, customizable, and comparable with modern commercial game engines. I&rsquo;m really thankful of the contributors and the kind community for helping me out during the development of Knights Rubbish, and if Knights Rubbish actually profits (which um&hellip; is kind of unlikely to be honest), I&rsquo;ll definitely donate a pecentage of the earnings to Godot.</p>
-
-<h2 id="links">Links</h2>
-
-<p><a href="/knights-rubbish">Knights Rubbish Homepage</a></p>
-
-<p><a href="/knights-rubbish-heroes/the-knights">Introduction to the Knights</a></p>
-
-<p><a href="https://store.steampowered.com/app/980440">Steam Store</a></p>
-
-<p><a href="https://shinerightstudio.itch.io/knights-rubbish">itch.io Store</a></p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>Another game title under by belt. Yay.</p>
+<p><a href="https://github.com/YuChaoGithub/music-training">View on GitHub</a></p>
 
   </section>
   <footer>
@@ -194,12 +153,11 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/music-training/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/knights-rubbish-heroes/keshia-erasia/">Older</a>
+          <a href="https://YuChaoGithub.github.io/posts/knights-rubbish-released/">Older</a>
           
         </div>
       </div>

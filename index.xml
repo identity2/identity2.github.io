@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2018</copyright>
-    <lastBuildDate>Fri, 23 Nov 2018 11:40:19 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 31 Jan 2019 22:24:18 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Music Training</title>
+      <link>https://YuChaoGithub.github.io/music-training/</link>
+      <pubDate>Thu, 31 Jan 2019 22:24:18 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/music-training/</guid>
+      <description>A Sight Reading, Sight Singing, Interval Dictation, and Chord Progression Dictation training app.
+Download On App Store (iOS)
+Description You can train multiple music theory skills including Sight Reading, Sight Singing, Interval Dictation, and Chord Progression Dictation with this app!
+
+&amp;ldquo;Sight Reading, Sight Singing, Interval Dictation and Chord Progression Dictation are all crucial skills for us human beings. Image if you are stranded on a desert island disk with nothing to eat, nothing to drink, nothing to do.</description>
+    </item>
     
     <item>
       <title>Knights Rubbish Released</title>
@@ -295,7 +308,8 @@ Features  Original Background music. Experience TRUE LOVE. Well, just kidding. F
       <guid>https://YuChaoGithub.github.io/projects/</guid>
       <description>Games Knights Rubbish
 kQq
-Apps Tuner &amp;amp; Metronome
+Apps Music Training
+Tuner &amp;amp; Metronome
 Recordable Launchpad
 Books Inter-dimensional Time
 Artworks Doodles
