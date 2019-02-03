@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://YuChaoGithub.github.io/music-training/</loc>
-    <lastmod>2019-01-31T22:24:18+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://YuChaoGithub.github.io/posts/knights-rubbish-released/</loc>
     <lastmod>2018-11-23T11:40:19+08:00</lastmod>
   </url>
@@ -68,7 +63,7 @@
   </url>
   
   <url>
-    <loc>https://YuChaoGithub.github.io/tuner-metronome/</loc>
+    <loc>https://YuChaoGithub.github.io/tuner-music-training/</loc>
     <lastmod>2018-04-02T10:51:18+08:00</lastmod>
   </url>
   
@@ -226,7 +221,7 @@
   
   <url>
     <loc>https://YuChaoGithub.github.io/</loc>
-    <lastmod>2019-01-31T22:24:18+08:00</lastmod>
+    <lastmod>2018-11-23T11:40:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   

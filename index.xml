@@ -7,23 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2018</copyright>
-    <lastBuildDate>Thu, 31 Jan 2019 22:24:18 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 23 Nov 2018 11:40:19 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Music Training</title>
-      <link>https://YuChaoGithub.github.io/music-training/</link>
-      <pubDate>Thu, 31 Jan 2019 22:24:18 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/music-training/</guid>
-      <description>A Sight Reading, Sight Singing, Interval Dictation, and Chord Progression Dictation training app.
-Release Date Before March 2019.
-Description You can train multiple music theory skills including Sight Reading, Sight Singing, Interval Dictation, and Chord Progression Dictation with this app!
-
-&amp;ldquo;Sight Reading, Sight Singing, Interval Dictation and Chord Progression Dictation are all crucial skills for us human beings. Image if you are stranded on a desert island disk with nothing to eat, nothing to drink, nothing to do.</description>
-    </item>
     
     <item>
       <title>Knights Rubbish Released</title>
@@ -164,18 +151,21 @@ Inter-dimensional Time is a cross dimensional pseudo-periodical published by Sch
     </item>
     
     <item>
-      <title>Tuner &amp; Metronome</title>
-      <link>https://YuChaoGithub.github.io/tuner-metronome/</link>
+      <title>Tuner &amp; Music Training</title>
+      <link>https://YuChaoGithub.github.io/tuner-music-training/</link>
       <pubDate>Mon, 02 Apr 2018 10:51:18 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/tuner-metronome/</guid>
-      <description>A minimal tuner &amp;amp; metronome app.
+      <guid>https://YuChaoGithub.github.io/tuner-music-training/</guid>
+      <description>A minimalistic tuner &amp;amp; music training app.
 Download On App Store (iOS)
 Description This is an extremely wonderful app that not only makes the world a better place but relieves the pain of existence.
 
-How so?
+Why so?
 
-It is proved in researches of various fields of science that good music could calm one&amp;rsquo;s soul and cheer up the depressed. Since good music require accurately tuned musical instruments and precisely calculated beats, a fine tuner and metronome are essential to the production of great music.</description>
+Because this app includes:
+ Tuner &amp;amp; Metronome. Sight Reading Training. Sight Singing Training. Interval Dictation Training. Chord Progression Dictation Training.  
+Other information:
+BEHOLD!!! This app fulfills your biggest childhood dream, that is, it creatively combines tuner, metronome and music training into A SINGLE app!</description>
     </item>
     
     <item>
@@ -225,7 +215,8 @@ The reason why I switched to Hugo on GitHub is quite simple.</description>
       
       <guid>https://YuChaoGithub.github.io/articles/</guid>
       <description>This page includes all the articles published on this blog.
-Game Dev Customized 2D Following Camera in Godot
+Game Dev Knights Rubbish Released
+Customized 2D Following Camera in Godot
 Camera Moving &amp;amp; Scene Scrolling in Metal Slug 3
 A Brief Review of Godot Engine
 2D Fireworks Effect with Unity Particle System
@@ -308,8 +299,7 @@ Features  Original Background music. Experience TRUE LOVE. Well, just kidding. F
       <guid>https://YuChaoGithub.github.io/projects/</guid>
       <description>Games Knights Rubbish
 kQq
-Apps Music Training
-Tuner &amp;amp; Metronome
+Apps Tuner &amp;amp; Music Training
 Recordable Launchpad
 Books Inter-dimensional Time
 Artworks Doodles
