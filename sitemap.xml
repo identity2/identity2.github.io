@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://YuChaoGithub.github.io/cuhk-course-review/csci2100-estr2102/</loc>
+    <lastmod>2019-05-12T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://YuChaoGithub.github.io/cuhk-course-review/csci3250-csci3251/</loc>
+    <lastmod>2019-05-12T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://YuChaoGithub.github.io/course-review/</loc>
+    <lastmod>2019-05-12T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://YuChaoGithub.github.io/cuhk-course-review/eltu2014/</loc>
+    <lastmod>2019-05-12T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://YuChaoGithub.github.io/cuhk-course-review/engg2430-estr2002/</loc>
+    <lastmod>2019-05-12T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://YuChaoGithub.github.io/cuhk-course-review/ugeb2440/</loc>
+    <lastmod>2019-05-12T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://YuChaoGithub.github.io/cuhk-course-review/uged2133/</loc>
+    <lastmod>2019-05-12T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://YuChaoGithub.github.io/posts/knights-rubbish-released/</loc>
     <lastmod>2018-11-23T11:40:19+08:00</lastmod>
   </url>
@@ -208,6 +243,12 @@
   </url>
   
   <url>
+    <loc>https://YuChaoGithub.github.io/cuhk-course-review/</loc>
+    <lastmod>2019-05-12T00:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://YuChaoGithub.github.io/knights-rubbish-heroes/</loc>
     <lastmod>2018-11-10T00:00:00+08:00</lastmod>
     <priority>0</priority>
@@ -221,7 +262,7 @@
   
   <url>
     <loc>https://YuChaoGithub.github.io/</loc>
-    <lastmod>2018-11-23T11:40:19+08:00</lastmod>
+    <lastmod>2019-05-12T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
