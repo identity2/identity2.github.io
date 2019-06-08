@@ -79,7 +79,7 @@ The reason why I switched to Hugo on GitHub is quite simple.</description>
 
 I will be using the open source Godot Engine with GDScript since I believe any programmer with could understand GDScript quite easily, so let&amp;rsquo;s get started.
 
-First, lets define some variables we&amp;rsquo;ll use later.
+First, let&amp;rsquo;s define some variables we&amp;rsquo;ll use later.
 12345678910 # Scroll the screen (aka.</description>
     </item>
     
