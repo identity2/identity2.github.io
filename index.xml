@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2019</copyright>
-    <lastBuildDate>Sun, 12 May 2019 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jun 2019 16:39:00 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Trying out Medium</title>
+      <link>https://YuChaoGithub.github.io/posts/trying-out-medium/</link>
+      <pubDate>Mon, 10 Jun 2019 16:39:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/posts/trying-out-medium/</guid>
+      <description>Haven&amp;rsquo;t been writing articles for almost half a year because I got back to school this spring. It&amp;rsquo;s really diffult to handle both the course works and side projects (such as maintaining a blog) at the same time, and I&amp;rsquo;m starting to worry that I&amp;rsquo;ll have even less time writing after I graduate. The &amp;ldquo;harsh&amp;rdquo; reality and &amp;ldquo;tough&amp;rdquo; life often change our hobbies into more &amp;ldquo;entertainment&amp;rdquo; ones unlike writing or other creative activities.</description>
+    </item>
     
     <item>
       <title>CSCI2100/ESTR2102 Data Structures - CUHK Course Review</title>
@@ -515,7 +524,9 @@ Selecting Organizations When selecting which organizations to contribute, I focu
       <pubDate>Mon, 01 May 2017 12:37:09 +0800</pubDate>
       
       <guid>https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/</guid>
-      <description>Finally finished reading the famous &amp;ldquo;The Art of Game Design: A Book of Lenses&amp;rdquo; by Jesse Schell. Jesse Schell is a professor at CMU ETC (which happens to be my dream graduate school :D) and an experienced game designer. Throughout the book, he often explains some abstract concepts by his actual experience in game designing (especially from the game Pirates of the Caribbean: Battle for Buccaneer Gold and Toontown Online which he designed) and performance art (he was a juggler during his teenage years).</description>
+      <description>中文版 (Chinese Version)
+
+Finally finished reading the famous &amp;ldquo;The Art of Game Design: A Book of Lenses&amp;rdquo; by Jesse Schell. Jesse Schell is a professor at CMU ETC (which happens to be my dream graduate school :D) and an experienced game designer. Throughout the book, he often explains some abstract concepts by his actual experience in game designing (especially from the game Pirates of the Caribbean: Battle for Buccaneer Gold and Toontown Online which he designed) and performance art (he was a juggler during his teenage years).</description>
     </item>
     
     <item>
