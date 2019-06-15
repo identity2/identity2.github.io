@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2019</copyright>
-    <lastBuildDate>Mon, 10 Jun 2019 16:39:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Jun 2019 10:02:39 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Andrew Ng Machine Learning Course Review and Brief Notes</title>
+      <link>https://YuChaoGithub.github.io/posts/andrew-ng-machine-learning-course-review/</link>
+      <pubDate>Sat, 15 Jun 2019 10:02:39 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/posts/andrew-ng-machine-learning-course-review/</guid>
+      <description>Just completed the renowned Andrew Ng&amp;rsquo;s Machine Learning course (on Coursera) these couple of days. Since many people are curious about this course, I will do a quick write up on how I think about this course and what I actually learned.
+About the Instructor Andrew Ng is the co-founder of Google Brain and Coursera, and an adjunct professor at Stanford University. He was also a former vice president and chief scientist at Baidu working on large scale artificial intelligence projects.</description>
+    </item>
     
     <item>
       <title>Trying out Medium</title>
