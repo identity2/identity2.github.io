@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2019</copyright>
-    <lastBuildDate>Sat, 22 Jun 2019 09:23:30 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jul 2019 21:29:47 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Proving NP-Completeness by Restriction</title>
+      <link>https://YuChaoGithub.github.io/posts/prove-np-complete-by-restriction/</link>
+      <pubDate>Sat, 06 Jul 2019 21:29:47 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/posts/prove-np-complete-by-restriction/</guid>
+      <description>Proving NP-Completeness is a core topic in the studies of algorithms. For most of the algorithms textbooks, they show some complicated tricks which reduce a known NP-Complete problem to another problem, say Q, to prove that Q is NP-Complete. This works because if problem A reduces to problem B, then B is at least as difficult as A. And since A is NP-Complete, B is also NP-Complete.
+
+However, many problem reduction methods are extremely subtle and often require some &amp;ldquo;devine instincts&amp;rdquo; to come up with in the first place.</description>
+    </item>
     
     <item>
       <title>Music in Film Terminology</title>
