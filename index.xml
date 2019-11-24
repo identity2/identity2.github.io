@@ -7,10 +7,91 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2019</copyright>
-    <lastBuildDate>Sat, 06 Jul 2019 21:29:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSCI2040 Introduction to Python - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci2040/</link>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci2040/</guid>
+      <description>Term Taken: 2019 Fall
+Instructor (Class A): Prof. John Lui Chi Shing
+Grading Scheme  Programming Exercises (40%) Final Exam (60%)  Topics Covered  Python basics. Functional programming. Object-oriented programming. Regular expressions. Numpy, Scipy, Matplotlib.  Review I already know Python, I registered this course for a GPA boost. To be honest, I only attended one lecture, so I don&amp;rsquo;t know much about this course. The programming exercises are pretty easy though.</description>
+    </item>
+    
+    <item>
+      <title>CSCI3130 Formal Language and Automata Theory - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3130/</link>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3130/</guid>
+      <description>Term Taken: 2019 Fall
+Instructor: Prof. Chan Siu On
+Grading Scheme Original Scheme:
+ Homework (30%) Midterm Exam (30%) Final Exam (40%)  Scheme for 2019 Course Cancellation:
+ Homework (50%) Midterm Exam (50%)  Textbook Introduction to the Theory of Computation, Michael Sipser, 3rd ed
+Topics Covered  Finite Automata (DFA, NFA). Regular Expressions. Context-Free Grammar. Pushdown Automata. Pumping Lemma. LR(0) Parser. Church-Turing Thesis. Reductions. Decidability and Undecidability. NP-completeness.</description>
+    </item>
+    
+    <item>
+      <title>CSCI3150/ESTR3102 Introduction to Operating Systems - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3150-estr3102/</link>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3150-estr3102/</guid>
+      <description>Term Taken: 2019 Fall
+Instructor: Prof. Shao Zili
+Grading Scheme Original Scheme
+ Labs (5%) Programming Assignments (45%) Midterm Test (10%) ESTR Labs (15%) Final Exam (25%)  For non-ESTR students, Final Exam takes up 40%.
+Scheme for 2019 Course Cancellation
+The final exam is changed to a programming assignment.
+Textbook Operating Systems: Three Easy Pieces
+Topics Covered  Basic Linux systems programming. System Calls. CPU Scheduling. Memory Management. Concurrency: Pthread, Semaphor.</description>
+    </item>
+    
+    <item>
+      <title>CSCI3160 Design and Analysis of Algorithms - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3160/</link>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3160/</guid>
+      <description>Term Taken: 2019 Fall
+Instructor: Prof. Tao Yufei
+Grading Scheme Original Scheme:
+ Quiz (18%) Midterm Exam (32%) Final Exam (50%)  Scheme for 2019 Course Cancellation:
+ Quiz (23.8%) Midterm (76.2%)  Textbook Introduction to Algorithms, 3rd Edition. By Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
+Topics Covered  Recursion. Divide and Conquer. Greedy Algorithms. Dynamic Programming. Graph Algorithms. Complexity Theory. NP-complete Problems.  Review This is a theoretical algorithm course focusing on proving the correctness and complexity of algorithms.</description>
+    </item>
+    
+    <item>
+      <title>CSCI3220 Algorithms for Bioinformatics - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3220/</link>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3220/</guid>
+      <description>Term Taken: 2019 Fall
+Instructor: Prof. Kevin Yip Yuk Lap
+Grading Scheme Original Scheme:
+ Assignments (45%) Ureply Quiz (5%) Midterm Exam (20%) Final Exam (30%)  Scheme for 2019 Course Cancellation:
+ Assignments (54%) Ureply Quiz (6%) Midterm Exam (40%)  Topics Covered  Optimal sequence alignment. Heuristic sequence alignment (BLAST/FASTA). Short read alignment (Suffix Trie, BWT). Sequence assembly (de Bruijn graph). Sequence motif models, k-mer counting. Hidden Markov models.</description>
+    </item>
+    
+    <item>
+      <title>CSCI3230/ESTR3108 Fundamentals of Artificial Intelligence - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3230-estr3108/</link>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3230-estr3108/</guid>
+      <description>Term Taken: 2019 Fall
+Instructor: Prof. Leung Kwong Sak
+Grading Scheme Original Scheme:
+ Written Assignments (12%) Prolog Programming Assignment (8%) Weka Data Mining Lab (5%) TensorFlow Neural Network Project (20%) Final Exam (55%)  Scheme for 2019 course cancellation:
+ Written Assignments (21%) Prolog Programming Assignment (10.5%) TensorFlow Neural Network Project (21%) Term Paper (17.5%) ESTR Research Project (30%)  Textbook Artificial Intelligence A Modern Approach by Stuart Russell and Peter Norvig.</description>
+    </item>
     
     <item>
       <title>Proving NP-Completeness by Restriction</title>
@@ -81,8 +162,8 @@ Grading Scheme  Group Presentation (20%) Class Activities and Quiz Question Desi
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
       <guid>https://YuChaoGithub.github.io/course-review/</guid>
-      <description>Below is a list of my reviews on some CUHK (The Chinese University of Hong Kong) courses I have taken. Hope this could help out some fellow CUHKers. Shoot me an email if you have questions.
-General Education  UGEB2440 Chemistry of Food and Drinks UGED2133 Music in Film  Computer Science Requirements  CSCI2100/ESTR2102 Data Structures ENGG2430/ESTR2002 Probability and Statistics for Engineers CSCI3250+CSCI3251 Computers &amp;amp; Society + Engineering Practicum  Computer Science Electives Empty as for now.</description>
+      <description> Below is a list of my reviews on some CUHK (The Chinese University of Hong Kong) courses I have taken. Hope this could help out some fellow CUHKers. Shoot me an email if you have questions.
+General Education  UGEB2440 Chemistry of Food and Drinks UGED2133 Music in Film  Computer Science Requirements  CSCI2100/ESTR2102 Data Structures ENGG2430/ESTR2002 Probability and Statistics for Engineers CSCI3250+CSCI3251 Computers &amp;amp; Society + Engineering Practicum CSCI3130 Formal Language and Automata Theory CSCI3150/ESTR3102 Introduction to Operating Systems CSCI3160 Design and Analysis of Algorithms  Computer Science Electives  CSCI2040 Introduction to Python CSCI3220 Algorithms for Bioinformatics CSCI3230/ESTR3108 Fundamentals of Artificial Intelligence  Language Requirements  ELTU2014 English for Engineers  </description>
     </item>
     
     <item>
