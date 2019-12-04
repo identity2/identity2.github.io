@@ -65,7 +65,7 @@ Instructor: Prof. Tao Yufei
 Grading Scheme Original Scheme:
  Quiz (18%) Midterm Exam (32%) Final Exam (50%)  Scheme for 2019 Course Cancellation:
  Quiz (23.8%) Midterm (76.2%)  Textbook Introduction to Algorithms, 3rd Edition. By Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
-Topics Covered  Recursion. Divide and Conquer. Greedy Algorithms. Dynamic Programming. Graph Algorithms. Complexity Theory. NP-complete Problems.  Review This is a theoretical algorithm course focusing on proving the correctness and complexity of algorithms.</description>
+Topics Covered  Recursion. Divide and Conquer. Greedy Algorithms. Dynamic Programming. Graph Algorithms. Complexity Theory. NP-complete Problems. Approximation Algorithms.</description>
     </item>
     
     <item>
@@ -164,7 +164,7 @@ Grading Scheme  Group Presentation (20%) Class Activities and Quiz Question Desi
       
       <guid>https://YuChaoGithub.github.io/course-review/</guid>
       <description> Below is a list of my reviews on some CUHK (The Chinese University of Hong Kong) courses I have taken. Hope this could help out some fellow CUHKers. Shoot me an email if you have questions.
-General Education  UGEB2440 Chemistry of Food and Drinks UGED2133 Music in Film  Computer Science Requirements  CSCI2100/ESTR2102 Data Structures ENGG2430/ESTR2002 Probability and Statistics for Engineers CSCI3250+CSCI3251 Computers &amp;amp; Society + Engineering Practicum CSCI3130 Formal Language and Automata Theory CSCI3150/ESTR3102 Introduction to Operating Systems CSCI3160 Design and Analysis of Algorithms  Computer Science Electives  CSCI2040 Introduction to Python CSCI3220 Algorithms for Bioinformatics CSCI3230/ESTR3108 Fundamentals of Artificial Intelligence  Language Requirements  ELTU2014 English for Engineers  </description>
+General Education  UGEB2440 Chemistry of Food and Drinks UGED2133 Music in Film  Computer Science Requirements  CSCI2100/ESTR2102 Data Structures ENGG2430/ESTR2002 Probability and Statistics for Engineers CSCI3250+CSCI3251 Computers &amp;amp; Society + Engineering Practicum CSCI3130 Formal Language and Automata Theory CSCI3150/ESTR3102 Introduction to Operating Systems CSCI3160 Design and Analysis of Algorithms CSCI3180 Principles of Programming Languages CSCI3100 Software Engineering  Computer Science Electives  CSCI2040 Introduction to Python CSCI3220 Algorithms for Bioinformatics CSCI3230/ESTR3108 Fundamentals of Artificial Intelligence CSCI3280 Introduction to Multimedia Systems CSCI3290 Computational Imaging and Vision CSCI3310 Mobile Computing and Application Development CSCI4430 Data Communication and Computer Networks  Language Requirements  ELTU2014 English for Engineers ELTU3014 English for Engineers II  </description>
     </item>
     
     <item>
