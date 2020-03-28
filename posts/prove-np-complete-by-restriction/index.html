@@ -28,7 +28,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.30.2" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.68.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://YuChaoGithub.github.io/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://YuChaoGithub.github.io/favicon.ico" />
   <script type="text/javascript" src="https://YuChaoGithub.github.io/js/bundle.js"></script>
@@ -103,148 +103,77 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
-
-<p>Proving NP-Completeness is a core topic in the studies of algorithms. For most of the algorithms textbooks, they show some complicated tricks which <em><a href="https://en.wikipedia.org/wiki/Reduction_(complexity)">reduce</a></em> a known NP-Complete problem to another problem, say <strong>Q</strong>, to prove that <strong>Q</strong> is NP-Complete. This works because if problem <strong>A</strong> <em>reduces</em> to problem <strong>B</strong>, then <em>B</em> is at least as difficult as <strong>A</strong>. And since <strong>A</strong> is NP-Complete, <strong>B</strong> is also NP-Complete.</p>
-
+    <p>Proving NP-Completeness is a core topic in the studies of algorithms. For most of the algorithms textbooks, they show some complicated tricks which <em><a href="https://en.wikipedia.org/wiki/Reduction_(complexity)">reduce</a></em> a known NP-Complete problem to another problem, say <strong>Q</strong>, to prove that <strong>Q</strong> is NP-Complete. This works because if problem <strong>A</strong> <em>reduces</em> to problem <strong>B</strong>, then <em>B</em> is at least as difficult as <strong>A</strong>. And since <strong>A</strong> is NP-Complete, <strong>B</strong> is also NP-Complete.</p>
 <p><br /></p>
-
-<p>However, many problem reduction methods are extremely subtle and often require some &ldquo;devine instincts&rdquo; to come up with in the first place. Fortunately, there is a far more simpler approach to prove NP-Completeness of a problem, that is, the restriction method.</p>
-
+<p>However, many problem reduction methods are extremely subtle and often require some &ldquo;devine instincts&rdquo; to come up with in the first place. Fortunately, there is a far simpler approach to prove NP-Completeness of a problem, that is, the restriction method.</p>
 <p><br /></p>
-
 <p>The logic of the restriction method is pretty straightforward, that is:</p>
-
 <p><br /></p>
-
 <blockquote>
 <p>If a problem <strong>Q</strong> contains a known NP-Complete problem as its subset, then <strong>Q</strong> is also NP-Complete.</p>
 </blockquote>
-
 <p><br /></p>
-
 <p>It is called the restriction method because in essence, we <em>restrict</em> the inputs of the problem <strong>Q</strong> to gain a subset problem of <strong>Q</strong>. And if the subset problem is NP-Complete, <strong>Q</strong> is proven to be NP-Complete.</p>
-
 <p><br /></p>
-
 <p>Let&rsquo;s make some analogies, suppose <strong>dribbling</strong> is <em>hard</em>, then you know that <strong>playing basketball</strong> is at least as difficult as <strong>dribbling</strong>, since <strong>playing basketball</strong> contains <strong>dribbling</strong>. Likewise, if <strong>standing</strong> is <em>hard</em>, then you know that <strong>walking</strong> is at least as difficult as <strong>standing</strong>, since <strong>standing</strong> is a subproblem of <strong>walking</strong>.</p>
-
 <p><br /></p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/1.png" alt="Prove NP-Complete by Restriction" /></p>
-
+<p><img src="/posts/prove-np-complete-by-restriction/1.png" alt="Prove NP-Complete by Restriction"></p>
 <p><br /></p>
-
 <p>By taking this logic into the fields of algorithms, many problems could be proven to be NP-Complete within a second.</p>
-
 <p><br /></p>
-
 <p>In the remaining sections of this article, I will first list some problems known to be NP-Complete, and then apply them to prove NP-Completeness of some other problems using the restriction method.</p>
-
 <h2 id="known-np-complete-problems">Known NP-Complete Problems</h2>
-
 <p><strong>CLIQUE</strong></p>
-
 <p>Input: A graph $G=(V,E)$, and a positive integer $k$.</p>
-
 <p>Problem: Return <em>true</em> if $G$ contains a clique of size at least $k$. Otherwise, return <em>false</em>. (A clique is a subset of vertices such that every two distinct vertices in the clique are adjacent. That is, the induced subgraph is <em>complete</em>.)</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/2.png" alt="Clique" /></p>
-
+<p><img src="/posts/prove-np-complete-by-restriction/2.png" alt="Clique"></p>
 <p><strong>SUBSET SUM</strong></p>
-
 <p>Input: A set $S$ of integers, and an integer $W$.</p>
-
-<p>Problem: Return <em>true</em> if there is a subset $S&rsquo;$ of $S$ such that the sum of the elements of $S&rsquo;$ equals to $W$. Otherwise, return <em>false</em>.</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/3.png" alt="Subset Sum" /></p>
-
+<p>Problem: Return <em>true</em> if there is a subset $S'$ of $S$ such that the sum of the elements of $S'$ equals to $W$. Otherwise, return <em>false</em>.</p>
+<p><img src="/posts/prove-np-complete-by-restriction/3.png" alt="Subset Sum"></p>
 <p><strong>LONGEST PATH</strong></p>
-
 <p>Input: A graph $G=(V,E)$, and a number $k$.</p>
-
 <p>Problem: Return <em>true</em> if $G$ contains a path of length at least $k$. Otherwise, return <em>false</em>.</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/5.png" alt="Longest Path" /></p>
-
+<p><img src="/posts/prove-np-complete-by-restriction/5.png" alt="Longest Path"></p>
 <p><strong>HAMILTON CYCLE</strong></p>
-
 <p>Input: A graph $G=(V,E)$, and a positive integer $k$.</p>
-
 <p>Problem: Return <em>true</em> if $G$ contains a cycle which traverses each vertex in $G$ exactly once. Otherwise, return <em>false</em>.</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/4.png" alt="Hamilton Cycle" /></p>
-
+<p><img src="/posts/prove-np-complete-by-restriction/4.png" alt="Hamilton Cycle"></p>
 <h2 id="proving-np-completeness-by-restriction">Proving NP-Completeness by Restriction</h2>
-
 <p><strong>DENSEST K SUBGRAPH</strong></p>
-
 <p>Input: A graph $G=(V,E)$, a positive integer $k$, and a positive integer $l$.</p>
-
 <p>Problem: Return <em>true</em> if $G$ contains a subgraph of $k$ vertices that has at least $l$ edges. Otherwise, return <em>false</em>.</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/6.png" alt="Densest k Subgraph" /></p>
-
+<p><img src="/posts/prove-np-complete-by-restriction/6.png" alt="Densest k Subgraph"></p>
 <p>Proof: Restrict the input $l$ such that $l={k \choose 2}$. Now, we are looking for a subgraph of $k$ vertices that has at least $\frac{k(k-1)}{2}$ edges. Since $n$ vertices are allowed to have at most $\frac{n(n-1)}{2}$ edges between them, we can restate the previous goal as: &ldquo;We are looking for a subgraph of $k$ vertices that has <em>exactly</em> $\frac{k(k-1)}{2}$ edges&rdquo;. This means that the target subgraph has an edge between each pair of vertices, and thus, we are essentially searching for a clique of $k$ vertices. Since <strong>DENSEST K SUBGRAPH</strong> contains <strong>CLIQUE</strong>, it is NP-Complete.</p>
-
 <p><br /></p>
-
 <p><strong>EDGE PACKING</strong></p>
-
 <p>Input: A graph $G=(V,E)$, a positive integer $k$, and a positive integer $l$.</p>
-
 <p>Problem: Return <em>true</em> if $G$ contains $k$ edges that are incident with at most $l$ vertices. Otherwise, return <em>false</em>.</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/7.png" alt="Edge Cover" /></p>
-
+<p><img src="/posts/prove-np-complete-by-restriction/7.png" alt="Edge Cover"></p>
 <p>Proof: <strong>EDGE PACKING</strong> is similar to <strong>DENSEST K SUBGRAPH</strong>, but this time, we restrict $k$ such that $k={l \choose 2}=\frac{l(l-1)}{2}$. We are now looking for $\frac{l(l-1)}{2}$ edges in the graph such that they cover at most $l$ vertices. Since $\frac{l(l-1)}{2}$ edges cover <em>exactly</em> $l$ vertices in a graph (no more and no less), we are essentially looking for a clique with $l$ vertices. Hence, <strong>EDGE PACKING</strong> is also NP-Complete.</p>
-
 <p><br /></p>
-
 <p><strong>GRAPH CLUSTERING</strong></p>
-
 <p>Input: A graph $G=(V, E)$, a positive integer $k$, a number $d$.</p>
-
-<p>Problem: Return <em>true</em> if $G$ contains at least $k$ vertices $V&rsquo;$ such that the distance for any pair of the vertices of $V&rsquo;$ is at most $d$. Otherwise, return <em>false</em>.</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/8.png" alt="Graph Clustering" /></p>
-
+<p>Problem: Return <em>true</em> if $G$ contains at least $k$ vertices $V'$ such that the distance for any pair of the vertices of $V'$ is at most $d$. Otherwise, return <em>false</em>.</p>
+<p><img src="/posts/prove-np-complete-by-restriction/8.png" alt="Graph Clustering"></p>
 <p>Proof: By restricting $d$ and $k$ such that $d=1$ and $k=|V|$ ($|V|$ denotes the number of vertices in graph $G$), and setting the weight of each edge such that $e_i=1$, we are now searching for a Hamilton path (that is, a longest path with length at least $k=|V|$ in a graph with each edge weighted $1$). Since <strong>HAMILTON PATH</strong> (or <strong>LONGEST PATH</strong>) is NP-Complete, <strong>GRAPH CLUSTERING</strong> is also NP-Complete.</p>
-
 <p><br /></p>
-
 <p><strong>MINIMUM-WEIGHT CYCLE</strong></p>
-
 <p>Input: A graph $G=(V,E)$, a number $W$.</p>
-
 <p>Problem: Return <em>true</em> if $G$ contains a cycle with total weight at most $W$. Otherwise, return <em>false</em>.</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/9.png" alt="Minimum-Weight Cycle" /></p>
-
+<p><img src="/posts/prove-np-complete-by-restriction/9.png" alt="Minimum-Weight Cycle"></p>
 <p>Proof: By restricting $W$ such that $W=-|V|$ and setting the weight of each edge such that $e_i=-1$, we are now looking for a Hamilton cycle with $|V|$ vertices. This is because we are required to travel $|V|$ vertices exactly once and finally get back to the initial vertex to achieve a minimum $W=-|V|$. To make the matter clearer, after traveling $|V|$ vertices, we have $W=-|V-1|$. By traveling the last edge back to the starting vertex, completing the cycle, we get $W=-|V|$ and attain our goal. <strong>MINIMUM-WEIGHT CYCLE</strong> contains <strong>HAMILTON CYCLE</strong>, so it is NP-Complete.</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/10.png" alt="Minimum-Weight Cycle Proof" /></p>
-
+<p><img src="/posts/prove-np-complete-by-restriction/10.png" alt="Minimum-Weight Cycle Proof"></p>
 <p><strong>TILE COVER</strong></p>
-
 <p>Input: Two integers forming a dimension $w \times h$, a collection $T$ of rectangular tiles $t_i$ of integer dimension $l_i \times w_i$.</p>
-
 <p>Problem: Return <em>true</em> if some tiles can be selected to cover exactly the whole $w \times h$ dimension. Otherwise, return <em>false</em>.</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/11.png" alt="Tile Cover" /></p>
-
+<p><img src="/posts/prove-np-complete-by-restriction/11.png" alt="Tile Cover"></p>
 <p>Proof: If we restrict $h$ such that $h=h_i$ for each tiles in $T$, then we only need to fit the tiles in one dimension. That is, because $h=h_i$, every tile covers the $h$-dimension fine, our problem now lies only in the $w$-dimension. It is easy to see that a one-dimensional tile cover problem is simply a subset sum problem since $T$ is only a set of integers, and our goal is a subset of $T$ with the sum of all elements equals to $w$. <strong>TILE COVER</strong> is NP-Complete because it contains <strong>SUBSET SUM</strong>.</p>
-
-<p><img src="/posts/prove-np-complete-by-restriction/12.png" alt="1D Tile Cover" /></p>
-
+<p><img src="/posts/prove-np-complete-by-restriction/12.png" alt="1D Tile Cover"></p>
 <h2 id="conclusion">Conclusion</h2>
-
 <p>I want to get an A on my Design and Analysis of Algorithms course next semester. Wish me luck.</p>
-
 <h5 id="references">References</h5>
-
 <p><a href="https://www.cse.cuhk.edu.hk/~lcai/">Prof. CAI Leizhen</a></p>
-
 <p><a href="https://www.amazon.com/Algorithms-Sanjoy-Dasgupta/dp/0073523402"><em>Algorithms</em> (Dasgupta)</a></p>
 
   </section>
@@ -266,12 +195,12 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci3230-estr3108/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/music-in-film-terminology/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/music-in-film-terminology/">Older</a>
+          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci3230-estr3108/">Older</a>
           
         </div>
       </div>
@@ -376,7 +305,7 @@
 
     <p class="p-copyright">
       
-        Yu Chao (趙佑) © 2019
+        Yu Chao (趙佑) © 2020
       
     </p>
   </footer>

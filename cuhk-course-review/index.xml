@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cuhk-course-reviews on Shine Right Homepage</title>
@@ -6,7 +6,7 @@
     <description>Recent content in Cuhk-course-reviews on Shine Right Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Yu Chao (趙佑) © 2019</copyright>
+    <copyright>Yu Chao (趙佑) © 2020</copyright>
     <lastBuildDate>Sun, 24 Nov 2019 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/cuhk-course-review/index.xml" rel="self" type="application/rss+xml" />
@@ -34,7 +34,7 @@ Instructor: Prof. Chan Siu On
 Grading Scheme Original Scheme:
  Homework (30%) Midterm Exam (30%) Final Exam (40%)  Scheme for 2019 Course Cancellation:
  Homework (50%) Midterm Exam (50%)  Textbook Introduction to the Theory of Computation, Michael Sipser, 3rd ed
-Topics Covered  Finite Automata (DFA, NFA). Regular Expressions. Context-Free Grammar. Pushdown Automata. Pumping Lemma. LR(0) Parser. Church-Turing Thesis. Reductions. Decidability and Undecidability. NP-completeness.</description>
+Topics Covered  Finite Automata (DFA, NFA). Regular Expressions. Context-Free Grammar. Pushdown Automata. Pumping Lemma. LR(0) Parser. Church-Turing Thesis. Reductions. Decidability and Undecidability. NP-completeness. Cook-Levin Theorem.</description>
     </item>
     
     <item>
@@ -51,7 +51,7 @@ Grading Scheme Original Scheme:
 Scheme for 2019 Course Cancellation:
 The final exam is changed to a programming assignment.
 Textbook Operating Systems: Three Easy Pieces
-Topics Covered  Basic Linux systems programming. System Calls. CPU Scheduling. Memory Management.</description>
+Topics Covered  Basic Linux systems programming. System Calls. CPU Scheduling. Memory Management. Concurrency: Pthread, Semaphor.</description>
     </item>
     
     <item>
@@ -151,7 +151,7 @@ Topics Covered Probability:
 Instructor (Class B): Kendrew Kin Wah Mak
 Grading Scheme  Short Writings x2 (10%) (English: 2000 words, Chinese: 3500 characters) Essay (40%) Final Exam (50%)  Topics Covered Food Constituents:
  Carbohydrates in Food. Protein, Peptide Bonds, Amino Acids, Collagen. Meat, Fish and Seafood in Dishes. Maillard Reaction. Fatty Acids, DHA.  Food Preservation:
- Drying, Salting, Fermenting, Smoking, Spicing. Kimchi. Alcohol Drinks: Wine, Whiskey. Cheese.</description>
+ Drying, Salting, Fermenting, Smoking, Spicing. Kimchi. Alcohol Drinks: Wine, Whiskey. Cheese.  Traditional and Modern Food and Drinks:</description>
     </item>
     
     <item>

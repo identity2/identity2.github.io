@@ -28,7 +28,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.30.2" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.68.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://YuChaoGithub.github.io/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://YuChaoGithub.github.io/favicon.ico" />
   <script type="text/javascript" src="https://YuChaoGithub.github.io/js/bundle.js"></script>
@@ -103,90 +103,89 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
-
-<p>Apple&rsquo;s Sprite Kit is a really well-designed and convenient framework for iOS game development. In this article, I will briefly introduce <strong>Sprite Kit Action</strong> (<code>SKAction</code> in short), which is the bread and butter for animating nodes in Sprite Kit.</p>
-
+    <p>Apple&rsquo;s Sprite Kit is a really well-designed and convenient framework for iOS game development. In this article, I will briefly introduce <strong>Sprite Kit Action</strong> (<code>SKAction</code> in short), which is the bread and butter for animating nodes in Sprite Kit.</p>
 <h2 id="the-basics">The Basics</h2>
-
 <p>In Sprite Kit, every node can run an <code>SKAction</code> by calling the <code>run(_:)</code> function. <code>run(_:)</code> takes an <code>SKAction</code> as its parameter, and will perform the action immediately after the call. Below is a simple examples of running <code>SKAction</code>s:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> moveAction = SKAction.move(to: CGPoint(x: <span style="color:#ae81ff">10.0</span>, y: <span style="color:#ae81ff">20.0</span>), duration: <span style="color:#ae81ff">5.0</span>)
 
 spriteNode.run(moveAction)</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>The code above moves (aka. translates) <code>spriteNode</code> to (x: 10, y: 20) in 5 seconds.</p>
-
 <p><br /></p>
-
 <p>Sprite Kit also provides a variety of <code>SKAction</code>s of the same type. For instance, aside from <code>SKAction.move(to:duration:)</code>, there is also a <code>move(by:duration:)</code> function, which you can specify the amount of movement instead of the exact destination position of the movement.</p>
-
 <p><br /></p>
-
 <p>On top of <code>move</code> action, <code>rotate</code> and <code>scale</code> are also frequently used actions which animate the transform of nodes.</p>
-
 <h2 id="completion-closure">Completion Closure</h2>
-
 <p>When performing animations, it is quite often that we want to do some other stuff when the animation ends. For example, after scaling up a sprite, we may want it to change color.</p>
-
 <p><br /></p>
-
 <p><code>SKAction</code> fulfills this need by providing another <code>run(_:completion:)</code> function. It receives an additional <code>() -&gt; Void</code> typed closure named <code>completion</code> as its parameter. The <code>completion</code> closure will be run right after the action is completed. Below is an example.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> scaleAction = SKAction.scale(to: <span style="color:#ae81ff">2.0</span>, duration: <span style="color:#ae81ff">3.0</span>)
 spriteNode.run(scaleAction, completion: { spriteNode.color = SKColor.red })</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>This code scales up <code>spriteNode</code> by 3 over 3 seconds, then changes its color to red right after that. You can also pass the closure in a more structured way:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> scaleAction = SKAction.scale(to: <span style="color:#ae81ff">2.0</span>, duration: <span style="color:#ae81ff">3.0</span>)
 spriteNode.run(scaleAction) {
     spriteNode.color = SKColor.red
 }</code></pre></td></tr></table>
 </div>
 </div>
-
 <h2 id="stop-an-action">Stop an Action</h2>
-
 <p>In almost all games, some animations will have to stop before completion. For example, when a monster is killed, we should definitely stop its movement and play its dying animation at the exact position which it was killed.</p>
-
 <p><br /></p>
-
 <p>Sprite Kit uses <strong>key</strong>s to attain this functionality. We can assign a <strong>key</strong> for any <code>SKAction</code>s by</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> actionWithKey = SKAction.scale(by: <span style="color:#ae81ff">2.0</span>, duration: <span style="color:#ae81ff">2.0</span>, withKey: <span style="color:#e6db74">&#34;my_key&#34;</span>)</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>For every <code>SKAction</code>, there is a <code>SKAction.action(by:duration:withKey:)</code>-like function so that you can assign a <code>String</code> typed key to it.</p>
-
 <p><br /></p>
-
 <p>Back to the topic, if you want to stop an action while it is still running, you can simply call <code>removeAction(forKey:)</code>. Below is a brief example.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">spawnMonsterAndMove</span>() {
     <span style="color:#75715e">// ...</span>
 
@@ -204,19 +203,20 @@ spriteNode.run(scaleAction) {
 }</code></pre></td></tr></table>
 </div>
 </div>
-
 <h2 id="sequence-group-wait">Sequence, Group, Wait</h2>
-
 <p>There are also times that you want to perform multiple animations sequentially or perform a group of animations at the same time.</p>
-
 <h4 id="sequence">Sequence</h4>
-
 <p>There is a <strong>sequence</strong> action in Sprite Kit which takes an array of <code>SKAction</code>s as its parameter. When running a <strong>sequence</strong> action, it runs the separate actions one by one. Below is an example.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> moveAction = SKAction.move(to: CGPoint(<span style="color:#ae81ff">10.0</span>, <span style="color:#ae81ff">20.0</span>), duration: <span style="color:#ae81ff">10.0</span>)
 <span style="color:#66d9ef">let</span> scaleAction = SKAction.scale(by: <span style="color:#ae81ff">2.0</span>, duration: <span style="color:#ae81ff">1.0</span>)
 
@@ -225,15 +225,19 @@ spriteNode.run(scaleAction) {
 spriteNode.run(moveThenScaleAction)</code></pre></td></tr></table>
 </div>
 </div>
-
 <h4 id="wait">Wait</h4>
-
 <p>Now you can run a sequence of actions quite easily, however, usually, we will want a small pause between the consecutive actions. <code>SKAction.wait(forDuration:)</code> is what you need here. By adding a <strong>wait</strong> action in the middle of the action array, a small pause then appears in between the animation:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">7</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> moveAction = SKAction.move(to: CGPoint(<span style="color:#ae81ff">10.0</span>, <span style="color:#ae81ff">20.0</span>), duration: <span style="color:#ae81ff">10.0</span>)
 <span style="color:#66d9ef">let</span> waitAction = SKAction.wait(forDuration: <span style="color:#ae81ff">1.0</span>)
 <span style="color:#66d9ef">let</span> scaleAction = SKAction.scale(by: <span style="color:#ae81ff">2.0</span>, duration: <span style="color:#ae81ff">1.0</span>)
@@ -243,15 +247,19 @@ spriteNode.run(moveThenScaleAction)</code></pre></td></tr></table>
 spriteNode.run(moveThenScaleAction)</code></pre></td></tr></table>
 </div>
 </div>
-
 <h4 id="closure-as-an-action">Closure as an action</h4>
-
 <p>Other times, instead of pausing, we want to run some other code in between of the sequence. There is an <code>SKAction.run(_:)</code> action which takes a <code>() -&gt; Void</code> typed closure as its parameter. The closure will be called when the action is run. For example, if we want to change the color of <code>spriteNode</code> in between the move and scale action, we can do this:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">7</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> moveAction = SKAction.move(to: CGPoint(<span style="color:#ae81ff">10.0</span>, <span style="color:#ae81ff">20.0</span>), duration: <span style="color:#ae81ff">10.0</span>)
 <span style="color:#66d9ef">let</span> changeColor = SKAction.run({ spriteNode.color = SKColor.red })
 <span style="color:#66d9ef">let</span> scaleAction = SKAction.scale(by: <span style="color:#ae81ff">2.0</span>, duration: <span style="color:#ae81ff">1.0</span>)
@@ -261,23 +269,23 @@ spriteNode.run(moveThenScaleAction)</code></pre></td></tr></table>
 spriteNode.run(moveThenScaleAction)</code></pre></td></tr></table>
 </div>
 </div>
-
 <h4 id="group">Group</h4>
-
 <p>Group action is similar to sequence action, it takes an array of <code>SKAction</code>s as its parameter. However, instead of running the actions one by one, it runs all the actions at the same time. By changing the previous example from <code>SKAction.sequence(_:)</code> to <code>SKAction.group(_:)</code>, the sprite will start scaling and moving at the same time.</p>
-
 <h2 id="repeating">Repeating</h2>
-
 <p>Repeating an action multiple times is easy in Sprite Kit. There are 2 types of <code>SKAction</code>s which we use from time to time to repeat actions.</p>
-
 <p><br /></p>
-
 <p>Firstly, if you want to repeat an action infinitely, you should use <code>SKAction.repeatForever(_:)</code>. The below code moves <code>spriteNode</code> back and forth forever.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">7</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> moveForth = SKAction.move(to: CGPoint(x: <span style="color:#ae81ff">100.0</span>, y: <span style="color:#ae81ff">100.0</span>), duration: <span style="color:#ae81ff">10.0</span>)
 <span style="color:#66d9ef">let</span> moveBack = SKAction.move(to: CGPoint(x: <span style="color:#ae81ff">0.0</span>, y: <span style="color:#ae81ff">0.0</span>), duration: <span style="color:#ae81ff">10.0</span>)
 
@@ -287,13 +295,18 @@ spriteNode.run(moveThenScaleAction)</code></pre></td></tr></table>
 spriteNode.run(repeatMovement)</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>Otherwise, if you want to repeat the action for  only a finite number of times, use <code>SKAction.repeat(_:count:)</code> instead.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">7</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">let</span> moveForth = SKAction.move(to: CGPoint(x: <span style="color:#ae81ff">100.0</span>, y: <span style="color:#ae81ff">100.0</span>), duration: <span style="color:#ae81ff">10.0</span>)
 <span style="color:#66d9ef">let</span> moveBack = SKAction.move(to: CGPoint(x: <span style="color:#ae81ff">0.0</span>, y: <span style="color:#ae81ff">0.0</span>), duration: <span style="color:#ae81ff">10.0</span>)
 
@@ -303,11 +316,8 @@ spriteNode.run(repeatMovement)</code></pre></td></tr></table>
 spriteNode.run(repeatMovement)</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>The code above will move <code>spriteNode</code> back and forth only 2 times.</p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>From June until now, I have programmed 3 mini games for my Google Summer of Code 2017 project <a href="https://github.com/systers/powerup-iOS">PowerUp-iOS</a>. In all three of the games, I used <code>SKAction</code>s intensively for animation code. Compared to <strong>Coroutine</strong> in Unity, I think Sprite Kit Action provides a more elegant and simpler way to code animations. Hope you can also appreciate the beauty of Sprite Kit Action. :D</p>
 
   </section>
@@ -329,12 +339,12 @@ spriteNode.run(repeatMovement)</code></pre></td></tr></table>
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/posts/gsoc-2017-conclusion/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/a-brief-review-of-godot/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/a-brief-review-of-godot/">Older</a>
+          <a href="https://YuChaoGithub.github.io/posts/gsoc-2017-conclusion/">Older</a>
           
         </div>
       </div>
@@ -439,7 +449,7 @@ spriteNode.run(repeatMovement)</code></pre></td></tr></table>
 
     <p class="p-copyright">
       
-        Yu Chao (趙佑) © 2019
+        Yu Chao (趙佑) © 2020
       
     </p>
   </footer>

@@ -28,7 +28,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.30.2" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.68.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://YuChaoGithub.github.io/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://YuChaoGithub.github.io/favicon.ico" />
   <script type="text/javascript" src="https://YuChaoGithub.github.io/js/bundle.js"></script>
@@ -103,143 +103,85 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
-
-<h1 id="i-introduction-the-coin-tossing-problem">I.Introduction: The Coin Tossing Problem</h1>
-
+    <h1 id="iintroduction-the-coin-tossing-problem">I.Introduction: The Coin Tossing Problem</h1>
 <p>Whenever you have difficulty deciding something, for example, whether to attend the lectures of a course or not, the most common thing to do in this scenario is to toss a coin and see whether the heads or tails of the coin is facing up when they land. Assume that the coin you toss is uniform, meaning that the chance of the heads to land facing up is equal to the chance of the tails to land facing up. Then, the chance that you attend the lecture would be $\frac{1}{2}$. You could further explain that, if you always decide whether or not to attend a lecture by tossing a coin, you would probably end up attending about half of the lectures at the end of the semester (which is a relatively high attendance rate compared to somebody).</p>
-
 <p><br /></p>
-
 <p>But then, what is the chance that you attend exactly half of the lectures in a semester. Mathematically put, if you have $2n$ lectures in total, what is the chance that you attend exactly $n$ lectures? There will be $2^{2n}$ possible outcomes in total if you toss the coin $2n$ times, and the possible outcomes that there are $n$ in $2n$ times when the coin faces up (you attend the lecture) will certainly be ${2n \choose n}$. Thus, the possibility that you attend exactly half of the lectures will be $$\begin{equation}P_{2n} = \frac{2n \choose n}{2^{2n}}=\frac{(2n)!}{2^{2n}n!n!}\label{ref1}\end{equation}$$</p>
-
 <p><br /></p>
-
 <p>And when years and decades have passed, when $n\rightarrow\infty$ (assume that you would study in a university for the rest of your life), then, what would $P_{2n}$ in $\eqref{ref1}$ be? The problem immediately emerged is that how should we tackle the ugly $n!$ and $(2n)!$ ? A sensible way to deal with this is to approximate $n!$ with other terms, and this is when the powerful Stirling&rsquo;s formula shall be introduced.</p>
-
 <p><br /></p>
-
-<h1 id="ii-the-proof-stirling-s-formula">II.The Proof: Stirling&rsquo;s Formula</h1>
-
+<h1 id="iithe-proof-stirlings-formula">II.The Proof: Stirling&rsquo;s Formula</h1>
 <p>Before getting our hands dirty into mathematical statements and equations, let us first take a glimpse and see how the formula looks like $$\begin{equation}\lim_{n\to\infty}\frac{n!}{\sqrt{2\pi}\cdot n^{n+\frac{1}{2}}\cdot e^{-n}}=1\label{ref2}\end{equation}$$</p>
-
 <p><br /></p>
-
 <p>Quite intimidating, isn&rsquo;t it? All the famous irrational numbers such as $\sqrt{2}$, $\pi$, and $e$ play a part in it. But if you&rsquo;ve studied hard enough in your calculus course (at least attend more than half of the calculus lectures), the proof of this formula will be just a piece of cake for you. Don&rsquo;t believe me? Let me give a proof of that!</p>
-
 <p><br /></p>
-
-<p>It is quite obvious from the formula that if we take the natural log on both sides, it will be easier to handle, since many of the terms include exponents and there is an $e$ being the base number in one of the terms as well. So, taking $ln$ on both sides, and we&rsquo;ll have $$\lim_{n\to\infty}ln\frac{n!}{\sqrt{2\pi}\cdot n^{n+\frac{1}{2}}\cdot e^{-n}}=ln\, 1$$</p>
-
+<p>It is quite obvious from the formula that if we take the natural log on both sides, it will be easier to handle, since many of the terms include exponents and there is an $e$ being the base number in one of the terms as well. So, taking $ln$ on both sides, and we&rsquo;ll have $$\lim_{n\to\infty}ln\frac{n!}{\sqrt{2\pi}\cdot n^{n+\frac{1}{2}}\cdot e^{-n}}=ln, 1$$</p>
 <p><br /></p>
-
-<p>After arranging it properly using techniques of logarithm, we will further get $$\begin{equation}\lim_{n\to\infty}(ln\, n!-\frac{1}{2}ln\, 2-\frac{1}{2}ln\, \pi- n\, ln\, n- \frac{1}{2}ln\, n+n)=0\label{ref3}\end{equation}$$</p>
-
+<p>After arranging it properly using techniques of logarithm, we will further get $$\begin{equation}\lim_{n\to\infty}(ln, n!-\frac{1}{2}ln, 2-\frac{1}{2}ln, \pi- n, ln, n- \frac{1}{2}ln, n+n)=0\label{ref3}\end{equation}$$</p>
 <p><br /></p>
-
-<p>This should seem less intimidating. Our mission now becomes approximating the term $ln\, n!$ using $-\frac{1}{2}ln\, 2-\frac{1}{2}ln\,\pi-n\, ln\, n- \frac{1}{2}ln\, n + n$. We&rsquo;ll start by showing that $$\begin{equation}ln\, n!=\sum_{k=1}^{n-1}\int_{k-\frac{1}{2}}^{k+\frac{1}{2}}(ln\, k)dt + \int_{n-\frac{1}{2}}^{n}(ln\, n)dt+\frac{1}{2}ln\, n\label{ref4}\end{equation}$$</p>
-
+<p>This should seem less intimidating. Our mission now becomes approximating the term $ln, n!$ using $-\frac{1}{2}ln, 2-\frac{1}{2}ln,\pi-n, ln, n- \frac{1}{2}ln, n + n$. We&rsquo;ll start by showing that $$\begin{equation}ln, n!=\sum_{k=1}^{n-1}\int_{k-\frac{1}{2}}^{k+\frac{1}{2}}(ln, k)dt + \int_{n-\frac{1}{2}}^{n}(ln, n)dt+\frac{1}{2}ln, n\label{ref4}\end{equation}$$</p>
 <p><br /></p>
-
 <p>By calculating the integrations in the RHS, we&rsquo;ll get</p>
-
 <p><br /></p>
-
 <p>$$\begin{align}
-RHS &amp; = \int_{1-\frac{1}{2}}^{1+\frac{1}{2}}(ln\, 1)dt+\int_{2-\frac{1}{2}}^{2+\frac{1}{2}}(ln\, 2)dt+ \dotsb +\int_{n-1-\frac{1}{2}}^{n-1+\frac{1}{2}}(ln(n-1))dt+\int_{n-\frac{1}{2}}^{n}(ln\, n)dt+\frac{1}{2}ln\, n \newline
-&amp; = (ln\, 1)+(ln\, 2)+\dotsb +[ln(n-1)]+\int_{n-\frac{1}{2}}^{n}(ln\, n)dt+\frac{1}{2}ln\, n \newline
-&amp; = ln(n-1)!+\frac{1}{2}ln\, n+\frac{1}{2}ln\, n \newline
-&amp; = ln\, n!\end{align}$$</p>
-
+RHS &amp; = \int_{1-\frac{1}{2}}^{1+\frac{1}{2}}(ln, 1)dt+\int_{2-\frac{1}{2}}^{2+\frac{1}{2}}(ln, 2)dt+ \dotsb +\int_{n-1-\frac{1}{2}}^{n-1+\frac{1}{2}}(ln(n-1))dt+\int_{n-\frac{1}{2}}^{n}(ln, n)dt+\frac{1}{2}ln, n \newline
+&amp; = (ln, 1)+(ln, 2)+\dotsb +[ln(n-1)]+\int_{n-\frac{1}{2}}^{n}(ln, n)dt+\frac{1}{2}ln, n \newline
+&amp; = ln(n-1)!+\frac{1}{2}ln, n+\frac{1}{2}ln, n \newline
+&amp; = ln, n!\end{align}$$</p>
 <p><br /></p>
-
 <p>We have the identity that</p>
-
-<p>$$I(x)=\int_{0}^{x}(ln\, t)dt=x\, ln\, x - x$$</p>
-
+<p>$$I(x)=\int_{0}^{x}(ln, t)dt=x, ln, x - x$$</p>
 <p>so it is natural to approximate the sum in $\eqref{ref4}$ by</p>
-
-<p>$$\sum_{k=1}^{n-1}\int_{k-\frac{1}{2}}^{k+\frac{1}{2}}(ln\, t)dt+\int_{n-\frac{1}{2}}^{n}(ln\, t)+\frac{1}{2}ln\, n=\int_{\frac{1}{2}}^{n}(ln\, t)dt+\frac{1}{2}ln\, n = I(n)-I(\frac{1}{2})+\frac{1}{2}ln\, n$$</p>
-
+<p>$$\sum_{k=1}^{n-1}\int_{k-\frac{1}{2}}^{k+\frac{1}{2}}(ln, t)dt+\int_{n-\frac{1}{2}}^{n}(ln, t)+\frac{1}{2}ln, n=\int_{\frac{1}{2}}^{n}(ln, t)dt+\frac{1}{2}ln, n = I(n)-I(\frac{1}{2})+\frac{1}{2}ln, n$$</p>
 <p>Hence, what remains is to bound the error of the approximation. To do so, let us define that</p>
-
-<p>$$\begin{align}a_k &amp; = \frac{1}{2}ln\, k-\int_{k-\frac{1}{2}}^{k}(ln\, t)dt \newline
-b_k &amp; = \int_{k}^{k+\frac{1}{2}}(ln\, t)dt-\frac{1}{2}ln\, k\end{align}$$</p>
-
+<p>$$\begin{align}a_k &amp; = \frac{1}{2}ln, k-\int_{k-\frac{1}{2}}^{k}(ln, t)dt \newline
+b_k &amp; = \int_{k}^{k+\frac{1}{2}}(ln, t)dt-\frac{1}{2}ln, k\end{align}$$</p>
 <p><br /></p>
-
 <p>where $k = 1, 2, \dotsb$.</p>
-
 <p><br /></p>
-
-<p>As $a_k-b_k=ln\, k-\int_{k-\frac{1}{2}}^{k+\frac{1}{2}}(ln\, t)dt$,</p>
-
-<p>$$\begin{equation}\begin{split}\sum_{k=1}^{n-1}(a_k-b_k)+a_n &amp; = \sum_{k=1}^{n-1}ln\, k-\sum_{k=1}^{n-1}\int_{k-\frac{1}{2}}^{k+\frac{1}{2}}ln\, t\, dt+\frac{1}{2}ln\, n-\int_{n-\frac{1}{2}}^{n}ln\, t\, dt \newline
-&amp; = ln\, n!-\frac{1}{2}ln\, n-\int_{\frac{1}{2}}^{n}ln\, t\, dt \newline
-&amp; = ln\, n!-\frac{1}{2}ln\, n-I(n)+I(\frac{1}{2})\end{split}\label{ref5}\end{equation}$$</p>
-
+<p>As $a_k-b_k=ln, k-\int_{k-\frac{1}{2}}^{k+\frac{1}{2}}(ln, t)dt$,</p>
+<p>$$\begin{equation}\begin{split}\sum_{k=1}^{n-1}(a_k-b_k)+a_n &amp; = \sum_{k=1}^{n-1}ln, k-\sum_{k=1}^{n-1}\int_{k-\frac{1}{2}}^{k+\frac{1}{2}}ln, t, dt+\frac{1}{2}ln, n-\int_{n-\frac{1}{2}}^{n}ln, t, dt \newline
+&amp; = ln, n!-\frac{1}{2}ln, n-\int_{\frac{1}{2}}^{n}ln, t, dt \newline
+&amp; = ln, n!-\frac{1}{2}ln, n-I(n)+I(\frac{1}{2})\end{split}\label{ref5}\end{equation}$$</p>
 <p><br /></p>
-
-<p>The result of $\eqref{ref5}$ implies that the alternating sum converges to a finite number (i.e. $S=\sum_{k=1}^{\infty}(a_k-b_k) &lt; \infty$), which is a helpful statement that we&rsquo;ll make use of further in the proof. But before moving onto that, we&rsquo;ll first develop some other useful tools required to complete the proof, that is, for $k=1,\, 2,\,\dotsb$,</p>
-
+<p>The result of $\eqref{ref5}$ implies that the alternating sum converges to a finite number (i.e. $S=\sum_{k=1}^{\infty}(a_k-b_k) &lt; \infty$), which is a helpful statement that we&rsquo;ll make use of further in the proof. But before moving onto that, we&rsquo;ll first develop some other useful tools required to complete the proof, that is, for $k=1,, 2,,\dotsb$,</p>
 <p><br /></p>
-
 <p>$$\begin{equation}a_k=\int_{0}^{\frac{1}{2}}ln\frac{1}{1-\frac{t}{k}}dt\label{ref6}\end{equation}$$</p>
-
 <p><br /></p>
-
 <p>$$\begin{equation}b_k=\int_{0}^{\frac{1}{2}}ln(1+\frac{t}{k})dt\label{ref7}\end{equation}$$</p>
-
 <p><br /></p>
-
 <p>This could also be proven trivially by integration,</p>
-
-<p>$$\begin{equation}\begin{split}a_k &amp; = \frac{1}{2}ln\, k-\int_{k-\frac{1}{2}}^{k}(ln\, t) dt\qquad(by\,definition) \newline
-&amp; = \frac{1}{2}[k\, ln\, k-k-(k -\frac{1}{2})ln(k-\frac{1}{2})+k-\frac{1}{2}] \newline
-&amp; = \frac{1}{2}+\frac{1}{2}ln\, k- k\, ln\, k+(k-\frac{1}{2})ln(k-\frac{1}{2}) \newline
-&amp; = \frac{1}{2}-(k-\frac{1}{2})ln\, k+(k - \frac{1}{2})ln(k-\frac{1}{2}) \newline
+<p>$$\begin{equation}\begin{split}a_k &amp; = \frac{1}{2}ln, k-\int_{k-\frac{1}{2}}^{k}(ln, t) dt\qquad(by,definition) \newline
+&amp; = \frac{1}{2}[k, ln, k-k-(k -\frac{1}{2})ln(k-\frac{1}{2})+k-\frac{1}{2}] \newline
+&amp; = \frac{1}{2}+\frac{1}{2}ln, k- k, ln, k+(k-\frac{1}{2})ln(k-\frac{1}{2}) \newline
+&amp; = \frac{1}{2}-(k-\frac{1}{2})ln, k+(k - \frac{1}{2})ln(k-\frac{1}{2}) \newline
 &amp; = \frac{1}{2}-(k-\frac{1}{2})ln \frac{k}{k-\frac{1}{2}}\end{split}\label{ref8}\end{equation}$$</p>
-
 <p><br /></p>
-
 <p>Looking back at $\eqref{ref6}$,</p>
-
-<p>$$\begin{split}RHS &amp; = \frac{1}{2}ln(\frac{1}{1-\frac{1}{2k}})+k\, ln(k-\frac{1}{2})+\frac{1}{2}-k\, ln\, k \newline
-&amp; = \frac{1}{2}-k\, ln \frac{k}{k-\frac{1}{2}}+\frac{1}{2}ln \frac{1}{1-\frac{1}{2k}} \newline
-&amp; = \frac{1}{2}-k\, ln \frac{k}{k-\frac{1}{2}}+\frac{1}{2}ln\frac{k}{k-\frac{1}{2}} \newline
+<p>$$\begin{split}RHS &amp; = \frac{1}{2}ln(\frac{1}{1-\frac{1}{2k}})+k, ln(k-\frac{1}{2})+\frac{1}{2}-k, ln, k \newline
+&amp; = \frac{1}{2}-k, ln \frac{k}{k-\frac{1}{2}}+\frac{1}{2}ln \frac{1}{1-\frac{1}{2k}} \newline
+&amp; = \frac{1}{2}-k, ln \frac{k}{k-\frac{1}{2}}+\frac{1}{2}ln\frac{k}{k-\frac{1}{2}} \newline
 &amp; = \frac{1}{2}-(k-\frac{1}{2})ln \frac{k}{k-\frac{1}{2}} \newline
-&amp; = a_k\qquad by\,\eqref{ref8}\end{split}$$</p>
-
+&amp; = a_k\qquad by,\eqref{ref8}\end{split}$$</p>
 <p><br /></p>
-
 <p>Similarly, for $b_k$,</p>
-
-<p>$$\begin{equation}\begin{split}b_k &amp; = \int_{k}^{k+\frac{1}{2}}(ln\, t)dt-\frac{1}{2}ln\, k\quad (by\, definition) \newline
-&amp; = (k+\frac{1}{2})ln(k+\frac{1}{2})-(k+\frac{1}{2})-k\, ln\, k+k-\frac{1}{2}ln\, k\newline
-&amp; = -\frac{1}{2}+(k+\frac{1}{2})ln(k+\frac{1}{2})-(k+\frac{1}{2})ln\, k \newline
+<p>$$\begin{equation}\begin{split}b_k &amp; = \int_{k}^{k+\frac{1}{2}}(ln, t)dt-\frac{1}{2}ln, k\quad (by, definition) \newline
+&amp; = (k+\frac{1}{2})ln(k+\frac{1}{2})-(k+\frac{1}{2})-k, ln, k+k-\frac{1}{2}ln, k\newline
+&amp; = -\frac{1}{2}+(k+\frac{1}{2})ln(k+\frac{1}{2})-(k+\frac{1}{2})ln, k \newline
 &amp; = -\frac{1}{2}+(k+\frac{1}{2})ln(\frac{k+\frac{1}{2}}{k})\end{split}\label{ref9}\end{equation}$$</p>
-
 <p><br /></p>
-
-<p>Looking back at $\eqref{ref7}$, $$\begin{split}RHS &amp; = -\frac{1}{2}+\frac{1}{2}ln(\frac{1}{2k}+1)+k\, ln(\frac{1}{2}+k)-k\, ln\, k\newline
-&amp; = -\frac{1}{2}+\frac{1}{2}ln(\frac{1}{2k}+1)+k\, ln (\frac{k+\frac{1}{2}}{k}) \newline
-&amp; = -\frac{1}{2}+\frac{1}{2}ln(\frac{k+\frac{1}{2}}{k})+k\, ln(\frac{k+\frac{1}{2}}{k})\newline
-&amp; = -\frac{1}{2}+(k+\frac{1}{2})ln(\frac{k+\frac{1}{2}}{k})\qquad by\,\eqref{ref9}\end{split}$$</p>
-
+<p>Looking back at $\eqref{ref7}$, $$\begin{split}RHS &amp; = -\frac{1}{2}+\frac{1}{2}ln(\frac{1}{2k}+1)+k, ln(\frac{1}{2}+k)-k, ln, k\newline
+&amp; = -\frac{1}{2}+\frac{1}{2}ln(\frac{1}{2k}+1)+k, ln (\frac{k+\frac{1}{2}}{k}) \newline
+&amp; = -\frac{1}{2}+\frac{1}{2}ln(\frac{k+\frac{1}{2}}{k})+k, ln(\frac{k+\frac{1}{2}}{k})\newline
+&amp; = -\frac{1}{2}+(k+\frac{1}{2})ln(\frac{k+\frac{1}{2}}{k})\qquad by,\eqref{ref9}\end{split}$$</p>
 <p><br /></p>
-
-<p>We&rsquo;ve already discussed that $S=\sum_{k=1}^{\infty}(a_k-b_k)&lt;\infty$ after proving $\eqref{ref5}$, now that we have proven $\eqref{ref6}$ and $\eqref{ref7}$, we&rsquo;re finally able to figure  out what $S$ is. In order to prove the Stirling&rsquo;s formula, we should write $S$ as $$\begin{equation}S=I(\frac{1}{2})-\int_{0}^{\frac{1}{2}}ln\, \phi (t)dt\label{ref10}\end{equation}$$</p>
-
+<p>We&rsquo;ve already discussed that $S=\sum_{k=1}^{\infty}(a_k-b_k)&lt;\infty$ after proving $\eqref{ref5}$, now that we have proven $\eqref{ref6}$ and $\eqref{ref7}$, we&rsquo;re finally able to figure  out what $S$ is. In order to prove the Stirling&rsquo;s formula, we should write $S$ as $$\begin{equation}S=I(\frac{1}{2})-\int_{0}^{\frac{1}{2}}ln, \phi (t)dt\label{ref10}\end{equation}$$</p>
 <p><br /></p>
-
-<p>where $$\phi (t)=t\prod_{k=1}^{\infty}(1-\frac{t^2}{k^2})=\frac{\sin\,\pi t}{\pi}$$</p>
-
+<p>where $$\phi (t)=t\prod_{k=1}^{\infty}(1-\frac{t^2}{k^2})=\frac{\sin,\pi t}{\pi}$$</p>
 <p><br /></p>
-
 <p>Let&rsquo;s prove it by using the identities of $\eqref{ref6}$ and $\eqref{ref7}$,</p>
-
-<p>$$\begin{align}S &amp; = \sum_{k=1}^{\infty}(a_k-b_k)\qquad (by\, definition) \newline
-&amp; = \sum_{k=1}^{\infty} ( \int_{0}^{\frac{1}{2}}ln\frac{1}{1-\frac{t}{k}}dt-\int_{0}^{\frac{1}{2}}ln(1+\frac{t}{k})dt ) \qquad (by\,\eqref{ref6},\,\eqref{ref7}) \newline
+<p>$$\begin{align}S &amp; = \sum_{k=1}^{\infty}(a_k-b_k)\qquad (by, definition) \newline
+&amp; = \sum_{k=1}^{\infty} ( \int_{0}^{\frac{1}{2}}ln\frac{1}{1-\frac{t}{k}}dt-\int_{0}^{\frac{1}{2}}ln(1+\frac{t}{k})dt ) \qquad (by,\eqref{ref6},,\eqref{ref7}) \newline
 &amp; = \sum_{k=1}^{\infty}\int_{0}^{\frac{1}{2}}(ln\frac{k}{k-t}-ln\frac{k+t}{k})dt \newline
 &amp; = \sum_{k=1}^{\infty}\int_{0}^{\frac{1}{2}}ln\frac{k\cdot k}{(k-t)(k+t)}dt \newline
 &amp; = \sum_{k=1}^{\infty}\int_{0}^{\frac{1}{2}}ln\frac{k^2}{k^2-t^2}dt \newline
@@ -247,275 +189,160 @@ b_k &amp; = \int_{k}^{k+\frac{1}{2}}(ln\, t)dt-\frac{1}{2}ln\, k\end{align}$$</p
 &amp; = -\sum_{k=1}^{\infty}\int_{0}^{\frac{1}{2}}ln(1-\frac{t^2}{k^2})dt \newline
 &amp; = -\int_{0}^{\frac{1}{2}} (ln(1-\frac{t^2}{1^2})+ln(1-\frac{t^2}{2^2})+\dotsb +ln(1-\frac{t^2}{n^2}))dt\quad (n\to\infty) \newline
 &amp; = -\int_{0}^{\frac{1}{2}}ln(\prod_{k=1}^{\infty}(1-\frac{t^2}{k^2}))dt \newline
-&amp; = \int_{0}^{\frac{1}{2}}ln\, t\, dt-\int_{0}^{\frac{1}{2}}ln\, t\, dt-\int_{0}^{\frac{1}{2}}ln(\prod_{k=1}^{\infty}(1-\frac{t^2}{k^2}))dt \newline
-&amp; = \int_{0}^{\frac{1}{2}}ln\, t\, dt-\int_{0}^{\frac{1}{2}}ln\, t(\prod_{k=1}^{\infty}(1-\frac{t^2}{k^2}))dt \newline
-&amp; = I(\frac{1}{2})-\int_{0}^{\frac{1}{2}}ln\,\phi (t)\, dt\end{align}$$</p>
-
+&amp; = \int_{0}^{\frac{1}{2}}ln, t, dt-\int_{0}^{\frac{1}{2}}ln, t, dt-\int_{0}^{\frac{1}{2}}ln(\prod_{k=1}^{\infty}(1-\frac{t^2}{k^2}))dt \newline
+&amp; = \int_{0}^{\frac{1}{2}}ln, t, dt-\int_{0}^{\frac{1}{2}}ln, t(\prod_{k=1}^{\infty}(1-\frac{t^2}{k^2}))dt \newline
+&amp; = I(\frac{1}{2})-\int_{0}^{\frac{1}{2}}ln,\phi (t), dt\end{align}$$</p>
 <p><br /></p>
-
-<p>By the fact that $\phi (t)=t\prod_{k=1}^{\infty}(1-\frac{t^2}{k^2})=\frac{\sin\,\pi t}{\pi}$, we could arrange $\eqref{ref10}$ and rewrite it as $$\begin{equation}S-I(\frac{1}{2})=\frac{1}{2}ln\,\pi-\int_{0}^{\frac{1}{2}}ln(\sin\,\pi t)dt\label{ref11}\end{equation}$$</p>
-
+<p>By the fact that $\phi (t)=t\prod_{k=1}^{\infty}(1-\frac{t^2}{k^2})=\frac{\sin,\pi t}{\pi}$, we could arrange $\eqref{ref10}$ and rewrite it as $$\begin{equation}S-I(\frac{1}{2})=\frac{1}{2}ln,\pi-\int_{0}^{\frac{1}{2}}ln(\sin,\pi t)dt\label{ref11}\end{equation}$$</p>
 <p><br /></p>
-
-<p>The term $-\int_{0}^{\frac{1}{2}}ln(\sin\,\pi t)dt$ seems annoying, but fortunately, it could be transformed into a simpler term that we&rsquo;ve seen before.</p>
-
+<p>The term $-\int_{0}^{\frac{1}{2}}ln(\sin,\pi t)dt$ seems annoying, but fortunately, it could be transformed into a simpler term that we&rsquo;ve seen before.</p>
 <p><br /></p>
-
-<p>Since $$\begin{split}\int_{0}^{\frac{1}{2}}ln(\sin\,\pi t)dt &amp; = \int_{0}^{\frac{1}{2}}ln(\cos(\pi(\frac{1}{2}-t)))dt \newline
-&amp; = \int_{0}^{\frac{1}{2}}ln(\cos\,\pi u)du\qquad (by\, letting\, u=\frac{1}{2}-t) \newline
-&amp; = \int_{0}^{\frac{1}{2}}ln(\cos\,\pi t)dt\end{split}$$</p>
-
+<p>Since $$\begin{split}\int_{0}^{\frac{1}{2}}ln(\sin,\pi t)dt &amp; = \int_{0}^{\frac{1}{2}}ln(\cos(\pi(\frac{1}{2}-t)))dt \newline
+&amp; = \int_{0}^{\frac{1}{2}}ln(\cos,\pi u)du\qquad (by, letting, u=\frac{1}{2}-t) \newline
+&amp; = \int_{0}^{\frac{1}{2}}ln(\cos,\pi t)dt\end{split}$$</p>
 <p><br /></p>
-
 <p>and</p>
-
 <p><br /></p>
-
-<p>$$\begin{split}\int_{0}^{\frac{1}{2}}ln(\sin\, 2\pi t)dt &amp; = \frac{1}{2}\int_{0}^{1}ln(\sin\,\pi u)du\qquad (by\, letting\, u=2t) \newline
-&amp; = \int_{0}^{\frac{1}{2}}ln(\sin\,\pi u)du\qquad (by\, symmetry)\newline
-&amp; = \int_{0}^{\frac{1}{2}}ln(\sin\,\pi t)dt\end{split}$$</p>
-
+<p>$$\begin{split}\int_{0}^{\frac{1}{2}}ln(\sin, 2\pi t)dt &amp; = \frac{1}{2}\int_{0}^{1}ln(\sin,\pi u)du\qquad (by, letting, u=2t) \newline
+&amp; = \int_{0}^{\frac{1}{2}}ln(\sin,\pi u)du\qquad (by, symmetry)\newline
+&amp; = \int_{0}^{\frac{1}{2}}ln(\sin,\pi t)dt\end{split}$$</p>
 <p><br /></p>
-
 <p>we could get</p>
-
 <p><br /></p>
-
-<p>$$\begin{split}\int_{0}^{\frac{1}{2}}ln(\sin\,\pi t)dt &amp; = \int_{0}^{\frac{1}{2}}ln(\sin(\pi t))dt+\int_{0}^{\frac{1}{2}}ln(\cos(\pi t))dt-\int_{0}^{\frac{1}{2}}ln(\sin(2\pi t))dt \newline
-&amp; = \int_{0}^{\frac{1}{2}}ln\frac{\sin (\pi t)\,\cos (\pi t)}{\sin (2\pi t)}dt \newline
-&amp; = \int_{0}^{\frac{1}{2}}ln\frac{1}{2}dt\qquad (by\, double\, angle\, formula)\newline
-&amp; = -\frac{1}{2}ln\, 2\end{split}$$</p>
-
+<p>$$\begin{split}\int_{0}^{\frac{1}{2}}ln(\sin,\pi t)dt &amp; = \int_{0}^{\frac{1}{2}}ln(\sin(\pi t))dt+\int_{0}^{\frac{1}{2}}ln(\cos(\pi t))dt-\int_{0}^{\frac{1}{2}}ln(\sin(2\pi t))dt \newline
+&amp; = \int_{0}^{\frac{1}{2}}ln\frac{\sin (\pi t),\cos (\pi t)}{\sin (2\pi t)}dt \newline
+&amp; = \int_{0}^{\frac{1}{2}}ln\frac{1}{2}dt\qquad (by, double, angle, formula)\newline
+&amp; = -\frac{1}{2}ln, 2\end{split}$$</p>
 <p><br /></p>
-
-<p>Thus, the equation $\eqref{ref11}$ could be beautifully transformed into $$\begin{equation}S-I(\frac{1}{2})=\frac{1}{2}ln\,\pi+\frac{1}{2}ln\, 2\label{ref12}\end{equation}$$</p>
-
+<p>Thus, the equation $\eqref{ref11}$ could be beautifully transformed into $$\begin{equation}S-I(\frac{1}{2})=\frac{1}{2}ln,\pi+\frac{1}{2}ln, 2\label{ref12}\end{equation}$$</p>
 <p><br /></p>
-
 <p>Now we&rsquo;ve finally got every puzzle pieces, let&rsquo;s put them together to prove Stirling&rsquo;s formula. The basic idea is to merge the two $S-I(\frac{1}{2})$ we know together.</p>
-
 <p><br /></p>
-
-<p>$$\begin{split}S-I(\frac{1}{2}) &amp; = \lim_{n\to\infty}\sum_{k=1}^{n}(a_k-b_k)-I(\frac{1}{2})\qquad (by\, definition) \newline
+<p>$$\begin{split}S-I(\frac{1}{2}) &amp; = \lim_{n\to\infty}\sum_{k=1}^{n}(a_k-b_k)-I(\frac{1}{2})\qquad (by, definition) \newline
 &amp; = \lim_{n\to +\infty}\sum_{k=1}^{n-1}(a_k-b_k)+a_n-I(\frac{1}{2}) \newline
 &amp; \quad(\because\lim_{n\to +\infty}b_n=\lim_{n\to +\infty}\int_{0}^{\frac{1}{2}}ln(1+\frac{t}{n})dt=0) \newline
-&amp; = \lim_{n\to +\infty}(ln\, n!-\frac{1}{2}ln\, n-I(n))\qquad (by\,\eqref{ref5})\end{split}$$</p>
-
+&amp; = \lim_{n\to +\infty}(ln, n!-\frac{1}{2}ln, n-I(n))\qquad (by,\eqref{ref5})\end{split}$$</p>
 <p><br /></p>
-
-<p>We could also write $S-I(\frac{1}{2})$ as $$S-(\frac{1}{2})=\frac{1}{2}ln\,\pi+\frac{1}{2}ln\, 2\qquad\eqref{ref12}$$</p>
-
+<p>We could also write $S-I(\frac{1}{2})$ as $$S-(\frac{1}{2})=\frac{1}{2}ln,\pi+\frac{1}{2}ln, 2\qquad\eqref{ref12}$$</p>
 <p><br /></p>
-
-<p>So, $$\lim_{n\to +\infty}[ln\, n!-\frac{1}{2}ln\, n-I(n)]=\frac{1}{2}ln\,\pi+\frac{1}{2}ln\, 2$$</p>
-
+<p>So, $$\lim_{n\to +\infty}[ln, n!-\frac{1}{2}ln, n-I(n)]=\frac{1}{2}ln,\pi+\frac{1}{2}ln, 2$$</p>
 <p><br /></p>
-
 <p>After arranging, we have</p>
-
 <p><br /></p>
-
-<p>$$\lim_{n\to +\infty}[ln\, n!-\frac{1}{2}ln\, n-I(n)]-\frac{1}{2}ln\,\pi-\frac{1}{2}\ln\, 2=0$$</p>
-
+<p>$$\lim_{n\to +\infty}[ln, n!-\frac{1}{2}ln, n-I(n)]-\frac{1}{2}ln,\pi-\frac{1}{2}\ln, 2=0$$</p>
 <p><br /></p>
-
-<p>$$\lim_{n\to\infty}(ln\, n!-\frac{1}{2}ln\, 2-\frac{1}{2}ln\,\pi-n\, ln\, n-\frac{1}{2}ln\, n+n)=0$$</p>
-
+<p>$$\lim_{n\to\infty}(ln, n!-\frac{1}{2}ln, 2-\frac{1}{2}ln,\pi-n, ln, n-\frac{1}{2}ln, n+n)=0$$</p>
 <p><br /></p>
-
 <p>which is the same as $\eqref{ref3}$ and the original $\eqref{ref2}$, $$\lim_{n\to\infty}\frac{n!}{\sqrt{2\pi}\cdot n^{n+\frac{1}{2}}\cdot e^{-n}}=1$$</p>
-
 <p><br /></p>
-
 <p>Congratulations! We&rsquo;ve completed the proof, now it&rsquo;s time for us to put it back into our original coin tossing problem, that is, $$P_{2n} = \frac{2n \choose n}{2^{2n}}=\frac{(2n)!}{2^{2n}n!n!}\qquad\qquad\eqref{ref1}$$</p>
-
 <p><br /></p>
-
 <p>Substitute the $(2n)!$ and $n!$s with what we acquired in the Stirling&rsquo;s formula, $$P_{2n}=\frac{\sqrt{2\pi}\cdot (2n)^{2n+\frac{1}{2}}\cdot e^{-2n}}{2^{2n}\cdot (\sqrt{2\pi}\cdot n^{n+\frac{1}{2}}\cdot e^{-n})^{2}}$$</p>
-
 <p><br /></p>
-
 <p>Arrange it, and we&rsquo;ll have</p>
-
 <p>$$P_{2n}=\frac{1}{\sqrt{\pi n}}$$</p>
-
 <p>When $n\to\infty$,</p>
-
 <p>$$P_{2n}=\lim_{n\to +\infty}\frac{1}{\sqrt{\pi n}}=0$$</p>
-
 <p><br /></p>
-
 <p>Surprisingly, it equals to zero, meaning that it is very unlikely that you would attend exactly half of the lectures after many days has passed.</p>
-
 <p><br /></p>
-
 <h1 id="iii-a-more-quantitative-formula-bounding-the-error">III. A More Quantitative formula: Bounding the error</h1>
-
 <p>We have now seen the proof and a simple application of Stirling&rsquo;s formula. However, since it is a method by approximating the value of $n!$, we had better know the bounds of the error in order to fully understand the formula. he more quantitative error bounding formula is simpy $$1&lt;\frac{n!}{\sqrt{2\pi\cdot n^{n+\frac{1}{2}}\cdot e^{-n}}}&lt;e^{\frac{1}{8n}}$$ for any $n\geq 1$.</p>
-
 <p><br /></p>
-
 <p>The proof of this equation requires some of the tools we developed earlier. From $\eqref{ref6}$ and $\eqref{ref7}$, we know that $a_k&gt;b_k&gt;a_{k+1}&gt;0$ because for $t\in (0, \frac{1}{2} ] $,</p>
-
 <p>$$1+\frac{t}{k}&gt;1$$</p>
-
 <p>$$ln(1+\frac{t}{k})&gt;0$$</p>
-
 <p><br /></p>
-
 <p>We have $b_k&gt;0$ for all $k$.</p>
-
 <p><br /></p>
-
-<p>Also, $$a_k-b_k=\int_{0}^{\frac{1}{2}}ln\frac{k^2}{k^2-t^2}dt\qquad (from\,\eqref{ref6},\,\eqref{ref7})$$</p>
-
+<p>Also, $$a_k-b_k=\int_{0}^{\frac{1}{2}}ln\frac{k^2}{k^2-t^2}dt\qquad (from,\eqref{ref6},,\eqref{ref7})$$</p>
 <p><br /></p>
-
 <p>for $t\in (0, \frac{1}{2}]$,</p>
-
 <p><br /></p>
-
 <p>$$\frac{k^2}{k^2-t^2}&gt;1$$</p>
-
 <p><br /></p>
-
 <p>$$ln\frac{k^2}{k^2-t^2}&gt;0$$</p>
-
 <p><br /></p>
-
 <p>We have $a_k-b_k&gt;0$ for all $k$.</p>
-
 <p><br /></p>
-
 <p>And that,</p>
-
-<p>$$b_k-a_{k+1}=\int_{0}^{\frac{1}{2}}ln\frac{(k^2+k)-(t^2-t)}{k^2+k}dt\qquad (from\,\eqref{ref6},\,\eqref{ref7})$$</p>
-
+<p>$$b_k-a_{k+1}=\int_{0}^{\frac{1}{2}}ln\frac{(k^2+k)-(t^2-t)}{k^2+k}dt\qquad (from,\eqref{ref6},,\eqref{ref7})$$</p>
 <p><br /></p>
-
 <p>for $t\in (0,\frac{1}{2}]$,</p>
-
 <p><br /></p>
-
 <p>$$\frac{(k^2+k)-(t^2-t)}{k^2+k}&gt;1$$</p>
-
 <p><br /></p>
-
 <p>$$ln\frac{(k^2+k)-(t^2-t)}{k^2+k}&gt;0$$</p>
-
 <p><br /></p>
-
 <p>We have $b_k-a_{k+1}&gt;0$ for all $k$.</p>
-
 <p><br /></p>
-
 <p>Combine the above three inequalities, we have</p>
-
 <p><br /></p>
-
 <p>$$\begin{equation}a_k&gt;b_k&gt;a_{k+1}&gt;0\label{ref13}\end{equation}$$</p>
-
 <p><br /></p>
-
 <p>Let us further define the approximation error by</p>
-
 <p><br /></p>
-
-<p>$$E_n=ln\, n!-\frac{1}{2}ln\, n-I(n)-[S-I(\frac{1}{2})]=b_n-a_{n+1}+b_{n+2}-\dotsb$$</p>
-
+<p>$$E_n=ln, n!-\frac{1}{2}ln, n-I(n)-[S-I(\frac{1}{2})]=b_n-a_{n+1}+b_{n+2}-\dotsb$$</p>
 <p><br /></p>
-
 <p>By $\eqref{ref13}$, we have</p>
-
 <p><br /></p>
-
 <p>$$E_n=(b_n-a_{n+1})+(b_{n+1}-a_{n+2})+\dotsb &gt;0$$</p>
-
 <p><br /></p>
-
 <p>$$b_n-E_n=(a_{n+1}-b_{n+1})+(a_{n+2}-b_{n+2})+\dotsb &gt;0$$</p>
-
 <p><br /></p>
-
 <p>From this result, we could show that $$\begin{equation}0&lt;E_n&lt;b_n\leq\frac{1}{8n}\label{ref14}\end{equation}$$</p>
-
 <p><br /></p>
-
 <p>because</p>
-
 <p><br /></p>
-
-<p>$$\begin{split}b_n &amp; = \int_{0}^{\frac{1}{2}}ln(1+\frac{t}{n})dt\qquad (from\,\eqref{ref7}) \newline
+<p>$$\begin{split}b_n &amp; = \int_{0}^{\frac{1}{2}}ln(1+\frac{t}{n})dt\qquad (from,\eqref{ref7}) \newline
 \leq &amp; \int_{0}^{\frac{1}{2}}\frac{t}{n}dt \newline
-  \qquad &amp;(\because\, ln(1+x)\leq x\, for\, x \geq 0) \ =&amp;\frac{1}{8n}\end{split}$$</p>
-
+\qquad &amp;(\because, ln(1+x)\leq x, for, x \geq 0) \ =&amp;\frac{1}{8n}\end{split}$$</p>
 <p><br /></p>
-
 <p>Transform $\eqref{ref14}$ into $$e^0 &lt; e^{E_n} &lt; e^{\frac{1}{8n}}$$</p>
-
 <p><br /></p>
-
-<p>Plug $E_n=ln\, n!-\frac{1}{2}ln\, n-I(n)-[S-I(\frac{1}{2})]$ and $e^0 = 1$ into it, we&rsquo;ll get:</p>
-
+<p>Plug $E_n=ln, n!-\frac{1}{2}ln, n-I(n)-[S-I(\frac{1}{2})]$ and $e^0 = 1$ into it, we&rsquo;ll get:</p>
 <p><br /></p>
-
-<p>$$1&lt;e^{(ln\, n!-\frac{1}{2}ln\, n-I(n)-[S-I(\frac{1}{2})])}&lt;e^{\frac{1}{8n}}$$</p>
-
+<p>$$1&lt;e^{(ln, n!-\frac{1}{2}ln, n-I(n)-[S-I(\frac{1}{2})])}&lt;e^{\frac{1}{8n}}$$</p>
 <p><br /></p>
-
 <p>After arranging, we have $$1&lt;\frac{n!}{\sqrt{2\pi\cdot n^{n+\frac{1}{2}}\cdot e^{-n}}}&lt;e^{\frac{1}{8n}}$$</p>
-
 <p><br /></p>
-
 <p>which is the desired error bound.</p>
-
 <p><br /></p>
-
 <h1 id="iv-conclusion-further-applications">IV. Conclusion: Further Applications</h1>
-
 <p>After understanding the proof of Stirling&rsquo;s formula, it&rsquo;s time for us to discover the applications of it.</p>
-
 <p><br /></p>
-
 <p>Generally, whenever you have to approximate $n!$, Stirling&rsquo;s formula would very likely be the tool you need to use. For example, when calculating probabilities, we often run into the problematic term $n!$, just like what we have encountered in the first example.</p>
-
 <p><br /></p>
-
 <p>Another place where Stirling&rsquo;s formula is useful is in the field of computer science. When you write a function to calculate the value of $n!$, the most intuitive way is to multiple all the numbers from $2$ to $n$ to get the final result, just as the following implementation.</p>
-
 <p><br /></p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">factorial(n):
     <span style="color:#66d9ef">if</span> (n<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
     <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">return</span> n<span style="color:#f92672">*</span>factorial(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)</code></pre></td></tr></table>
 </div>
 </div>
-
 <p><br /></p>
-
 <p>This algorithm is linear, meaning that it would run in $O(n)$ time. However, if you write the function with another algorithm, using Stirling&rsquo;s formula,</p>
-
 <p><br /></p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">factorial(n):
     <span style="color:#66d9ef">return</span> sqrt(PI<span style="color:#f92672">*</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>pow(n <span style="color:#f92672">/</span> E, n)</code></pre></td></tr></table>
 </div>
 </div>
-
 <p><br /></p>
-
-<p>it would be less time-consuming, since the calculation of $n$ to the $n$-th power (aka. the $(\frac{n}{e})^{n}$ is only $O(log\, n)$.</p>
-
+<p>it would be less time-consuming, since the calculation of $n$ to the $n$-th power (aka. the $(\frac{n}{e})^{n}$ is only $O(log, n)$.</p>
 <p><br /></p>
-
 <p>Through this simple yet elegant equation, much of the complexities in algorithms could be reduced and let us understand further in the fields of mathematics and engineering.</p>
 
   </section>
@@ -537,12 +364,12 @@ b_k &amp; = \int_{k}^{k+\frac{1}{2}}(ln\, t)dt-\frac{1}{2}ln\, k\end{align}$$</p
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/knights-rubbish/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/shineright-studio-starts-again-and-again/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/shineright-studio-starts-again-and-again/">Older</a>
+          <a href="https://YuChaoGithub.github.io/knights-rubbish/">Older</a>
           
         </div>
       </div>
@@ -647,7 +474,7 @@ b_k &amp; = \int_{k}^{k+\frac{1}{2}}(ln\, t)dt-\frac{1}{2}ln\, k\end{align}$$</p
 
     <p class="p-copyright">
       
-        Yu Chao (趙佑) © 2019
+        Yu Chao (趙佑) © 2020
       
     </p>
   </footer>

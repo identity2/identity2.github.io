@@ -28,7 +28,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.30.2" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.68.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://YuChaoGithub.github.io/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://YuChaoGithub.github.io/favicon.ico" />
   <script type="text/javascript" src="https://YuChaoGithub.github.io/js/bundle.js"></script>
@@ -103,136 +103,70 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
-
-<p>Using particle systems is a wonderful way to improve the juiciness as well as the aesthetics of your game.</p>
-
+    <p>Using particle systems is a wonderful way to improve the juiciness as well as the aesthetics of your game.</p>
 <p><br /></p>
-
 <p>When making my rhythm game <a href="/boots-cuts">Boots-Cuts</a>, I used the particle system in Unity to display a little firework effect whenever a music note is hit on-beat.</p>
-
-<p><img src="http://i.imgur.com/z0v876s.gif" alt="Boots-Cuts" /></p>
-
+<p><img src="http://i.imgur.com/z0v876s.gif" alt="Boots-Cuts"></p>
 <p>In this article, I&rsquo;ll demonstrate how to make such an effect.</p>
-
 <h2 id="texture-and-material">Texture and Material</h2>
-
 <p>First, we&rsquo;ll have to import the the graphics which we would like the particle systems to emit (aka. the small stars &amp; circles).</p>
-
 <p><br /></p>
-
 <p>Since the effect is only be displayed in a 2D scene, so a 2D sprite texture should be okay.</p>
-
-<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/2d-texture.png" alt="2D Texture" /></p>
-
+<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/2d-texture.png" alt="2D Texture"></p>
 <p>After importing the 2D texture, we&rsquo;ll have to make it a material so that the particle system could render it.</p>
-
 <p><br /></p>
-
 <p>Create a new <strong>material</strong> in Unity, and set the shader to either <strong>Particles/Alpha Blended</strong> or <strong>Mobile/Particles/Alpha Blended</strong> depending on your target platform (the one with &ldquo;Mobile&rdquo; would have better performance).</p>
-
 <p><br /></p>
-
 <p>Simply drag the 2D texture you&rsquo;ve imported to the inspector, and the configuration of the <strong>material</strong> is done.</p>
-
-<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/material.png" alt="Material" /></p>
-
+<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/material.png" alt="Material"></p>
 <p>Now you have the proper material, let&rsquo;s head on to the particle system itself.</p>
-
 <h2 id="particle-system">Particle System</h2>
-
 <p>Create a new <strong>Particle System</strong> in your scene, and you&rsquo;ll notice that there&rsquo;s a long list of settings to be configured.</p>
-
-<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/particle-system.png" alt="Particle System" /></p>
-
+<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/particle-system.png" alt="Particle System"></p>
 <p>We&rsquo;ll go through all the required settings step by step.</p>
-
 <h4 id="particle-system-panel">Particle System Panel</h4>
-
 <p>Expand the <strong>Particle System</strong> panel, you&rsquo;ll see the settings below:</p>
-
 <p><br /></p>
-
 <p><strong>Duration</strong> - This is the duration of the whole particle system animation. I&rsquo;ll set this to <strong>0.5</strong> because the firework effect I use is quick and short.</p>
-
 <p><br /></p>
-
 <p><strong>Looping</strong> - This simply means whether the animation would be looping over and over again or not. I&rsquo;m only playing the particle systems <em>once</em> whenever an on-beat music note is hit, so it definitely shouldn&rsquo;t be checked.</p>
-
 <p><br /></p>
-
 <p><strong>Start Lifetime</strong> - This indicates the lifetime of each particle (aka. a single star). I&rsquo;ll set it to a constant which equals to the <strong>Duration (0.5)</strong>, so that every particles would appear on start and disappear simultaneously when the animation ends.</p>
-
 <p><br /></p>
-
 <p><strong>Start Speed</strong> - This is the speed of each particle upon emission. I&rsquo;ll set it to a constant (<strong>6</strong>), so that each particle has the same emission speed (which simulates the firework explosion in real world).</p>
-
 <p><br /></p>
-
 <p><strong>Start Size</strong> - This configures the sizes (scale) of each particle. I&rsquo;ll make each particle have a different size (to make the effect more natural) by setting their sizes between two constants <strong>[0.2, 1.5]</strong> (click on the small triangle at the right of the panel, and select <strong>Random Between Two Constants</strong>).</p>
-
 <p><br /></p>
-
 <p><strong>Start Color</strong> - This simply means the color of each particle. I&rsquo;ll set all the particles to the same color, and the color depended on which music track the effect is being played on.</p>
-
 <p><br /></p>
-
 <p><strong>Gravity Modifier</strong> - This indicates the gravity applied to every particle. Since the particles (or dusts) of a firework (unfortunately) falls from the sky in the real world, setting a gravity modifier to the particle system would make the effect seem more natural. Through trail and error, I found that a <strong>2.5</strong> gravity modifier seems the best.</p>
-
 <p><br /></p>
-
 <p><strong>Play On Awake</strong> - This means that whether the particle system would be played automatically when the scene is loaded (just like the <code>Awake()</code> function in scripting). I&rsquo;d like the particle system to be played only if an on-beat hit is performed, so I unchecked it.</p>
-
 <p><br /></p>
-
 <p>The final configuration of my <strong>Particle System</strong> panel looks like this.</p>
-
-<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/particle-system-panel.png" alt="Particle System Panel" /></p>
-
+<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/particle-system-panel.png" alt="Particle System Panel"></p>
 <h4 id="emission">Emission</h4>
-
 <p>Emission is quite simple. Fireworks emit particles in one single burst, so we should set <strong>Rate Over Time</strong> (The rate which particles continuously emit over time) to <strong>0</strong>. Next, click the + sign at the bottom right corner to add a <em>burst</em> to the particle system. The burst <strong>Time</strong> should be set to <strong>0</strong> so that the particles would be emitted in the beginning of the animation. <strong>Min</strong> means the minimum amount of particles to be emitted in this <em>burst</em>. Similarly, <strong>Max</strong> means the maximum amount of particles to be emitted in the <em>burst</em>. I set them to <strong>30</strong> and <strong>50</strong> so that the animation seems different, but not too different each time.</p>
-
-<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/emission.png" alt="Emission" /></p>
-
+<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/emission.png" alt="Emission"></p>
 <h4 id="shape">Shape</h4>
-
 <p>Shape configures the shape which the particles would be emitted from. A firework bursts from a single point to a circular ring, so we should set the shape to <strong>Circle</strong>.</p>
-
-<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/shape.png" alt="Shape" /></p>
-
+<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/shape.png" alt="Shape"></p>
 <h4 id="color-over-lifetime">Color Over Lifetime</h4>
-
 <p>Skip some of the settings which we won&rsquo;t be using, and move on to the <strong>Color Over Lifetime</strong> panel.</p>
-
 <p><br /></p>
-
 <p>If you&rsquo;ve ever seen a firework show, you&rsquo;ll notice that whenever fireworks explode in the sky, the particles are bright and colorful. However, within a second, the shiny particles would dim over time and at last vanish.</p>
-
 <p><br /></p>
-
 <p>To apply such an effect to our particle system, we should set <strong>Color over Lifetime</strong> to <strong>Gradient</strong>. And the gradient color should be set between full alpha (<strong>255</strong>) to zero alpha (aka. transparent) (<strong>0</strong>).</p>
-
-<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/color-over-time.png" alt="Color Over Lifetime" /></p>
-
+<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/color-over-time.png" alt="Color Over Lifetime"></p>
 <h4 id="renderer">Renderer</h4>
-
 <p>Now the behaviors of the particle system are all fine, we just need to set the <strong>Material</strong> of the particle system to the one we&rsquo;ve created previously. Furthermore, the <strong>Min/Max Particle Size</strong> could also be configured in the <strong>Renderer</strong> panel to fine tune the particle system.</p>
-
-<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/renderer.png" alt="Renderer" /></p>
-
+<p><img src="/posts/2d-fireworks-effect-with-unity-particle-system/renderer.png" alt="Renderer"></p>
 <p>The firework effect is done!</p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>Particle systems are pretty fun to play with, and by applying them correctly in your games, your games would seem more polished and would have a better overall feeling.</p>
-
 <p><br /></p>
-
 <p>Thanks for reading the article, and hope you&rsquo;ve learned something!</p>
-
 <p><br /></p>
-
 <p><strong>Self Promotion Time :D</strong> - My game <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=883429236">kQq</a> is on Steam Greenlight now! If you think the game is worth being published, please vote for it!</p>
 
   </section>
@@ -254,12 +188,12 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/kqq-mobile-to-standalone/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/kqq-mobile-to-standalone/">Older</a>
+          <a href="https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/">Older</a>
           
         </div>
       </div>
@@ -364,7 +298,7 @@
 
     <p class="p-copyright">
       
-        Yu Chao (趙佑) © 2019
+        Yu Chao (趙佑) © 2020
       
     </p>
   </footer>

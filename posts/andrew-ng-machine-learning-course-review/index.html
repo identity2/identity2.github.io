@@ -28,7 +28,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.30.2" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.68.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://YuChaoGithub.github.io/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://YuChaoGithub.github.io/favicon.ico" />
   <script type="text/javascript" src="https://YuChaoGithub.github.io/js/bundle.js"></script>
@@ -103,128 +103,66 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
-
-<p>Just completed the renowned <a href="https://www.coursera.org/learn/machine-learning">Andrew Ng&rsquo;s Machine Learning course</a> (on Coursera) these couple of days. Since many people are curious about this course, I will do a quick write up on how I think about this course and what I actually learned.</p>
-
+    <p>Just completed the renowned <a href="https://www.coursera.org/learn/machine-learning">Andrew Ng&rsquo;s Machine Learning course</a> (on Coursera) these couple of days. Since many people are curious about this course, I will do a quick write up on how I think about this course and what I actually learned.</p>
 <h1 id="about-the-instructor">About the Instructor</h1>
-
 <p>Andrew Ng is the co-founder of Google Brain and Coursera, and an adjunct professor at Stanford University. He was also a former vice president and chief scientist at Baidu working on large scale artificial intelligence projects. Therefore, without a doubt, Andrew Ng is one of the most knowledgeable people in the world for teaching machine learning.</p>
-
 <h1 id="about-the-course">About the Course</h1>
-
 <p>Since this is an introduction to machine learning course, very little mathematics and nearly zero statistics background is required. However, people familiar with probability/statistics, vector calculus, and linear algebra will find it a lot easier to understand the formulas and the mathematical derivations. Furthermore, a couple videos are provided between the course for reviewing some basic concepts of linear algebra and manipulations of matrices which would be used in the programming exercises.</p>
-
 <p><br /></p>
-
 <p>Though Python is the most popular language for machine learning nowadays, the course is taught in Matlab (or Octave). To many, this might be a minus for the course, but I find it simpler to implement the machine learning algorithms in Octave than in Python due to the cleaner syntax (for math eqations). This lets us focus on the mathematical equations and the machine learning concepts themselves rather than the details of programming languages. As for programming background, I would say that familiarity with the basics of programming (i.e. loops, if-statements, assignments, operators, etc.) is sufficient for you to handle the programming exercises.</p>
-
 <p><br /></p>
-
 <p>Andrew Ng delivers course materials very clear and with details, but his voice is a little soft and requires additional attention to follow through.</p>
-
 <p><br /></p>
-
 <p>Overall, this is a pretty decent course for beginners to get a broad understanding of how machine learning works.</p>
-
 <h1 id="topics-covered">Topics Covered</h1>
-
 <h3 id="introduction">Introduction</h3>
-
 <p>This is a brief section which introduces different methods in machine learning, such as <strong>supervised learning</strong>, <strong>unsupervised learning</strong>, <strong>regression problem</strong>, <strong>classification problem</strong>, <strong>clustering</strong>, and so on. You would understand the relations of different problems with certain algorithms in machine learning.</p>
-
 <h3 id="linear-regression">Linear Regression</h3>
-
 <p><strong>Hypothesis</strong>, <strong>Cost Function</strong> and <strong>Gradient Descent</strong> are introduced in this section. It starts with single variable linear regression and moves on to the more complex multi-variable linear regression.</p>
-
 <h5 id="for-multivariate-linear-regression">For multivariate linear regression:</h5>
-
 <p><strong>Hypothesis:</strong> $h_θ(x)=θ^T X$</p>
-
 <p><strong>Cost Function (m training data):</strong> $J(θ) = \frac{1}{2m}\sum_{i=1}^{m}(h_θ(x^{(i)})-y^{(i)})^2$</p>
-
 <p><strong>Gradient Descent:</strong> $θ_j := θ_j - \alpha \frac{\partial}{\partial θ_j}J(θ)$</p>
-
 <h3 id="linear-algebra-review">Linear Algebra Review</h3>
-
 <p>This section briefly reviews some of the basic concepts of linear algebra such as matrix multiplication, addition, subtraction, etc. People experienced with linear algebra would find this section super easy and might want to skip it.</p>
-
 <h3 id="octave-tutorial">Octave Tutorial</h3>
-
 <p>The basic syntax of Octave programming language is introduced here. Since Octave is practically a carbon copy of Matlab, so people with good knowledge in Matlab could skip this section. However, those who are not familiar with scientific programming languages like Matlab would find this section useful because you will learn how to manipulate matrices in programming languages as well as vectorizing a problem.</p>
-
 <h3 id="logistic-regression">Logistic Regression</h3>
-
 <p><strong>Sigmoid function</strong>, <strong>One-vs-All</strong>, <strong>advanced optimization algorithms</strong>, and the <strong>Cost Function for Logistic Regression</strong> are taught in this section. You will get a nice intuition about the sigmoid function and how it relates to probability theory. Furthermore, you will understand how sigmoid function is used to set the decision boundary of a classification problem. Some advanced optimization algorithms (Conjugate Gradient, BFGS, L-BFGS) are also mentioned in the course, but the instructor does not get into the details of them (since it will be too difficult). Lastly, the important One-vs-All concept is introduced in the course to tackle multiclass classification problems.</p>
-
 <h5 id="for-logistic-regression-m-training-data">For Logistic Regression (m training data):</h5>
-
 <p><strong>Sigmoid Function:</strong> $g(z)=\frac{1}{1+e^{-z}}$</p>
-
 <p><strong>Hypothesis:</strong> $h_θ=g(θ^T x)$</p>
-
 <p><strong>Cost Function:</strong> $J(θ)=-\frac{1}{m}\sum _{i=1}^{m}(y^{(i)} \log{h_θ(x^{(i)})}+(1-y^{(i)})\log{(1-h_θ(x^{(i)}))})$</p>
-
 <h3 id="regularization">Regularization</h3>
-
 <p>This section discusses some common ways to adress overfitting, that is, <strong>Model Selection</strong>, <strong>Feature Selection</strong>, and the most important <strong>Regularization</strong>. It shows that by penalizing the magnitude of the parameters, the curve would less likely to overfit the dataset.</p>
-
 <h5 id="linear-regression-with-regularization-m-training-data-n-features">Linear Regression with Regularization (m training data, n features):</h5>
-
 <p><strong>Cost Function:</strong> $J(θ) = \frac{1}{2m}\sum _{i=1}^{m}((h_θ(x^{(i)})-y^{(i)})^2+\lambda \sum _{j=1}^{n} θ_j^2)$</p>
-
 <p><strong>Gradient Descent:</strong></p>
-
 <p>$θ_0 := θ_0 - \alpha\frac{1}{m}\sum _{i=1}^{m}((h_θ(x^{(i)})-y^{(i)})x_0^{(0)}$</p>
-
 <p>$θ_j := θ_j - \alpha(\frac{1}{m}\sum _{i=1}^{m}((h_θ(x^{(i)})-y^{(i)})x_j^{(0)}-\frac{\lambda}{m}θ_j)$</p>
-
 <h5 id="logistic-regression-with-regularization-m-training-data-n-features">Logistic Regression with Regularization (m training data, n features):</h5>
-
 <p><strong>Cost Function:</strong> $J(θ)=-\frac{1}{m}\sum_{i=1}^{m}(y^{(i)}\log{h_θ(x^{(i)})}+(1-y^{(i)})\log{(1-h_θ(x^{(i)}))})+\frac{\lambda}{2m}\sum _{j=1}^{n} θ_j^2$</p>
-
 <p><strong>Gradient Descent:</strong></p>
-
 <p>$θ_0 := θ_0 - \alpha\frac{1}{m}\sum _{i=1}^{m}((h_θ(x^{(i)})-y^{(i)})x_0^{(0)}$</p>
-
 <p>$θ_j := θ_j - \alpha(\frac{1}{m}\sum _{i=1}^{m}((h_θ(x^{(i)})-y^{(i)})x_j^{(0)}-\frac{\lambda}{m}θ_j)$</p>
-
 <h3 id="neural-networks">Neural Networks</h3>
-
 <p>In recent years, the study of neural networks became increasingly popular due to the advance in computing power and the abundance of data collected. As a result, the instructor spent quite some time discussing the topics of neural networks. <strong>Forward Propagation</strong>, <strong>Back Propagation</strong>, and <strong>One-Hot Encoding</strong> are introduced, but the deeper mathematical derivations are skipped so the technical level is managable for beginners.</p>
-
 <h5 id="forward-propagation-m-training-data-n-features-l-layers-k-classes">Forward Propagation (m training data, n features, L layers, K classes):</h5>
-
 <p><strong>Feature:</strong> $x = a^{(1)} = \begin{bmatrix}x_0 \\ x_1 \\ &hellip; \\ x_n \end{bmatrix}$</p>
-
 <p><br /></p>
-
 <p><strong>Activation:</strong> $a^{(i)} = g(Θ^{(i-1)} a^{(i-1)})$</p>
-
 <p><strong>Cost Function:</strong> $J(Θ) = -\frac{1}{m}\sum _{i=1}^{m} \sum _{k=1}^{K}(y_k^{(i)}\log(h_θ(x^{(i)}))_k+(1-y_k^{(i)})\log(1-(h_θ(x^{(i)})))) + \frac{\lambda}{2m}\sum _{l=1}^{L-1} \sum _{i=1}^{s_l} \sum _{j=1}^{s_l+1} (Θ _{ji}^{(l)})^2$</p>
-
 <h5 id="back-propagation-l-layers">Back Propagation (L layers):</h5>
-
 <p>$\delta ^{(L)} = a^{(L)}-y$</p>
-
 <p>$\delta ^{(l)} = (Θ^{(l)})^T \delta ^{(l+1)} a^{(l)} .* (1-a^{(l)})$</p>
-
 <p>$\frac{\partial}{\partial Θ _{ij}^{(l)}} J(Θ) = a_j^{l} \delta _i^{(l+1)}$</p>
-
 <p>($.*$ means element-wise multiplication.)</p>
-
 <h3 id="debugging-variance-vs-bias">Debugging: Variance vs. Bias</h3>
-
 <p>This section gives us some useful techniques in debugging a machine learning system, including <strong>Cross Validation Set</strong>, <strong>Bias</strong>, <strong>Variance</strong>, etc. It also introduces some common terms such as <strong>Percision</strong>, <strong>Recall</strong>, and <strong>F1 Score</strong>. After studying this section, you will have a better intuition on how to solve machine learning bugs by plotting the learning curves.</p>
-
 <h3 id="support-vector-machines">Support Vector Machines</h3>
-
 <p><strong>Support Vector Machine (SVM)</strong> is another solution to classification problems. The instructor does not go in depth into this subject, but still gives us a clear view on its mechanics and its intuition. The overall idea is to compute new feature depending on proximity to established <em>landmarks</em>.</p>
-
 <h3 id="k-means-clustering">K-Means Clustering</h3>
-
 <p>Some unsupervised learning algorithms are introduced at the later part of the course. <strong>K-Means Clustering</strong> is one of them. It is used to group data into different clusters by procedurally moving centroids towards the gravity of the data points.</p>
-
 <pre><code>The Algorithm (m data, K clusters):
 
 Randomly initialize K cluster centroids μ1, μ2, ..., μk
@@ -233,30 +171,17 @@ Repeat:
         c(i) := index of cluster centroid closest to x(i)
     for k = 1 to K:
         μk := mean of points assigned to cluster k
-</code></pre>
-
-<h3 id="principal-component-analysis">Principal Component Analysis</h3>
-
+</code></pre><h3 id="principal-component-analysis">Principal Component Analysis</h3>
 <p>To visualize or compress data, we commonly need to shrink the number of dimensions of a set of data. <strong>Principal Componenet Analysis</strong> allows us to approximate and transform high-dimensional feature sets into lower dimensional ones.</p>
-
 <h3 id="anomaly-detection">Anomaly detection</h3>
-
 <p>This is another useful unsupervised learning algorithm. It adopts <strong>Density Estimation</strong> to find out which  are anomalies in a large set of data points. Gaussian distribution and Multivariate Gaussian distribution would be mentioned and explained briefly in this section.</p>
-
 <h3 id="recommender-system">Recommender System</h3>
-
 <p>Couple algorithms for building a movie recommender system are introduced in this section. <strong>Feature Learning</strong>, <strong>Collaborative Filtering</strong>, and <strong>Content-Based Recommender System</strong> are discussed in depth with details of their implementations.</p>
-
 <h3 id="large-scale-machine-learning">Large Scale Machine Learning</h3>
-
 <p>Some concerns about large scale machine learning systems are discussed in this section. For example, <strong>Batch Gradient Descent</strong> and <strong>Stochastic Gradient Descent</strong> are compared. Other techniques such as <strong>Online Learning</strong> and <strong>Map-Reduce</strong> are also introduced here.</p>
-
 <h3 id="example-photo-ocr">Example: Photo OCR</h3>
-
 <p>Lastly, an example of an application of machine learning is introduced. The instructor shows us the whole machine learning pipline of how the system is designed and and it works.</p>
-
 <h1 id="post-scripts">Post Scripts</h1>
-
 <p>Not until I finished taking this course did I notice the vastness of machine learning. It is really a mathematics-involved field with a steep learning curve. Seeing almost 90% of my fellow Computer Science classmates persuing this career path makes me wonder how many of them can really make it. As for me, I&rsquo;ll probably just play with the &ldquo;applied side&rdquo; of machine learning instead of doing it for a living.</p>
 
   </section>
@@ -278,12 +203,12 @@ Repeat:
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/posts/music-in-film-terminology/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/trying-out-medium/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/trying-out-medium/">Older</a>
+          <a href="https://YuChaoGithub.github.io/posts/music-in-film-terminology/">Older</a>
           
         </div>
       </div>
@@ -388,7 +313,7 @@ Repeat:
 
     <p class="p-copyright">
       
-        Yu Chao (趙佑) © 2019
+        Yu Chao (趙佑) © 2020
       
     </p>
   </footer>

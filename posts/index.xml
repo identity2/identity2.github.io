@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Shine Right Homepage</title>
@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Shine Right Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Yu Chao (趙佑) © 2019</copyright>
+    <copyright>Yu Chao (趙佑) © 2020</copyright>
     <lastBuildDate>Sat, 06 Jul 2019 21:29:47 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -71,7 +71,7 @@ Real Photos as Game Graphics One of the coolest features in Knights Rubbish is t
       
       <guid>https://YuChaoGithub.github.io/posts/self-publish-a-graphic-novel-with-amazon-kdp/</guid>
       <description>I just self-published my very first graphic novel Inter-dimensional Time recently, using Amazon&amp;rsquo;s KDP (Kindle Direct Publish) platform. In this article, I am going to share my experience with Amazon KDP, and briefly go through the process of self-publishing.
-Introduction Amazon KDP is arguably the cheapest and most convenient self-publishing service out there. It requires no service fee and lets you publish your book in both eBook and paperback formats.</description>
+Introduction Amazon KDP is arguably the cheapest and most convenient self-publishing service out there. It requires no service fee and lets you publish your book in both eBook and paperback formats. The best part, as far as I&amp;rsquo;m concerned, is that the dimensions, paper material, cover art, and pricing are highly customizable.</description>
     </item>
     
     <item>
@@ -120,7 +120,7 @@ The reason why I switched to Hugo on GitHub is quite simple.</description>
 I will be using the open source Godot Engine with GDScript since I believe any programmer with could understand GDScript quite easily, so let&amp;rsquo;s get started.
 
 First, let&amp;rsquo;s define some variables we&amp;rsquo;ll use later.
-12345678910 # Scroll the screen (aka.</description>
+1 2 3 4 5 6 7 8 9 10  # Scroll the screen (aka.</description>
     </item>
     
     <item>
@@ -141,9 +141,7 @@ I find some interesting camera controlling technique used in the Metal Slug seri
       
       <guid>https://YuChaoGithub.github.io/posts/my-experience-in-google-summer-of-code-2017/</guid>
       <description>I&amp;rsquo;ve already posted an article about Google Summer of Code 2017. However, the post is mainly about the project itself. For this article, I&amp;rsquo;d like to share my experience and thoughts for the whole GSoC period.
-Google Summer of Code 2017 was an extremely exciting and rewarding experience for me. I was very lucky to be accepted by Systers (Anita Borg Institute) for working on the PowerUp-iOS project.
-
-Before heading straight into the actual GSoC period, I would like to write briefly about why and how I applied for GSoC.</description>
+ Google Summer of Code 2017 was an extremely exciting and rewarding experience for me. I was very lucky to be accepted by Systers (Anita Borg Institute) for working on the PowerUp-iOS project.</description>
     </item>
     
     <item>

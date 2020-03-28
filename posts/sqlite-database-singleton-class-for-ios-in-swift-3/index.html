@@ -28,7 +28,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.30.2" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.68.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://YuChaoGithub.github.io/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://YuChaoGithub.github.io/favicon.ico" />
   <script type="text/javascript" src="https://YuChaoGithub.github.io/js/bundle.js"></script>
@@ -103,29 +103,30 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
-
-<p>Writing code for database querying or updating can be tedious, error-prone, and hard to manage. Therefore, abstracting the database operations into a globally accessible model class may be a nice solution. In this article, I will show you how to write a <a href="https://en.wikipedia.org/wiki/Singleton_pattern">singleton</a> class which wraps the database operations. I will use <a href="https://github.com/ccgus/fmdb">FMDB</a> (SQLite) with Swift 3 to demonstrate, but it is just about the same for every languages and frameworks.</p>
-
+    <p>Writing code for database querying or updating can be tedious, error-prone, and hard to manage. Therefore, abstracting the database operations into a globally accessible model class may be a nice solution. In this article, I will show you how to write a <a href="https://en.wikipedia.org/wiki/Singleton_pattern">singleton</a> class which wraps the database operations. I will use <a href="https://github.com/ccgus/fmdb">FMDB</a> (SQLite) with Swift 3 to demonstrate, but it is just about the same for every languages and frameworks.</p>
 <h2 id="the-singleton-class">The Singleton Class</h2>
-
 <p>By using the singleton pattern, we can</p>
-
 <ol>
 <li>Make sure only one object of the class is instantiated throughout the app.</li>
 <li>Access the object of the class globally.</li>
 </ol>
-
 <p>Since usually, we only have one database across the app, it is a good idea to ensure only one database accessing class is instanced. Not to mention that multiple instances of database accessing class would cause problematic inconsistencies. On top of that, by making the class accessible globally, we can fetch data from the database at ease in any part of the program.</p>
-
 <p><br /></p>
-
 <p>Below is the outline of the database singleton class:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DatabaseAccessor</span> {
     
     <span style="color:#75715e">// The instance of DatabaseAccessor</span>
@@ -138,25 +139,35 @@
 }</code></pre></td></tr></table>
 </div>
 </div>
-
-<p>The member <code>sharedInstance</code> is assigned to <code>DatabaseAccessor</code>&rsquo;s own initializer, so you will have an <code>DatabaseAccessor</code> object available. Furthermore, since <code>sharedInstance</code> is marked as <code>static</code>, it not only will be loaded before any access to <code>DatabaseAccessor</code> but also can be accessed globally by <code>DatabaseAccessor.sharedInstance</code>.</p>
-
+<p>The member <code>sharedInstance</code> is assigned to <code>DatabaseAccessor</code>'s own initializer, so you will have an <code>DatabaseAccessor</code> object available. Furthermore, since <code>sharedInstance</code> is marked as <code>static</code>, it not only will be loaded before any access to <code>DatabaseAccessor</code> but also can be accessed globally by <code>DatabaseAccessor.sharedInstance</code>.</p>
 <p><br /></p>
-
 <p>Lastly, the <code>init()</code> is declared as <code>private</code> so it can only be instanced in the scope of the <code>DatabaseAccessor</code> class, implying that only one instance is allowed in the entire program.</p>
-
 <p><br /></p>
-
 <p>Before moving on to abstracting the operations, I have to warn you that though singletons are super convenient, it could cause inconsistency problems if the program is multi-threaded. So, use singletons with caution if your program consists of multiple threads.</p>
-
 <h2 id="opening-and-closing-the-database">Opening and Closing the database</h2>
-
 <p>Carry on to implementing the abstraction of database operations. First, let us do the simplest, opening and closing the database (again, I will be using FMDB for simplicity, the syntax may differ for other database frameworks):</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">17</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">18</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DatabaseAccessor</span> {
     <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">let</span> sharedInstance = DatabaseAccessor()
     <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">init</span>() {}
@@ -177,30 +188,20 @@
 }</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>In the beginning, we add a private <code>mainDB</code> variable to store the actual database instance. In <code>initializeDatabase()</code>, we store the database path in <code>databasePath</code>, instance a <code>FMDatabase</code> object (the main database instance), and assign it to <code>mainDB</code>.</p>
-
 <p><br /></p>
-
 <p>For <code>closeDatabase()</code>, we simply call <code>mainDB?.close()</code> to close the database.</p>
-
 <h2 id="select-update-insert-operations">SELECT, UPDATE, INSERT Operations</h2>
-
 <p>Now moving on to the most important part &ndash; implementing the database operations. This includes <code>SELECT</code>, <code>UPDATE</code>, and the <code>INSERT</code> operations.</p>
-
 <p><br /></p>
-
 <p>Suppose that we have the table <code>Contact</code> stored in the database, and it consists of the following columns and entries:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">    ID    |   Name   |   Phone    |   City<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>==============================================<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    0     |   Alex   |  59301934  |    York<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    1     |   Mark   |  29481048  |   London<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    2     |   Kate   |  12490289  |   Sin City<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    3     |   Bill   |  29849102  |   Seattle </code></pre></div>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">    ID    |   Name   |   Phone    |   City
+==============================================
+    0     |   Alex   |  59301934  |    York
+    1     |   Mark   |  29481048  |   London
+    2     |   Kate   |  12490289  |   Sin City
+    3     |   Bill   |  29849102  |   Seattle </code></pre></div>
 <p>The declaration of the table:</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">`</span>Contact<span style="color:#f92672">`</span> (
 	<span style="color:#f92672">`</span>ID<span style="color:#f92672">`</span>	INTEGER <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">UNIQUE</span>,
 	<span style="color:#f92672">`</span>Name<span style="color:#f92672">`</span>	VARCHAR <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
@@ -208,15 +209,18 @@
 	<span style="color:#f92672">`</span>City<span style="color:#f92672">`</span>	VARCHAR <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
 	<span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>(<span style="color:#f92672">`</span>ID<span style="color:#f92672">`</span>)
 );</code></pre></div>
-
 <h4 id="data-model">Data Model</h4>
-
 <p>To interact with the database entries, it is essential to create a data model class for each entries so that the data could also be abstracted. Below is the data model class (structure).</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Contact</span> {
     <span style="color:#66d9ef">var</span> id: Int
     <span style="color:#66d9ef">var</span> name: String
@@ -225,49 +229,83 @@
 }</code></pre></td></tr></table>
 </div>
 </div>
-
 <h4 id="addcontact-updatecontact-searchcontact">addContact, updateContact, searchContact</h4>
-
 <p>After declaring the data model, interacting with the database becomes super easy. We&rsquo;ll have to add entries to the database first, so let&rsquo;s implement the <code>addContact(_:)</code> method.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">addContact</span>(<span style="color:#66d9ef">_</span> contact: Contact) {
     <span style="color:#66d9ef">let</span> queryString = <span style="color:#e6db74">&#34;INSERT INTO Contact (ID, Name, Phone, City) VALUES (</span><span style="color:#e6db74">\(</span>contact.id<span style="color:#e6db74">)</span><span style="color:#e6db74">, </span><span style="color:#e6db74">\(</span>contact.name<span style="color:#e6db74">)</span><span style="color:#e6db74">, </span><span style="color:#e6db74">\(</span>contact.phoneNumber<span style="color:#e6db74">)</span><span style="color:#e6db74">, </span><span style="color:#e6db74">\(</span>contact.city<span style="color:#e6db74">)</span><span style="color:#e6db74">)&#34;</span>
-    mainDB<span style="color:#f92672">!</span>.executeUpdate(queryString, withArgumentsIn: <span style="color:#66d9ef">nil</span>)
+    mainDB!.executeUpdate(queryString, withArgumentsIn: <span style="color:#66d9ef">nil</span>)
 }</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>This inserts the new contact into the database by using the SQL syntax <code>INSERT INTO</code>-<code>VALUES</code>.</p>
-
 <p><br /></p>
-
 <p>After adding entries to the database, updating an existing data is also essential. This is why we need the <code>updateContact(_:)</code> function.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">updateContact</span>(<span style="color:#66d9ef">_</span> contact: Contact) {
     <span style="color:#66d9ef">let</span> queryString = <span style="color:#e6db74">&#34;UPDATE Contact SET Name = </span><span style="color:#e6db74">\(</span>Contact.name<span style="color:#e6db74">)</span><span style="color:#e6db74">, Phone = </span><span style="color:#e6db74">\(</span>Contact.phoneNumber<span style="color:#e6db74">)</span><span style="color:#e6db74">, City = </span><span style="color:#e6db74">\(</span>Contact.city<span style="color:#e6db74">)</span><span style="color:#e6db74"> WHERE ID = </span><span style="color:#e6db74">\(</span>Contact.id<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>
-    mainDB<span style="color:#f92672">!</span>.executeUpdate(queryString, withArgumentsIn: <span style="color:#66d9ef">nil</span>)
+    mainDB!.executeUpdate(queryString, withArgumentsIn: <span style="color:#66d9ef">nil</span>)
 }</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>We use <code>UPDATE</code>-<code>SET</code> and take <code>ID</code> as the key to update the database entry.</p>
-
 <p><br /></p>
-
 <p>Lastly, the ultimate goal for creating database is to search entries efficiently. We will implement multiple &ldquo;search&rdquo; functions so that we can search contacts by different information.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">17</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">18</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">19</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">20</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">21</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">22</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">23</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">24</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">25</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">26</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">27</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">28</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">29</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">30</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">31</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">32</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">33</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">34</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">35</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">36</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">37</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">searchContactByID</span>(<span style="color:#66d9ef">_</span> id: Int) -&gt; Contact? {
     <span style="color:#66d9ef">let</span> queryString = <span style="color:#e6db74">&#34;SELECT * FROM Contact WHERE ID = </span><span style="color:#e6db74">\(</span>id<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>
     
@@ -276,9 +314,9 @@
 
     <span style="color:#75715e">// Check if there are results.</span>
     <span style="color:#66d9ef">if</span> queryResults?.next() == <span style="color:#66d9ef">true</span> { 
-        <span style="color:#66d9ef">let</span> contactName = queryResults<span style="color:#f92672">!</span>.string(forColumn: <span style="color:#e6db74">&#34;Name&#34;</span>)
-        <span style="color:#66d9ef">let</span> contactPhone = Int(queryResults<span style="color:#f92672">!</span>.int(forColumn: <span style="color:#e6db74">&#34;Phone&#34;</span>))
-        <span style="color:#66d9ef">let</span> contactCity = queryResults<span style="color:#f92672">!</span>.string(forColumn: <span style="color:#e6db74">&#34;City&#34;</span>)
+        <span style="color:#66d9ef">let</span> contactName = queryResults!.string(forColumn: <span style="color:#e6db74">&#34;Name&#34;</span>)
+        <span style="color:#66d9ef">let</span> contactPhone = Int(queryResults!.int(forColumn: <span style="color:#e6db74">&#34;Phone&#34;</span>))
+        <span style="color:#66d9ef">let</span> contactCity = queryResults!.string(forColumn: <span style="color:#e6db74">&#34;City&#34;</span>)
 
         <span style="color:#66d9ef">return</span> Contact(id: id, name: contactName, phoneNumber: contactPhone, city: contactCity)
     }
@@ -295,9 +333,9 @@
     <span style="color:#66d9ef">var</span> results = [Contact]()
     
     <span style="color:#66d9ef">while</span> queryResults?.next() == <span style="color:#66d9ef">true</span> { 
-        <span style="color:#66d9ef">let</span> contactID = Int(queryResults<span style="color:#f92672">!</span>.int(forColumn: <span style="color:#e6db74">&#34;ID&#34;</span>))
-        <span style="color:#66d9ef">let</span> contactPhone = Int(queryResults<span style="color:#f92672">!</span>.int(forColumn: <span style="color:#e6db74">&#34;Phone&#34;</span>))
-        <span style="color:#66d9ef">let</span> contactCity = queryResults<span style="color:#f92672">!</span>.string(forColumn: <span style="color:#e6db74">&#34;City&#34;</span>)
+        <span style="color:#66d9ef">let</span> contactID = Int(queryResults!.int(forColumn: <span style="color:#e6db74">&#34;ID&#34;</span>))
+        <span style="color:#66d9ef">let</span> contactPhone = Int(queryResults!.int(forColumn: <span style="color:#e6db74">&#34;Phone&#34;</span>))
+        <span style="color:#66d9ef">let</span> contactCity = queryResults!.string(forColumn: <span style="color:#e6db74">&#34;City&#34;</span>)
 
         <span style="color:#75715e">// Append the result to the results array.</span>
         results.append(Contact(id: contactID, name: name, phoneNumber: contactPhone, city: contactCity))
@@ -307,33 +345,23 @@
 }</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>Since <code>searchContactByPhone(_:)</code> and <code>searchContactByCity(_:)</code> are similar to <code>searchContactByID(_:)</code> and <code>searchContactByName(_:)</code> respectively, pardon me for omitting them.</p>
-
 <p><br /></p>
-
 <p>We use <code>SELECT * FROM</code> to fetch the entire row and <code>WHERE</code> to limit the search results to certain conditions. Note that for <code>searchContactByID(_:)</code>, the return type is <code>Contact?</code>, however, for <code>searchContactByName(_:)</code>, the return type is <code>[Contact]</code>. This is because <code>ID</code> is a unique key, the result will be either <strong>exactly one</strong> or <strong>none</strong>. If none, we simply return <code>nil</code>. On the other hand, since <code>Name</code> is not a unique key (people may share the same name), we return an array of all matching contacts. If there are no matching results, we will return an empty <code>[Contact]</code>.</p>
-
 <p><br /></p>
-
 <p>(Incidentally, because <code>queryResults!.int(forColumn:)</code> returns the type <code>Int32</code>, we should cast it to <code>Int</code> by <code>Int(...)</code>.)</p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>By wrapping the operations into a singleton class, accessing database could be made within a single line of code. For example, whenever I need to search for people named <em>Bill</em>, I just need to do a single function call:</p>
-
-<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">var</span> peopleNamedBill = DatabaseAccessor.sharedInstance.searchContactByName(<span style="color:#e6db74">&#34;Bill&#34;</span>)</code></pre></td></tr></table>
 </div>
-</div></p>
-
+</div>
 <p>And we will get the results from the database. Simple and clear.</p>
-
-<h2 id="p-s">P.S.</h2>
-
+<h2 id="ps">P.S.</h2>
 <p>I am working on the <a href="https://github.com/systers/powerup-iOS">PowerUp-iOS</a> project as a Google Summer of Code (GSoC) student from June to August. Since I am developing everything in Swift 3.0, I will (hopefully) be posting articles about Swift and iOS dev during these couple of months.</p>
 
   </section>
@@ -355,12 +383,12 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/posts/build-test-automation-for-xcode-projects-using-travis-ci/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/gsoc-2017-with-systers-on-powerup-project/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/gsoc-2017-with-systers-on-powerup-project/">Older</a>
+          <a href="https://YuChaoGithub.github.io/posts/build-test-automation-for-xcode-projects-using-travis-ci/">Older</a>
           
         </div>
       </div>
@@ -465,7 +493,7 @@
 
     <p class="p-copyright">
       
-        Yu Chao (趙佑) © 2019
+        Yu Chao (趙佑) © 2020
       
     </p>
   </footer>

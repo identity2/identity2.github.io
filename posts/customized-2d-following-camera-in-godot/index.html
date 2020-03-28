@@ -28,7 +28,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.30.2" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.68.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://YuChaoGithub.github.io/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://YuChaoGithub.github.io/favicon.ico" />
   <script type="text/javascript" src="https://YuChaoGithub.github.io/js/bundle.js"></script>
@@ -103,22 +103,25 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
-
-<p>Two weeks ago, I wrote an <a href="posts/camera-moving-scene-scrolling-in-metal-slug-3/">article</a> about some camera moving schemes used in Metal Slug 3. In this article, I will show you how to actually implement such a camera.</p>
-
+    <p>Two weeks ago, I wrote an <a href="posts/camera-moving-scene-scrolling-in-metal-slug-3/">article</a> about some camera moving schemes used in Metal Slug 3. In this article, I will show you how to actually implement such a camera.</p>
 <p><br /></p>
-
 <p>I will be using the open source <a href="https://godotengine.org">Godot Engine</a> with <strong>GDScript</strong> since I believe any programmer with could understand GDScript quite easily, so let&rsquo;s get started.</p>
-
 <p><br /></p>
-
 <p>First, let&rsquo;s define some variables we&rsquo;ll use later.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Scroll the screen (aka. move the camera) when the character reaches the margins.</span>
 var drag_margin_left <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>
 var drag_margin_right <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>
@@ -131,29 +134,28 @@ var left_limit <span style="color:#f92672">=</span> <span style="color:#f92672">
 var screen_size</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>The <code>drag_margin_left</code> and <code>drag_margin_right</code> variables represent the red and blue lines of the image below.</p>
-
-<p><img src="/posts/customized-2d-following-camera-in-godot/1.png" alt="Image 1" /></p>
-
+<p><img src="/posts/customized-2d-following-camera-in-godot/1.png" alt="Image 1"></p>
 <p>When the character reaches the red line, the screen will scroll left. Similarly, when the character reaches the blue line, the screen will scroll right.</p>
-
 <p><br /></p>
-
 <p>Now comes the important <code>right_limit</code> and <code>left_limit</code> variables. They limit the camera so that it won&rsquo;t scroll past the right or left most edge of a scene or level. For example, in the image below, though the character reaches the blue line, the camera won&rsquo;t scroll, since it already reaches the right limit of the scene.</p>
-
-<p><img src="/posts/customized-2d-following-camera-in-godot/2.png" alt="Image 2" /></p>
-
+<p><img src="/posts/customized-2d-following-camera-in-godot/2.png" alt="Image 2"></p>
 <p><code>screen_size</code> simply stores the width and height of the game screen in a 2D vector. I will only be using <code>screen_size.x</code> (aka. the width of the screen) in this article since horizontal scrolling is our main concern. (Vertical scrolling is just the same as horizontal scrolling.)</p>
-
 <p><br /></p>
-
 <p>After declaring the variables, let&rsquo;s move on to write some short functions.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">9</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Being called when loaded.</span>
 func _ready():
     screen_size <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>get_viewport_rect()<span style="color:#f92672">.</span>size
@@ -165,25 +167,36 @@ func update_viewport():
     self<span style="color:#f92672">.</span>get_viewport()<span style="color:#f92672">.</span>set_canvas_transform(canvas_transform)</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>In Godot Engine, the <code>_ready()</code> function would be called after the node as well as its children are loaded. All we do here is setting the size of the viewport (aka. screen) to <code>screen_size</code>.</p>
-
 <p><br /></p>
-
 <p>The <code>update_viewport()</code> function is a little more complicated. Since our camera is just a plain node in the scene, we have to update the viewport to actually make the screen scroll. <code>get_viewport().get_canvas_transform()</code> returns the canvas transform in a 3x3 2D array where <code>canvas_transform.x</code> and <code>canvas_transform.y</code> controls the rotation and scale of a canvas item, and <code>canvas_transform.x</code> controls the translation of a canvas item. (Well, this description is kind of oversimplified, please refer to <a href="http://docs.godotengine.org/en/stable/learning/features/math/matrices_and_transforms.html">this link</a> if you are interested in the details of the mathematical meaning of <code>.x</code>, <code>.y</code>, and <code>.o</code>.) We will only be using <code>canvas_transform.o</code> since we won&rsquo;t rotate or scale our screen when scrolling. We set <code>canvas_transform.o</code> to <code>-self.get_global_pos() + screen.size() / 2</code> so that the center point of the viewport would align with the center point (aka. <code>self.get_global_pos()</code>) of the camera. You might wonder why there is a negative sign in the front of <code>self.get_global_pos()</code>. This is not that intuitive, but what we do is redefining the origin point of the canvas transform. Think of <em>offsetting</em> instead of <em>translating</em> the canvas transform.</p>
-
 <p><br /></p>
-
 <p>Now whenever the camera moves, the screen (viewport) will reposition itself so that their center points always align. Then comes the most important part: how we actually move the camera?</p>
-
 <p><br /></p>
-
 <p>To move the camera, we declare another function, <code>update_camera(character_pos)</code>. Whenever the character moves, it should call this function in the camera node, passing in its position as the parameter.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">17</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">18</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">19</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># This function should be called whenever the character moves.</span>
 func update_camera(character_pos):
     var new_camera_pos <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>get_global_pos()
@@ -205,55 +218,30 @@ func update_camera(character_pos):
     self<span style="color:#f92672">.</span>set_global_pos(new_camera_pos)</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>The code first checks whether the character reaches the right margin of the camera. If it does, then move the camera right.</p>
-
 <p><br /></p>
-
 <p>Since we are using two different coordinate systems, we have to transform them before comparison and assignment. Our first coordinate system is the <em>Normalized Coordinate</em>, which starts from 0 on the left edge of the screen and ends at 1 on the right edge of the screen. The second coordinate system is the <em>Global Coordinate</em>. This is the actual coordinate of the screen where the camera, character reside in. It starts from <code>get_global_pos() - screen_size.x / 2</code> on the left edge of the screen and ends at <code>get_global_pos() + screen_size.x / 2</code> on the right edge of the screen. So, to transform from <em>Normalized Coordinate</em> to <em>Global Coordinate</em>, we have to multiply it by (<code>(get_global_pos() + screen_size.x / 2) - (get_global_pos() - screen_size.x / 2)</code>) (aka. The distance of left edge to right edge). The image below shows the two coordinate systems. Note that we use <em>Normalized Coordinate</em> for <code>right_margin</code> and <code>drag_left_margin</code>, and <em>Global Coordinate</em> for <code>character_pos</code>.</p>
-
-<p><img src="/posts/customized-2d-following-camera-in-godot/3.png" alt="Image 3" /></p>
-
+<p><img src="/posts/customized-2d-following-camera-in-godot/3.png" alt="Image 3"></p>
 <p>The left margin check is similar to the right margin check. Only that the signs are reversed.</p>
-
 <p><br /></p>
-
 <p>Next, we clamp the new camera position so that it is within the limits of the scene. This is quite straightforward if you look at the image below. The camera can only scroll within the green line. The red lines are forbidden so that the camera won&rsquo;t scroll past the level boarders, rendering some unwanted stuff over the borders.</p>
-
-<p><img src="/posts/customized-2d-following-camera-in-godot/4.png" alt="Image 4" /></p>
-
+<p><img src="/posts/customized-2d-following-camera-in-godot/4.png" alt="Image 4"></p>
 <p>Lastly, <code>self.set_global_pos(new_camera_pos)</code> is called to set the position of the camera to the new position, and <code>update_viewport()</code> is called to actually scroll the viewport.</p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>This script is all we need to perform &ldquo;Metal Slug 3&rdquo;-like camera scrolling.</p>
-
 <h4 id="single-static-line-scrolling">Single Static Line Scrolling</h4>
-
-<p><img src="/posts/camera-moving-scene-scrolling-in-metal-slug-3/Clip1.gif" alt="Single Static Line Scrolling" /></p>
-
+<p><img src="/posts/camera-moving-scene-scrolling-in-metal-slug-3/Clip1.gif" alt="Single Static Line Scrolling"></p>
 <p>For Single Static Line Scrolling, simply set <code>drag_left_margin</code> to 0 to prevent the camera from scrolling to the left, and set <code>drag_right_margin</code> to somewhere around 0.3-0.4 so that the screen would scroll further to the right when the character reaches 30%-40% of the screen width to the right.</p>
-
 <h4 id="limited-scrolling">Limited Scrolling</h4>
-
-<p><img src="/posts/camera-moving-scene-scrolling-in-metal-slug-3/Clip2.gif" alt="Limited Scrolling" /></p>
-
+<p><img src="/posts/camera-moving-scene-scrolling-in-metal-slug-3/Clip2.gif" alt="Limited Scrolling"></p>
 <p>Limited Scrolling could be done by assigning <code>right_limit</code> and <code>left_limit</code> to the right and left of the limited area. <code>drag_left_margin</code> and <code>drag_right_margin</code> could be reset to around 0.1 and 0.9 respectively if the limited area is larger than the screen (like the scene below).</p>
-
-<p><img src="/posts/camera-moving-scene-scrolling-in-metal-slug-3/Clip5.gif" alt="Limited Scrolling 2" /></p>
-
+<p><img src="/posts/camera-moving-scene-scrolling-in-metal-slug-3/Clip5.gif" alt="Limited Scrolling 2"></p>
 <h4 id="reposition-scrolling">Reposition Scrolling</h4>
-
-<p><img src="/posts/camera-moving-scene-scrolling-in-metal-slug-3/Clip3.gif" alt="Reposition Scrolling" /></p>
-
-<p>To perform Reposition Scrolling, just remove expand the <code>right_limit</code> of the script, and the character would snap back to <code>drag_right_margin</code>. However, if you want the snapping to look smoothly like in Metal Slug 3, you might want to do some *Lerp*ing every frame to gradually move the camera to its target position.</p>
-
+<p><img src="/posts/camera-moving-scene-scrolling-in-metal-slug-3/Clip3.gif" alt="Reposition Scrolling"></p>
+<p>To perform Reposition Scrolling, just remove expand the <code>right_limit</code> of the script, and the character would snap back to <code>drag_right_margin</code>. However, if you want the snapping to look smoothly like in Metal Slug 3, you might want to do some <em>Lerp</em>ing every frame to gradually move the camera to its target position.</p>
 <h4 id="constant-speed-scrolling">Constant Speed Scrolling</h4>
-
-<p><img src="/posts/camera-moving-scene-scrolling-in-metal-slug-3/Clip7.gif" alt="Constant Speed Scrolling" /></p>
-
+<p><img src="/posts/camera-moving-scene-scrolling-in-metal-slug-3/Clip7.gif" alt="Constant Speed Scrolling"></p>
 <p>Well, Constant Speed Scrolling could be done even without this script entirely. Just increment the position of the camera every frame and it is done.</p>
-
 <p>The source code of this article can be found on my GitHub: <a href="https://github.com/YuChaoGithub/Godot-Scripts">Link</a>.</p>
 
   </section>
@@ -275,12 +263,12 @@ func update_camera(character_pos):
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/about/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/camera-moving-scene-scrolling-in-metal-slug-3/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/camera-moving-scene-scrolling-in-metal-slug-3/">Older</a>
+          <a href="https://YuChaoGithub.github.io/about/">Older</a>
           
         </div>
       </div>
@@ -385,7 +373,7 @@ func update_camera(character_pos):
 
     <p class="p-copyright">
       
-        Yu Chao (趙佑) © 2019
+        Yu Chao (趙佑) © 2020
       
     </p>
   </footer>

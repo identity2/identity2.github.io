@@ -28,7 +28,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.30.2" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.68.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://YuChaoGithub.github.io/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://YuChaoGithub.github.io/favicon.ico" />
   <script type="text/javascript" src="https://YuChaoGithub.github.io/js/bundle.js"></script>
@@ -103,102 +103,58 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
-
-<p>Testing your code is a vital process in app development, since it could reveal bugs and mistakes before the users actually use it. However, testing your app whenever you make a commit can be tedious and time-consuming. This is where Continuous Integration (CI) comes to rescue.</p>
-
+    <p>Testing your code is a vital process in app development, since it could reveal bugs and mistakes before the users actually use it. However, testing your app whenever you make a commit can be tedious and time-consuming. This is where Continuous Integration (CI) comes to rescue.</p>
 <h2 id="continuous-integration">Continuous Integration</h2>
-
 <p>Continuous Integration is the process of building and testing your app automatically, saving precious time for the developers. In this article, I will demonstrate how to integrate Travis CI to your XCode projects (to be specific, iOS/macOS/tvOS/watchOS projects) on GitHub.</p>
-
 <h2 id="starting-up-a-github-repo">Starting Up a GitHub Repo</h2>
-
 <p>Start a new XCode project and initialize a local Git repository by:</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init</code></pre></div>
-
 <p>Then do the typical Git workflow to push this on your remote GitHub repo (make sure you have created a new repo on GitHub):</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add -all
 git commit -m <span style="color:#e6db74">&#34;Start a new project.&#34;</span>
 git remote add origin https://github.com/your_username/your_repo.git</code></pre></div>
-
 <h2 id="activate-travis-on-github">Activate Travis on GitHub</h2>
-
 <p>Now it&rsquo;s time to integrate Travis to your GitHub repo. Go to the <a href="https://travis-ci.org">official website of Travis CI</a> and hit the &ldquo;Sign in with GitHub&rdquo; button on the upper right corner. Log in using your GitHub account. You will find your GitHub avatar picture appearing on the upper right corner of the webpage if you logged in successfully. Click your avatar picture and you will see all of your GitHub repos.</p>
-
-<p><img src="/posts/build-test-automation-for-xcode-projects-using-travis-ci/1.png" alt="Pic-1" /></p>
-
+<p><img src="/posts/build-test-automation-for-xcode-projects-using-travis-ci/1.png" alt="Pic-1"></p>
 <p>Click on the switch located on the left of your repo to turn it on. A green check will appear, meaning Travis is now monitoring this repo.</p>
-
-<p><img src="/posts/build-test-automation-for-xcode-projects-using-travis-ci/2.png" alt="Pic-2" /></p>
-
+<p><img src="/posts/build-test-automation-for-xcode-projects-using-travis-ci/2.png" alt="Pic-2"></p>
 <h2 id="configuring-travis-ci">Configuring Travis CI</h2>
-
 <p>You can now try to commit and push your changes on the Travis-activated GitHub repo, but the test will fail because the configuration file is missing. Locate your local project in the Terminal, and edit (add) a plain text file named <code>.travis.yml</code>:</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi .travis.yml</code></pre></div>
-
 <p>Terminal will now open the file up with the Vi text editor. Add the following lines as the configuration, and type <code>:wq</code> to save and quit Vi.</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">language: objective-c
 osx_image: xcode8.3
 script: xcodebuild -project ProjectName.xcodeproj -scheme ProjectName -sdk iphonesimulator10.3 -destination <span style="color:#e6db74">&#39;platform=iOS Simulator,OS=9.1,name=iPhone 6&#39;</span> -configuration Debug build test</code></pre></div>
-
 <p>I will explain the configuration line by line.</p>
-
 <p><br /></p>
-
 <p><strong>language</strong> - No matter you are using Swift, Objective-C, or both in your project, Travis recognizes XCode projects with the value of <code>objective-c</code>. So don&rsquo;t worry if you are not using Objective-C in your project.</p>
-
 <p><br /></p>
-
 <p><strong>osx-image</strong> - This indicates which version of XCode tools you want your project to be built with. <a href="https://docs.travis-ci.com/user/languages/objective-c/#Supported-Xcode-versions">Here is a list of the versions Travis provide</a></p>
-
 <p><br /></p>
-
 <p><strong>script</strong> - You can decide which scripts you want Travis to run on the building &amp; testing environment. By default, Travis CI uses <code>xctool</code> to build and test XCode projects. However, after XCode 8, many of the original commands are not supported by <code>xctool</code> anymore. As a result, I will use the plain old <code>xcodebuild</code> to build and test the project.</p>
-
 <p><br /></p>
-
 <p><strong>-project</strong> - This is the <code>.xcodeproj</code> file of your project. Note that if you are using CocoaPods, you should replece <code>xcode_project</code> with <code>xcode_workspace</code> and assign it with <code>ProjectName.xcworkspace</code> instead.</p>
-
 <p><br /></p>
-
 <p><strong>-scheme</strong> - You can decide which scheme you want to build and run by setting <code>-scheme</code>. Most of the time, you will set this to the default scheme, which is the same as your project name.</p>
-
 <p><br /></p>
-
 <p><strong>-sdk</strong> - Tests should be run on iOS simulators, so <code>-sdk</code> lets you decide which simulator you want your tests to be run on.</p>
-
 <p><br /></p>
-
 <p><strong>-destination</strong> - This should be set explicitly or <code>xcodebuild</code> will try to test the built project on <em>Generic iOS Device</em>, which will always fail.</p>
-
 <p><br /></p>
-
 <h2 id="configure-xcode-scheme">Configure XCode Scheme</h2>
-
 <p>Though the project is correctly configured for Travis CI, Travis still fails if you commit and push your changes now. This is because your scheme isn&rsquo;t shared on your GitHub repo. To solve this, open up your project in XCode and click <strong>Edit Scheme</strong>. Select the <strong>Shared</strong> checkbox below the <em>Edit Scheme</em> window, your project is now perfectly setup for Travis!</p>
-
 <p><br /></p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>Commit and push an arbitrary change to your GitHub repo. Wait for few minutes and you will see a small checkmark next to your commit code, meaning all tests for Travis has passed.</p>
-
-<p><img src="/posts/build-test-automation-for-xcode-projects-using-travis-ci/3.png" alt="Pic-3" /></p>
-
+<p><img src="/posts/build-test-automation-for-xcode-projects-using-travis-ci/3.png" alt="Pic-3"></p>
 <p>Click on it and you can see all the output messages on the building environment. Since we are using <code>xcodebuild</code>, the output message is quite bulky. Scroll to the very bottom, you will find all your test cases.</p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Test Case <span style="color:#e6db74">&#39;-[ProjectNameTests.ProjectNameTests testExample]&#39;</span> started.
-Test Case <span style="color:#e6db74">&#39;-[ProjectNameTests.ProjectNameTests testExample]&#39;</span> passed <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>.006 seconds<span style="color:#f92672">)</span>.
+Test Case <span style="color:#e6db74">&#39;-[ProjectNameTests.ProjectNameTests testExample]&#39;</span> passed <span style="color:#f92672">(</span>0.006 seconds<span style="color:#f92672">)</span>.
 Test Case <span style="color:#e6db74">&#39;-[ProjectNameTests.ProjectNameTests testPerformanceExample]&#39;</span> started.
 ...
 ...
 ...
 ** TEST SUCCEEDED **</code></pre></div>
-
 <p>This is the basic way to integrate Travis CI with your XCode project. Hope it will save your precious time and boost your development speed. Bye! :D</p>
 
   </section>
@@ -220,12 +176,12 @@ Test Case <span style="color:#e6db74">&#39;-[ProjectNameTests.ProjectNameTests t
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/posts/a-brief-review-of-godot/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/sqlite-database-singleton-class-for-ios-in-swift-3/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/sqlite-database-singleton-class-for-ios-in-swift-3/">Older</a>
+          <a href="https://YuChaoGithub.github.io/posts/a-brief-review-of-godot/">Older</a>
           
         </div>
       </div>
@@ -330,7 +286,7 @@ Test Case <span style="color:#e6db74">&#39;-[ProjectNameTests.ProjectNameTests t
 
     <p class="p-copyright">
       
-        Yu Chao (趙佑) © 2019
+        Yu Chao (趙佑) © 2020
       
     </p>
   </footer>

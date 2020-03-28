@@ -28,7 +28,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.30.2" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.68.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://YuChaoGithub.github.io/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://YuChaoGithub.github.io/favicon.ico" />
   <script type="text/javascript" src="https://YuChaoGithub.github.io/js/bundle.js"></script>
@@ -103,34 +103,34 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
-
-<p>Recently, I&rsquo;ve started my beatbox rhythm game project <a href="/boots-cuts">Boots-Cut</a> using Unity. When prototyping the basic game mechanics, I found that it is quite tricky to sync the music notes with the music correctly. However, there are very little articles on the web concerning this subject. So, I will try to point out some important tips when developing a rhythm game (especially in Unity) in this article.</p>
-
+    <p>Recently, I&rsquo;ve started my beatbox rhythm game project <a href="/boots-cuts">Boots-Cut</a> using Unity. When prototyping the basic game mechanics, I found that it is quite tricky to sync the music notes with the music correctly. However, there are very little articles on the web concerning this subject. So, I will try to point out some important tips when developing a rhythm game (especially in Unity) in this article.</p>
 <p><br /></p>
-
 <p>Among all, I found the following three points with most importance:</p>
-
 <ul>
 <li>Use <code>AudioSettings.dspTime</code> instead of <code>Time.timeSinceLevelLoad</code> to keep track of the position of the song.</li>
 <li>Always use the position of the song to update movements.</li>
 <li>Don&rsquo;t update music notes by time differences every frame, interpolate them.</li>
 </ul>
-
 <p>Keep these in mind, and let&rsquo;s get started!</p>
-
 <h3 id="the-main-class">The Main Class</h3>
-
 <p>A <code>SongManager</code> class should be created for song position tracking, music note spawning, and other song managing stuffs.</p>
-
 <h5 id="position-tracking">Position Tracking</h5>
-
 <p>In all rhythm games, we have to track the song position to determine whether a note should be spawned. Below are the essential fields for song position tracking:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">//the current position of the song (in seconds)
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">float</span> songPosition;
 
@@ -141,16 +141,27 @@
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">float</span> secPerBeat;
 
 <span style="color:#75715e">//how much time (in seconds) has passed since the song started
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">float</span> dsptimesong;</code></pre></td></tr></table>
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">float</span> dsptimesong;
+</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>We initialize these fields in the <code>Start()</code> function:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">void</span> Start()
 {
     <span style="color:#75715e">//calculate how many seconds is one beat
@@ -162,24 +173,27 @@
 
     <span style="color:#75715e">//start the song
 </span><span style="color:#75715e"></span>    GetComponent&lt;AudioSource&gt;().Play();
-}</code></pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>We convert <code>bpm</code> to <code>secPerBeat</code> for convenience. Later on, <code>secPerBeat</code> would be used to calculate the song position in beats, which is very important for note spawning.</p>
-
 <p><br /></p>
-
 <p>Also, we record the start time of the song in <code>dsptimesong</code>. We use <code>AudioSettings.dspTime</code> instead of <code>Time.timeSinceLevelLoad</code> because <code>Time.timeSinceLevelLoad</code> is updated only in each frame while <code>AudioSettings.dspTime</code> updates more frequently because it is the timer of the audio system. To keep in pace of the song, we have to use the timer of the audio system to avoid the latency caused by the time differences between frame updates and audio updates.</p>
-
 <p><br /></p>
-
 <p>In the <code>Update()</code> function, we also calculate the position of the song by <code>AudioSettings.dspTime</code>:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">8</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">void</span> Update()
 {
     <span style="color:#75715e">//calculate the position in seconds
@@ -187,109 +201,103 @@
 
     <span style="color:#75715e">//calculate the position in beats
 </span><span style="color:#75715e"></span>    songPosInBeats = songPosition / secPerBeat;
-}</code></pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>We calculate the position-in-seconds in a song simply by subtracting the current <code>AudioSettings.dspTime</code> by the time in the start of the song (aka. <code>dsptimesong</code>). We now have the position-in-seconds of a song, however, in the world of music, we record our notes in beats. So, it is better to convert the position-in-seconds to position-in-beats. Dividing <code>songPosition</code> by <code>secPerBeat</code> ( second / (second / beat) ), we will get the position-in-beats.</p>
-
 <p><br /></p>
-
 <p>Consider the note below:</p>
-
-<p><img src="/posts/music-syncing-in-rhythm-games/pic1.png" alt="picture1" /></p>
-
+<p><img src="/posts/music-syncing-in-rhythm-games/pic1.png" alt="picture1"></p>
 <p>The position-in-beats of the notes are 1, 2, 2.5, 3, 3.5, 4.5, and a beat lasts for 0.5 seconds. So, if 1.75 seconds have passed in the song (aka. <code>songPosition == 1.75</code>), we know that we now reaches the <strong>1.75</strong> (<code>songPosition</code>) / <strong>0.5</strong> (<code>secPerBeat</code>) = <strong>3.5</strong> beat in the song, and the note in 3.5 beat should be spawned.</p>
-
 <h6 id="song-information">Song Information</h6>
-
 <p>Move on to the fields which we record the information of the song:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">8</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">//beats per minute of a song
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">float</span> bpm;
 
 <span style="color:#75715e">//keep all the position-in-beats of notes in the song
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">float</span><span style="color:#a6e22e">[]</span> notes;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">float</span>[] notes;
 
 <span style="color:#75715e">//the index of the next note to be spawned
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> nextIndex = <span style="color:#ae81ff">0</span>;</code></pre></td></tr></table>
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> nextIndex = <span style="color:#ae81ff">0</span>;
+</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>For simplicity, I demonstrate the song with only one track of notes (<em>Guitar Hero Mobile</em> has three tracks, while <em>Taikono Tatsujin</em> has only one track).</p>
-
 <p><br /></p>
-
 <p><code>bpm</code> is the beats per minute of a song. As we have seen, it would be converted to <code>secPerBeat</code> for convenience.</p>
-
 <p><br /></p>
-
 <p><code>notes</code> is an array which keeps the entire position-in-beats of the notes in the song. For example, <code>notes</code> would be <code>{1f, 2f, 2.5f, 3f, 3.5f, 4.5f}</code> for the note below:</p>
-
-<p><img src="/posts/music-syncing-in-rhythm-games/pic1.png" alt="picture1" /></p>
-
+<p><img src="/posts/music-syncing-in-rhythm-games/pic1.png" alt="picture1"></p>
 <p>Lastly, <code>nextIndex</code> is simply an integer used to traverse the array. It is initialized to 0 since the next note to spawn is the very first note of the song. We would increment <code>nextIndex</code> whenever a note is spawned.</p>
-
 <h5 id="spawning-the-notes">Spawning the Notes</h5>
-
 <p>We determine whether a note should be spawned in the <code>Update()</code> function. However, we should first determine how many beats would be shown in advance.</p>
-
 <p><br /></p>
-
 <p>For example, in the following track,</p>
-
-<p><img src="/posts/music-syncing-in-rhythm-games/pic2.png" alt="picture2" /></p>
-
+<p><img src="/posts/music-syncing-in-rhythm-games/pic2.png" alt="picture2"></p>
 <p>The current songposition-in-beats is 1, but beat 3 is already spawned, meaning 3 beats are shown in advance.</p>
-
 <p><br /></p>
-
 <p>Just below <code>songPosInBeats = songPosition / secPerBeat;</code>, add the following lines:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">8</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">if</span> (nextIndex &lt; notes.Length &amp;&amp; notes<span style="color:#a6e22e">[nextIndex]</span> &lt; songPosInBeats + beatsShownInAdvance)
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">if</span> (nextIndex &lt; notes.Length &amp;&amp; notes[nextIndex] &lt; songPosInBeats + beatsShownInAdvance)
 {
     Instantiate( <span style="color:#75715e">/* Music Note Prefab */</span> );
 
     <span style="color:#75715e">//initialize the fields of the music note
 </span><span style="color:#75715e"></span>
     nextIndex++;
-}</code></pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>We first check if there are no notes left in the song (<code>nextIndex &lt; notes.Length</code>), if there are notes left, we then see if the song reaches the beat where the next note should be spawned (<code>notes[nextIndex] &lt; songPosInBeats + beatsShownInAdvance</code>). If it does, spawn the note and increment <code>nextIndex</code> so that it now keep tracks of the next note to spawn.</p>
-
 <h5 id="moving-the-notes">Moving the Notes</h5>
-
 <p>Lastly, we talk about how to move the notes we spawned according to the song. It is quite easy if you remember the point: <strong>Don&rsquo;t move them by time differences of frames, interpolate them</strong>.</p>
-
 <p><br /></p>
-
 <p>Always update movements by the position of the song because</p>
-
 <ol>
 <li>Audio timer has time difference with frame timer</li>
 <li>Beats may be right in the middle of two frames (which cause time difference)</li>
 </ol>
-
 <p>&hellip;so, how exactly to move the notes? <strong>INTERPOLATE</strong>!</p>
-
 <p><br /></p>
-
 <p>For simplicity, I will spare all the code in the <code>MusicNote</code> class, and include only the <code>Update()</code> function where we move each music note:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">9</span></code></pre></td>
-<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">//the update function of music notes
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> Update()
 {
@@ -298,26 +306,18 @@
         RemovePos,
         (BeatsShownInAdvance - (beatOfThisNote - songPosInBeats)) / BeatsShownInAdvance
     );    
-}</code></pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>The below graph should show this clearly:</p>
-
-<p><img src="/posts/music-syncing-in-rhythm-games/pic3.png" alt="picture3" /></p>
-
+<p><img src="/posts/music-syncing-in-rhythm-games/pic3.png" alt="picture3"></p>
 <h3 id="conclusion">Conclusion</h3>
-
 <p>These are the basics of how to program a rhythm game. By following the principles, hopefully, you could make any kind of song-synchronizing games. Multiple-tracked games could be created by making a nested <code>notes</code> array, removal of notes could be done by checking if its position reaches the removal line, long duration notes could be implemented by keeping track of both the start beat and end beat, etc.</p>
-
 <p><br /></p>
-
 <p>Thanks a lot for reading the article and hope that it helps. My own rhythm game <a href="/boots-cuts">Boots-Cuts</a> would be out in the next couple of years, stay tuned for more information! :D</p>
-
 <p><br /></p>
-
 <p><strong>2018.07 Update:</strong> I cancelled the project Boot-Cuts because I don&rsquo;t see the point in finishing it.</p>
-
 <p><strong>2018.10.24 Update:</strong> I wrote a minimal rhythm game sample project in Unity. Feel free to download and play with the code. <a href="https://github.com/YuChaoGithub/Rhythm-Game-Sample">View On GitHub</a></p>
 
   </section>
@@ -339,12 +339,12 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/posts/mobile-game-portrait-or-landscape/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/recording-and-playing-audio-in-unity/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/recording-and-playing-audio-in-unity/">Older</a>
+          <a href="https://YuChaoGithub.github.io/posts/mobile-game-portrait-or-landscape/">Older</a>
           
         </div>
       </div>
@@ -449,7 +449,7 @@
 
     <p class="p-copyright">
       
-        Yu Chao (趙佑) © 2019
+        Yu Chao (趙佑) © 2020
       
     </p>
   </footer>
