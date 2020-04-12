@@ -20,7 +20,7 @@
       <guid>https://YuChaoGithub.github.io/posts/prove-np-complete-by-restriction/</guid>
       <description>Proving NP-Completeness is a core topic in the studies of algorithms. For most of the algorithms textbooks, they show some complicated tricks which reduce a known NP-Complete problem to another problem, say Q, to prove that Q is NP-Complete. This works because if problem A reduces to problem B, then B is at least as difficult as A. And since A is NP-Complete, B is also NP-Complete.
 
-However, many problem reduction methods are extremely subtle and often require some &amp;ldquo;devine instincts&amp;rdquo; to come up with in the first place.</description>
+However, many problem reduction methods are extremely subtle and often require some &amp;ldquo;divine instincts&amp;rdquo; to come up with in the first place.</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ About the Instructor Andrew Ng is the co-founder of Google Brain and Coursera, a
       <pubDate>Mon, 10 Jun 2019 16:39:00 +0800</pubDate>
       
       <guid>https://YuChaoGithub.github.io/posts/trying-out-medium/</guid>
-      <description>Haven&amp;rsquo;t been writing articles for almost half a year because I got back to school this spring. It&amp;rsquo;s really diffult to handle both the course works and side projects (such as maintaining a blog) at the same time, and I&amp;rsquo;m starting to worry that I&amp;rsquo;ll have even less time writing after I graduate. The &amp;ldquo;harsh&amp;rdquo; reality and &amp;ldquo;tough&amp;rdquo; life often change our hobbies into more &amp;ldquo;entertainment&amp;rdquo; ones unlike writing or other creative activities.</description>
+      <description>Haven&amp;rsquo;t been writing articles for almost half a year because I got back to school this spring. It&amp;rsquo;s really difficult to handle both the course works and side projects (such as maintaining a blog) at the same time, and I&amp;rsquo;m starting to worry that I&amp;rsquo;ll have even less time writing after I graduate. The &amp;ldquo;harsh&amp;rdquo; reality and &amp;ldquo;tough&amp;rdquo; life often change our hobbies into more &amp;ldquo;entertainment&amp;rdquo; ones unlike writing or other creative activities.</description>
     </item>
     
     <item>
@@ -60,7 +60,7 @@ About the Instructor Andrew Ng is the co-founder of Google Brain and Coursera, a
       <guid>https://YuChaoGithub.github.io/posts/knights-rubbish-released/</guid>
       <description>My second game project Knights Rubbish has released!
 
-Originally I was just doing some experiments with Godot Engine and trying to implement the barebones of a platformer, but then the project grew larger and larger as I combined it with other mechanics I was testing. After a year and couple of months, Knights Rubbish was born!
+Originally I was just doing some experiments with Godot Engine and trying to implement the bare bones of a platformer, but then the project grew larger and larger as I combined it with other mechanics I was testing. After a year and couple of months, Knights Rubbish was born!
 Real Photos as Game Graphics One of the coolest features in Knights Rubbish is that most of its graphics are made with processed photos.</description>
     </item>
     

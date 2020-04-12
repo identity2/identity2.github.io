@@ -113,7 +113,7 @@
 <p><br /></p>
 <p>I will not delve into how I implement the views since the code is quite bulky and tedious. Similarly, I will not write anything about how I made the metronome, since the mechanics behind it are just some trivial algebraic manipulations.</p>
 <p><br /></p>
-<p>We divide our tasks into three classes: <code>Note</code>, <code>Pitch</code>, and <code>Tuner</code>. The <code>Note</code> class represents a single (natural) musical note. For example, <em>C (Do)</em>, <em>D (Re)</em>, <em>E (Mi)</em>, <em>C♯</em>, <em>E♭</em>. The <code>Pitch</code> class is used to process the sampled audio, taking its raw frequency and assign it to the nearest natural note. The <code>Tuner</code> class polls the audio through microphone, aquires the natural note through the <code>Pitch</code> class, and calculates the error ratio between the raw frequency and the &ldquo;correct&rdquo; natural pitch.</p>
+<p>We divide our tasks into three classes: <code>Note</code>, <code>Pitch</code>, and <code>Tuner</code>. The <code>Note</code> class represents a single (natural) musical note. For example, <em>C (Do)</em>, <em>D (Re)</em>, <em>E (Mi)</em>, <em>C♯</em>, <em>E♭</em>. The <code>Pitch</code> class is used to process the sampled audio, taking its raw frequency and assign it to the nearest natural note. The <code>Tuner</code> class polls the audio through microphone, acquires the natural note through the <code>Pitch</code> class, and calculates the error ratio between the raw frequency and the &ldquo;correct&rdquo; natural pitch.</p>
 <p><br /></p>
 <p>This article will be written in a bottom to top approach, from the <code>Note</code> class, the <code>Pitch</code> class, to the <code>Tuner</code> class.</p>
 <h1 id="the-note-class">The Note Class</h1>
@@ -272,7 +272,7 @@
 }</code></pre></td></tr></table>
 </div>
 </div>
-<p>The <code>frequency</code> variable stores the raw frequency we recieved, <code>note</code> stores the nearest note to the raw <code>frequency</code>. Since the <code>Note</code> class contains the middle octave (aka the 4th octave) only, we have to declare another variable to store the <code>octave</code> of the current pitch.</p>
+<p>The <code>frequency</code> variable stores the raw frequency we received, <code>note</code> stores the nearest note to the raw <code>frequency</code>. Since the <code>Note</code> class contains the middle octave (aka the 4th octave) only, we have to declare another variable to store the <code>octave</code> of the current pitch.</p>
 <p><br /></p>
 <p>In the initializer, we multiply the frequency (of the note of the middle octave) by <code>pow(2, octave - 4)</code> to obtain the actual frequency of the note in the target <code>octave</code>. (This is so because the middle octave is usually defined as the 4th octave. [For example, A in the 6th octave is obtained by 440 * 2 * 2 = <code>440 * pow(2, 6 - 4)</code>.])</p>
 <p><br /></p>
@@ -311,7 +311,7 @@
 }</code></pre></td></tr></table>
 </div>
 </div>
-<p>What we do is looping through the <code>all</code> array by <code>.map</code>, and produce an array of tuples called <code>results</code>. It stores the original <code>Pitch</code> object as well as the distance (i.e. difference) between the raw frequency and and frequency of the particular <code>pitch</code>. The <code>results</code> array is then sorted in acsending order by their <code>distance</code>. We take the first item in the array (that is, the item with the least <code>distance</code>), and <code>return</code> the pitch. The nearest note is then obtained.</p>
+<p>What we do is looping through the <code>all</code> array by <code>.map</code>, and produce an array of tuples called <code>results</code>. It stores the original <code>Pitch</code> object as well as the distance (i.e. difference) between the raw frequency and and frequency of the particular <code>pitch</code>. The <code>results</code> array is then sorted in ascending order by their <code>distance</code>. We take the first item in the array (that is, the item with the least <code>distance</code>), and <code>return</code> the pitch. The nearest note is then obtained.</p>
 <h1 id="the-tuner-class">The Tuner Class</h1>
 <p>The <code>Tuner</code> class is implemented by utilizing the <code>Pitch</code> class and the AudioKit library. You should first import AudioKit to your Xcode workspace. [<a href="https://audiokit.io/downloads/">Link</a>]</p>
 <p>After importing AudioKit, initialize it and declare some related variables.</p>
@@ -367,7 +367,7 @@
 }</code></pre></td></tr></table>
 </div>
 </div>
-<p>In the initializer, we first configure the setting of Apple&rsquo;s AVFoundation through the <code>AVAudioSession</code> singleton. We speicify the category to <code>AVAudioSessionCategoryRecord</code> because we want to sample the audio by recording through the microphone. The mode is set to <code>AVAudioSessionModeMeasurement</code> since the purpose of the app is to measure the audio.</p>
+<p>In the initializer, we first configure the setting of Apple&rsquo;s AVFoundation through the <code>AVAudioSession</code> singleton. We specify the category to <code>AVAudioSessionCategoryRecord</code> because we want to sample the audio by recording through the microphone. The mode is set to <code>AVAudioSessionModeMeasurement</code> since the purpose of the app is to measure the audio.</p>
 <p><br /></p>
 <p>Next on, we initialize the microphone for AudioKit. We first enable audio input, then initialize <code>mic</code>, <code>tracker</code>, and <code>silence</code> as <code>AKMicrophone</code>, <code>AKFrequencyTracker</code> and <code>AKBooster</code>. <code>AKMicrophone</code> is just the microphone class for AudioKit, <code>AKFrequencyTracker</code> is a well-implemented frequency tracker which analyzes sound waves to obtain the frequency of the input audio. <code>AKBooster</code> is a stereo mixer, we initialize it by our frequency tracker and set it as the output of AudioKit.</p>
 <p><br /></p>

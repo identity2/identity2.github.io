@@ -133,7 +133,7 @@ script: xcodebuild -project ProjectName.xcodeproj -scheme ProjectName -sdk iphon
 <p><br /></p>
 <p><strong>script</strong> - You can decide which scripts you want Travis to run on the building &amp; testing environment. By default, Travis CI uses <code>xctool</code> to build and test XCode projects. However, after XCode 8, many of the original commands are not supported by <code>xctool</code> anymore. As a result, I will use the plain old <code>xcodebuild</code> to build and test the project.</p>
 <p><br /></p>
-<p><strong>-project</strong> - This is the <code>.xcodeproj</code> file of your project. Note that if you are using CocoaPods, you should replece <code>xcode_project</code> with <code>xcode_workspace</code> and assign it with <code>ProjectName.xcworkspace</code> instead.</p>
+<p><strong>-project</strong> - This is the <code>.xcodeproj</code> file of your project. Note that if you are using CocoaPods, you should replace <code>xcode_project</code> with <code>xcode_workspace</code> and assign it with <code>ProjectName.xcworkspace</code> instead.</p>
 <p><br /></p>
 <p><strong>-scheme</strong> - You can decide which scheme you want to build and run by setting <code>-scheme</code>. Most of the time, you will set this to the default scheme, which is the same as your project name.</p>
 <p><br /></p>
