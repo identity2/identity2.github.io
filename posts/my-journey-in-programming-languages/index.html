@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  
+  <title>My Journey in Programming Languages</title>
+  <meta property="og:title" content="My Journey in Programming Languages" />
+  <meta name="twitter:title" content="My Journey in Programming Languages" />
+  
+
+  
+
+  <meta name="author" content="Yu Chao"/>
+  <meta property="og:site_name" content="Shine Right Homepage" />
+  <meta property="og:url" content="https://YuChaoGithub.github.io/posts/my-journey-in-programming-languages/" />
+
+  
+  <meta name="twitter:card" content="summary" />
+
+  
+  <meta name="twitter:site" content="@realYuChao" />
+  <meta name="twitter:creator" content="@realYuChao" />
+  
+
+  
+  <meta property="og:type" content="article" />
+  
+  
+  
+  <meta name="generator" content="Hugo 0.68.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://YuChaoGithub.github.io/css/style.css" />
+  <link rel='icon' type='image/x-icon' href="https://YuChaoGithub.github.io/favicon.ico" />
+  <script type="text/javascript" src="https://YuChaoGithub.github.io/js/bundle.js"></script>
+  
+
+</head>
+
+<body>
+  <a href="#main" class="skip-link p-screen-reader-text">Skip to content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true"> <symbol id="icon-500px" viewBox="0 0 16 16"><g> <path d="M3.953 10.512a5.24 5.24 0 0 0 6.996 3.141c.625-.262 1.184-.641 1.666-1.122s.859-1.041 1.122-1.666c.272-.647.412-1.331.412-2.037s-.137-1.394-.412-2.037c-.262-.625-.641-1.184-1.122-1.666s-1.041-.859-1.666-1.122a5.226 5.226 0 0 0-2.037-.413c-.716 0-1.431.144-2.066.413-.509.216-1.372.769-1.875 1.291l-.003.003V.984h7.241c.262-.003.262-.372.262-.491 0-.122 0-.487-.266-.491H4.377a.343.343 0 0 0-.344.341v6.066c0 .197.244.338.472.384.444.094.544-.047.653-.197l.016-.019c.166-.247.681-.766.688-.772a4.262 4.262 0 0 1 3.037-1.25c1.147 0 2.222.444 3.028 1.25a4.245 4.245 0 0 1 1.256 3.019 4.236 4.236 0 0 1-1.25 3.019 4.336 4.336 0 0 1-3.047 1.25 4.136 4.136 0 0 1-2.159-.597l.003-3.688c0-.491.213-1.028.572-1.431a2.09 2.09 0 0 1 1.588-.716c.594 0 1.15.225 1.566.634.409.406.637.95.637 1.528a2.179 2.179 0 0 1-2.206 2.197c-.238 0-.672-.106-.691-.109-.25-.075-.356.272-.391.387-.134.441.069.528.109.541.397.125.659.147 1.003.147a3.173 3.173 0 0 0 3.169-3.169c0-1.734-1.422-3.144-3.166-3.144-.856 0-1.659.328-2.263.919-.575.566-.903 1.319-.903 2.069v.019c-.003.094-.003 2.306-.006 3.031l-.003-.003c-.328-.363-.653-.919-.869-1.488-.084-.222-.275-.184-.534-.103-.125.034-.469.141-.391.394zm3.722-.865c0 .106.097.2.156.253l.019.019c.1.097.194.147.281.147a.181.181 0 0 0 .131-.05c.044-.041.537-.544.588-.591l.553.55c.05.056.106.088.172.088.088 0 .184-.053.284-.156.238-.244.119-.375.063-.438l-.559-.559.584-.588c.128-.137.016-.284-.097-.397-.162-.162-.322-.206-.422-.112l-.581.581-.588-.588a.16.16 0 0 0-.113-.047c-.078 0-.172.053-.275.156-.181.181-.219.306-.125.406l.588.584-.584.584c-.053.05-.078.103-.075.156zm1.278-7.931c-.938 0-1.938.191-2.669.506a.207.207 0 0 0-.134.181.753.753 0 0 0 .069.337c.047.116.166.425.4.334a6.689 6.689 0 0 1 2.334-.444 6.35 6.35 0 0 1 2.469.497c.622.263 1.206.644 1.844 1.194a.22.22 0 0 0 .147.059c.125 0 .244-.122.347-.237.169-.191.287-.35.119-.509a6.858 6.858 0 0 0-2.1-1.356 7.326 7.326 0 0 0-2.825-.563zM14.006 13.3c-.113-.113-.209-.178-.294-.203s-.162-.006-.222.053l-.056.056a6.32 6.32 0 0 1-6.938 1.356 6.336 6.336 0 0 1-2.013-1.356 6.046 6.046 0 0 1-1.356-2.012c-.288-.713-.381-1.247-.413-1.422-.003-.016-.006-.028-.006-.037-.041-.206-.231-.222-.503-.178-.112.019-.459.072-.428.319v.006a7.261 7.261 0 0 0 2.04 3.994 7.266 7.266 0 0 0 10.288 0l.059-.059c.069-.084.134-.225-.159-.516z"/> </g></symbol> <symbol id="icon-codepen" viewBox="0 0 16 16"><g> <path d="M14.777 5.751l-7-4.667a.5.5 0 0 0-.555 0l-7 4.667a.501.501 0 0 0-.223.416v4.667c0 .167.084.323.223.416l7 4.667a.5.5 0 0 0 .554 0l7-4.667a.501.501 0 0 0 .223-.416V6.167a.501.501 0 0 0-.223-.416zM7.5 10.232L4.901 8.5 7.5 6.768 10.099 8.5 7.5 10.232zM8 5.899V2.434l5.599 3.732L11 7.898l-3-2zm-1 0l-3 2-2.599-1.732L7 2.435V5.9zM3.099 8.5L1 9.899V7.101L3.099 8.5zM4 9.101l3 2v3.465l-5.599-3.732L4 9.102zm4 2l3-2 2.599 1.732L8 14.565V11.1zM11.901 8.5L14 7.101v2.798L11.901 8.5z"/> </g></symbol> <symbol id="icon-dribbble" viewBox="0 0 16 16"><g> <path d="M8 16c-4.412 0-8-3.588-8-8s3.587-8 8-8c4.412 0 8 3.587 8 8s-3.588 8-8 8zm6.747-6.906c-.234-.075-2.116-.634-4.256-.291a29.7 29.7 0 0 1 1.328 4.872 6.845 6.845 0 0 0 2.928-4.581zM10.669 14.3c-.103-.6-.497-2.688-1.456-5.181-.016.006-.031.009-.044.016-3.856 1.344-5.241 4.016-5.362 4.266a6.807 6.807 0 0 0 6.863.9zm-7.747-1.722c.156-.266 2.031-3.369 5.553-4.509a7.04 7.04 0 0 1 .269-.081 24.04 24.04 0 0 0-.553-1.159c-3.409 1.022-6.722.978-7.022.975-.003.069-.003.138-.003.209 0 1.753.666 3.356 1.756 4.566zM1.313 6.609c.306.003 3.122.016 6.319-.831a43.092 43.092 0 0 0-2.534-3.953 6.854 6.854 0 0 0-3.784 4.784zM6.4 1.366a36.612 36.612 0 0 1 2.55 4c2.431-.909 3.459-2.294 3.581-2.469A6.799 6.799 0 0 0 6.4 1.366zm6.891 2.325c-.144.194-1.291 1.663-3.816 2.694.159.325.313.656.453.991.05.119.1.234.147.353 2.275-.284 4.534.172 4.759.219a6.816 6.816 0 0 0-1.544-4.256z"/> </g></symbol> <symbol id="icon-facebook" viewBox="0 0 16 16"><g> <path d="M9.5 3H12V0H9.5C7.57 0 6 1.57 6 3.5V5H4v3h2v8h3V8h2.5l.5-3H9V3.5c0-.271.229-.5.5-.5z"/> </g></symbol> <symbol id="icon-feed" viewBox="0 0 16 16"><g> <path d="M2.13 11.733c-1.175 0-2.13.958-2.13 2.126 0 1.174.955 2.122 2.13 2.122a2.126 2.126 0 0 0 2.133-2.122 2.133 2.133 0 0 0-2.133-2.126zM.002 5.436v3.067c1.997 0 3.874.781 5.288 2.196a7.45 7.45 0 0 1 2.192 5.302h3.08c0-5.825-4.739-10.564-10.56-10.564zM.006 0v3.068C7.128 3.068 12.924 8.87 12.924 16H16C16 7.18 8.824 0 .006 0z"/> </g></symbol> <symbol id="icon-flickr" viewBox="0 0 16 16"><g> <path d="M0 8.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0zm9 0a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/> </g></symbol> <symbol id="icon-github" viewBox="0 0 16 16"><g> <path d="M8 .198a8 8 0 0 0-2.529 15.591c.4.074.547-.174.547-.385 0-.191-.008-.821-.011-1.489-2.226.484-2.695-.944-2.695-.944-.364-.925-.888-1.171-.888-1.171-.726-.497.055-.486.055-.486.803.056 1.226.824 1.226.824.714 1.223 1.872.869 2.328.665.072-.517.279-.87.508-1.07-1.777-.202-3.645-.888-3.645-3.954 0-.873.313-1.587.824-2.147-.083-.202-.357-1.015.077-2.117 0 0 .672-.215 2.201.82A7.672 7.672 0 0 1 8 4.066c.68.003 1.365.092 2.004.269 1.527-1.035 2.198-.82 2.198-.82.435 1.102.162 1.916.079 2.117.513.56.823 1.274.823 2.147 0 3.073-1.872 3.749-3.653 3.947.287.248.543.735.543 1.481 0 1.07-.009 1.932-.009 2.195 0 .213.144.462.55.384A8 8 0 0 0 8.001.196z"/> </g></symbol> <symbol id="icon-google-plus" viewBox="0 0 16 16"><g> <path d="M5.091 7.147v1.747h2.888c-.116.75-.872 2.197-2.888 2.197-1.737 0-3.156-1.441-3.156-3.216s1.419-3.216 3.156-3.216c.991 0 1.65.422 2.028.784L8.5 4.112c-.888-.828-2.037-1.331-3.409-1.331C2.275 2.784 0 5.059 0 7.875s2.275 5.091 5.091 5.091c2.937 0 4.888-2.066 4.888-4.975 0-.334-.037-.591-.081-.844H5.092zM16 7h-1.5V5.5H13V7h-1.5v1.5H13V10h1.5V8.5H16z"/> </g></symbol> <symbol id="icon-instagram" viewBox="0 0 22 22"><g> <path d="M15.445 0H6.554A6.559 6.559 0 0 0 0 6.554v8.891A6.559 6.559 0 0 0 6.554 22h8.891a6.56 6.56 0 0 0 6.554-6.555V6.554A6.557 6.557 0 0 0 15.445 0zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342H6.554a4.341 4.341 0 0 1-4.341-4.342V6.554a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/> <path d="M11 5.312A5.693 5.693 0 0 0 5.312 11 5.694 5.694 0 0 0 11 16.688 5.694 5.694 0 0 0 16.688 11 5.693 5.693 0 0 0 11 5.312zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zm5.7-10.484a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"/> </g></symbol> <symbol id="icon-linkedin" viewBox="0 0 16 16"><g> <path d="M6 6h2.767v1.418h.04C9.192 6.727 10.134 6 11.539 6 14.46 6 15 7.818 15 10.183V15h-2.885v-4.27c0-1.018-.021-2.329-1.5-2.329-1.502 0-1.732 1.109-1.732 2.255V15H6V6zM1 6h3v9H1V6zM4 3.5a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 4 3.5z"/> </g></symbol> <symbol id="icon-mail" viewBox="0 0 22 18"><g> <path fill="#000" d="M0 17.225V.776h22v16.447H0v.002zm3.011-1.815h15.978l-5.111-5.115L11 13.179l-2.877-2.883-5.112 5.114zm-1.216-1.275l5.077-5.09L1.795 3.98v10.155zm13.332-5.09l5.079 5.09V3.979l-5.079 5.066zm-4.126 1.588l8.022-8.027-16.045-.001 8.023 8.028z"/> </g></symbol> <symbol id="icon-npm" viewBox="0 0 16 16"><g> <path d="M0 0v16h16V0H0zm13 13h-2V5H8v8H3V3h10v10z"/> </g></symbol> <symbol id="icon-pinterest" viewBox="0 0 16 16"><g> <path d="M8 1.069a6.93 6.93 0 0 0-2.525 13.384c-.059-.547-.116-1.391.025-1.988.125-.541.813-3.444.813-3.444s-.206-.416-.206-1.028c0-.963.559-1.684 1.253-1.684.591 0 .878.444.878.975 0 .594-.378 1.484-.575 2.306-.166.691.344 1.253 1.025 1.253 1.231 0 2.178-1.3 2.178-3.175 0-1.659-1.194-2.819-2.894-2.819-1.972 0-3.128 1.478-3.128 3.009 0 .597.228 1.234.516 1.581.056.069.066.128.047.2a95.89 95.89 0 0 1-.194.787c-.031.128-.1.153-.231.094-.866-.403-1.406-1.669-1.406-2.684 0-2.188 1.587-4.194 4.578-4.194 2.403 0 4.272 1.712 4.272 4.003 0 2.388-1.506 4.313-3.597 4.313-.703 0-1.362-.366-1.588-.797 0 0-.347 1.322-.431 1.647-.156.603-.578 1.356-.862 1.816a6.93 6.93 0 0 0 8.984-6.622 6.931 6.931 0 0 0-6.931-6.934z"/> </g></symbol> <symbol id="icon-search" viewBox="0 0 16 16"><g> <path d="M15.504 13.616l-3.79-3.223c-.392-.353-.811-.514-1.149-.499a6 6 0 1 0-.672.672c-.016.338.146.757.499 1.149l3.223 3.79c.552.613 1.453.665 2.003.115s.498-1.452-.115-2.003zM6 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/> </g></symbol> <symbol id="icon-tumblr" viewBox="0 0 16 16"><g> <path d="M9.001 7v3.659c0 .928-.012 1.463.086 1.727.098.262.342.534.609.691.354.212.758.318 1.214.318.81 0 1.289-.107 2.09-.633v2.405a9.089 9.089 0 0 1-1.833.639A7.93 7.93 0 0 1 9.369 16a4.9 4.9 0 0 1-1.725-.276 4.195 4.195 0 0 1-1.438-.79c-.398-.343-.672-.706-.826-1.091s-.23-.944-.23-1.676V6.556H3.003V4.29c.628-.204 1.331-.497 1.778-.877a4.386 4.386 0 0 0 1.08-1.374C6.133 1.505 6.32.825 6.422 0h2.579v4H13v3H9.001z"/> </g></symbol> <symbol id="icon-twitter" viewBox="0 0 16 16"><g> <path d="M16 3.538a6.461 6.461 0 0 1-1.884.516 3.301 3.301 0 0 0 1.444-1.816 6.607 6.607 0 0 1-2.084.797 3.28 3.28 0 0 0-2.397-1.034 3.28 3.28 0 0 0-3.197 4.028 9.321 9.321 0 0 1-6.766-3.431 3.284 3.284 0 0 0 1.015 4.381A3.301 3.301 0 0 1 .643 6.57v.041A3.283 3.283 0 0 0 3.277 9.83a3.291 3.291 0 0 1-1.485.057 3.293 3.293 0 0 0 3.066 2.281 6.586 6.586 0 0 1-4.862 1.359 9.286 9.286 0 0 0 5.034 1.475c6.037 0 9.341-5.003 9.341-9.341 0-.144-.003-.284-.009-.425a6.59 6.59 0 0 0 1.637-1.697z"/> </g></symbol> <symbol id="icon-vimeo" viewBox="0 0 16 16"><g> <path d="M15.994 4.281c-.072 1.556-1.159 3.691-3.263 6.397-2.175 2.825-4.016 4.241-5.522 4.241-.931 0-1.722-.859-2.366-2.581-.431-1.578-.859-3.156-1.291-4.734-.478-1.722-.991-2.581-1.541-2.581-.119 0-.538.253-1.256.753l-.753-.969c.791-.694 1.569-1.388 2.334-2.081 1.053-.909 1.844-1.387 2.372-1.438 1.244-.119 2.013.731 2.3 2.553.309 1.966.525 3.188.647 3.666.359 1.631.753 2.447 1.184 2.447.334 0 .838-.528 1.509-1.588.669-1.056 1.028-1.862 1.078-2.416.097-.912-.262-1.372-1.078-1.372a2.98 2.98 0 0 0-1.184.263c.787-2.575 2.287-3.825 4.506-3.753 1.641.044 2.416 1.109 2.322 3.194z"/> </g></symbol> <symbol id="icon-wordpress" viewBox="0 0 16 16"><g> <path d="M2 8c0 2.313 1.38 4.312 3.382 5.259L2.52 5.622A5.693 5.693 0 0 0 2 8zm10.05-.295c0-.722-.266-1.222-.495-1.612-.304-.482-.589-.889-.589-1.371 0-.537.418-1.037 1.008-1.037.027 0 .052.003.078.005A6.064 6.064 0 0 0 8 2.156 6.036 6.036 0 0 0 2.987 4.79c.141.004.274.007.386.007.627 0 1.599-.074 1.599-.074.323-.018.361.444.038.482 0 0-.325.037-.687.055l2.185 6.33 1.313-3.835-.935-2.495a12.304 12.304 0 0 1-.629-.055c-.323-.019-.285-.5.038-.482 0 0 .991.074 1.58.074.627 0 1.599-.074 1.599-.074.323-.018.362.444.038.482 0 0-.326.037-.687.055l2.168 6.282.599-1.947c.259-.809.457-1.389.457-1.889zm-3.945.806l-1.8 5.095a6.148 6.148 0 0 0 3.687-.093.52.52 0 0 1-.043-.081L8.105 8.511zm5.16-3.315c.026.186.04.386.04.601 0 .593-.114 1.259-.456 2.093l-1.833 5.16c1.784-1.013 2.983-2.895 2.983-5.051a5.697 5.697 0 0 0-.735-2.803zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14z"/> </g></symbol> <symbol id="icon-youtube" viewBox="0 0 16 16"><g> <path d="M15.841 4.8s-.156-1.103-.637-1.587c-.609-.637-1.291-.641-1.603-.678-2.237-.163-5.597-.163-5.597-.163h-.006s-3.359 0-5.597.163c-.313.038-.994.041-1.603.678C.317 3.697.164 4.8.164 4.8S.005 6.094.005 7.391v1.213c0 1.294.159 2.591.159 2.591s.156 1.103.634 1.588c.609.637 1.409.616 1.766.684 1.281.122 5.441.159 5.441.159s3.363-.006 5.6-.166c.313-.037.994-.041 1.603-.678.481-.484.637-1.588.637-1.588s.159-1.294.159-2.591V7.39c-.003-1.294-.162-2.591-.162-2.591zm-9.494 5.275V5.578l4.322 2.256-4.322 2.241z"/> </g></symbol></svg>
+  <header class="l-header">
+      <img alt="Title Image" src= /title-image.png />      
+    
+  </header>
+  <main id="main" class="l-main">
+
+
+<nav class="l-nav">
+  <ul class="p-menu__lists">
+    
+      
+      <li class="p-menu__listitem">
+        <a href="/">Blog</a>
+      </li>
+      
+    
+      
+      <li class="p-menu__listitem">
+        <a href="/about">About</a>
+      </li>
+      
+    
+      
+      <li class="p-menu__listitem">
+        <a href="/projects">Projects</a>
+      </li>
+      
+    
+      
+      <li class="p-menu__listitem">
+        <a href="/articles">Articles</a>
+      </li>
+      
+    
+      
+      <li class="p-menu__listitem">
+        <a href="/index.xml">RSS</a>
+      </li>
+      
+    
+  </ul>
+</nav>
+
+
+
+<article class="p-article">
+  <header>
+    <h1>My Journey in Programming Languages</h1>
+    
+    <div>
+      
+      <div class="c-time">
+        Posted on
+        <time datetime="2020-05-02T00:17:49&#43;08:00">
+          May 2, 2020
+        </time>
+      </div>
+      
+
+      
+    </div>
+  </header>
+  
+  <section id="js-article" class="p-article__body">
+    <p>In this semester, I am taking a course called Principles of Programming Language. It introduced some interesting programming language concepts such as dynamic scoping, duck typing, functional programming, and logic programming. However, what I enjoyed most in the course is that I got a lot of chance to explore and compare drastically different languages. In a 13-week semester, we had to turn in assignments written in COBOL, C, Java, Python, Perl, Prolog, and ML. This was a very exciting experience and reminded me of my very own journey in programming languages. This article is kind of like a chronicle where I record all the programming languages I got exposed to during the first 15 years of my programming &ldquo;career&rdquo;.</p>
+<h2 id="actionscript-2-and-actionscript-3">ActionScript 2 and ActionScript 3</h2>
+<p>It all began in the third year of my elementary study. At that time, Flash games such as Neopets, Mr. Snoozleberg and Club Penguin are all the rage. I remember that I always looked forward to every weekend, when I was allowed to play for an hour of Flash games with my little brother. I was so amazed by the Flash games that I wished I could make one of those someday. As a result, my mother sent me to a Flash game development summer camp held by a university in my city. My journey of programming thus began, like many of the fellow programmers out there, it was all because of the desire of making a game.</p>
+<p><br /></p>
+<p>Actionscript 2 and Flash 8 was the newest technology then, and hence they were taught in the summer camp. As a third-to-fourth-year elementary school student, it was quite difficult for me to wrap my head around many concepts of programming languages (Note that at that time programming-for-kids software was super rare, and the web wasn&rsquo;t filled with programming tutorial resources yet). However, after attending the summer camp and reading two Flash 8 tutorial books I purchased with my own allowance, I finally got a hint of how functions, variables, objects, as well as all the <code>MovieClip</code>s and <code>gotoAndStop()</code>s work. The first project I completed is a diving game, where the player controls a diver using the arrow keys, if the diver successfully reaches the bottom of the ocean without hitting any of the sharks, the player wins. Though it was an extremely simple game, the experience was so satisfying that I couldn&rsquo;t wait to dive deeper in the world of programming.</p>
+<p><br /></p>
+<p>Micromedia was purchased by Adobe soon after I completed my first project, and they switched from Actionscript 2 to Actionscript 3. The upgrade from Actionscript 2 to 3 made the language more robust and more like a real programming language. By following the update, I got a stronger sense of what data types and object-oriented programming were all about. Therefore, thinking back, I always thought of Actionscript 3 as my enlightener of programming.</p>
+<h2 id="java-c-and-c">Java, C and C++</h2>
+<p>Yahoo Knowledge+ was a popular forum like Quora back in my childhood years in Taiwan, people post questions and others answer it to gain virtual points. After the exploration of Flash and Actionscript, I wanted to go further in the world of programming and build a &ldquo;real game like MapleStory&rdquo;, so I posted my question titled <em>&ldquo;What programming language should I learn if I want to make a game like MapleStory?&quot;</em> on Yahoo Knowledge+ and waited for a response.</p>
+<p><br /></p>
+<p>The great internet replied me with Java, C, and C++. Excited, I went to the book store, and found that books with &ldquo;Java&rdquo;, &ldquo;C&rdquo; or &ldquo;C++&rdquo; in their titles were all as thick as a dictionary. I started reading them anyway. I remember that I ground through most of the contents of <em>Thinking in Java</em>, <em>C Primer Plus</em>, and <em>C++ Primer Plus</em> even though I couldn&rsquo;t grasp many of their contents. For a middle school student, this was really quite an accomplishment.</p>
+<p><br /></p>
+<p>The concepts of pointer, reference, pass-by-value, pass-by-reference, and inheritance finally clicked in my mind after the long grind of flipping through the pages. Though I did not completed any big project aside from a calculator using Java Spring, these few years of reading truly enhanced my knowledge in programming, and later on made my university studies a lot more easier than my fellow classmates. (Few years later during my university years, whenever a classmate was scratching their head over the ideas of pointers/references/polymorphism and inquired about my &ldquo;secret in how to write code so fast&rdquo;, I always replied that I went through all these during middle school.)</p>
+<h2 id="visual-basic">Visual Basic</h2>
+<p>Unlike all of the other middle schools in Taiwan, our school offered an elective &ldquo;hobby&rdquo; course for grade eight students. I chose &ldquo;Introduction to Programming&rdquo; of course. The teacher taught the course using the notorious Visual Basic, the most prevalent &ldquo;for educational purposes&rdquo; language at that time. With the knowledge of Java, C, and C++, learning Visual Basic was really dull and painful, but what&rsquo;s more painful was to watch over half of the classmates struggling with Visual Basic and hating programming after the course. Really, thinking back, we might have lost many programming talents just because they were introduced to programming using Visual Basic (or C and C++), and was frightened off after their attempt on learning it. (We can clearly see a rise in beginner or hobbyist programmers these years, and I think this is partly because of the switch of beginner programming language from Visual Basic to Python, JavaScript, or even Scratch.)</p>
+<p><br /></p>
+<p>I completed a small &ldquo;tool-collection&rdquo; project (including a toy MS Paint, a guessing game, a calculator, some other random stuff which I can&rsquo;t remember) using Visual Basic after the course and swore that I would never touch that language ever again.</p>
+<h2 id="c-and-java-again">C and Java again&hellip;</h2>
+<p>Without a doubt, I got into the computer science major. In my university, we were introduced to the C language first, and then for the purpose of teaching OOP, we were introduced to Java. I breezed through both of the courses without learning much new, but it was still pretty satisfying to complete the problems on our online judge system.</p>
+<h2 id="ruby-and-javascript">Ruby and JavaScript</h2>
+<p>During my first year of university, I tried to get into web development on my spare time. At that time, the most popular web frameworks are Django and Ruby on Rails, and I chose Ruby on Rails. I went through some tutorials about HTML, CSS, JavaScript, and Ruby, but didn&rsquo;t really complete a project. However, this exposure to web development actually made my life easier later on, when I got a web internship in China, and couple years later when I had to develop a web app in my level 3 computer science course as well as my final year project. So it kind of worked like the Steve Jobs&rsquo;s &ldquo;connecting the dots&rdquo; quote for me.</p>
+<h2 id="php">PHP</h2>
+<p>I got a summer internship in Chongqing, China after my first year of university. I was assigned to write some simple features of a sales website using PHP. I didn&rsquo;t really enjoy the internship itself because it was not challenging at all, but it was still quite nice that I got the chance to explore a different city and interact with people of different lifestyles.</p>
+<p><br /></p>
+<p>Back to our topic, I feel like PHP just isn&rsquo;t an elegant language. It must be the fact that it was evolved from an HTML template language through many incremental steps. I heard that PHP has evolved further and become a more consistent and general-purposed language in these few years, but I didn&rsquo;t and probably wouldn&rsquo;t try out myself.</p>
+<p><br /></p>
+<p>Anyway, after I finished my internship, I decided that I don&rsquo;t enjoy web programming, so I started learning game programming next.</p>
+<h2 id="c">C#</h2>
+<p>I got a severe illness during my first semester of my second year in the university, so I suspended my studies for three entire years. During that period, I picked up the essentials of gameplay programming using the famous Unity game engine.</p>
+<p><br /></p>
+<p>When I first started to learn Unity, it offered three languages for gameplay scripting - C#, a dialect of JavaScript (often referred to as UnityScript), and Boo. Among the three, I liked the syntax of Boo most, nonetheless, I went with the mainstream C# due to its abundance of online resources.</p>
+<p><br /></p>
+<p>It turned out that programming in C# was a rather enjoyable experience. It was like a more elegant and concise Java (of course this is because C# came later than Java, so it could extract the &ldquo;good parts&rdquo; of Java). Much of the language features such as operator overloading, built-in events &amp; delegates made gameplay scripting much faster and maintainable.</p>
+<p><br /></p>
+<p>I published two games programmed in C#/Unity before I got back into university. The projects made me more confident on building software systems of larger scale, and made me want to pursue game development once again. (Spoiler: I later decided not to.)</p>
+<h2 id="swift">Swift</h2>
+<p>During the second year of my study suspension, I got very lucky and was chosen to be a student participant in Google Summer of Code 2017. I worked with the Anita Borg&rsquo;s Institute and developed a mobile game app with them. The game was separated into the Android port and iOS port, and since I was more interested in Swift than Java (most people still develop Android apps using Java instead of Kotlin back then), I chose to develop the iOS port.</p>
+<p><br /></p>
+<p>The internship was quite rewarding (I mean, both the experience and the stipend). I participated in a real-world open source software development team and got many practical software engineering experiences like how to do version control, unit testing and continuous integration.</p>
+<p><br /></p>
+<p>As for the Swift language, I really appreciate the efforts of Apple on designing a higher level and syntatically more modern language for the whole Apple ecosystem. Though Swift still includes some legacy bridges to Objective-C, many of the lower level Objective-C code could be fully expressed using Swift with more elegant code. For example, in my opinion, the replacement of pointers in Objective-C by optionals in Swift is a great decision made. This results in way more readable and reliable code.</p>
+<p><br /></p>
+<p>As a side note, when I first got into Swift, I felt that the overall design of Swift resembles C# a lot. For example, struct-typed variables are passed-by-value and class-typed variables are passed-by-reference in both languages, and they both support getter and setters.</p>
+<h2 id="gdscript">GDScript</h2>
+<p>After I completed two games using Unity, I started to look into different game engines. Godot attracted my attention by being an open source, feature-rich, and actively maintained game engine.</p>
+<p><br /></p>
+<p>After learning the basics, I planned to make a game with a larger scale than all of my previous games. The process of developing a multi-level multi-character platformer game thus began.</p>
+<p><br /></p>
+<p>Although there are many language-bindings to the Godot Engine, I went with the default language - GDScript for my development. Honestly, I feel that GDScript is pretty much like a carbon copy of Python. It&rsquo;s syntax is concise, elegant, and extremely easy to learn.</p>
+<p><br /></p>
+<p>After approximately a year&rsquo;s development, I finally published the game on Steam and completed one of my little dreams. However, after the big struggle of developing a medium-sized game all by myself, I kind of got burnt out in game development, and wanted to try doing something new.</p>
+<h2 id="dart">Dart</h2>
+<p>I finally got back into school and continued my second year studies in 2019. One of my classmate was pretty excited about Google&rsquo;s new cross-platform mobile development framework - Flutter, and spread the gospel with me. It did sound pretty exciting and fun to use, so I bought a tutorial course on Udemy and after that, started a small project.</p>
+<p><br /></p>
+<p>The project I developed was an apnea training app for free divers, since my siblings were getting into free diving and I found it interesting to create an app to help their training. But back to the topic of programming language, Flutter requires us to develop in Google&rsquo;s Dart language. Though I saw many bad words about Dart on the internet, I actually pretty enjoy using it (at least it&rsquo;s more enjoyable than JavaScript). The language is pretty solid and includes convenient features such as generics which many languages lack.</p>
+<p><br /></p>
+<p>Though I didn&rsquo;t continue my journey in Flutter development after the apnea training project, I felt like Flutter would soar and become one of the major frameworks for web/mobile client development in the coming years. The main reasons are that 1) it requires developers to learn only Dart but accomplishes HTML/CSS/JavaScript functionalities, 2) the hot reload feature makes development cycles very fast, 3) it combines declarative programming and the business logic pretty well. That&rsquo;s just my two cents, but the main takeaway for me after completing a Flutter project is that I got to appreciate the beauty of declarative UI programming. This experience later on made my learning experiences in SwiftUI, React, and Vue much smoother.</p>
+<h2 id="python-and-octave">Python and Octave</h2>
+<p>The AI hype was on after I got back into the school. Over half of my fellow classmates wanted to get into the fields of machine learning. Curious about the hype, I wanted to figure out what machine learning and deep learning really is. So, I took the famous intro course taught by Andrew Ng on Coursera and did the assignments in Octave. Also, I purchased the popular Deep Learning with Python book and went through some examples using the Keras framework.</p>
+<p><br /></p>
+<p>Overall, I think machine learning and deep learning are too math-heavy for me, and I really couldn&rsquo;t see that there will be enough job vacancies for all those aspiring machine learning practitioners. Thus, I didn&rsquo;t dive deeper in the vast field of machine learning and deep learning.</p>
+<h2 id="python-and-prolog">Python and Prolog</h2>
+<p>I still took the Introduction to AI course offered by my department even though I dislike AI, and this was a big mistake. I had to work on a substance toxicity prediction project using the TensorFlow framework, and a traditional rule-based AI project using Prolog.</p>
+<p><br /></p>
+<p>I really could not wrap my head around TensorFlow in such a short time, even though I binge watched tutorials after tutorials. At the end of the semester, I finally put together a neural network which worked kind of well for this task somehow, but I still didn&rsquo;t know why and how it worked.</p>
+<p><br /></p>
+<p>As for Prolog, it was super tough to get into since I was only exposed to the imperative programming paradigm in the past. I think the professor should teach more about logic programming in the course instead of leaving us struggling with Prolog on our own, but anyway, I still completed the project (with so much pain).</p>
+<p><br /></p>
+<p>After this course, my determination of not getting into AI fields was even stronger.</p>
+<h2 id="tons-of-java-c-and-python">Tons of Java, C, and Python</h2>
+<p>During most of the level 3-4 courses, we had to write our homework in either Java, C, or Python, which was quite reasonable since they are the most popular general purposed languages in the current decade.</p>
+<p><br /></p>
+<p>Below is a list of courses I took and their corresponding languages used:</p>
+<ul>
+<li>Data Structures: C</li>
+<li>Operating Systems: C</li>
+<li>Algorithms in Bioinformatics: C++/Python/Java</li>
+<li>Database: Java</li>
+<li>Computer Networks: C/C++</li>
+<li>AI: Python, Prolog</li>
+<li>Programming Languages: C, COBOL, Java, Python, Perl, Prolog, ML</li>
+</ul>
+<h2 id="cobol-perl-and-ml">COBOL, Perl, and ML</h2>
+<p>Yeah, we had to program projects in C, COBOL, Java, Python, Perl, Prolog, and ML within a 13-week programming language course. It sounded quite daunting at first, but after introducing the core concepts of programming languages in course, that is, binding, scoping, static vs. dynamic, it became quite easy for us to pick up a new language within a short period of time.</p>
+<p><br /></p>
+<p>COBOL is a really old, ugly and verbose language. When programming in COBOL, it makes us think like a programmer in the last century. We have to format the program within certain column numbers, divide the program into different divisions, specify the precision of a numeric type, and compose record (aka struct) types using very unreadable code. However, surprisingly, COBOL wasn&rsquo;t that hard to pick up. It&rsquo;s still an imperative language and works like the C-based languages. I probably wouldn&rsquo;t have a chance to program in COBOL again in the future, but it was a very unforgettable and cool experience to be honest.</p>
+<p><br /></p>
+<p>Perl is just like the other popular scripting languages, except it includes a lot of weird symbols like %, @, $. The OOP syntax for Perl is also quite weird, though I quite like the term <code>bless</code> for &ldquo;blessing&rdquo; a thing to become a class. Overall, learning Perl isn&rsquo;t that difficult as long as you remember what those weird %, @, $ mean.</p>
+<p><br /></p>
+<p>Prolog, as mentioned before is quite different from the imperative programming languages. Finally, after taking this programming languages course, I started to grasp the beauty of declarative logic programming languages. When programming by logic, you have to switch your mind to think about the &ldquo;what&rdquo; instead of the &ldquo;how&rdquo; of the program. That is, you don&rsquo;t think about the algorithms when programming, what you do is to state the basic rules and predicates of a program.</p>
+<p><br /></p>
+<p>ML is a pure functional language, also quite different from the ordinary imperative languages. When programming in ML, we think of functions as mathematical functions and variables are mathematical functions. Thus, ML isn&rsquo;t that hard to pick up compared to Prolog, since most of the people are already well-trained in the mathematical mindset required in functional programming. In my opinion, ML is quite straightforward and concise, functions receive parameters and output results, no side-effects at all, each variable associates with one value, so variable assignment is non-existent. Writing a program in ML is like performing different mathematical transformations through various functions, which pretty much resembles the mathematical exercises we did throughout the math courses offered by school.</p>
+<h2 id="go-and-javascript">Go and JavaScript</h2>
+<p>I started to think what I want to do after graduation these couple of months, and judging from the job vacancies in the city I wanted to work in, I figured that I would give web development a second try. I planned to pick up a frontend framework as well as a backend language. For frontend, I tried React in a Hackathon and didn&rsquo;t like the mashed up JavaScript and HTML code, so I went with Vue. As for backend, since I always preferred statically-typed languages and I wanted to try out languages aside from C# and Java, I went with Go.</p>
+<p><br /></p>
+<p>I quite enjoy programming in Go, and in my opinion, I think Go could be regarded as a modern C. Unlike most of the popular languages emerged in this century, Go preserves pointers and supports OOP in a very different way. Also, different from other mainstream languages, Go&rsquo;s interface is quite unique and somehow resembles duck typing in dynamic-typed languages. The main drawback of Go is that many basic functions and container types aren&rsquo;t included in the standard library, so you have to reinvent the wheels in many cases just like C. Also, the most common criticism on Go is that it doesn&rsquo;t support generics.</p>
+<p><br /></p>
+<p>Since I plan to pursue web development once again, I decided to build a small online web game as my final year project. Originally I planned to build it using TypeScript and Go, but after doing some research, I felt that the learning resources and communities of TypeScript still wasn&rsquo;t there yet, so I went with JavaScript and Go. However, the growing interest in TypeScript made me quite excited since I like statically-typed language over dynamically-typed language, and being able to program client-side web app using a statically-typed language is really enticing.</p>
+<h2 id="what-i-enjoyed-most">What I Enjoyed Most</h2>
+<p>I think programming language wars are quite childish and pointless, especially after taking the programming languages course. Each language has its own perks and fields of application, not to mention that the popularity of a language wanes and waxes. So, in this section, I&rsquo;m trying to list my personal preferences about programming language instead of composing a &ldquo;tier list&rdquo; of programming languages.</p>
+<p><br /></p>
+<p>As I mentioned, since I enjoy programming in statically-typed languages more, no dynamically-typed language is on the list.</p>
+<p><br /></p>
+<p>The top three are Go, Swift, and C++. In my opinion, Go preserves the good parts of C while adding modern syntax on top. Swift is elegant in a way that it wraps the ugly Object-C syntax in a more readable form. C++ is messy yet powerful, I especially like the STL of C++, and I think it provides the most straightforward ways to manipulate container data structures.</p>
+<p><br /></p>
+<p>I also pretty enjoy programming in C# and Java. The two along with Swift offer the best OOP experience for me.</p>
+<p><br /></p>
+<p>Aside from the imperative programming languages, I consider that Prolog and ML each has their own beauty, and programming in them requires us to switch to a different mindset. However, I think they are only practical in niche areas.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Just to show off, I&rsquo;ve written projects in all the following languages:</p>
+<ul>
+<li>Actionscript</li>
+<li>Java</li>
+<li>C</li>
+<li>C++</li>
+<li>Visual Basic</li>
+<li>JavaScript</li>
+<li>PHP</li>
+<li>C#</li>
+<li>Swift</li>
+<li>GDScript</li>
+<li>Dart</li>
+<li>Python</li>
+<li>Prolog</li>
+<li>COBOL</li>
+<li>Perl</li>
+<li>ML</li>
+<li>Go</li>
+</ul>
+<p>And the journey continues&hellip;</p>
+
+  </section>
+  <footer>
+    
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'shineright-studio-yu-chao';
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    <nav class="p-pagination c-pagination">
+      <div class="c-pagination__ctrl">
+        <div class="c-pagination__newer">
+          
+          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci2040/">Newer</a>
+          
+        </div>
+        <div class="c-pagination__older">
+          
+          
+        </div>
+      </div>
+    </nav>
+    
+<aside class="p-author">
+  
+  <div class="c-avatar p-author__avatar">
+    <img alt="Author Avatar" src="/avatar.png" />
+  </div>
+  
+  
+  <div class="p-author__body">
+    
+    <p class="c-title p-author__name ">Yu Chao</p>
+    
+    
+    <p>Such boredom, much time. So I write.</p>
+    
+    
+    <p>
+      <a href="mailto:chaoyu@link.cuhk.edu.hk">
+        Contact me
+      </a>
+    </p>
+    
+  </div>
+  
+</aside>
+
+
+  </footer>
+</article>
+  </main>
+  
+  <footer class="l-footer">
+    
+<ul class="c-links">
+  
+  <li class="c-links__item">
+    <a href="https://twitter.com/realYuChao" target="_blank">
+      <svg viewBox="0 0 64 64" class="c-links__icon">
+        <title>twitter</title>
+        <use xlink:href="#icon-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="c-links__item">
+    <a href="https://instagram.com/yuchao.jpg" target="_blank">
+      <svg viewBox="0 0 64 64" class="c-links__icon">
+        <title>instagram</title>
+        <use xlink:href="#icon-instagram"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="c-links__item">
+    <a href="https://github.com/YuChaoGithub" target="_blank">
+      <svg viewBox="0 0 64 64" class="c-links__icon">
+        <title>github</title>
+        <use xlink:href="#icon-github"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li class="c-links__item">
+    <a href="https://www.youtube.com/user/casd8822" target="_blank">
+      <svg viewBox="0 0 64 64" class="c-links__icon">
+        <title>youtube</title>
+        <use xlink:href="#icon-youtube"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  <li class="c-links__item">
+    <a href="https://linkedin.com/in/yu-chao-a55b85b2" target="_blank">
+      <svg viewBox="0 0 64 64" class="c-links__icon">
+        <title>linkedin</title>
+        <use xlink:href="#icon-linkedin"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+
+
+    <p class="p-copyright">
+      
+        Yu Chao (趙佑) © 2020
+      
+    </p>
+  </footer>
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-109245777-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+
+
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+</body>
+</html>
+

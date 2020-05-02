@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2020</copyright>
-    <lastBuildDate>Sat, 06 Jul 2019 21:29:47 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 00:17:49 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Journey in Programming Languages</title>
+      <link>https://YuChaoGithub.github.io/posts/my-journey-in-programming-languages/</link>
+      <pubDate>Sat, 02 May 2020 00:17:49 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/posts/my-journey-in-programming-languages/</guid>
+      <description>In this semester, I am taking a course called Principles of Programming Language. It introduced some interesting programming language concepts such as dynamic scoping, duck typing, functional programming, and logic programming. However, what I enjoyed most in the course is that I got a lot of chance to explore and compare drastically different languages. In a 13-week semester, we had to turn in assignments written in COBOL, C, Java, Python, Perl, Prolog, and ML.</description>
+    </item>
     
     <item>
       <title>Proving NP-Completeness by Restriction</title>
