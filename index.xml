@@ -13,6 +13,47 @@
     
     
     <item>
+      <title>CSCI3100 Software Engineering - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3100/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3100/</guid>
+      <description>Term Taken: 2020 Spring
+Remote Teaching due to COVID19
+Instructor: Prof. Lyu Rung Tsong Michael
+Grading Scheme  6 written assignments (20%) Group project - (free topic) web application (40%) Final exam (40%)  Midterm exam cancelled due to COVID-19
+Textbook Fundamentals of Software Engineering. (Ghezzi, Jazayeri, Mandrioli)
+Topics Covered  Software life cycle. Software qualities. Software engineering principles. Software specification: UML, DFD, FSM, petri-net, logic spec, ER-diagram. Software design: design patterns, step-wise refinement, TDN.</description>
+    </item>
+    
+    <item>
+      <title>CSCI3180 Principles of Programming Language - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3180/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3180/</guid>
+      <description>Term Taken: 2020 Spring
+Remote Teaching due to COVID19
+Instructor: Prof. Lee Ho Man Jimmy
+Grading Scheme  Programming assignments x4 (60%) Final exam (40%)  Topics Covered  Names, bindings, scoping. Data types. Expressions and assignment statements. Statement-level control structures. Subprograms. Declarative programming languages: logic programming, functional programming.  
+Covered in tutorials:
+ COBOL Python: duck typing Perl: dynamic scoping Prolog ML  Textbook Concepts of Programming Languages. (Robert W.</description>
+    </item>
+    
+    <item>
+      <title>ELTU3014 English for Engineers II - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/eltu3014/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/eltu3014/</guid>
+      <description>Term Taken: 2020 Spring
+Remote Teaching due to COVID19
+Grading Scheme  Resume writing (15%) Cover letter writing(20%) Business letter writing (25%) Mock individual interview (25%) Mock group interview (15%)  Review This is the third and final English requirement for engineering majors.
+
+The first part of the course is resume writing and business writing. It was very easy and I don&amp;rsquo;t think the marking scheme is fair enough. The teacher required us to &amp;ldquo;elaborate&amp;rdquo; on every points beneath a listing, however, I believe most of the companies prefer short and concise bullet points to long elaborations.</description>
+    </item>
+    
+    <item>
       <title>My Journey in Programming Languages</title>
       <link>https://YuChaoGithub.github.io/posts/my-journey-in-programming-languages/</link>
       <pubDate>Sat, 02 May 2020 00:17:49 +0800</pubDate>
