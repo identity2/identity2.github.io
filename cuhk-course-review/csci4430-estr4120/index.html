@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>ELTU3014 English for Engineers II - CUHK Course Review</title>
-  <meta property="og:title" content="ELTU3014 English for Engineers II - CUHK Course Review" />
-  <meta name="twitter:title" content="ELTU3014 English for Engineers II - CUHK Course Review" />
+  <title>CSCI4430/ESTR4120 Data Communication and Computer Networks - CUHK Course Review</title>
+  <meta property="og:title" content="CSCI4430/ESTR4120 Data Communication and Computer Networks - CUHK Course Review" />
+  <meta name="twitter:title" content="CSCI4430/ESTR4120 Data Communication and Computer Networks - CUHK Course Review" />
   
 
   
 
   <meta name="author" content="Yu Chao"/>
   <meta property="og:site_name" content="Shine Right Homepage" />
-  <meta property="og:url" content="https://YuChaoGithub.github.io/cuhk-course-review/eltu3014/" />
+  <meta property="og:url" content="https://YuChaoGithub.github.io/cuhk-course-review/csci4430-estr4120/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -86,7 +86,7 @@
 
 <article class="p-article">
   <header>
-    <h1>ELTU3014 English for Engineers II - CUHK Course Review</h1>
+    <h1>CSCI4430/ESTR4120 Data Communication and Computer Networks - CUHK Course Review</h1>
     
     <div>
       
@@ -98,24 +98,52 @@
   <section id="js-article" class="p-article__body">
     <p>Term Taken: 2020 Spring</p>
 <p><em>Remote Teaching due to COVID19</em></p>
+<p>Instructor: Prof. Lee Pak Ching Patrick</p>
 <h1 id="grading-scheme">Grading Scheme</h1>
 <ul>
-<li>Resume writing (15%)</li>
-<li>Cover letter writing(20%)</li>
-<li>Business letter writing (25%)</li>
-<li>Mock individual interview (25%)</li>
-<li>Mock group interview (15%)</li>
+<li>Programming assignments x3 (60%)</li>
+<li>Final exam (40%)</li>
+</ul>
+<p><em>For ESTR students, there are 5 programming assignments instead.</em></p>
+<h1 id="textbook">Textbook</h1>
+<p>Computer Networking: A Top-Down Approach. (J. Kurose and K. W. Ross)</p>
+<h1 id="topics-covered">Topics Covered</h1>
+<ul>
+<li>Socket programming.</li>
+<li>Multi-threaded programming.</li>
+<li>Application layer: HTTP, FTP, DNS.</li>
+<li>Transport layer: UDP, TCP, RDT principles.</li>
+<li>Network layer: IP, DHCP, NAT, ICMP, VPN, NFQUEUE.</li>
+<li>Link state and distance vector algorithms.</li>
+<li>Fairness and scheduling algorithms.</li>
+<li>RIP, OSPF, BGP.</li>
+<li>Link layer: ARP, ethernet, hub vs switch.</li>
+</ul>
+<p><br /></p>
+<p><strong>Additional topics for ESTR:</strong></p>
+<ul>
+<li>Applied cryptography.</li>
+<li>OpenSSL programming.</li>
+<li>Sniffing.</li>
+<li>TCP exploits.</li>
+<li>Port scans and DDoS.</li>
+<li>Firewalls and NIDS.</li>
+<li>Cellular network exploits.</li>
 </ul>
 <h1 id="review">Review</h1>
-<p>This is the third and final English requirement for engineering majors.</p>
+<p>This is an extremely important course for CS students, it basically teaches the inner workings of modern internet. The course roughly followed the textbook, and went from the top to the bottom of the network stack. That is, from application, transport, network, to link layer. The physical layer was not covered since most of it doesn&rsquo;t belong to the fields of computer science.</p>
 <p><br /></p>
-<p>The first part of the course is resume writing and business writing. It was very easy and I don&rsquo;t think the marking scheme is fair enough. The teacher required us to &ldquo;elaborate&rdquo; on every points beneath a listing, however, I believe most of the companies prefer short and concise bullet points to long elaborations. Also, since most students had the experience of writing resume and cover letters, I think most of us simply modified old resumes and turned them in. So honestly I didn&rsquo;t gain much from the first part.</p>
+<p>The contents of the course were super interesting for me because before taking the course, internet was like wizardry for me. I took it for granted that it connects the whole world together, but I hadn&rsquo;t got a single clue on how it achieves this. After taking the course, I finally realized that a simply click on a website requires a whole ton of data sending back and forth from different parties across the world. And the most basic idea of ensuring correct, lossless, and in order data transmissions requires very intricate and clever designs.</p>
 <p><br /></p>
-<p>The second part of the course is individual and group interview. It provides a chance for you to do a mock interview for a job you applied (that is, the cover letter and resume you wrote for in the first part), which is helpful in the sense that it makes you more confident and prepared. However, since the teacher wasn&rsquo;t that familiar with the engineering field, most of the questions were rather vague and general so it didn&rsquo;t really resemble engineering interviews.</p>
+<p>Though the course introduced us to almost the whole network stack, the main focus was on the transport layer and network layer. For the transport layer, we spent a lot of time discussing the principles of reliable data transfer by tackling different errors one at a time. Then we delved into the actual implementation of modern TCP. As for the network layer, routing algorithms and principles were a heavy topic. However, it should be straightforward for people good at algorithms, since routing algorithms are generally based on Dijkstra&rsquo;s Shortest Path Algorithm and Bellman-Ford&rsquo;s Algorithm.</p>
 <p><br /></p>
-<p>As for the group interview, a group of 4-5 students were thrown a topic (ours was &ldquo;How to encourage more women in tech field&rdquo;), and they discussed it for 12-15 minutes. It was just like the one done in ELTU1001, except the topic was always engineering-related. I always feel that group interview is extremely awkward and is more favorable for pretentious people. Fortunately, all of the students in my group were pretty honest people, so we let every one take turn and spoke for couple minutes to end the group interview torture smoothly. I don&rsquo;t really think many engineering companies hire people based on group interviews, so I wouldn&rsquo;t regard this assessment as super helpful to engineering students.</p>
+<p>There were three programming assignments for the regular CSCI4430 and two more for ESTR4120, all assignments were done together by a team of 2-3 people. The first assignment was to get us familiar with multi-threaded programming and the use of TCP sockets in Linux, it required us to develop a multi-client single server FTP system. Though it was time consuming, it wasn&rsquo;t too hard. The second assignment was to upgrade the first assignment to be failure-tolerant by calling an erasure coding library and making it a multi-client multi-server FTP. Since this was based on the first assignment, it was extremely important to get full marks in the first assignment, otherwise the mark deduction could cascade. The second assignment was a little trickier since we had to understand the erasure coding library first, then modify our FTP program accordingly. The third assignment was about NAT in the network layer. The task was to implement a NAT system with traffic shaping by capturing UDP packets and translating the (source IP, destination IP, source port, destination port) tuple for inbound and outbound traffic. The most difficult part of this assignment was to figure out the library interfaces of libnetfilter_queue, since the documentation was rather lacking. On top of that, the multi-threading programming in this assignment was also a little tricky, since the correct timing of mutex locks and unlocks were very important. As for the ESTR assignments, I got nothing to say since both of them were fully done by my teammate, big thanks to him.</p>
 <p><br /></p>
-<p>In conclusion, this was an ok course. We didn&rsquo;t really learn much from the course, but we got the chance to use our English skills.</p>
+<p>In conclusion, this was the most enjoyable computer science course I&rsquo;ve taken so far (not exaggerating). The information provided in this course was huge but all very useful, and the programming assignments were challenging and fun. I would recommend every computer science students take on the challenge and register this course, since it would be weird if you graduated from CS, but know nothing about how internet works.</p>
+<p><br /></p>
+<p>P.S. Also a great thanks to Prof. Lee for taking me as one of his final year project students.</p>
+<h1 id="assignment-link">Assignment Link</h1>
+<p><a href="https://github.com/YuChaoGithub/ESTR4120">GitHub</a></p>
 <p><br /></p>
 <p><a href="/course-review">More CUHK Course Reviews</a></p>
 
@@ -138,12 +166,12 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci3170/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/my-journey-in-programming-languages/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci3180/">Older</a>
+          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci3170/">Older</a>
           
         </div>
       </div>

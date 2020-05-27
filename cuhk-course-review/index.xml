@@ -54,6 +54,34 @@ The first part of the course is resume writing and business writing. It was very
     </item>
     
     <item>
+      <title>CSCI3170 Introduction to Database Systems - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3170/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3170/</guid>
+      <description>Term Taken: 2020 Spring
+Remote Teaching due to COVID19
+Instructor: Prof. Wong Man Hon
+Grading Scheme  Final exam (30%) Programming project (30%) Assignments (30%) Short assignments (10%)  Midterm exam cancelled due to COVID-19
+Textbook Database Management Systems. (Ramakrishnan, Gehrke)
+Topics Covered  ER-diagram. Relational database schema design. Relational algebra. SQL. Schema refinement and normal forms. Database application development. Database storage and indexing. Relational operation cost analysis. Concurrency control and recovery.</description>
+    </item>
+    
+    <item>
+      <title>CSCI4430/ESTR4120 Data Communication and Computer Networks - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci4430-estr4120/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci4430-estr4120/</guid>
+      <description>Term Taken: 2020 Spring
+Remote Teaching due to COVID19
+Instructor: Prof. Lee Pak Ching Patrick
+Grading Scheme  Programming assignments x3 (60%) Final exam (40%)  For ESTR students, there are 5 programming assignments instead.
+Textbook Computer Networking: A Top-Down Approach. (J. Kurose and K. W. Ross)
+Topics Covered  Socket programming. Multi-threaded programming. Application layer: HTTP, FTP, DNS. Transport layer: UDP, TCP, RDT principles. Network layer: IP, DHCP, NAT, ICMP, VPN, NFQUEUE.</description>
+    </item>
+    
+    <item>
       <title>CSCI2040 Introduction to Python - CUHK Course Review</title>
       <link>https://YuChaoGithub.github.io/cuhk-course-review/csci2040/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
