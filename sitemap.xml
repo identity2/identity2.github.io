@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://YuChaoGithub.github.io/posts/</loc>
+    <lastmod>2020-07-10T12:43:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/</loc>
+    <lastmod>2020-07-10T12:43:25+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://YuChaoGithub.github.io/cuhk-course-review/csci3100/</loc>
     <lastmod>2020-05-26T00:00:00+08:00</lastmod>
   </url>
@@ -34,11 +44,6 @@
   
   <url>
     <loc>https://YuChaoGithub.github.io/posts/my-journey-in-programming-languages/</loc>
-    <lastmod>2020-05-02T00:17:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://YuChaoGithub.github.io/posts/</loc>
     <lastmod>2020-05-02T00:17:49+08:00</lastmod>
   </url>
   

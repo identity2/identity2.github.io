@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Project: YARC - Cloning Reddit Using Go and Vue</title>
+      <link>https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/</link>
+      <pubDate>Fri, 10 Jul 2020 12:43:25 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/</guid>
+      <description>I didn&amp;rsquo;t get an internship this summer. This wasn&amp;rsquo;t because of COVID-19 or failing interviews, I simply didn&amp;rsquo;t apply to any. I felt that since I would be working something like 9-to-5 for the next 20, 30, or 40 years after I graduate, why would I spend my last summer vacation on&amp;hellip;working? So, instead of going through the anxiety of internship searching, I designed a few side projects and started working on them.</description>
+    </item>
+    
+    <item>
       <title>CSCI3100 Software Engineering - CUHK Course Review</title>
       <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3100/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
@@ -499,6 +508,7 @@ The reason why I switched to Hugo on GitHub is quite simple.</description>
       <guid>https://YuChaoGithub.github.io/articles/</guid>
       <description>This page includes all the articles published on this blog.
 Computer Science Proving NP-Completeness by Restriction
+Web Dev Project: YARC - Cloning Reddit using Go and Vue
 Game Dev Knights Rubbish Released
 Customized 2D Following Camera in Godot
 Camera Moving &amp;amp; Scene Scrolling in Metal Slug 3
@@ -506,9 +516,7 @@ A Brief Review of Godot Engine
 2D Fireworks Effect with Unity Particle System
 kQq: Mobile to Standalone
 Zero Budget Marketing for Indies
-Mobile Game: Portrait or Landscape
-Music Syncing in Rhythm Games
-Recording and Playing Audio in Unity</description>
+Mobile Game: Portrait or Landscape</description>
     </item>
     
     <item>
@@ -621,11 +629,11 @@ PowerUp iOS (Anita Borg Institute)</description>
       <guid>https://YuChaoGithub.github.io/about/</guid>
       <description>I&amp;rsquo;m Yu Chao (趙佑) from Taiwan.
 
-I am a computer science undergraduate interested in game and application development.
+I am a computer science undergraduate interested in web development, game development, and distributed systems.
 
 I kill time by reading and listening to music.
 
-I murder time by drawing, writing, making simple apps, and creating random stuff.
+I murder time by drawing, writing, developing simple apps, and creating random stuff.
 Education   BSc. Computer Science at CUHK. (2014-2015, 2019-2021)
   HSNU. (2011-2014)
   Projects Some games, apps, and artworks. Link

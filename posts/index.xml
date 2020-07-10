@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2020</copyright>
-    <lastBuildDate>Sat, 02 May 2020 00:17:49 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2020 12:43:25 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Project: YARC - Cloning Reddit Using Go and Vue</title>
+      <link>https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/</link>
+      <pubDate>Fri, 10 Jul 2020 12:43:25 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/</guid>
+      <description>I didn&amp;rsquo;t get an internship this summer. This wasn&amp;rsquo;t because of COVID-19 or failing interviews, I simply didn&amp;rsquo;t apply to any. I felt that since I would be working something like 9-to-5 for the next 20, 30, or 40 years after I graduate, why would I spend my last summer vacation on&amp;hellip;working? So, instead of going through the anxiety of internship searching, I designed a few side projects and started working on them.</description>
+    </item>
     
     <item>
       <title>My Journey in Programming Languages</title>
