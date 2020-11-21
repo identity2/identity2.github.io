@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Project: YARC - Cloning Reddit Using Go and Vue</title>
-  <meta property="og:title" content="Project: YARC - Cloning Reddit Using Go and Vue" />
-  <meta name="twitter:title" content="Project: YARC - Cloning Reddit Using Go and Vue" />
+  <title>My First CTF Experience</title>
+  <meta property="og:title" content="My First CTF Experience" />
+  <meta name="twitter:title" content="My First CTF Experience" />
   
 
   
 
   <meta name="author" content="Yu Chao"/>
   <meta property="og:site_name" content="Shine Right Homepage" />
-  <meta property="og:url" content="https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/" />
+  <meta property="og:url" content="https://YuChaoGithub.github.io/posts/my-first-ctf-experience/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -86,14 +86,14 @@
 
 <article class="p-article">
   <header>
-    <h1>Project: YARC - Cloning Reddit Using Go and Vue</h1>
+    <h1>My First CTF Experience</h1>
     
     <div>
       
       <div class="c-time">
         Posted on
-        <time datetime="2020-07-10T12:43:25&#43;08:00">
-          Jul 10, 2020
+        <time datetime="2020-11-21T16:57:32&#43;08:00">
+          Nov 21, 2020
         </time>
       </div>
       
@@ -103,47 +103,42 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <p>I didn&rsquo;t get an internship this summer. This wasn&rsquo;t because of COVID-19 or failing interviews, I simply didn&rsquo;t apply to any. I felt that since I would be working something like 9-to-5 for the next 20, 30, or 40 years after I graduate, why would I spend my last summer vacation on&hellip;working? So, instead of going through the anxiety of internship searching, I designed a few side projects and started working on them. One of them is YARC, that is, the topic of this article.</p>
+    <p>Just participated in my very first Capture the Flag (CTF) competition two weeks ago. I had never heard of CTF before I took the cybersecurity course this semester, and it didn’t interest me at first so I didn’t register for it until a friend of mine invited me to join his team. It turned out to be a fabulous experience.</p>
 <p><br /></p>
-<p>YARC stands for Yet Another Reddit Clone. As its name implies, it is a <a href="https://www.reddit.com/">Reddit</a> clone. You might wonder, what was the point of cloning an existing website. Well, first of all, after taking the <a href="/cuhk-course-review/csci3100">Software Engineering course</a> last semester, I found that I really enjoyed building websites, so I wanted to challenge myself to go through the full design-to-deploy process. Secondly, although I wanted to build a website, I have no &ldquo;innovative&rdquo; &ldquo;killer&rdquo; &ldquo;business&rdquo; ideas, so I figured I should build the site I visited most (as you might have guessed), Reddit. Thirdly, most of my previous side projects were games and mobile apps, however, since I was planning on doing backend software engineering job after I graduate, I thought a complete web project on my resume would help.</p>
-<h1 id="design-and-planning">Design and Planning</h1>
-<p>I began the design by searching for the technologies to use. Since web development is a fast moving industry, there were countless frameworks and tools for me to choose from. The popular ones were Angular, Flutter, React, Vue for frontend, and Python (Django, Flask), Ruby (on Rails), PHP (Laravel), Java (Spring Boot), Go, C# (.net), JavaScript/Typescript (node) for backend. After some considerations, I finalized my tech stack to be:</p>
-<ul>
-<li>Frontend: Vue</li>
-<li>Backend: Go</li>
-<li>Database: PostgreSQL + Redis</li>
-<li>Container: Docker</li>
-</ul>
-<h2 id="why-vue">Why Vue?</h2>
-<p>I tried React on a Hackathon last year. I also tried Flutter on a <a href="/apnea-app">side project</a> before. I disliked React because nesting HTML code in JavaScript is just too cursed to be true. Flutter, on the other hand, is pretty neat, but I thought it wasn&rsquo;t mature enough for serious web development. Thus, a natural move was to go with Vue. I bought a Udemy course on Vue and found that I quite liked the way Vue organizes its code. The division of <code>&lt;template&gt;</code>, <code>&lt;script&gt;</code>, and <code>&lt;style&gt;</code> in a document is a huge step out of React&rsquo;s mess, and the <code>data</code>, <code>props</code>, <code>watch</code>, <code>mounted</code>, <code>methods</code>, <code>computed</code>, etc properties in a Vue object just makes every thing clear and readable. So I stuck with Vue.</p>
+<p>Usually, CTF competitions can be classified into two types, namely, the “attack and defense” match where two teams battle by  attacking and defending a server, and the “jeopardy” contest where multiple teams compete to solve tricky puzzles. The CTF I attended was held by <a href="https://www.hkcert.org/">HKCert</a>. It was in the form of the “jeopardy” contest.</p>
 <p><br /></p>
-<p>Unrelated Note: My hopes on the direction of web frontend industry are 1) Let TypeScript become a thing, 2) Let WebAssembly take over. (You might have noticed, the common goal of the two is - <em>Getting rid of the error-prone JavaScript development.</em>)</p>
-<h2 id="why-go">Why Go?</h2>
-<p>So I was hanging out in this wonderful <a href="https://www.tenlong.com.tw/">Tenlong Bookstore</a> in Taipei last summer, and found this lovely <a href="https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440">book</a>. I didn&rsquo;t know why I bought it in the first place (I never coded in Go then), but the book proved very useful to me. After reading couple chapters of the book, I found the beauty in Go, and really wanted to try and develop something using it. However, the main reason of choosing Go for this project was that it was the most prominent static-typed language for backend development aside from the older languages like Java and C#. In my opinion, static-typed languages are less error-prone, more readable, and thus they speed up the development process.</p>
-<h2 id="why-postgresql">Why PostgreSQL?</h2>
-<p>Most relational databases work pretty much the same except in minor details. I went with PostgreSQL because it was arguably the most popular relational database these couple years.</p>
+<p>The puzzles were divided into Web Security, Reverse Engineering, Binary Exploit, Cryptography, Digital Forensics, and Miscellany. What we had to do was to follow the instructions of the problems and jeopardize/hack the systems to fish out the “flags”. The flags were usually in the forms of <code>hkcert20{SoMe_F1ag_str1ng}</code>, and you couldn’t believe how hyped I was whenever I dug out a single line of these strings from a complicated problem. It was like a dose of coke which pushed my sleep-deprived brain forward to solve the next problem.</p>
 <p><br /></p>
-<p>Why relational databases over NoSQL though? I argue that people should always stick to relational database as the main storage for their web app, only in very special cases should NoSQL come into the picture to <em>complement</em> the main relational database. Almost all data are relational, so relational databases simply model real world data better and more rigorously. It also makes it much simpler to perform complex updates and selects. All in all, I don&rsquo;t agree with the point of view that NoSQL &ldquo;scales&rdquo; better. To me, NoSQL is just a complementary tool for storing documents.</p>
-<h2 id="why-redis">Why Redis?</h2>
-<p>Redis was popular, so I was just testing the usage of Redis. The usage of Redis in this app is minimal. I would definite explore Redis more on future projects.</p>
-<h2 id="why-docker">Why Docker?</h2>
-<p>Why not? There wasn&rsquo;t really other choices. Like Vue, I also learned Docker through a Udemy course. I was blown away by how easy it was to develop, test, and deploy an app using images and containers. I hoped that I knew Docker back when I was developing my Software Engineering course project. A must-learn technology for all web developers (if not all software engineers).</p>
+<p>Also worth mentioning, I quite liked the scoring method. The scores you got from a problem depended on the number of teams which solved the problem. For problems solved by only 1-3 teams, you earned up to 500 points. On the other hand, for problems solved by 30+ teams, you got only a 25 points reward. Thus, solving a difficult problem granted you more points than solving 10+ simple ones. Our team managed to solve around 5 difficult problems and most of the simple ones. This made us the 5th top team in the final ranking.</p>
 <p><br /></p>
-<h1 id="the-development-process">The Development Process</h1>
-<p>I spent around 2-3 months to develop YARC. There&rsquo;s really not much to say about the development process, since it was just coding for days, but I found it very rewarding to be able to apply the knowledge I learned last semester into practice. For example, I learned HTTP, DNS, TCP in my networking course, software testing in my Software Engineering course and complex SQL queries, schema normalization in my database course. Those concepts saved me tons of time when developing and deploying YARC.</p>
+<p>Honestly I was only aiming at entering the top 30 teams before the competition, but when the contest started, quite surprisingly, our team stayed as the top 3 teams for a very long time, and it fueled our ambitions in achieving more. As a team of 4 CTF first-timers, we were more than satisfied with our final rank.</p>
+<h2 id="valuable-skills-for-ctf">Valuable Skills for CTF</h2>
+<p>A variety of skills and tools are required to solve CTF problems. As far as I am concerned, I found that the knowledge I gained from my computer networks course mattered the most. All the in-depth knowledge in IP, TCP, HTTP, DNS helped me crack a great amount of problems. Furthermore, some understanding in OS, SQL, Web development, Docker, and Cryptography also proved handy in solving some tricky problems. However, my OS and Cryptography knowledge was too shallow so I couldn’t solve most of the Binary Exploit and Cryptography problems.</p>
 <p><br /></p>
-<p>I also gained a deeper understanding on some important topics in web development such as middleware chaining, the N+1 problem in database, CORS policy and preflight request in the browser, and the mechanism of JWT authorization.</p>
-<h1 id="deployment">Deployment</h1>
-<p>Heroku offered a free tier for running an app along with free PostgreSQL and Redis attachments. Although the usage was very limiting (for example, it sleeps every 30 minutes of inactivity), I still went for it because I liked money and it was free. Also, it was extremely easy to deploy a Docker image on Heroku, so that was a natural choice.</p>
+<p>I also took a course in cybersecurity which covered some attacking techniques like SQL injection, XSS, CSRF, ROP Chain. It was good to know these methods, but they were usually too standard to provide practical uses on CTF problems. Most of the difficult CTF problems require you to have a more thorough knowledge in the fundamentals of the systems (i.e. OS, networks, web server, crypto system) so that you could tweak the standard attacking schemes into something that fits the problems.</p>
 <p><br /></p>
-<p>I deployed my frontend app on Firebase because again, it was free. How it was better than Heroku was that it would not sleep every 30 minutes of inactivity. It was for static websites only of course, so I could not deploy my backend server here.</p>
-<h1 id="conclusion">Conclusion</h1>
-<p>I just finished developing and deploying a Reddit clone web app.</p>
-<p><img src="https://i.imgur.com/jvVG5yU.png" alt="Homepage"></p>
-<h1 id="project-link">Project Link</h1>
-<p><a href="https://yarc-29bed.firebaseapp.com/">Link to YARC</a></p>
-<p><a href="https://github.com/YuChaoGithub/YARC">Source Code on GitHub</a></p>
-<p><a href="https://www.youtube.com/watch?v=BwcGhgvhw6k">Demo Video</a></p>
+<p>As for the tools, a Linux (preferably Kali Linux) is a must. Most of the Digital Forensics problems require software which is easily available on Linux. Unfortunately, most of our team members had only macOS machines, so it was very troublesome to install some ad-hoc “hacker tools” like angr, aircrack-ng, password crackers, RAID disk tools, and memory dump analyzers. However, it happened that a member and I were taking a cloud computing course where we were granted three Debian virtual machines to run map-reduce programs. We turned out using the virtual machines extensively to solve various problems which required a Linux environment. So, great thanks to <a href="/cuhk-course-review/csci4180">CSCI4180 Introduction to Cloud Computing and Storage</a>, god bless you.</p>
+<h2 id="some-interesting-problems">Some Interesting Problems</h2>
+<p>Some problems really amazed me on how they were designed, and others cracked me up for how witty and memeable they were. I’ll list three such problems here.</p>
+<h4 id="rickroll-web-security">Rickroll (Web Security)</h4>
+<p>They put down a URL in the problem description and that was it. And guess what, it <a href="https://youtu.be/dQw4w9WgXcQ">rickrolled</a> the heck out of us.</p>
+<p><br /></p>
+<p>The solution was to look for the <code>robots.txt</code> file to get the hidden URL. Then, the website located by the URL required us to enter a set of username and password. Most people were stuck in this step, including our team. Whenever you entered some random username and password sets, it would respond with a 500 internal server error. Most people were looking for the correct username and password set, but there was none. It turned out that this happened because the internal Apache server was misconfigured. By digging more information from the server, you would find that if you request the webpage with a gibberish HTTP method, you would get the flag.</p>
+<h4 id="doom-miscellany">Doom (Miscellany)</h4>
+<p>Given the Doom game files, the problem told us to &ldquo;kill the boss the obtain the flag&rdquo;.</p>
+<p><br /></p>
+<p>This problem was extremely tricky and required some divine instincts (as most problems classified in Miscellany). To solve it, I first booted up the game with a MS Dos emulator called dosbox. Then I searched on the web to check in which level was the boss located in. It turned out to be level E1M8, E2M8, E3M8, and E4M8. Since the game file given contained only levels in E1, I knew the problem was referring to the boss in level E1M8. It would take a long time to advance to the boss level (as I was bad in FPS games), so I searched for cheats online. I used sine cheat commands to warp to the boss level, gain invulnerability, and kill the bosses (it turned out to have two of them). However, when one of the bosses fell, the game crashed. I was stuck in here for literally more than three hours and finally realized that there must be something wrong with the data files of the game. Thus I did a quick search and found a software called Slade which was capable of opening and viewing Doom’s data file “DOOM1.WAD”. I scrolled through the game assets and BAM&hellip; a wild flag appeared in the frame images of the boss dying animation. The images were changed to the .png format instead of Doom’s usual image format which explained the crash.</p>
+<h4 id="conversion-center-web-security">Conversion Center (Web Security)</h4>
+<p>The problem stated that there was a flag stored in the <code>/gotenberg/flag</code> directory in the local file systems of a containerized Gotenberg (PDF conversion) web service.</p>
+<p><br /></p>
+<p>We could not directly access the file through HTTP requests, so we checked out the APIs of Gotenberg to find if there was anything useful. After some reading, we found that one of the APIs of Gotenberg was able to receive a “remote” URL, convert it into PDF format, and send it back to the requesting user. Thus, we exploited this API by sending a request asking the service to convert the file located at the URL <code>file:///gotenberg/flag</code>. The server thought it was a remote URL so it fetched the file for us anyway, and gave the flag to us in <em>beautiful</em> PDF format.</p>
+<h4 id="777-cryptography">777 (Cryptography)</h4>
+<p>I don’t remember the details of this problem too much, but the main idea was that the crypto system was based on using timestamps as the random seed and taking a Hong Kong Identification number as a parameter to generate the “randomized” result of a slot machine.</p>
+<p><br /></p>
+<p>To crack this slot machine, we wrote a short script to generate Hong Kong Identification numbers until we found a desired match for the slot machine (I forgot what was the condition of a “desired match”, but we deduced it from the source code of the problem). Then, when we started a stopwatch as soon as we entered the slot machine. Another short script we wrote aided us to calculate the exact time which, combining the HKID number, would generate <strong>777</strong> in the slot machine. Lastly, with our sweaty hands, we pressed ENTER as soon as the stopwatch reached the target timestamp (the timestamp was in seconds instead of the usual milliseconds timestamp, so we could do it by hands), and BOOM! Here goes the flag!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p><a href="https://youtu.be/dQw4w9WgXcQ">Great competition!</a></p>
+<p><span style="color: white">hkcert20{y0u_FoUnD_tH3_F1a9_cOnGr4Ts}</span></p>
 
   </section>
   <footer>
@@ -164,12 +159,12 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci3100/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/my-first-ctf-experience/">Older</a>
+          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci4180/">Older</a>
           
         </div>
       </div>

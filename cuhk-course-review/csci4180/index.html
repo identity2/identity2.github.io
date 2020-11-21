@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Project: YARC - Cloning Reddit Using Go and Vue</title>
-  <meta property="og:title" content="Project: YARC - Cloning Reddit Using Go and Vue" />
-  <meta name="twitter:title" content="Project: YARC - Cloning Reddit Using Go and Vue" />
+  <title>CSCI4180 Introduction to Cloud Computing and Storage - CUHK Course Review</title>
+  <meta property="og:title" content="CSCI4180 Introduction to Cloud Computing and Storage - CUHK Course Review" />
+  <meta name="twitter:title" content="CSCI4180 Introduction to Cloud Computing and Storage - CUHK Course Review" />
   
 
   
 
   <meta name="author" content="Yu Chao"/>
   <meta property="og:site_name" content="Shine Right Homepage" />
-  <meta property="og:url" content="https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/" />
+  <meta property="og:url" content="https://YuChaoGithub.github.io/cuhk-course-review/csci4180/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -86,14 +86,14 @@
 
 <article class="p-article">
   <header>
-    <h1>Project: YARC - Cloning Reddit Using Go and Vue</h1>
+    <h1>CSCI4180 Introduction to Cloud Computing and Storage - CUHK Course Review</h1>
     
     <div>
       
       <div class="c-time">
         Posted on
-        <time datetime="2020-07-10T12:43:25&#43;08:00">
-          Jul 10, 2020
+        <time datetime="2020-11-21T17:11:25&#43;08:00">
+          Nov 21, 2020
         </time>
       </div>
       
@@ -103,47 +103,17 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <p>I didn&rsquo;t get an internship this summer. This wasn&rsquo;t because of COVID-19 or failing interviews, I simply didn&rsquo;t apply to any. I felt that since I would be working something like 9-to-5 for the next 20, 30, or 40 years after I graduate, why would I spend my last summer vacation on&hellip;working? So, instead of going through the anxiety of internship searching, I designed a few side projects and started working on them. One of them is YARC, that is, the topic of this article.</p>
+    <p>Term Taken: 2020 Fall</p>
+<p><em>Remote Teaching due to COVID19</em></p>
+<p>Instructor: Prof. Lee Pak Ching Patrick</p>
+<h1 id="grading-scheme">Grading Scheme</h1>
+<p>To be filled.</p>
+<h1 id="topics-covered">Topics Covered</h1>
+<p>To be filled.</p>
+<h1 id="review">Review</h1>
+<p>To be filled.</p>
 <p><br /></p>
-<p>YARC stands for Yet Another Reddit Clone. As its name implies, it is a <a href="https://www.reddit.com/">Reddit</a> clone. You might wonder, what was the point of cloning an existing website. Well, first of all, after taking the <a href="/cuhk-course-review/csci3100">Software Engineering course</a> last semester, I found that I really enjoyed building websites, so I wanted to challenge myself to go through the full design-to-deploy process. Secondly, although I wanted to build a website, I have no &ldquo;innovative&rdquo; &ldquo;killer&rdquo; &ldquo;business&rdquo; ideas, so I figured I should build the site I visited most (as you might have guessed), Reddit. Thirdly, most of my previous side projects were games and mobile apps, however, since I was planning on doing backend software engineering job after I graduate, I thought a complete web project on my resume would help.</p>
-<h1 id="design-and-planning">Design and Planning</h1>
-<p>I began the design by searching for the technologies to use. Since web development is a fast moving industry, there were countless frameworks and tools for me to choose from. The popular ones were Angular, Flutter, React, Vue for frontend, and Python (Django, Flask), Ruby (on Rails), PHP (Laravel), Java (Spring Boot), Go, C# (.net), JavaScript/Typescript (node) for backend. After some considerations, I finalized my tech stack to be:</p>
-<ul>
-<li>Frontend: Vue</li>
-<li>Backend: Go</li>
-<li>Database: PostgreSQL + Redis</li>
-<li>Container: Docker</li>
-</ul>
-<h2 id="why-vue">Why Vue?</h2>
-<p>I tried React on a Hackathon last year. I also tried Flutter on a <a href="/apnea-app">side project</a> before. I disliked React because nesting HTML code in JavaScript is just too cursed to be true. Flutter, on the other hand, is pretty neat, but I thought it wasn&rsquo;t mature enough for serious web development. Thus, a natural move was to go with Vue. I bought a Udemy course on Vue and found that I quite liked the way Vue organizes its code. The division of <code>&lt;template&gt;</code>, <code>&lt;script&gt;</code>, and <code>&lt;style&gt;</code> in a document is a huge step out of React&rsquo;s mess, and the <code>data</code>, <code>props</code>, <code>watch</code>, <code>mounted</code>, <code>methods</code>, <code>computed</code>, etc properties in a Vue object just makes every thing clear and readable. So I stuck with Vue.</p>
-<p><br /></p>
-<p>Unrelated Note: My hopes on the direction of web frontend industry are 1) Let TypeScript become a thing, 2) Let WebAssembly take over. (You might have noticed, the common goal of the two is - <em>Getting rid of the error-prone JavaScript development.</em>)</p>
-<h2 id="why-go">Why Go?</h2>
-<p>So I was hanging out in this wonderful <a href="https://www.tenlong.com.tw/">Tenlong Bookstore</a> in Taipei last summer, and found this lovely <a href="https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440">book</a>. I didn&rsquo;t know why I bought it in the first place (I never coded in Go then), but the book proved very useful to me. After reading couple chapters of the book, I found the beauty in Go, and really wanted to try and develop something using it. However, the main reason of choosing Go for this project was that it was the most prominent static-typed language for backend development aside from the older languages like Java and C#. In my opinion, static-typed languages are less error-prone, more readable, and thus they speed up the development process.</p>
-<h2 id="why-postgresql">Why PostgreSQL?</h2>
-<p>Most relational databases work pretty much the same except in minor details. I went with PostgreSQL because it was arguably the most popular relational database these couple years.</p>
-<p><br /></p>
-<p>Why relational databases over NoSQL though? I argue that people should always stick to relational database as the main storage for their web app, only in very special cases should NoSQL come into the picture to <em>complement</em> the main relational database. Almost all data are relational, so relational databases simply model real world data better and more rigorously. It also makes it much simpler to perform complex updates and selects. All in all, I don&rsquo;t agree with the point of view that NoSQL &ldquo;scales&rdquo; better. To me, NoSQL is just a complementary tool for storing documents.</p>
-<h2 id="why-redis">Why Redis?</h2>
-<p>Redis was popular, so I was just testing the usage of Redis. The usage of Redis in this app is minimal. I would definite explore Redis more on future projects.</p>
-<h2 id="why-docker">Why Docker?</h2>
-<p>Why not? There wasn&rsquo;t really other choices. Like Vue, I also learned Docker through a Udemy course. I was blown away by how easy it was to develop, test, and deploy an app using images and containers. I hoped that I knew Docker back when I was developing my Software Engineering course project. A must-learn technology for all web developers (if not all software engineers).</p>
-<p><br /></p>
-<h1 id="the-development-process">The Development Process</h1>
-<p>I spent around 2-3 months to develop YARC. There&rsquo;s really not much to say about the development process, since it was just coding for days, but I found it very rewarding to be able to apply the knowledge I learned last semester into practice. For example, I learned HTTP, DNS, TCP in my networking course, software testing in my Software Engineering course and complex SQL queries, schema normalization in my database course. Those concepts saved me tons of time when developing and deploying YARC.</p>
-<p><br /></p>
-<p>I also gained a deeper understanding on some important topics in web development such as middleware chaining, the N+1 problem in database, CORS policy and preflight request in the browser, and the mechanism of JWT authorization.</p>
-<h1 id="deployment">Deployment</h1>
-<p>Heroku offered a free tier for running an app along with free PostgreSQL and Redis attachments. Although the usage was very limiting (for example, it sleeps every 30 minutes of inactivity), I still went for it because I liked money and it was free. Also, it was extremely easy to deploy a Docker image on Heroku, so that was a natural choice.</p>
-<p><br /></p>
-<p>I deployed my frontend app on Firebase because again, it was free. How it was better than Heroku was that it would not sleep every 30 minutes of inactivity. It was for static websites only of course, so I could not deploy my backend server here.</p>
-<h1 id="conclusion">Conclusion</h1>
-<p>I just finished developing and deploying a Reddit clone web app.</p>
-<p><img src="https://i.imgur.com/jvVG5yU.png" alt="Homepage"></p>
-<h1 id="project-link">Project Link</h1>
-<p><a href="https://yarc-29bed.firebaseapp.com/">Link to YARC</a></p>
-<p><a href="https://github.com/YuChaoGithub/YARC">Source Code on GitHub</a></p>
-<p><a href="https://www.youtube.com/watch?v=BwcGhgvhw6k">Demo Video</a></p>
+<p><a href="/course-review">More CUHK Course Reviews</a></p>
 
   </section>
   <footer>
@@ -164,12 +134,12 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci3100/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/posts/my-first-ctf-experience/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/posts/my-first-ctf-experience/">Older</a>
+          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci4130/">Older</a>
           
         </div>
       </div>
