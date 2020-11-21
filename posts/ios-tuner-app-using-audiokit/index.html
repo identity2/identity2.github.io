@@ -405,7 +405,7 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Pitch</span> {
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Tuner</span> {
     <span style="color:#66d9ef">let</span> pollingInterval = <span style="color:#ae81ff">0.05</span>
     
     <span style="color:#66d9ef">var</span> pollingTimer: Timer?
@@ -458,7 +458,7 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Pitch</span> {
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Tuner</span> {
     <span style="color:#66d9ef">var</span> delegate: TunerDelegate?
 
     <span style="color:#75715e">// ...code omitted...</span>
@@ -493,7 +493,7 @@
 <p><br /></p>
 <p>The view class could then utilize the <code>Tuner</code> class by adopting the <code>TunerDelegate</code> protocol, calling <code>start()</code> to start, implementing <code>tunerDidTick(pitch:errRatio:)</code> to receive processed information of the tuner, and calling <code>stop()</code> to stop the tuner.</p>
 <p><br /></p>
-<p>Such a wonderful day.</p>
+<p>Nice.</p>
 
   </section>
   <footer>
