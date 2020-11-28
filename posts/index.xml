@@ -215,15 +215,6 @@ Continuous Integration Continuous Integration is the process of building and tes
     </item>
     
     <item>
-      <title>SQLite Database Singleton Class for iOS in Swift 3</title>
-      <link>https://YuChaoGithub.github.io/posts/sqlite-database-singleton-class-for-ios-in-swift-3/</link>
-      <pubDate>Sun, 25 Jun 2017 10:50:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/sqlite-database-singleton-class-for-ios-in-swift-3/</guid>
-      <description>Writing code for database querying or updating can be tedious, error-prone, and hard to manage. Therefore, abstracting the database operations into a globally accessible model class may be a nice solution. In this article, I will show you how to write a singleton class which wraps the database operations. I will use FMDB (SQLite) with Swift 3 to demonstrate, but it is just about the same for every languages and frameworks.</description>
-    </item>
-    
-    <item>
       <title>GSoC 2017 With Systers on PowerUp Project</title>
       <link>https://YuChaoGithub.github.io/posts/gsoc-2017-with-systers-on-powerup-project/</link>
       <pubDate>Sun, 21 May 2017 20:37:00 +0800</pubDate>
