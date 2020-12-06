@@ -36,8 +36,7 @@ More CUHK Course Reviews</description>
       <description>Term Taken: 2020 Fall
 Remote Teaching due to COVID19
 Instructor: Prof. Xu Qiang
-Grading Scheme  Written Homework (10%) Lab (15%) In-class exercises and quizzes (20%) Project (25%) Final exam (30%)  Topics Covered To be filled.
-Review To be filled.
+Grading Scheme  Written Homework (10%) Lab (15%) In-class exercises and quizzes (20%) Project (25%) Final exam (30%)  Topics Covered  GPIO. ARM Processor. Serial Communications: UART, SPI, I2C. Analog Interfacing. Concurrency: Interrupt vs. Polling, Scheduling. Direct Memory Access. Motor and Control Systems.  Review To be filled.
 
 More CUHK Course Reviews</description>
     </item>
@@ -51,10 +50,7 @@ More CUHK Course Reviews</description>
       <description>Term Taken: 2020 Fall
 Remote Teaching due to COVID19
 Instructor: Prof. Meng Wei
-Grading Scheme  Homework x 4 (40%) Midterm Exam (28%) Final Exam (32%)  Topics Covered To be filled.
-Review To be filled.
-
-More CUHK Course Reviews</description>
+Grading Scheme  Homework x 4 (40%) Midterm Exam (28%) Final Exam (32%)  Topics Covered  Security Principles. Memory Stack. Control Hijack. Cryptography (Symmetric/Asymmetric): Strong Hash, Block Ciphers, RSA, Diffie-Hellman Key Exchange, Certificates, Message Authentication Code. Web Security: Same-origin Policy, Cross-site Scripting, Cross-site Request Forgery, SQL Injection, UI-based Attacks. Network Security: Sniffing, Port Scanning, DNS Poisoning, DHCP Hijacking, ARP Spoofing, TLS/SSL, DoS.</description>
     </item>
     
     <item>
@@ -66,10 +62,7 @@ More CUHK Course Reviews</description>
       <description>Term Taken: 2020 Fall
 Remote Teaching due to COVID19
 Instructor: Prof. Lee Pak Ching Patrick
-Grading Scheme  Programming Group Assignments x 3 (45%) Final Exam (55%)  Topics Covered To be filled.
-Review To be filled.
-
-More CUHK Course Reviews</description>
+Grading Scheme  Programming Group Assignments x 3 (45%) Final Exam (55%)  Topics Covered  Cloud Computing Models. Hadoop: MapReduce, HDFS, YARN. MapReduce Design Patterns: Pair, Stripe, Order-inversion, Secondary Sorting. MapReduce Algorithms: Counting, Parallel Dijkstra, PageRank. Key-value Stores: BigTable, HBase, NoSQL, Amazon Dynamo. CAP Theorem. Deduplication: Rabin Fingerprinting, Indexing, Security. Facebook Haystack, f4. Zookeeper. Tail Tolerance.</description>
     </item>
     
     <item>
@@ -685,11 +678,13 @@ Tuner &amp;amp; Music Training
 Recordable Launchpad
 Artworks Doodles
 Line Stickers
+Inter-dimensional Time
 Game Prototypes / Trivial Games: Boots-Cuts
 Tall as the Sky
 Quantum Game
 Open Source Projects Below are the open source projects I&amp;rsquo;ve contributed to:
-PowerUp iOS (Anita Borg Institute)</description>
+PowerUp iOS (Anita Borg Institute)
+know your rights</description>
     </item>
     
     <item>
