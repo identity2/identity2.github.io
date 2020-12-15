@@ -131,7 +131,7 @@ Remote Teaching due to COVID19
 Instructor: Prof. Lee Pak Ching Patrick
 Grading Scheme  Programming assignments x3 (60%) Final exam (40%)  For ESTR students, there are 5 programming assignments instead.
 Textbook Computer Networking: A Top-Down Approach. (J. Kurose and K. W. Ross)
-Topics Covered  Socket programming. Multi-threaded programming. Application layer: HTTP, FTP, DNS. Transport layer: UDP, TCP, RDT principles. Network layer: IP, DHCP, NAT, ICMP, VPN, NFQUEUE.</description>
+Topics Covered  Socket programming. Multi-threaded programming. Application layer: HTTP, FTP, DNS. Transport layer: UDP, TCP, reliable data transfer principles. Network layer: IP, DHCP, NAT, ICMP, VPN, NFQUEUE.</description>
     </item>
     
     <item>
@@ -173,7 +173,7 @@ Grading Scheme Original Scheme:
 Scheme for 2019 Course Cancellation:
 The final exam was changed to a programming assignment.
 Textbook Operating Systems: Three Easy Pieces
-Topics Covered  Basic Linux systems programming. System Calls. CPU Scheduling. Memory Management. Concurrency: Pthread, Semaphor.</description>
+Topics Covered  Basic Linux systems programming. System Calls. CPU Scheduling. Memory Management. Concurrency: Mutex, Pthread, Semaphor, Condition Variable.</description>
     </item>
     
     <item>
@@ -260,7 +260,7 @@ Grading Scheme  (Individual) Informative Presentation (25%) (Group) Technical Sp
 Instructor (Class A): Prof. Andrej Bogdanov
 Grading Scheme  Tutorial Participation (+ ESTR Presentation) (12.5%) Quizzes (12.5%) Midterm Exam (25%) Final Exam (50%) Homework (0%)  Textbook Introduction to Probability (2nd edition), by Bertsekas and Tsitsiklis.
 Topics Covered Probability:
- Probabilistic Model, Sets. Combinatorics. Conditional Probability, Independence. Discrete/Continuous Random Variables, PMF, PDF, CDF. Uniform, Bernoulli, Binomial, Geometric, Poisson, Exponential, Normal R.V. Bayes&amp;rsquo; Rule, Total Expectation Theorem, Total Law of Variance, Law of Iterated Expectation.</description>
+ Probabilistic Model, Sets. Combinatorics. Conditional Probability, Independence. Discrete/Continuous Random Variables, PMF, PDF, CDF. Uniform, Bernoulli, Binomial, Geometric, Poisson, Exponential, Normal Random Variables. Bayes&amp;rsquo; Rule, Total Expectation Theorem, Total Law of Variance, Law of Iterated Expectation.</description>
     </item>
     
     <item>
