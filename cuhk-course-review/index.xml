@@ -7,63 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Yu Chao (趙佑) © 2020</copyright>
-    <lastBuildDate>Sat, 21 Nov 2020 17:11:57 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/cuhk-course-review/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>GENA2342 Appreciation of Music Cultures - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/gena2342/</link>
-      <pubDate>Sat, 21 Nov 2020 17:11:57 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/gena2342/</guid>
-      <description>Term Taken: 2020 Fall
-Remote Teaching due to COVID19
-Instructor: Prof. Chiu Wai Yee Lulu
-Grading Scheme  Music Concert/Film/Show Report (50%) Essay (50%)  Topics Covered To be filled.
-Review To be filled.
-
-More CUHK Course Reviews</description>
-    </item>
-    
-    <item>
-      <title>CENG2400 Embedded System Design - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/ceng2400/</link>
-      <pubDate>Sat, 21 Nov 2020 17:11:41 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/ceng2400/</guid>
-      <description>Term Taken: 2020 Fall
-Remote Teaching due to COVID19
-Instructor: Prof. Xu Qiang
-Grading Scheme  Written Homework (10%) Lab (15%) In-class exercises and quizzes (20%) Project (25%) Final exam (30%)  Topics Covered  GPIO. ARM Processor. Serial Communications: UART, SPI, I2C. Analog Interfacing. Concurrency: Interrupt vs. Polling, Scheduling. Direct Memory Access. Motor and Control Systems.  Review To be filled.
-
-More CUHK Course Reviews</description>
-    </item>
-    
-    <item>
-      <title>CSCI4130 Cyber Security - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci4130/</link>
-      <pubDate>Sat, 21 Nov 2020 17:11:31 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci4130/</guid>
-      <description>Term Taken: 2020 Fall
-Remote Teaching due to COVID19
-Instructor: Prof. Meng Wei
-Grading Scheme  Homework x 4 (40%) Midterm Exam (28%) Final Exam (32%)  Topics Covered  Security Principles. Memory Stack. Control Hijack. Cryptography (Symmetric/Asymmetric): Strong Hash, Block Ciphers, RSA, Diffie-Hellman Key Exchange, Certificates, Message Authentication Code. Web Security: Same-origin Policy, Cross-site Scripting, Cross-site Request Forgery, SQL Injection, UI-based Attacks. Network Security: Sniffing, Port Scanning, DNS Poisoning, DHCP Hijacking, ARP Spoofing, TLS/SSL, DoS.</description>
-    </item>
-    
-    <item>
-      <title>CSCI4180 Introduction to Cloud Computing and Storage - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci4180/</link>
-      <pubDate>Sat, 21 Nov 2020 17:11:25 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci4180/</guid>
-      <description>Term Taken: 2020 Fall
-Remote Teaching due to COVID19
-Instructor: Prof. Lee Pak Ching Patrick
-Grading Scheme  Programming Group Assignments x 3 (45%) Final Exam (55%)  Topics Covered  Cloud Computing Models. Hadoop: MapReduce, HDFS, YARN. MapReduce Design Patterns: Pair, Stripe, Order-inversion, Secondary Sorting. MapReduce Algorithms: Counting, Parallel Dijkstra, PageRank. Key-value Stores: BigTable, HBase, NoSQL, Amazon Dynamo. CAP Theorem. Deduplication: Rabin Fingerprinting, Indexing, Security. Facebook Haystack, f4. Zookeeper. Tail Tolerance.</description>
-    </item>
     
     <item>
       <title>CSCI3100 Software Engineering - CUHK Course Review</title>
