@@ -6,11 +6,35 @@
     <description>Recent content on Shine Right Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Yu Chao (趙佑) © 2020</copyright>
+    <copyright>Yu Chao © 2021</copyright>
     <lastBuildDate>Sun, 12 May 2019 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSCI3280 Introduction to Multimedia Systems - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3280/</link>
+      <pubDate>Tue, 08 Jun 2021 17:11:31 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3280/</guid>
+      <description>Term Taken: 2021 Spring
+Remote Teaching due to COVID19
+Instructor: Prof. Tien-Tsin Wong
+Grading Scheme  Programming assignments x 4 (100%)  Topics Covered  Multimedia digital representation Compression algorithms View synthesis  Review Usually, this course contains a group project where students work on a P2P music streaming desktop application. However, this year, since it was online teaching, we only needed to turn in 4 programming assignments. They weren&amp;rsquo;t difficult concept-wise, but just really tricky to implement correctly since they involved some amount of 3D math.</description>
+    </item>
+    
+    <item>
+      <title>CSCI4160 Parallel and Distributed Computing - CUHK Course Review</title>
+      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci4160/</link>
+      <pubDate>Tue, 08 Jun 2021 17:11:31 +0800</pubDate>
+      
+      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci4160/</guid>
+      <description>Term Taken: 2021 Spring
+Remote Teaching due to COVID19
+Instructor: Prof. Eric Chi Li Lo
+Grading Scheme  OpenMP/pthread + SIMD programming (10%) CUDA programming (10%) OpenMPI programming (10%) Raft Implementation (30%) Final Exam (40%)  Topics Covered  Time Order, Broadcast, Mutex Leader Election, Fault, Consensus Paxos, Raft CAP Theorem, Replicated State Machine Consistency Models Transaction P2P, Blockchain OpenMP, pthread Software Hardware Co-design General-Purposed GPU, CUDA Performance Analysis MPI Lock-free programming  Review This was surely one of the top 5 most enjoyable CS courses I took at CUHK.</description>
+    </item>
     
     <item>
       <title>CENG2400 Embedded System Design - CUHK Course Review</title>
@@ -260,15 +284,6 @@ About the Instructor Andrew Ng is the co-founder of Google Brain and Coursera, a
     </item>
     
     <item>
-      <title>Trying out Medium</title>
-      <link>https://YuChaoGithub.github.io/posts/trying-out-medium/</link>
-      <pubDate>Mon, 10 Jun 2019 16:39:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/trying-out-medium/</guid>
-      <description>Haven&amp;rsquo;t been writing articles for almost half a year because I got back to school this spring. It&amp;rsquo;s really difficult to handle both the course works and side projects (such as maintaining a blog) at the same time, and I&amp;rsquo;m starting to worry that I&amp;rsquo;ll have even less time writing after I graduate. The &amp;ldquo;harsh&amp;rdquo; reality and &amp;ldquo;tough&amp;rdquo; life often change our hobbies into more &amp;ldquo;entertainment&amp;rdquo; ones unlike writing or other creative activities.</description>
-    </item>
-    
-    <item>
       <title>CSCI2100/ESTR2102 Data Structures - CUHK Course Review</title>
       <link>https://YuChaoGithub.github.io/cuhk-course-review/csci2100-estr2102/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
@@ -431,16 +446,6 @@ One day, Keshia Erasia, the founder of Knights Rubbish happened to pass by and f
     </item>
     
     <item>
-      <title>Self-Publish a Graphic Novel With Amazon KDP</title>
-      <link>https://YuChaoGithub.github.io/posts/self-publish-a-graphic-novel-with-amazon-kdp/</link>
-      <pubDate>Sun, 23 Sep 2018 17:20:39 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/self-publish-a-graphic-novel-with-amazon-kdp/</guid>
-      <description>I just self-published my very first graphic novel Inter-dimensional Time recently, using Amazon&amp;rsquo;s KDP (Kindle Direct Publish) platform. In this article, I am going to share my experience with Amazon KDP, and briefly go through the process of self-publishing.
-Introduction Amazon KDP is arguably the cheapest and most convenient self-publishing service out there. It requires no service fee and lets you publish your book in both eBook and paperback formats. The best part, as far as I&amp;rsquo;m concerned, is that the dimensions, paper material, cover art, and pricing are highly customizable.</description>
-    </item>
-    
-    <item>
       <title>iOS Tuner App Using Audiokit</title>
       <link>https://YuChaoGithub.github.io/posts/ios-tuner-app-using-audiokit/</link>
       <pubDate>Wed, 29 Aug 2018 12:23:50 +0800</pubDate>
@@ -535,37 +540,6 @@ Features  5 hilarious heroes to choose from. Local co-op arcade. Cool combo skil
     </item>
     
     <item>
-      <title>Shineright Studio starts...again and again!</title>
-      <link>https://YuChaoGithub.github.io/posts/shineright-studio-starts-again-and-again/</link>
-      <pubDate>Sun, 29 Oct 2017 20:00:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/shineright-studio-starts-again-and-again/</guid>
-      <description>Hello world, again!
-
-Well, I&amp;rsquo;ve been moving my blog around different platforms quite a bit this year. Within only 8 months I&amp;rsquo;ve switched from Google&amp;rsquo;s Blogger to a self hosted Ghost blog on an AWS server, and now, I moved all my articles on my AWS server to this new blog, using Hugo static page generator, hosted on GitHub.
-
-The reason why I switched to Hugo on GitHub is quite simple.</description>
-    </item>
-    
-    <item>
-      <title>Articles</title>
-      <link>https://YuChaoGithub.github.io/articles/</link>
-      <pubDate>Sun, 22 Oct 2017 17:58:04 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/articles/</guid>
-      <description>This page includes all the articles published on this blog.
-Computer Science Proving NP-Completeness by Restriction
-Web Dev Project: YARC - Cloning Reddit using Go and Vue
-Game Dev Knights Rubbish Released
-Customized 2D Following Camera in Godot
-Camera Moving &amp;amp; Scene Scrolling in Metal Slug 3
-A Brief Review of Godot Engine
-2D Fireworks Effect with Unity Particle System
-Music Syncing in Rhythm Games
-Recording and Playing Audio in Unity</description>
-    </item>
-    
-    <item>
       <title>Free Diving Apnea Training App</title>
       <link>https://YuChaoGithub.github.io/apnea-app/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:58 +0800</pubDate>
@@ -574,7 +548,7 @@ Recording and Playing Audio in Unity</description>
       <description>An apnea training app for free divers.
 Download On App Store (iOS)
 Google Play (Android)
-Description Everybody loves free diving. It is a dope activity which gives you strength and power.
+Description Everybody loves free diving. It gives you strength and power.
 
 This app lets you customize your apnea training tables and test your breath holding duration.
 
@@ -651,7 +625,7 @@ Features  Original Background music. Experience TRUE LOVE. Well, just kidding. F
       <pubDate>Sun, 22 Oct 2017 17:56:58 +0800</pubDate>
       
       <guid>https://YuChaoGithub.github.io/projects/</guid>
-      <description>I announce new projects on my Twitter, usually.
+      <description>(I haven&amp;rsquo;t updated many of my projects for a long time, so some of them might not work properly.)
 Games Knights Rubbish
 kQq
 Mobile Apps Free Diving Apnea Training
@@ -674,8 +648,11 @@ Know Your Rights</description>
       <pubDate>Sat, 21 Oct 2017 23:32:39 +0800</pubDate>
       
       <guid>https://YuChaoGithub.github.io/about/</guid>
-      <description>I&amp;rsquo;m Yu Chao (趙佑). I kill time by reading novels and listening to music (mostly Brit rock). I murder time by drawing, writing, and creating random stuff.
-Experience  The first couple decades of being alive. Also these.  TL;DR I am a good person. Kind of.</description>
+      <description>I&amp;rsquo;m Yu Chao. I got my BSc. Computer Science degree at the Chinese University of Hong Kong, and I&amp;rsquo;m currently a software engineer located at Taipei.
+
+I usually dump technical articles in this blog, but you might see some non-technical ones occasionally as well.
+
+This blog was named &amp;ldquo;Shine Right Studio&amp;rdquo; 5 years ago because when directly translating &amp;ldquo;Shine&amp;rdquo; and &amp;ldquo;Right&amp;rdquo; into Mandarin, they were homophones of my name.</description>
     </item>
     
     <item>
@@ -771,19 +748,6 @@ Selecting Organizations When selecting which organizations to contribute, I focu
       
       <guid>https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/</guid>
       <description>Finally finished reading the famous &amp;ldquo;The Art of Game Design: A Book of Lenses&amp;rdquo; by Jesse Schell. Jesse Schell is a professor at CMU ETC (which happens to be my dream graduate school :D) and an experienced game designer. Throughout the book, he often explains some abstract concepts by his actual experience in game designing (especially from the game Pirates of the Caribbean: Battle for Buccaneer Gold and Toontown Online which he designed) and performance art (he was a juggler during his teenage years).</description>
-    </item>
-    
-    <item>
-      <title>2D Fireworks Effect with Unity Particle System</title>
-      <link>https://YuChaoGithub.github.io/posts/2d-fireworks-effect-with-unity-particle-system/</link>
-      <pubDate>Sun, 16 Apr 2017 18:43:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/2d-fireworks-effect-with-unity-particle-system/</guid>
-      <description>Using particle systems is a wonderful way to improve the juiciness as well as the aesthetics of your game.
-
-When making my rhythm game Boots-Cuts, I used the particle system in Unity to display a little firework effect whenever a music note is hit on-beat.
-In this article, I&amp;rsquo;ll demonstrate how to make such an effect.
-Texture and Material First, we&amp;rsquo;ll have to import the the graphics which we would like the particle systems to emit (aka.</description>
     </item>
     
     <item>

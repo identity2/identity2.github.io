@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>My First CTF Experience</title>
-  <meta property="og:title" content="My First CTF Experience" />
-  <meta name="twitter:title" content="My First CTF Experience" />
+  <title>CSCI4160 Parallel and Distributed Computing - CUHK Course Review</title>
+  <meta property="og:title" content="CSCI4160 Parallel and Distributed Computing - CUHK Course Review" />
+  <meta name="twitter:title" content="CSCI4160 Parallel and Distributed Computing - CUHK Course Review" />
   
 
   
 
   <meta name="author" content="Yu Chao"/>
   <meta property="og:site_name" content="Shine Right Homepage" />
-  <meta property="og:url" content="https://YuChaoGithub.github.io/posts/my-first-ctf-experience/" />
+  <meta property="og:url" content="https://YuChaoGithub.github.io/cuhk-course-review/csci4160/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -80,16 +80,9 @@
 
 <article class="p-article">
   <header>
-    <h1>My First CTF Experience</h1>
+    <h1>CSCI4160 Parallel and Distributed Computing - CUHK Course Review</h1>
     
     <div>
-      
-      <div class="c-time">
-        Posted on
-        <time datetime="2020-11-21T16:57:32&#43;08:00">
-          Nov 21, 2020
-        </time>
-      </div>
       
 
       
@@ -97,42 +90,47 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <p>Just participated in my very first Capture the Flag (CTF) competition two weeks ago. I had never heard of CTF before I took the cybersecurity course this semester, and it didn’t interest me at first so I didn’t register for it until a friend of mine invited me to join his team. It turned out to be a fabulous experience.</p>
+    <p>Term Taken: 2021 Spring</p>
+<p><em>Remote Teaching due to COVID19</em></p>
+<p>Instructor: Prof. Eric Chi Li Lo</p>
+<h1 id="grading-scheme">Grading Scheme</h1>
+<ul>
+<li>OpenMP/pthread + SIMD programming (10%)</li>
+<li>CUDA programming (10%)</li>
+<li>OpenMPI programming (10%)</li>
+<li>Raft Implementation (30%)</li>
+<li>Final Exam (40%)</li>
+</ul>
+<h1 id="topics-covered">Topics Covered</h1>
+<ul>
+<li>Time Order, Broadcast, Mutex</li>
+<li>Leader Election, Fault, Consensus</li>
+<li>Paxos, Raft</li>
+<li>CAP Theorem, Replicated State Machine</li>
+<li>Consistency Models</li>
+<li>Transaction</li>
+<li>P2P, Blockchain</li>
+<li>OpenMP, pthread</li>
+<li>Software Hardware Co-design</li>
+<li>General-Purposed GPU, CUDA</li>
+<li>Performance Analysis</li>
+<li>MPI</li>
+<li>Lock-free programming</li>
+</ul>
+<h1 id="review">Review</h1>
+<p>This was surely one of the top 5 most enjoyable CS courses I took at CUHK. It systematically taught us some important systems-related topics. If you enjoyed Operating Systems (CSCI3150), Database (CSCI3170), and Cloud Computing (CSCI4180), this course is for you. It gave a good review and deeper dive on the previous three courses while connecting them so we could see the big picture.</p>
 <p><br /></p>
-<p>Usually, CTF competitions can be classified into two types, namely, the “attack and defense” match where two teams battle by  attacking and defending a server, and the “jeopardy” contest where multiple teams compete to solve tricky puzzles. The CTF I attended was held by <a href="https://www.hkcert.org/">HKCert</a>. It was in the form of the “jeopardy” contest.</p>
+<p>Although the lectures were more theoretical, the homework offered quality hands-on programming exercises. In the parallel programming part, we had to solve the <a href="https://en.wikipedia.org/wiki/Maxima_of_a_point_set">&ldquo;maxima of a point set&rdquo;</a> problem three times, using OpenMP/pthread and SIMD for the first time, CUDA for the second time, and OpenMPI for the third time. This assignment was quite challenging since we only got 60% score if our program was fully correct, the 40% was calculated by the running speed of the program. We had to beat the running time of TA&rsquo;s solution to obtain full marks.</p>
 <p><br /></p>
-<p>The puzzles were divided into Web Security, Reverse Engineering, Binary Exploit, Cryptography, Digital Forensics, and Miscellany. What we had to do was to follow the instructions of the problems and jeopardize/hack the systems to fish out the “flags”. The flags were usually in the forms of <code>hkcert20{SoMe_F1ag_str1ng}</code>, and you couldn’t believe how hyped I was whenever I dug out a single line of these strings from a complicated problem. It was like having a line of coke which pushed my sleep-deprived brain forward to solve the next problem.</p>
+<p>As for the distributed programming homework, we had to implement the Raft consensus algorithm using either Java or Go. Most of the students used Go because it&rsquo;s got some nice multi-threaded primitives such as goroutines and channels. This homework was a great challenge for most of the students because we had to read and fully understand the Raft paper before heading into actual programming. Furthermore, since many students weren&rsquo;t familiar with Go, it made the matter more complex. However, completing the homework was extremely rewarding, as I not only gained hands-on experience in programming something non-trivial using the popular Go language but also comprehended the elegance of a distributed consensus algorithm.</p>
 <p><br /></p>
-<p>Also worth mentioning, I quite liked the scoring method. The scores you got from a problem depended on the number of teams which solved the problem. For problems solved by only 1-3 teams, you earned up to 500 points. On the other hand, for problems solved by 30+ teams, you got only a 25 points reward. Thus, solving a difficult problem granted you more points than solving 10+ simple ones. Our team managed to solve around 5 difficult problems and most of the simple ones. This made us the 5th top team in the final ranking.</p>
+<p>I really enjoyed the teaching style as well. Prof. Eric taught complex subjects step-by-step, and made it easy for us to absorb. He also made sure every student was on the same page by checking the backgrounds of all students from time to time. For example, if there were students who didn&rsquo;t take Database (CSCI3170) before, he would go over some essential concepts of Database before moving on to the actual subject.</p>
 <p><br /></p>
-<p>Honestly I was only aiming at entering the top 30 teams before the competition, but when the contest started, quite surprisingly, our team stayed as the top 3 teams for a very long time, and it fueled our ambitions in achieving more. As a team of 4 CTF first-timers, we were more than satisfied with our final rank.</p>
-<h2 id="valuable-skills-for-ctf">Valuable Skills for CTF</h2>
-<p>A variety of skills and tools are required to solve CTF problems. As far as I am concerned, I found that the knowledge I gained from my computer networks course mattered the most. All the in-depth knowledge in IP, TCP, HTTP, DNS helped me crack a great amount of problems. Furthermore, some understanding in OS, SQL, Web development, Docker, and Cryptography also proved handy in solving some tricky problems. However, my OS and Cryptography knowledge was too shallow so I couldn’t solve most of the Binary Exploit and Cryptography problems.</p>
+<p>Overall, this was one of the most challenging undergraduate course CUHK offered, but the amount of knowledge one could gain from it was totally worth it.</p>
 <p><br /></p>
-<p>I also took a course in cybersecurity which covered some attacking techniques like SQL injection, XSS, CSRF, ROP Chain. It was good to know these methods, but they were usually too standard to provide practical uses on CTF problems. Most of the difficult CTF problems require you to have a more thorough knowledge in the fundamentals of the systems (i.e. OS, networks, web server, crypto system) so that you could tweak the standard attacking schemes into something that fits the problems.</p>
+<p>P.S. This is the last course review on this blog since I&rsquo;m graduating this semester. See y&rsquo;all.</p>
 <p><br /></p>
-<p>As for the tools, a Linux (preferably Kali Linux) is a must. Most of the Digital Forensics problems require software which is easily available on Linux. Unfortunately, most of our team members had only macOS machines, so it was very troublesome to install some ad-hoc “hacker tools” like angr, aircrack-ng, password crackers, RAID disk tools, and memory dump analyzers. However, it happened that a member and I were taking a cloud computing course where we were granted three Debian virtual machines to run map-reduce programs. We turned out using the virtual machines extensively to solve various problems which required a Linux environment. So, great thanks to <a href="/cuhk-course-review/csci4180">CSCI4180 Introduction to Cloud Computing and Storage</a>, god bless you.</p>
-<h2 id="some-interesting-problems">Some Interesting Problems</h2>
-<p>Some problems really amazed me on how they were designed, and others cracked me up for how witty and memeable they were. I’ll list three such problems here.</p>
-<h4 id="rickroll-web-security">Rickroll (Web Security)</h4>
-<p>They put down a URL in the problem description and that was it. And guess what, it <a href="https://youtu.be/dQw4w9WgXcQ">rickrolled</a> the heck out of us.</p>
-<p><br /></p>
-<p>The solution was to look for the <code>robots.txt</code> file to get the hidden URL. Then, the website located by the URL required us to enter a set of username and password. Most people were stuck in this step, including our team. Whenever you entered some random username and password sets, it would respond with a 500 internal server error. Most people were looking for the correct username and password set, but there was none. It turned out that this happened because the internal Apache server was misconfigured. By digging more information from the server, you would find that if you request the webpage with a gibberish HTTP method, you would get the flag.</p>
-<h4 id="doom-miscellany">Doom (Miscellany)</h4>
-<p>Given the Doom game files, the problem told us to &ldquo;kill the boss the obtain the flag&rdquo;.</p>
-<p><br /></p>
-<p>This problem was extremely tricky and required some divine instincts (as most problems classified in Miscellany). To solve it, I first booted up the game with a MS Dos emulator called dosbox. Then I searched on the web to check in which level was the boss located in. It turned out to be level E1M8, E2M8, E3M8, and E4M8. Since the game file given contained only levels in E1, I knew the problem was referring to the boss in level E1M8. It would take a long time to advance to the boss level (as I was bad in FPS games), so I searched for cheats online. I used sine cheat commands to warp to the boss level, gain invulnerability, and kill the bosses (it turned out to have two of them). However, when one of the bosses fell, the game crashed. I was stuck in here for literally more than three hours and finally realized that there must be something wrong with the data files of the game. Thus I did a quick search and found a software called Slade which was capable of opening and viewing Doom’s data file “DOOM1.WAD”. I scrolled through the game assets and BAM&hellip; a wild flag appeared in the frame images of the boss dying animation. The images were changed to the .png format instead of Doom’s usual image format which explained the crash.</p>
-<h4 id="conversion-center-web-security">Conversion Center (Web Security)</h4>
-<p>The problem stated that there was a flag stored in the <code>/gotenberg/flag</code> directory in the local file systems of a containerized Gotenberg (PDF conversion) web service.</p>
-<p><br /></p>
-<p>We could not directly access the file through HTTP requests, so we checked out the APIs of Gotenberg to find if there was anything useful. After some reading, we found that one of the APIs of Gotenberg was able to receive a “remote” URL, convert it into PDF format, and send it back to the requesting user. Thus, we exploited this API by sending a request asking the service to convert the file located at the URL <code>file:///gotenberg/flag</code>. The server thought it was a remote URL so it fetched the file for us anyway, and gave the flag to us in <em>beautiful</em> PDF format.</p>
-<h4 id="777-cryptography">777 (Cryptography)</h4>
-<p>I don’t remember the details of this problem too much, but the main idea was that the crypto system was based on using timestamps as the random seed and taking a Hong Kong Identification number as a parameter to generate the “randomized” result of a slot machine.</p>
-<p><br /></p>
-<p>To crack this slot machine, we wrote a short script to generate Hong Kong Identification numbers until we found a desired match for the slot machine (I forgot what was the condition of a “desired match”, but we deduced it from the source code of the problem). Then, when we started a stopwatch as soon as we entered the slot machine. Another short script we wrote aided us to calculate the exact time which, combining the HKID number, would generate <strong>777</strong> in the slot machine. Lastly, with our sweaty hands, we pressed ENTER as soon as the stopwatch reached the target timestamp (the timestamp was in seconds instead of the usual milliseconds timestamp, so we could do it by hands), and BOOM! Here goes the flag!</p>
-<h2 id="conclusion">Conclusion</h2>
-<p><a href="https://youtu.be/dQw4w9WgXcQ">Great competition!</a></p>
-<p><span style="color: white">hkcert20{y0u_FoUnD_tH3_F1a9_cOnGr4Ts}</span></p>
+<p><a href="/course-review">More CUHK Course Reviews</a></p>
 
   </section>
   <footer>
@@ -153,12 +151,12 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/">Newer</a>
+          <a href="https://YuChaoGithub.github.io/cuhk-course-review/ceng2400/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci4180/">Older</a>
+          <a href="https://YuChaoGithub.github.io/cuhk-course-review/csci3280/">Older</a>
           
         </div>
       </div>

@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://YuChaoGithub.github.io/cuhk-course-review/ceng2400/</loc>
-    <lastmod>2020-12-20T17:11:41+08:00</lastmod>
+    <loc>https://YuChaoGithub.github.io/cuhk-course-review/csci3280/</loc>
+    <lastmod>2021-06-08T17:11:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://YuChaoGithub.github.io/cuhk-course-review/csci4160/</loc>
+    <lastmod>2021-06-08T17:11:31+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://YuChaoGithub.github.io/cuhk-course-review/</loc>
+    <lastmod>2021-06-08T17:11:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://YuChaoGithub.github.io/cuhk-course-review/ceng2400/</loc>
     <lastmod>2020-12-20T17:11:41+08:00</lastmod>
   </url>
   
@@ -113,11 +123,6 @@
   </url>
   
   <url>
-    <loc>https://YuChaoGithub.github.io/posts/trying-out-medium/</loc>
-    <lastmod>2019-06-10T16:39:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://YuChaoGithub.github.io/cuhk-course-review/csci2100-estr2102/</loc>
     <lastmod>2019-05-12T00:00:00+08:00</lastmod>
   </url>
@@ -198,11 +203,6 @@
   </url>
   
   <url>
-    <loc>https://YuChaoGithub.github.io/posts/self-publish-a-graphic-novel-with-amazon-kdp/</loc>
-    <lastmod>2018-09-23T17:20:39+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://YuChaoGithub.github.io/posts/ios-tuner-app-using-audiokit/</loc>
     <lastmod>2018-08-29T12:23:50+08:00</lastmod>
   </url>
@@ -235,16 +235,6 @@
   <url>
     <loc>https://YuChaoGithub.github.io/posts/stirling-formula/</loc>
     <lastmod>2017-10-30T20:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://YuChaoGithub.github.io/posts/shineright-studio-starts-again-and-again/</loc>
-    <lastmod>2017-10-29T20:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://YuChaoGithub.github.io/articles/</loc>
-    <lastmod>2017-10-22T17:58:04+08:00</lastmod>
   </url>
   
   <url>
@@ -330,11 +320,6 @@
   <url>
     <loc>https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/</loc>
     <lastmod>2017-05-01T12:37:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://YuChaoGithub.github.io/posts/2d-fireworks-effect-with-unity-particle-system/</loc>
-    <lastmod>2017-04-16T18:43:00+08:00</lastmod>
   </url>
   
   <url>

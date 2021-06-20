@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Shine Right Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Yu Chao (趙佑) © 2020</copyright>
+    <copyright>Yu Chao © 2021</copyright>
     <lastBuildDate>Sat, 21 Nov 2020 16:57:32 +0800</lastBuildDate>
     
 	<atom:link href="https://YuChaoGithub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -73,15 +73,6 @@ About the Instructor Andrew Ng is the co-founder of Google Brain and Coursera, a
     </item>
     
     <item>
-      <title>Trying out Medium</title>
-      <link>https://YuChaoGithub.github.io/posts/trying-out-medium/</link>
-      <pubDate>Mon, 10 Jun 2019 16:39:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/trying-out-medium/</guid>
-      <description>Haven&amp;rsquo;t been writing articles for almost half a year because I got back to school this spring. It&amp;rsquo;s really difficult to handle both the course works and side projects (such as maintaining a blog) at the same time, and I&amp;rsquo;m starting to worry that I&amp;rsquo;ll have even less time writing after I graduate. The &amp;ldquo;harsh&amp;rdquo; reality and &amp;ldquo;tough&amp;rdquo; life often change our hobbies into more &amp;ldquo;entertainment&amp;rdquo; ones unlike writing or other creative activities.</description>
-    </item>
-    
-    <item>
       <title>Knights Rubbish Released</title>
       <link>https://YuChaoGithub.github.io/posts/knights-rubbish-released/</link>
       <pubDate>Fri, 23 Nov 2018 11:40:19 +0800</pubDate>
@@ -91,16 +82,6 @@ About the Instructor Andrew Ng is the co-founder of Google Brain and Coursera, a
 
 Originally I was just doing some experiments with Godot Engine and trying to implement the bare bones of a platformer, but then the project grew larger and larger as I combined it with other mechanics I was testing. After a year and couple of months, Knights Rubbish was born!
 Real Photos as Game Graphics One of the coolest features in Knights Rubbish is that most of its graphics are made with processed photos.</description>
-    </item>
-    
-    <item>
-      <title>Self-Publish a Graphic Novel With Amazon KDP</title>
-      <link>https://YuChaoGithub.github.io/posts/self-publish-a-graphic-novel-with-amazon-kdp/</link>
-      <pubDate>Sun, 23 Sep 2018 17:20:39 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/self-publish-a-graphic-novel-with-amazon-kdp/</guid>
-      <description>I just self-published my very first graphic novel Inter-dimensional Time recently, using Amazon&amp;rsquo;s KDP (Kindle Direct Publish) platform. In this article, I am going to share my experience with Amazon KDP, and briefly go through the process of self-publishing.
-Introduction Amazon KDP is arguably the cheapest and most convenient self-publishing service out there. It requires no service fee and lets you publish your book in both eBook and paperback formats. The best part, as far as I&amp;rsquo;m concerned, is that the dimensions, paper material, cover art, and pricing are highly customizable.</description>
     </item>
     
     <item>
@@ -123,19 +104,6 @@ I will not delve into how I implement the views since the code is quite bulky an
       
       <guid>https://YuChaoGithub.github.io/posts/stirling-formula/</guid>
       <description>I.Introduction: The Coin Tossing Problem Whenever you have difficulty deciding something, for example, whether to attend the lectures of a course or not, the most common thing to do in this scenario is to toss a coin and see whether the heads or tails of the coin is facing up when they land. Assume that the coin you toss is uniform, meaning that the chance of the heads to land facing up is equal to the chance of the tails to land facing up.</description>
-    </item>
-    
-    <item>
-      <title>Shineright Studio starts...again and again!</title>
-      <link>https://YuChaoGithub.github.io/posts/shineright-studio-starts-again-and-again/</link>
-      <pubDate>Sun, 29 Oct 2017 20:00:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/shineright-studio-starts-again-and-again/</guid>
-      <description>Hello world, again!
-
-Well, I&amp;rsquo;ve been moving my blog around different platforms quite a bit this year. Within only 8 months I&amp;rsquo;ve switched from Google&amp;rsquo;s Blogger to a self hosted Ghost blog on an AWS server, and now, I moved all my articles on my AWS server to this new blog, using Hugo static page generator, hosted on GitHub.
-
-The reason why I switched to Hugo on GitHub is quite simple.</description>
     </item>
     
     <item>
@@ -231,19 +199,6 @@ Selecting Organizations When selecting which organizations to contribute, I focu
       
       <guid>https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/</guid>
       <description>Finally finished reading the famous &amp;ldquo;The Art of Game Design: A Book of Lenses&amp;rdquo; by Jesse Schell. Jesse Schell is a professor at CMU ETC (which happens to be my dream graduate school :D) and an experienced game designer. Throughout the book, he often explains some abstract concepts by his actual experience in game designing (especially from the game Pirates of the Caribbean: Battle for Buccaneer Gold and Toontown Online which he designed) and performance art (he was a juggler during his teenage years).</description>
-    </item>
-    
-    <item>
-      <title>2D Fireworks Effect with Unity Particle System</title>
-      <link>https://YuChaoGithub.github.io/posts/2d-fireworks-effect-with-unity-particle-system/</link>
-      <pubDate>Sun, 16 Apr 2017 18:43:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/2d-fireworks-effect-with-unity-particle-system/</guid>
-      <description>Using particle systems is a wonderful way to improve the juiciness as well as the aesthetics of your game.
-
-When making my rhythm game Boots-Cuts, I used the particle system in Unity to display a little firework effect whenever a music note is hit on-beat.
-In this article, I&amp;rsquo;ll demonstrate how to make such an effect.
-Texture and Material First, we&amp;rsquo;ll have to import the the graphics which we would like the particle systems to emit (aka.</description>
     </item>
     
     <item>
