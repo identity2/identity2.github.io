@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shine Right Homepage</title>
-    <link>https://YuChaoGithub.github.io/</link>
-    <description>Recent content on Shine Right Homepage</description>
+    <title>New Tab</title>
+    <link>chrome://newtab/</link>
+    <description>Recent content on New Tab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Yu Chao © 2021</copyright>
     <lastBuildDate>Sun, 12 May 2019 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://YuChaoGithub.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="chrome://newtab/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Google Taiwan 2021 Campus Hire Interview Experience</title>
-      <link>https://YuChaoGithub.github.io/posts/google-taiwan-2021-campus-hire-interview-experience/</link>
+      <link>chrome://newtab/posts/google-taiwan-2021-campus-hire-interview-experience/</link>
       <pubDate>Thu, 11 Nov 2021 11:11:11 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/posts/google-taiwan-2021-campus-hire-interview-experience/</guid>
+      <guid>chrome://newtab/posts/google-taiwan-2021-campus-hire-interview-experience/</guid>
       <description>I was hunting for a new grad software engineering role over the last few months and quite fortunately, Google invited me for a technical phone interview one week after I submitted my resume through their job portal. I will write down the full process of my application in this article. Verbosely.
 
 My application process, ordered chronologically:
@@ -26,10 +25,10 @@ My application process, ordered chronologically:
     
     <item>
       <title>CSCI3280 Introduction to Multimedia Systems - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3280/</link>
+      <link>chrome://newtab/cuhk-course-review/csci3280/</link>
       <pubDate>Tue, 08 Jun 2021 17:11:31 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3280/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci3280/</guid>
       <description>Term Taken: 2021 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Tien-Tsin Wong
@@ -38,10 +37,10 @@ Grading Scheme  Programming assignments x 4 (100%)  Topics Covered  Multimedia d
     
     <item>
       <title>CSCI4160 Parallel and Distributed Computing - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci4160/</link>
+      <link>chrome://newtab/cuhk-course-review/csci4160/</link>
       <pubDate>Tue, 08 Jun 2021 17:11:31 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci4160/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci4160/</guid>
       <description>Term Taken: 2021 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Eric Chi Li Lo
@@ -50,10 +49,10 @@ Grading Scheme  OpenMP/pthread + SIMD programming (10%) CUDA programming (10%) O
     
     <item>
       <title>CENG2400 Embedded System Design - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/ceng2400/</link>
+      <link>chrome://newtab/cuhk-course-review/ceng2400/</link>
       <pubDate>Sun, 20 Dec 2020 17:11:41 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/ceng2400/</guid>
+      <guid>chrome://newtab/cuhk-course-review/ceng2400/</guid>
       <description>Term Taken: 2020 Fall
 Remote Teaching due to COVID19
 Instructor: Prof. Xu Qiang
@@ -62,10 +61,10 @@ Grading Scheme  Written Homework (10%) Lab (15%) In-class exercises and quizzes 
     
     <item>
       <title>CSCI4130 Cyber Security - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci4130/</link>
+      <link>chrome://newtab/cuhk-course-review/csci4130/</link>
       <pubDate>Sun, 20 Dec 2020 17:11:31 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci4130/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci4130/</guid>
       <description>Term Taken: 2020 Fall
 Remote Teaching due to COVID19
 Instructor: Prof. Meng Wei
@@ -74,10 +73,10 @@ Grading Scheme  Homework x 4 (40%) Midterm Exam (28%) Final Exam (32%)  Topics C
     
     <item>
       <title>CSCI4180 Introduction to Cloud Computing and Storage - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci4180/</link>
+      <link>chrome://newtab/cuhk-course-review/csci4180/</link>
       <pubDate>Sun, 20 Dec 2020 17:11:25 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci4180/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci4180/</guid>
       <description>Term Taken: 2020 Fall
 Remote Teaching due to COVID19
 Instructor: Prof. Lee Pak Ching Patrick
@@ -85,31 +84,11 @@ Grading Scheme  Programming Group Assignments x 3 (45%) Final Exam (55%)  Topics
     </item>
     
     <item>
-      <title>My First CTF Experience</title>
-      <link>https://YuChaoGithub.github.io/posts/my-first-ctf-experience/</link>
-      <pubDate>Sat, 21 Nov 2020 16:57:32 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/my-first-ctf-experience/</guid>
-      <description>Just participated in my very first Capture the Flag (CTF) competition two weeks ago. I had never heard of CTF before I took the cybersecurity course this semester, and it didn’t interest me at first so I didn’t register for it until a friend of mine invited me to join his team. It turned out to be a fabulous experience.
-
-Usually, CTF competitions can be classified into two types, namely, the “attack and defense” match where two teams battle by attacking and defending a server, and the “jeopardy” contest where multiple teams compete to solve tricky puzzles.</description>
-    </item>
-    
-    <item>
-      <title>Project: YARC - Cloning Reddit Using Go and Vue</title>
-      <link>https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/</link>
-      <pubDate>Fri, 10 Jul 2020 12:43:25 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/project-yarc-cloning-reddit-using-go-and-vue/</guid>
-      <description>I didn&amp;rsquo;t get an internship this summer. This wasn&amp;rsquo;t because of COVID-19 or failing interviews, I simply didn&amp;rsquo;t apply to any. I felt that since I would be working something like 9-to-5 for the next 20, 30, or 40 years after I graduate, why would I spend my last summer vacation on&amp;hellip;working? So, instead of going through the anxiety of internship searching, I designed a few side projects and started working on them.</description>
-    </item>
-    
-    <item>
       <title>CSCI3100 Software Engineering - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3100/</link>
+      <link>chrome://newtab/cuhk-course-review/csci3100/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3100/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci3100/</guid>
       <description>Term Taken: 2020 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Lyu Rung Tsong Michael
@@ -120,10 +99,10 @@ Topics Covered  Software life cycle. Software qualities. Software engineering pr
     
     <item>
       <title>CSCI3180 Principles of Programming Language - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3180/</link>
+      <link>chrome://newtab/cuhk-course-review/csci3180/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3180/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci3180/</guid>
       <description>Term Taken: 2020 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Lee Ho Man Jimmy
@@ -134,10 +113,10 @@ Covered in tutorials:
     
     <item>
       <title>ELTU3014 English for Engineers II - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/eltu3014/</link>
+      <link>chrome://newtab/cuhk-course-review/eltu3014/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/eltu3014/</guid>
+      <guid>chrome://newtab/cuhk-course-review/eltu3014/</guid>
       <description>Term Taken: 2020 Spring
 Remote Teaching due to COVID19
 Grading Scheme  Resume writing (15%) Cover letter writing(20%) Business letter writing (25%) Mock individual interview (25%) Mock group interview (15%)  Review This is the third and final English requirement for engineering majors.
@@ -147,10 +126,10 @@ The first part of the course was resume writing and business writing. It was ver
     
     <item>
       <title>CSCI3170 Introduction to Database Systems - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3170/</link>
+      <link>chrome://newtab/cuhk-course-review/csci3170/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3170/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci3170/</guid>
       <description>Term Taken: 2020 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Wong Man Hon
@@ -161,10 +140,10 @@ Topics Covered  ER-diagram. Relational database schema design. Relational algebr
     
     <item>
       <title>CSCI4430/ESTR4120 Data Communication and Computer Networks - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci4430-estr4120/</link>
+      <link>chrome://newtab/cuhk-course-review/csci4430-estr4120/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci4430-estr4120/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci4430-estr4120/</guid>
       <description>Term Taken: 2020 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Lee Pak Ching Patrick
@@ -174,20 +153,11 @@ Topics Covered  Socket programming. Multi-threaded programming. Application laye
     </item>
     
     <item>
-      <title>My Journey in Programming Languages</title>
-      <link>https://YuChaoGithub.github.io/posts/my-journey-in-programming-languages/</link>
-      <pubDate>Sat, 02 May 2020 00:17:49 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/my-journey-in-programming-languages/</guid>
-      <description>In this semester, I am taking a course called Principles of Programming Language. It introduced some interesting programming language concepts such as dynamic scoping, duck typing, functional programming, and logic programming. However, what I enjoyed most in the course is that I got a lot of chance to explore and compare drastically different languages. In a 13-week semester, we had to turn in assignments written in COBOL, C, Java, Python, Perl, Prolog, and ML.</description>
-    </item>
-    
-    <item>
       <title>CSCI2040 Introduction to Python - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci2040/</link>
+      <link>chrome://newtab/cuhk-course-review/csci2040/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci2040/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci2040/</guid>
       <description>Term Taken: 2019 Fall
 Instructor (Class A): Prof. John Lui Chi Shing
 Grading Scheme  Programming Exercises (40%) Final Exam (60%)  Topics Covered  Python basics. Functional programming. Object-oriented programming. Regular expressions. Numpy, Scipy, Matplotlib.  Review I already knew Python, but I shamelessly registered this course for that +0.01 GPA boost. To be honest, I only attended one lecture, so I don&amp;rsquo;t know much about this course. I assume it is pretty easy for computer science majors.</description>
@@ -195,10 +165,10 @@ Grading Scheme  Programming Exercises (40%) Final Exam (60%)  Topics Covered  Py
     
     <item>
       <title>CSCI3130 Formal Language and Automata Theory - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3130/</link>
+      <link>chrome://newtab/cuhk-course-review/csci3130/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3130/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci3130/</guid>
       <description>Term Taken: 2019 Fall
 Instructor: Prof. Chan Siu On
 Grading Scheme Original Scheme:
@@ -209,10 +179,10 @@ Topics Covered  Finite Automata (DFA, NFA). Regular Expressions. Context-Free Gr
     
     <item>
       <title>CSCI3150/ESTR3102 Introduction to Operating Systems - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3150-estr3102/</link>
+      <link>chrome://newtab/cuhk-course-review/csci3150-estr3102/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3150-estr3102/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci3150-estr3102/</guid>
       <description>Term Taken: 2019 Fall
 Instructor: Prof. Shao Zili
 Grading Scheme Original Scheme:
@@ -226,10 +196,10 @@ Topics Covered  Basic Linux systems programming. System Calls. CPU Scheduling. M
     
     <item>
       <title>CSCI3160 Design and Analysis of Algorithms - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3160/</link>
+      <link>chrome://newtab/cuhk-course-review/csci3160/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3160/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci3160/</guid>
       <description>Term Taken: 2019 Fall
 Instructor: Prof. Tao Yufei
 Grading Scheme Original Scheme:
@@ -240,10 +210,10 @@ Topics Covered  Recursion. Divide and Conquer. Greedy Algorithms. Dynamic Progra
     
     <item>
       <title>CSCI3220 Algorithms for Bioinformatics - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3220/</link>
+      <link>chrome://newtab/cuhk-course-review/csci3220/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3220/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci3220/</guid>
       <description>Term Taken: 2019 Fall
 Instructor: Prof. Kevin Yip Yuk Lap
 Grading Scheme Original Scheme:
@@ -253,10 +223,10 @@ Grading Scheme Original Scheme:
     
     <item>
       <title>CSCI3230/ESTR3108 Fundamentals of Artificial Intelligence - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3230-estr3108/</link>
+      <link>chrome://newtab/cuhk-course-review/csci3230-estr3108/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3230-estr3108/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci3230-estr3108/</guid>
       <description>Term Taken: 2019 Fall
 Instructor: Prof. Leung Kwong Sak
 Grading Scheme Original Scheme:
@@ -266,10 +236,10 @@ Grading Scheme Original Scheme:
     
     <item>
       <title>Proving NP-Completeness by Restriction</title>
-      <link>https://YuChaoGithub.github.io/posts/prove-np-complete-by-restriction/</link>
+      <link>chrome://newtab/posts/prove-np-complete-by-restriction/</link>
       <pubDate>Sat, 06 Jul 2019 21:29:47 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/posts/prove-np-complete-by-restriction/</guid>
+      <guid>chrome://newtab/posts/prove-np-complete-by-restriction/</guid>
       <description>Proving NP-Completeness is a core topic in the studies of algorithms. For most of the algorithms textbooks, they show some complicated tricks which reduce a known NP-Complete problem to another problem, say Q, to prove that Q is NP-Complete. This works because if problem A reduces to problem B, then B is at least as difficult as A. And since A is NP-Complete, B is also NP-Complete.
 
 However, many problem reduction methods are extremely subtle and often require some &amp;ldquo;divine instincts&amp;rdquo; to come up with in the first place.</description>
@@ -277,30 +247,20 @@ However, many problem reduction methods are extremely subtle and often require s
     
     <item>
       <title>Music in Film Terminology</title>
-      <link>https://YuChaoGithub.github.io/posts/music-in-film-terminology/</link>
+      <link>chrome://newtab/posts/music-in-film-terminology/</link>
       <pubDate>Sat, 22 Jun 2019 09:23:30 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/posts/music-in-film-terminology/</guid>
+      <guid>chrome://newtab/posts/music-in-film-terminology/</guid>
       <description>Just took an interesting gen-eds course Music in Film last semester. Though I publish mostly technical or game dev articles on this blog, I really enjoyed the materials in the course and I&amp;rsquo;d love to share the basics (that is, the terminology) of the course here. (Note we refer &amp;ldquo;music in film&amp;rdquo; as the score music of films rather than the sound effects.)
 Tonality vs. Atonality Tonality is a principle which the music is composed to center around a tonic central.</description>
     </item>
     
     <item>
-      <title>Andrew Ng Machine Learning Course Review and Brief Notes</title>
-      <link>https://YuChaoGithub.github.io/posts/andrew-ng-machine-learning-course-review/</link>
-      <pubDate>Sat, 15 Jun 2019 10:02:39 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/andrew-ng-machine-learning-course-review/</guid>
-      <description>Just completed the renowned Andrew Ng&amp;rsquo;s Machine Learning course (on Coursera) these couple of days. Since many people are curious about this course, I will do a quick write up on how I think about this course and what I actually learned.
-About the Instructor Andrew Ng is the co-founder of Google Brain and Coursera, and an adjunct professor at Stanford University. He was also a former vice president and chief scientist at Baidu working on large scale artificial intelligence projects.</description>
-    </item>
-    
-    <item>
       <title>CSCI2100/ESTR2102 Data Structures - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci2100-estr2102/</link>
+      <link>chrome://newtab/cuhk-course-review/csci2100-estr2102/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci2100-estr2102/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci2100-estr2102/</guid>
       <description>Term Taken: 2019 Spring
 Instructor (Class A): Prof. Irwin King Kuo Ching
 Grading Scheme  Written Assignments (5%) Programming Assignments (20%) Written Midterm Exam (20%) Programming Midterm Exam (35%) Written Final Exam (20%)  Textbook Data Structures and Algorithm Analysis in C (2nd Edition), Mark Weiss, 1997.
@@ -309,10 +269,10 @@ Topics Covered  Big O, Omega, Theta Notation. Linked List. Stack. Queue. Tree: B
     
     <item>
       <title>CSCI3250 &#43; CSCI3251 Computers and Society &#43; Engineering Practicum - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/csci3250-csci3251/</link>
+      <link>chrome://newtab/cuhk-course-review/csci3250-csci3251/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/csci3250-csci3251/</guid>
+      <guid>chrome://newtab/cuhk-course-review/csci3250-csci3251/</guid>
       <description>Term Taken: 2019 Spring
 Instructor: Prof. Chau Chuck Jee
 Grading Scheme  Group Presentation (20%) Class Activities and Quiz Question Design (5%) Group Presentation Writeup (10%) Peer Evaluation (5%) Industry Visit Report x2 (20%) Reflection Article (15%) Final Quiz (10%) Project: Learning GitHub (15%)  Review This course was conducted in a &amp;ldquo;flipped classroom&amp;rdquo; fashion. In each lecture, about 4 groups (consisting of 4 people each) gave presentations on various computer science topics.</description>
@@ -320,20 +280,20 @@ Grading Scheme  Group Presentation (20%) Class Activities and Quiz Question Desi
     
     <item>
       <title>CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/course-review/</link>
+      <link>chrome://newtab/course-review/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/course-review/</guid>
+      <guid>chrome://newtab/course-review/</guid>
       <description>Below is a list of all the courses I&amp;rsquo;ve taken during my university studies at CUHK (The Chinese University of Hong Kong). For some of the courses, you could link to the reviews I&amp;rsquo;ve written. Hope this helps out some fellow CUHKers, as there&amp;rsquo;re not much CUHK course reviews out there on the internet. Feel free to send me an email if you have any questions.
 Computer Science Major Requirements  ENGG2020/ESTR2104 Digital Logic and System CSCI1130 Introduction to Computing using Java CSCI2100/ESTR2102 Data Structures CSCI3100 Software Engineering CSCI3130 Formal Language and Automata Theory CSCI3150/ESTR3102 Introduction to Operating Systems CSCI3160 Design and Analysis of Algorithms CSCI3180 Principles of Programming Languages CSCI3250+CSCI3251 Computers &amp;amp; Society + Engineering Practicum CSCI/ESTR4998+4999 Final Year Project/Thesis  Computer Science Electives  CSCI2040 Introduction to Python CSCI3170 Introduction to Database Systems CSCI3220 Algorithms for Bioinformatics CSCI3230/ESTR3108 Fundamentals of Artificial Intelligence CSCI3280 Introduction to Multimedia Systems CSCI4130 Cyber Security CSCI4180 Introduction to Cloud Computing and Storage CSCI4430/ESTR4120 Data Communication and Computer Networks CSCI4160 Parallel and Distributed Computing CENG2400 Embedded System Design  Engineering Requirements  CSCI1110/ESTR1002 Problem Solving by Programming ENGG1100 Introduction to Engineering Design  Math &amp;amp; Science Requirements  MATH1510 Calculus for Engineers ENGG1410 Vector Calculus and Linear Algebra for Engineers PHYS1110 Physics for Engineers I ENGG2520/ESTR2006 Physics for Engineers II ENGG2440/ESTR2004 Discrete Mathematics ENGG2430/ESTR2002 Probability and Statistics for Engineers  Language Requirements  CHLT1100 University Chinese I CHLT1200 University Chinese II ELTU1001 Foundation English for University Studies ELTU2014 English for Engineers ELTU3014 English for Engineers II  General Education  GENA1112 Aspects of General Education GENA1113 Student-Oriented Teaching and Seminar GENA2342 Appreciation of Music Cultures UGFH1000 In Dialogue with Humanity UGFN1000 In Dialogue with Nature UGEA2230 Introduction to Transformation in Chinese History UGEB2440 Chemistry of Food and Drinks UGEC2007 Transitional Justice UGED2133 Music in Film  Physical Education  PHED1003 Squash PHED1017 Physical Conditioning  </description>
     </item>
     
     <item>
       <title>ELTU2014 English for Engineers I - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/eltu2014/</link>
+      <link>chrome://newtab/cuhk-course-review/eltu2014/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/eltu2014/</guid>
+      <guid>chrome://newtab/cuhk-course-review/eltu2014/</guid>
       <description>Term Taken: 2019 Spring
 Grading Scheme  (Individual) Informative Presentation (25%) (Group) Technical Specification Writing (20%) (Group) Project Pitching Presentation (25%) (Group) Project Proposal (30%)  Review This is the second English requirement for engineering majors. Students were formed into groups of 4 or 5, and were asked to go through the process of:
  Coming up an &amp;ldquo;innovative&amp;rdquo; product. Writing a technical specification document of the product. Giving an informative presentation on a technical detail of the product.</description>
@@ -341,10 +301,10 @@ Grading Scheme  (Individual) Informative Presentation (25%) (Group) Technical Sp
     
     <item>
       <title>ENGG2430/ESTR2002 Probability and Statistics for Engineers - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/engg2430-estr2002/</link>
+      <link>chrome://newtab/cuhk-course-review/engg2430-estr2002/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/engg2430-estr2002/</guid>
+      <guid>chrome://newtab/cuhk-course-review/engg2430-estr2002/</guid>
       <description>Term Taken: 2019 Spring
 Instructor (Class A): Prof. Andrej Bogdanov
 Grading Scheme  Tutorial Participation (+ ESTR Presentation) (12.5%) Quizzes (12.5%) Midterm Exam (25%) Final Exam (50%) Homework (0%)  Textbook Introduction to Probability (2nd edition), by Bertsekas and Tsitsiklis.
@@ -354,10 +314,10 @@ Topics Covered Probability:
     
     <item>
       <title>UGEB2440 Chemistry of Food and Drinks - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/ugeb2440/</link>
+      <link>chrome://newtab/cuhk-course-review/ugeb2440/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/ugeb2440/</guid>
+      <guid>chrome://newtab/cuhk-course-review/ugeb2440/</guid>
       <description>Term Taken: 2019 Spring
 Instructor (Class B): Kendrew Kin Wah Mak
 Grading Scheme  Short Writings x2 (10%) (English: 2000 words, Chinese: 3500 characters) Essay (40%) Final Exam (50%)  Topics Covered Food Constituents:
@@ -367,10 +327,10 @@ Grading Scheme  Short Writings x2 (10%) (English: 2000 words, Chinese: 3500 char
     
     <item>
       <title>UGED2133 Music in Film - CUHK Course Review</title>
-      <link>https://YuChaoGithub.github.io/cuhk-course-review/uged2133/</link>
+      <link>chrome://newtab/cuhk-course-review/uged2133/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/cuhk-course-review/uged2133/</guid>
+      <guid>chrome://newtab/cuhk-course-review/uged2133/</guid>
       <description>Term Taken: 2019 Spring
 Instructor: Prof. Brian C. Thompson
 Grading Scheme  Online Discussion Participation (20%) Quiz (10%) Project (30%) Final Exam (40%)  Syllabus Terminology:
@@ -379,59 +339,47 @@ Grading Scheme  Online Discussion Participation (20%) Quiz (10%) Project (30%) F
     </item>
     
     <item>
-      <title>Knights Rubbish Released</title>
-      <link>https://YuChaoGithub.github.io/posts/knights-rubbish-released/</link>
-      <pubDate>Fri, 23 Nov 2018 11:40:19 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/knights-rubbish-released/</guid>
-      <description>My second game project Knights Rubbish has released!
-
-Originally I was just doing some experiments with Godot Engine and trying to implement the bare bones of a platformer, but then the project grew larger and larger as I combined it with other mechanics I was testing. After a year and couple of months, Knights Rubbish was born!
-Real Photos as Game Graphics One of the coolest features in Knights Rubbish is that most of its graphics are made with processed photos.</description>
-    </item>
-    
-    <item>
       <title>Knights Rubbish - Keshia Erasia</title>
-      <link>https://YuChaoGithub.github.io/knights-rubbish-heroes/keshia-erasia/</link>
+      <link>chrome://newtab/knights-rubbish-heroes/keshia-erasia/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/knights-rubbish-heroes/keshia-erasia/</guid>
+      <guid>chrome://newtab/knights-rubbish-heroes/keshia-erasia/</guid>
       <description>Lore Keshia Erasia was once the happiest eraser in the world. His owner Bobby had always placed him inside an exquisite aluminum box after using him. Though becoming smaller everyday, Keshia still enjoyed the time with Bobby…until one day, Bobby tripped on a crossbar and dropped his aluminum box on the sidewalk. The pain was enough for Bobby to forget the aluminum box and left. Keshia thus became just another forsaken rubbish on the side walk.</description>
     </item>
     
     <item>
       <title>Knights Rubbish - Othox Codox</title>
-      <link>https://YuChaoGithub.github.io/knights-rubbish-heroes/othox-codox/</link>
+      <link>chrome://newtab/knights-rubbish-heroes/othox-codox/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/knights-rubbish-heroes/othox-codox/</guid>
+      <guid>chrome://newtab/knights-rubbish-heroes/othox-codox/</guid>
       <description>Lore Othox Codox was once a magic codex written by the famous sorcerer Bobbington. Unfortunately, Bobbington was executed because he stole a loaf of bread. All Bobbington’s precious publications were torn and ripped, some burnt in the merciless flames. Othox, though almost ripped into shreds, called for the Blessings of Rabimouchinus and granted a wheel chair to aid him. He practiced the magic written inside him as he ran away from the murderers and gradually became one of the greatest magic codex in the world.</description>
     </item>
     
     <item>
       <title>Knights Rubbish - Ranawato Plato</title>
-      <link>https://YuChaoGithub.github.io/knights-rubbish-heroes/ranawato-plato/</link>
+      <link>chrome://newtab/knights-rubbish-heroes/ranawato-plato/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/knights-rubbish-heroes/ranawato-plato/</guid>
+      <guid>chrome://newtab/knights-rubbish-heroes/ranawato-plato/</guid>
       <description>Lore Ranawato Plato was once the most beloved plate of a famous philosopher, Bobus. As bad luck would have it, Bobus committed suicide due to the pain of existence. Ranawato then became an unused plate on the shelf (aka. rubbish). Overwhelmed by sad emotions, Ranawato dreamed of her deceased owner every night…until one day, a handsome spoon came and introduced himself. Ranawato thus forgot her past owner and ran away with the spoon.</description>
     </item>
     
     <item>
       <title>Knights Rubbish - Sirurueruerue Senyesuensuesue &amp; Sugsesugsem Sosas</title>
-      <link>https://YuChaoGithub.github.io/knights-rubbish-heroes/bross/</link>
+      <link>chrome://newtab/knights-rubbish-heroes/bross/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/knights-rubbish-heroes/bross/</guid>
+      <guid>chrome://newtab/knights-rubbish-heroes/bross/</guid>
       <description>Lore Sirurueruerue Senyesuensuesue &amp;amp; Sugsesugsem Sosas were once the best selling mp3 players. However, smart phones became a thing and they were thrown into the recycle bin by their owner Bobs. They joined the local gang inside the bin and became the SS brothers (even though they had no genetic ties). The gang leader Big Brother had good relationship with the founder of Knights Rubbish, Keshia Erasia, so he referred the SS brothers to Keshia.</description>
     </item>
     
     <item>
       <title>Knights Rubbish - The Knights</title>
-      <link>https://YuChaoGithub.github.io/knights-rubbish-heroes/the-knights/</link>
+      <link>chrome://newtab/knights-rubbish-heroes/the-knights/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/knights-rubbish-heroes/the-knights/</guid>
+      <guid>chrome://newtab/knights-rubbish-heroes/the-knights/</guid>
       <description>Keshia Erasia
 Wendy Floopy
 Ranawato Plato
@@ -448,47 +396,34 @@ Back to Knights Rubbish project page</description>
     
     <item>
       <title>Knights Rubbish - Wendy Floopy</title>
-      <link>https://YuChaoGithub.github.io/knights-rubbish-heroes/wendy-floopy/</link>
+      <link>chrome://newtab/knights-rubbish-heroes/wendy-floopy/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/knights-rubbish-heroes/wendy-floopy/</guid>
+      <guid>chrome://newtab/knights-rubbish-heroes/wendy-floopy/</guid>
       <description>Lore Wendy Floopy was once the 6th installation floppy disk of a famous operating system. However, then came CDs, USB drives, and well, cloud downloads as replacements of floppies, so her owner Bobates the Software Engineer tossed her in the recycling box without another glimpse. Bored, Wendy’s biggest interest became collecting CDs in the recycling box.
 
 One day, Keshia Erasia, the founder of Knights Rubbish happened to pass by and fall in love with Wendy, but Wendy refused Keshia because he is ugly.</description>
     </item>
     
     <item>
-      <title>iOS Tuner App Using Audiokit</title>
-      <link>https://YuChaoGithub.github.io/posts/ios-tuner-app-using-audiokit/</link>
-      <pubDate>Wed, 29 Aug 2018 12:23:50 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/ios-tuner-app-using-audiokit/</guid>
-      <description>I made an iOS Tuner &amp;amp; Metronome App last couple of months due to boredom. Suffering from boredom again this month, I decided to write an article on how I implement it.
-
-In this article, I will show:
- How to sample audio from the microphone using AudioKit. How to calculate the notes from raw frequencies (of the sampled audio).  
-I will not delve into how I implement the views since the code is quite bulky and tedious.</description>
-    </item>
-    
-    <item>
       <title>Quantum Game</title>
-      <link>https://YuChaoGithub.github.io/quantum-game/</link>
+      <link>chrome://newtab/quantum-game/</link>
       <pubDate>Thu, 19 Jul 2018 00:02:39 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/quantum-game/</guid>
+      <guid>chrome://newtab/quantum-game/</guid>
       <description>THIS GAME IS A PROTOTYPE. IT WAS IMPLEMENTED ONLY TO TEST OUT AND DEMONSTRATE THE CORE IDEA, SO MOST OF THE GRAPHICS AND GAME ASSETS ARE PLACEHOLDERS.
 Play Online On Itch.io
-Core Idea Quantum Game (yeah I know, what a bad title) is an action game which the players should switch between being an electron or a proton to overcome obstacles in the level.
+Core Idea Quantum Game is an action game which the players should switch between being an electron or a proton to overcome obstacles in the level.
 
 Electron and proton have difference sets of abilities, and are attracted/repelled by different objects.</description>
     </item>
     
     <item>
       <title>Inter-dimensional Time</title>
-      <link>https://YuChaoGithub.github.io/inter-dimensional-time/</link>
+      <link>chrome://newtab/inter-dimensional-time/</link>
       <pubDate>Thu, 19 Jul 2018 00:01:39 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/inter-dimensional-time/</guid>
+      <guid>chrome://newtab/inter-dimensional-time/</guid>
       <description>Purchase On Amazon Paperback
 eBook
 Sample Chapters Recipe ． Movies ． News ． Life Pro Tips ． Ads 1 ． Ads 2
@@ -499,19 +434,19 @@ Inter-dimensional Time is a cross dimensional pseudo-periodical published by Sch
     
     <item>
       <title>Sudkolimaca Answer</title>
-      <link>https://YuChaoGithub.github.io/sudkolimaca/</link>
+      <link>chrome://newtab/sudkolimaca/</link>
       <pubDate>Mon, 16 Jul 2018 13:23:39 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/sudkolimaca/</guid>
+      <guid>chrome://newtab/sudkolimaca/</guid>
       <description>Did you do it correctly?</description>
     </item>
     
     <item>
       <title>Tuner &amp; Music Training</title>
-      <link>https://YuChaoGithub.github.io/tuner-music-training/</link>
+      <link>chrome://newtab/tuner-music-training/</link>
       <pubDate>Mon, 02 Apr 2018 10:51:18 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/tuner-music-training/</guid>
+      <guid>chrome://newtab/tuner-music-training/</guid>
       <description>A minimalistic tuner &amp;amp; music training app.
 Download On App Store (iOS)
 Description This is an extremely wonderful app that not only makes the world a better place but relieves the pain of existence.
@@ -526,10 +461,10 @@ BEHOLD!!! This app fulfills your biggest childhood dream, that is, it creatively
     
     <item>
       <title>Knights Rubbish</title>
-      <link>https://YuChaoGithub.github.io/knights-rubbish/</link>
+      <link>chrome://newtab/knights-rubbish/</link>
       <pubDate>Sun, 12 Nov 2017 15:38:45 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/knights-rubbish/</guid>
+      <guid>chrome://newtab/knights-rubbish/</guid>
       <description>Store Page Steam
 Description A co-op platformer fighter game made with real photos, featuring our beloved character Keshia Erasia and his friends. They have risen from the rubbish and they seek for adventures. Exciting, eh?
 The Knights Keshia Erasia
@@ -543,20 +478,11 @@ Features  5 hilarious heroes to choose from. Local co-op arcade. Cool combo skil
     </item>
     
     <item>
-      <title>Stirling&#39;s Formula - Approximation of n!</title>
-      <link>https://YuChaoGithub.github.io/posts/stirling-formula/</link>
-      <pubDate>Mon, 30 Oct 2017 20:00:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/stirling-formula/</guid>
-      <description>I.Introduction: The Coin Tossing Problem Whenever you have difficulty deciding something, for example, whether to attend the lectures of a course or not, the most common thing to do in this scenario is to toss a coin and see whether the heads or tails of the coin is facing up when they land. Assume that the coin you toss is uniform, meaning that the chance of the heads to land facing up is equal to the chance of the tails to land facing up.</description>
-    </item>
-    
-    <item>
       <title>Free Diving Apnea Training App</title>
-      <link>https://YuChaoGithub.github.io/apnea-app/</link>
+      <link>chrome://newtab/apnea-app/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:58 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/apnea-app/</guid>
+      <guid>chrome://newtab/apnea-app/</guid>
       <description>An apnea training app for free divers.
 Download On App Store (iOS)
 Google Play (Android)
@@ -570,36 +496,38 @@ Features  Customizable training tables. Record training histories. Breath holdin
     
     <item>
       <title>Recordable Launchpad</title>
-      <link>https://YuChaoGithub.github.io/recordable-launchpad/</link>
+      <link>chrome://newtab/recordable-launchpad/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:58 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/recordable-launchpad/</guid>
+      <guid>chrome://newtab/recordable-launchpad/</guid>
       <description>A launchpad app with recordable slots.
 Download On App Store (iOS)
 Google Play (Android)
 Description A launchpad app with 25 recordable slots.
 
 This is a project I made accidentally when I was testing out the microphone and in-app purchase feature of the Unity game engine as well as the admob SDK provided by Google.
-Features  25 Recordable Slots. Beautiful Background. Well, kind of. Download for Free (with Ads). That&amp;rsquo;s It.</description>
+Source Code View On GitHub</description>
     </item>
     
     <item>
       <title>Privacy Policy</title>
-      <link>https://YuChaoGithub.github.io/privacy-policy/</link>
+      <link>chrome://newtab/privacy-policy/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:50 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/privacy-policy/</guid>
-      <description>This private policy is effective as at 2017.10.29.
-About I am a game developing hobbyist from Taiwan who can&amp;rsquo;t live without making games. Shineright Studio is not a registered company anywhere in the world, so the legal rights and responsibilities of Shineright Studio are held by Yu Chao (趙佑), a natural person. To contact me, please email to chaoyu@link.cuhk.edu.hk.
-About the Policy This policy describes how and why I collect, use, process and share information about you.</description>
+      <guid>chrome://newtab/privacy-policy/</guid>
+      <description>What types of information do I collect Unity Analytics
+I use Unity Analytics as my analytics tool for some games and apps to collect information about how you play my games or how you use my apps.
+
+Google Analytics
+I use Google Analytics as my analytics tool for this website. It tracks the region, time, viewing duration, operating system &amp;amp; browser used when you visit my website.</description>
     </item>
     
     <item>
       <title>Boots Cuts</title>
-      <link>https://YuChaoGithub.github.io/boots-cuts/</link>
+      <link>chrome://newtab/boots-cuts/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:39 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/boots-cuts/</guid>
+      <guid>chrome://newtab/boots-cuts/</guid>
       <description>THIS GAME IS A PROTOTYPE. IT WAS IMPLEMENTED ONLY TO TEST OUT AND DEMONSTRATE THE CORE IDEA, SO MOST OF THE GRAPHICS, SOUNDTRACKS, AND OTHER GAME ASSETS ARE PLACEHOLDERS.
 Screenshot (Demo Screenshot)
 Download On Itch.io
@@ -610,10 +538,10 @@ Source Code View On GitHub</description>
     
     <item>
       <title>Tall as the Sky</title>
-      <link>https://YuChaoGithub.github.io/tall-as-the-sky/</link>
+      <link>chrome://newtab/tall-as-the-sky/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:27 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/tall-as-the-sky/</guid>
+      <guid>chrome://newtab/tall-as-the-sky/</guid>
       <description>Download On App Store (iOS)
 Google Play (Android)
 Dev Diary This game is created to attend a developer challenge held by a Taiwanese online forum. Participants of the challenge have to write articles about technology &amp;ndash; which I chose the Unity game engine as my topic &amp;ndash; daily for a 30 days streak. This game was made within the 30 days, and a daily diary had been kept during the project.</description>
@@ -621,10 +549,10 @@ Dev Diary This game is created to attend a developer challenge held by a Taiwane
     
     <item>
       <title>kQq</title>
-      <link>https://YuChaoGithub.github.io/kqq/</link>
+      <link>chrome://newtab/kqq/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:18 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/kqq/</guid>
+      <guid>chrome://newtab/kqq/</guid>
       <description>Download On App Store (iOS)
 Google Play (Android)
 Description kQq is a physics puzzle game where player should Guide Lil&amp;rsquo; Neg &amp;ndash; the main character &amp;ndash; to the Worm Hole by placing positive, negative or neutral charges on each game levels. The game consists of unique original soundtracks and artworks.
@@ -633,12 +561,11 @@ Features  Original Background music. Experience TRUE LOVE. Well, just kidding. F
     
     <item>
       <title>Projects</title>
-      <link>https://YuChaoGithub.github.io/projects/</link>
+      <link>chrome://newtab/projects/</link>
       <pubDate>Sun, 22 Oct 2017 17:56:58 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/projects/</guid>
-      <description>(Some of the projects or links might be broken because I lost motivation in maintaining them.)
-Games Knights Rubbish
+      <guid>chrome://newtab/projects/</guid>
+      <description>Games Knights Rubbish
 kQq
 Mobile Apps Free Diving Apnea Training
 Tuner &amp;amp; Music Training
@@ -656,23 +583,19 @@ Know Your Rights</description>
     
     <item>
       <title>About</title>
-      <link>https://YuChaoGithub.github.io/about/</link>
+      <link>chrome://newtab/about/</link>
       <pubDate>Sat, 21 Oct 2017 23:32:39 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/about/</guid>
-      <description>I&amp;rsquo;m Yu Chao. I got my BSc. Computer Science degree at the Chinese University of Hong Kong and I&amp;rsquo;m currently a software engineer located at Taipei.
-
-This blog is a trash dump for my technical articles, but you might see some non-technical ones here occasionally.
-
-This blog was named &amp;ldquo;Shine Right Studio&amp;rdquo; 5 years ago because &amp;ldquo;Shine&amp;rdquo; and &amp;ldquo;Right&amp;rdquo; are homophones of my name when directly translated into Mandarin.</description>
+      <guid>chrome://newtab/about/</guid>
+      <description>This blog is deprecated.</description>
     </item>
     
     <item>
       <title>Customized 2D Following Camera in Godot</title>
-      <link>https://YuChaoGithub.github.io/posts/customized-2d-following-camera-in-godot/</link>
+      <link>chrome://newtab/posts/customized-2d-following-camera-in-godot/</link>
       <pubDate>Sun, 15 Oct 2017 16:40:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/posts/customized-2d-following-camera-in-godot/</guid>
+      <guid>chrome://newtab/posts/customized-2d-following-camera-in-godot/</guid>
       <description>Two weeks ago, I wrote an article about some camera moving schemes used in Metal Slug 3. In this article, I will show you how to actually implement such a camera.
 
 I will be using the open source Godot Engine with GDScript since I believe any programmer with could understand GDScript quite easily, so let&amp;rsquo;s get started.
@@ -683,114 +606,32 @@ First, let&amp;rsquo;s define some variables we&amp;rsquo;ll use later.
     
     <item>
       <title>Camera Moving Scene Scrolling in Metal Slug 3</title>
-      <link>https://YuChaoGithub.github.io/posts/camera-moving-scene-scrolling-in-metal-slug-3/</link>
+      <link>chrome://newtab/posts/camera-moving-scene-scrolling-in-metal-slug-3/</link>
       <pubDate>Sun, 01 Oct 2017 17:01:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/posts/camera-moving-scene-scrolling-in-metal-slug-3/</guid>
+      <guid>chrome://newtab/posts/camera-moving-scene-scrolling-in-metal-slug-3/</guid>
       <description>I&amp;rsquo;ve started to work on my first 2D side scrolling platformer recently. However, before diving into designing my own game, I did some quick research on various topics about 2D platformers. One of them is camera controlling (aka. scene scrolling).
 
 I find some interesting camera controlling technique used in the Metal Slug series, so I would like to share my observations and analysis of how and when to apply those camera controlling schemes.</description>
     </item>
     
     <item>
-      <title>My Experience in Google Summer of Code 2017</title>
-      <link>https://YuChaoGithub.github.io/posts/my-experience-in-google-summer-of-code-2017/</link>
-      <pubDate>Sun, 10 Sep 2017 15:10:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/my-experience-in-google-summer-of-code-2017/</guid>
-      <description>I&amp;rsquo;ve already posted an article about Google Summer of Code 2017. However, the post is mainly about the project itself. For this article, I&amp;rsquo;d like to share my experience and thoughts for the whole GSoC period.
- Google Summer of Code 2017 was an extremely exciting and rewarding experience for me. I was very lucky to be accepted by Systers (Anita Borg Institute) for working on the PowerUp-iOS project.</description>
-    </item>
-    
-    <item>
-      <title>GSoC 2017 Conclusion</title>
-      <link>https://YuChaoGithub.github.io/posts/gsoc-2017-conclusion/</link>
-      <pubDate>Mon, 04 Sep 2017 11:37:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/gsoc-2017-conclusion/</guid>
-      <description>(This is an overview and conclusion for my summer internship (Google Summer of Code 2017) in Systers on the PowerUp-iOS project. The original article is posted on systers&amp;rsquo; Blogger. Here is the Link.)
-Overview PowerUp is an educational mobile game app aiming at providing adolescent girls with reproductive health knowledge, empowering them with better self esteem, and teaching them conflict resolution skills in social life.
-
-It is a choose-your-own-adventure game which the players have to navigate an avatar to engage in conversations of different scenarios.</description>
-    </item>
-    
-    <item>
-      <title>Animate Nodes Using SKAction in iOS Sprite Kit</title>
-      <link>https://YuChaoGithub.github.io/posts/animate-nodes-using-skaction-in-ios-sprite-kit/</link>
-      <pubDate>Sun, 06 Aug 2017 22:35:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/animate-nodes-using-skaction-in-ios-sprite-kit/</guid>
-      <description>Apple&amp;rsquo;s Sprite Kit is a really well-designed and convenient framework for iOS game development. In this article, I will briefly introduce Sprite Kit Action (SKAction in short), which is the bread and butter for animating nodes in Sprite Kit.
-The Basics In Sprite Kit, every node can run an SKAction by calling the run(_:) function. run(_:) takes an SKAction as its parameter, and will perform the action immediately after the call.</description>
-    </item>
-    
-    <item>
-      <title>A Brief Review of Godot Engine</title>
-      <link>https://YuChaoGithub.github.io/posts/a-brief-review-of-godot/</link>
-      <pubDate>Sun, 23 Jul 2017 15:11:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/a-brief-review-of-godot/</guid>
-      <description>After finishing 2 of my projects in Unity, I was planning to try out something different and hopefully, more suitable for me to use. I did a quick research on some modern cross platform game engines: Godot, Cocos2d-x, Atomic, Love2D, Phaser, and of course, Unreal. I finally decided to look more into Godot Engine. In this article, I will write briefly about the features, the special node-scene system, as well as the pros and cons of Godot Engine.</description>
-    </item>
-    
-    <item>
-      <title>Build &amp; Test Automation for Xcode Projects Using Travis CI</title>
-      <link>https://YuChaoGithub.github.io/posts/build-test-automation-for-xcode-projects-using-travis-ci/</link>
-      <pubDate>Sat, 08 Jul 2017 18:47:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/build-test-automation-for-xcode-projects-using-travis-ci/</guid>
-      <description>Testing your code is a vital process in app development, since it could reveal bugs and mistakes before the users actually use it. However, testing your app whenever you make a commit can be tedious and time-consuming. This is where Continuous Integration (CI) comes to rescue.
-Continuous Integration Continuous Integration is the process of building and testing your app automatically, saving precious time for the developers. In this article, I will demonstrate how to integrate Travis CI to your XCode projects (to be specific, iOS/macOS/tvOS/watchOS projects) on GitHub.</description>
-    </item>
-    
-    <item>
-      <title>GSoC 2017 With Systers on PowerUp Project</title>
-      <link>https://YuChaoGithub.github.io/posts/gsoc-2017-with-systers-on-powerup-project/</link>
-      <pubDate>Sun, 21 May 2017 20:37:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/gsoc-2017-with-systers-on-powerup-project/</guid>
-      <description>I&amp;rsquo;ve always wanted to participate in Google Summer of Code (GSoC) someday. Fortunately, this year, I got selected by Systers, an Anita Borg Institute community for a mobile game project &amp;ndash; PowerUp. In this article, I&amp;rsquo;ll write about how I chose which project to contribute, how I wrote my proposal, and what is the PowerUp project about.
-Selecting Organizations When selecting which organizations to contribute, I focus mostly on what am I capable of doing, what interests me the most, and which projects would enhance my portfolio for my dream career.</description>
-    </item>
-    
-    <item>
-      <title>The Art of Game Design - Book Review</title>
-      <link>https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/</link>
-      <pubDate>Mon, 01 May 2017 12:37:09 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/the-art-of-game-design-book-review/</guid>
-      <description>Finally finished reading the famous &amp;ldquo;The Art of Game Design: A Book of Lenses&amp;rdquo; by Jesse Schell. Jesse Schell is a professor at CMU ETC (which happens to be my dream graduate school :D) and an experienced game designer. Throughout the book, he often explains some abstract concepts by his actual experience in game designing (especially from the game Pirates of the Caribbean: Battle for Buccaneer Gold and Toontown Online which he designed) and performance art (he was a juggler during his teenage years).</description>
-    </item>
-    
-    <item>
       <title>Music Syncing in Rhythm Games</title>
-      <link>https://YuChaoGithub.github.io/posts/music-syncing-in-rhythm-games/</link>
+      <link>chrome://newtab/posts/music-syncing-in-rhythm-games/</link>
       <pubDate>Sun, 12 Mar 2017 23:12:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/posts/music-syncing-in-rhythm-games/</guid>
+      <guid>chrome://newtab/posts/music-syncing-in-rhythm-games/</guid>
       <description>Recently, I&amp;rsquo;ve started my beatbox rhythm game project Boots-Cut using Unity. When prototyping the basic game mechanics, I found that it is quite tricky to sync the music notes with the music correctly. However, there are very little articles on the web concerning this subject. So, I will try to point out some important tips when developing a rhythm game (especially in Unity) in this article.
 
 Among all, I found the following three points with most importance:</description>
     </item>
     
     <item>
-      <title>Recording and Playing Audio in Unity</title>
-      <link>https://YuChaoGithub.github.io/posts/recording-and-playing-audio-in-unity/</link>
-      <pubDate>Sun, 05 Mar 2017 13:31:00 +0800</pubDate>
-      
-      <guid>https://YuChaoGithub.github.io/posts/recording-and-playing-audio-in-unity/</guid>
-      <description>Just published my Recordable Launchpad app on the iOS App Store and Google Play! Actually, the project was created accidentally when I was testing out Unity In-App Purchase, Google Admob Unity SDK, the &amp;ldquo;Prepare iOS for Recording&amp;rdquo; checkbox, and Audio Latency.
-
-Since integrating Unity In-App Purchase and Google Admob are rather straightforward, I would be writing mostly about (the more troublesome parts, which are)
- Serializing and Deserializing AudioClips Getting Rid of Audio Latency Prepare iOS for Recording and iPhoneSpeakerFix  in this article.</description>
-    </item>
-    
-    <item>
       <title>Sashimi Sweets Hiring Elite 烏魚子公司 精英招募</title>
-      <link>https://YuChaoGithub.github.io/sashimi-sweets/</link>
+      <link>chrome://newtab/sashimi-sweets/</link>
       <pubDate>Fri, 24 Nov 1995 00:00:00 +0800</pubDate>
       
-      <guid>https://YuChaoGithub.github.io/sashimi-sweets/</guid>
+      <guid>chrome://newtab/sashimi-sweets/</guid>
       <description>Click this link to apply 點此連結申請</description>
     </item>
     
