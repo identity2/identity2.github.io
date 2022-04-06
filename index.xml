@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>New Tab</title>
-    <link>chrome://newtab/</link>
+    <link>https://shinerightstudio.com/</link>
     <description>Recent content on New Tab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 May 2019 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="chrome://newtab/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://shinerightstudio.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Google Taiwan 2021 Campus Hire Interview Experience</title>
-      <link>chrome://newtab/posts/google-taiwan-2021-campus-hire-interview-experience/</link>
+      <link>https://shinerightstudio.com/posts/google-taiwan-2021-campus-hire-interview-experience/</link>
       <pubDate>Thu, 11 Nov 2021 11:11:11 +0800</pubDate>
       
-      <guid>chrome://newtab/posts/google-taiwan-2021-campus-hire-interview-experience/</guid>
+      <guid>https://shinerightstudio.com/posts/google-taiwan-2021-campus-hire-interview-experience/</guid>
       <description>I was hunting for a new grad software engineering role over the last few months and quite fortunately, Google invited me for a technical phone interview one week after I submitted my resume through their job portal. I will write down the full process of my application in this article. Verbosely.
 
 My application process, ordered chronologically:
@@ -25,10 +25,10 @@ My application process, ordered chronologically:
     
     <item>
       <title>CSCI3280 Introduction to Multimedia Systems - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci3280/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci3280/</link>
       <pubDate>Tue, 08 Jun 2021 17:11:31 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci3280/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci3280/</guid>
       <description>Term Taken: 2021 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Tien-Tsin Wong
@@ -37,10 +37,10 @@ Grading Scheme  Programming assignments x 4 (100%)  Topics Covered  Multimedia d
     
     <item>
       <title>CSCI4160 Parallel and Distributed Computing - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci4160/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci4160/</link>
       <pubDate>Tue, 08 Jun 2021 17:11:31 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci4160/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci4160/</guid>
       <description>Term Taken: 2021 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Eric Chi Li Lo
@@ -49,10 +49,10 @@ Grading Scheme  OpenMP/pthread + SIMD programming (10%) CUDA programming (10%) O
     
     <item>
       <title>CENG2400 Embedded System Design - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/ceng2400/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/ceng2400/</link>
       <pubDate>Sun, 20 Dec 2020 17:11:41 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/ceng2400/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/ceng2400/</guid>
       <description>Term Taken: 2020 Fall
 Remote Teaching due to COVID19
 Instructor: Prof. Xu Qiang
@@ -61,10 +61,10 @@ Grading Scheme  Written Homework (10%) Lab (15%) In-class exercises and quizzes 
     
     <item>
       <title>CSCI4130 Cyber Security - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci4130/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci4130/</link>
       <pubDate>Sun, 20 Dec 2020 17:11:31 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci4130/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci4130/</guid>
       <description>Term Taken: 2020 Fall
 Remote Teaching due to COVID19
 Instructor: Prof. Meng Wei
@@ -73,10 +73,10 @@ Grading Scheme  Homework x 4 (40%) Midterm Exam (28%) Final Exam (32%)  Topics C
     
     <item>
       <title>CSCI4180 Introduction to Cloud Computing and Storage - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci4180/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci4180/</link>
       <pubDate>Sun, 20 Dec 2020 17:11:25 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci4180/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci4180/</guid>
       <description>Term Taken: 2020 Fall
 Remote Teaching due to COVID19
 Instructor: Prof. Lee Pak Ching Patrick
@@ -85,10 +85,10 @@ Grading Scheme  Programming Group Assignments x 3 (45%) Final Exam (55%)  Topics
     
     <item>
       <title>CSCI3100 Software Engineering - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci3100/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci3100/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci3100/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci3100/</guid>
       <description>Term Taken: 2020 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Lyu Rung Tsong Michael
@@ -99,10 +99,10 @@ Topics Covered  Software life cycle. Software qualities. Software engineering pr
     
     <item>
       <title>CSCI3180 Principles of Programming Language - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci3180/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci3180/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci3180/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci3180/</guid>
       <description>Term Taken: 2020 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Lee Ho Man Jimmy
@@ -113,10 +113,10 @@ Covered in tutorials:
     
     <item>
       <title>ELTU3014 English for Engineers II - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/eltu3014/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/eltu3014/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/eltu3014/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/eltu3014/</guid>
       <description>Term Taken: 2020 Spring
 Remote Teaching due to COVID19
 Grading Scheme  Resume writing (15%) Cover letter writing(20%) Business letter writing (25%) Mock individual interview (25%) Mock group interview (15%)  Review This is the third and final English requirement for engineering majors.
@@ -126,10 +126,10 @@ The first part of the course was resume writing and business writing. It was ver
     
     <item>
       <title>CSCI3170 Introduction to Database Systems - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci3170/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci3170/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci3170/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci3170/</guid>
       <description>Term Taken: 2020 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Wong Man Hon
@@ -140,10 +140,10 @@ Topics Covered  ER-diagram. Relational database schema design. Relational algebr
     
     <item>
       <title>CSCI4430/ESTR4120 Data Communication and Computer Networks - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci4430-estr4120/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci4430-estr4120/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci4430-estr4120/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci4430-estr4120/</guid>
       <description>Term Taken: 2020 Spring
 Remote Teaching due to COVID19
 Instructor: Prof. Lee Pak Ching Patrick
@@ -154,10 +154,10 @@ Topics Covered  Socket programming. Multi-threaded programming. Application laye
     
     <item>
       <title>CSCI2040 Introduction to Python - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci2040/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci2040/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci2040/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci2040/</guid>
       <description>Term Taken: 2019 Fall
 Instructor (Class A): Prof. John Lui Chi Shing
 Grading Scheme  Programming Exercises (40%) Final Exam (60%)  Topics Covered  Python basics. Functional programming. Object-oriented programming. Regular expressions. Numpy, Scipy, Matplotlib.  Review I already knew Python, but I shamelessly registered this course for that +0.01 GPA boost. To be honest, I only attended one lecture, so I don&amp;rsquo;t know much about this course. I assume it is pretty easy for computer science majors.</description>
@@ -165,10 +165,10 @@ Grading Scheme  Programming Exercises (40%) Final Exam (60%)  Topics Covered  Py
     
     <item>
       <title>CSCI3130 Formal Language and Automata Theory - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci3130/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci3130/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci3130/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci3130/</guid>
       <description>Term Taken: 2019 Fall
 Instructor: Prof. Chan Siu On
 Grading Scheme Original Scheme:
@@ -179,10 +179,10 @@ Topics Covered  Finite Automata (DFA, NFA). Regular Expressions. Context-Free Gr
     
     <item>
       <title>CSCI3150/ESTR3102 Introduction to Operating Systems - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci3150-estr3102/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci3150-estr3102/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci3150-estr3102/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci3150-estr3102/</guid>
       <description>Term Taken: 2019 Fall
 Instructor: Prof. Shao Zili
 Grading Scheme Original Scheme:
@@ -196,10 +196,10 @@ Topics Covered  Basic Linux systems programming. System Calls. CPU Scheduling. M
     
     <item>
       <title>CSCI3160 Design and Analysis of Algorithms - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci3160/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci3160/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci3160/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci3160/</guid>
       <description>Term Taken: 2019 Fall
 Instructor: Prof. Tao Yufei
 Grading Scheme Original Scheme:
@@ -210,10 +210,10 @@ Topics Covered  Recursion. Divide and Conquer. Greedy Algorithms. Dynamic Progra
     
     <item>
       <title>CSCI3220 Algorithms for Bioinformatics - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci3220/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci3220/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci3220/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci3220/</guid>
       <description>Term Taken: 2019 Fall
 Instructor: Prof. Kevin Yip Yuk Lap
 Grading Scheme Original Scheme:
@@ -223,10 +223,10 @@ Grading Scheme Original Scheme:
     
     <item>
       <title>CSCI3230/ESTR3108 Fundamentals of Artificial Intelligence - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci3230-estr3108/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci3230-estr3108/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci3230-estr3108/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci3230-estr3108/</guid>
       <description>Term Taken: 2019 Fall
 Instructor: Prof. Leung Kwong Sak
 Grading Scheme Original Scheme:
@@ -236,10 +236,10 @@ Grading Scheme Original Scheme:
     
     <item>
       <title>Proving NP-Completeness by Restriction</title>
-      <link>chrome://newtab/posts/prove-np-complete-by-restriction/</link>
+      <link>https://shinerightstudio.com/posts/prove-np-complete-by-restriction/</link>
       <pubDate>Sat, 06 Jul 2019 21:29:47 +0800</pubDate>
       
-      <guid>chrome://newtab/posts/prove-np-complete-by-restriction/</guid>
+      <guid>https://shinerightstudio.com/posts/prove-np-complete-by-restriction/</guid>
       <description>Proving NP-Completeness is a core topic in the studies of algorithms. For most of the algorithms textbooks, they show some complicated tricks which reduce a known NP-Complete problem to another problem, say Q, to prove that Q is NP-Complete. This works because if problem A reduces to problem B, then B is at least as difficult as A. And since A is NP-Complete, B is also NP-Complete.
 
 However, many problem reduction methods are extremely subtle and often require some &amp;ldquo;divine instincts&amp;rdquo; to come up with in the first place.</description>
@@ -247,20 +247,20 @@ However, many problem reduction methods are extremely subtle and often require s
     
     <item>
       <title>Music in Film Terminology</title>
-      <link>chrome://newtab/posts/music-in-film-terminology/</link>
+      <link>https://shinerightstudio.com/posts/music-in-film-terminology/</link>
       <pubDate>Sat, 22 Jun 2019 09:23:30 +0800</pubDate>
       
-      <guid>chrome://newtab/posts/music-in-film-terminology/</guid>
+      <guid>https://shinerightstudio.com/posts/music-in-film-terminology/</guid>
       <description>Just took an interesting gen-eds course Music in Film last semester. Though I publish mostly technical or game dev articles on this blog, I really enjoyed the materials in the course and I&amp;rsquo;d love to share the basics (that is, the terminology) of the course here. (Note we refer &amp;ldquo;music in film&amp;rdquo; as the score music of films rather than the sound effects.)
 Tonality vs. Atonality Tonality is a principle which the music is composed to center around a tonic central.</description>
     </item>
     
     <item>
       <title>CSCI2100/ESTR2102 Data Structures - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci2100-estr2102/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci2100-estr2102/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci2100-estr2102/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci2100-estr2102/</guid>
       <description>Term Taken: 2019 Spring
 Instructor (Class A): Prof. Irwin King Kuo Ching
 Grading Scheme  Written Assignments (5%) Programming Assignments (20%) Written Midterm Exam (20%) Programming Midterm Exam (35%) Written Final Exam (20%)  Textbook Data Structures and Algorithm Analysis in C (2nd Edition), Mark Weiss, 1997.
@@ -269,10 +269,10 @@ Topics Covered  Big O, Omega, Theta Notation. Linked List. Stack. Queue. Tree: B
     
     <item>
       <title>CSCI3250 &#43; CSCI3251 Computers and Society &#43; Engineering Practicum - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/csci3250-csci3251/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/csci3250-csci3251/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/csci3250-csci3251/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/csci3250-csci3251/</guid>
       <description>Term Taken: 2019 Spring
 Instructor: Prof. Chau Chuck Jee
 Grading Scheme  Group Presentation (20%) Class Activities and Quiz Question Design (5%) Group Presentation Writeup (10%) Peer Evaluation (5%) Industry Visit Report x2 (20%) Reflection Article (15%) Final Quiz (10%) Project: Learning GitHub (15%)  Review This course was conducted in a &amp;ldquo;flipped classroom&amp;rdquo; fashion. In each lecture, about 4 groups (consisting of 4 people each) gave presentations on various computer science topics.</description>
@@ -280,20 +280,20 @@ Grading Scheme  Group Presentation (20%) Class Activities and Quiz Question Desi
     
     <item>
       <title>CUHK Course Review</title>
-      <link>chrome://newtab/course-review/</link>
+      <link>https://shinerightstudio.com/course-review/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/course-review/</guid>
+      <guid>https://shinerightstudio.com/course-review/</guid>
       <description>Below is a list of all the courses I&amp;rsquo;ve taken during my university studies at CUHK (The Chinese University of Hong Kong). For some of the courses, you could link to the reviews I&amp;rsquo;ve written. Hope this helps out some fellow CUHKers, as there&amp;rsquo;re not much CUHK course reviews out there on the internet. Feel free to send me an email if you have any questions.
 Computer Science Major Requirements  ENGG2020/ESTR2104 Digital Logic and System CSCI1130 Introduction to Computing using Java CSCI2100/ESTR2102 Data Structures CSCI3100 Software Engineering CSCI3130 Formal Language and Automata Theory CSCI3150/ESTR3102 Introduction to Operating Systems CSCI3160 Design and Analysis of Algorithms CSCI3180 Principles of Programming Languages CSCI3250+CSCI3251 Computers &amp;amp; Society + Engineering Practicum CSCI/ESTR4998+4999 Final Year Project/Thesis  Computer Science Electives  CSCI2040 Introduction to Python CSCI3170 Introduction to Database Systems CSCI3220 Algorithms for Bioinformatics CSCI3230/ESTR3108 Fundamentals of Artificial Intelligence CSCI3280 Introduction to Multimedia Systems CSCI4130 Cyber Security CSCI4180 Introduction to Cloud Computing and Storage CSCI4430/ESTR4120 Data Communication and Computer Networks CSCI4160 Parallel and Distributed Computing CENG2400 Embedded System Design  Engineering Requirements  CSCI1110/ESTR1002 Problem Solving by Programming ENGG1100 Introduction to Engineering Design  Math &amp;amp; Science Requirements  MATH1510 Calculus for Engineers ENGG1410 Vector Calculus and Linear Algebra for Engineers PHYS1110 Physics for Engineers I ENGG2520/ESTR2006 Physics for Engineers II ENGG2440/ESTR2004 Discrete Mathematics ENGG2430/ESTR2002 Probability and Statistics for Engineers  Language Requirements  CHLT1100 University Chinese I CHLT1200 University Chinese II ELTU1001 Foundation English for University Studies ELTU2014 English for Engineers ELTU3014 English for Engineers II  General Education  GENA1112 Aspects of General Education GENA1113 Student-Oriented Teaching and Seminar GENA2342 Appreciation of Music Cultures UGFH1000 In Dialogue with Humanity UGFN1000 In Dialogue with Nature UGEA2230 Introduction to Transformation in Chinese History UGEB2440 Chemistry of Food and Drinks UGEC2007 Transitional Justice UGED2133 Music in Film  Physical Education  PHED1003 Squash PHED1017 Physical Conditioning  </description>
     </item>
     
     <item>
       <title>ELTU2014 English for Engineers I - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/eltu2014/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/eltu2014/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/eltu2014/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/eltu2014/</guid>
       <description>Term Taken: 2019 Spring
 Grading Scheme  (Individual) Informative Presentation (25%) (Group) Technical Specification Writing (20%) (Group) Project Pitching Presentation (25%) (Group) Project Proposal (30%)  Review This is the second English requirement for engineering majors. Students were formed into groups of 4 or 5, and were asked to go through the process of:
  Coming up an &amp;ldquo;innovative&amp;rdquo; product. Writing a technical specification document of the product. Giving an informative presentation on a technical detail of the product.</description>
@@ -301,10 +301,10 @@ Grading Scheme  (Individual) Informative Presentation (25%) (Group) Technical Sp
     
     <item>
       <title>ENGG2430/ESTR2002 Probability and Statistics for Engineers - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/engg2430-estr2002/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/engg2430-estr2002/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/engg2430-estr2002/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/engg2430-estr2002/</guid>
       <description>Term Taken: 2019 Spring
 Instructor (Class A): Prof. Andrej Bogdanov
 Grading Scheme  Tutorial Participation (+ ESTR Presentation) (12.5%) Quizzes (12.5%) Midterm Exam (25%) Final Exam (50%) Homework (0%)  Textbook Introduction to Probability (2nd edition), by Bertsekas and Tsitsiklis.
@@ -314,10 +314,10 @@ Topics Covered Probability:
     
     <item>
       <title>UGEB2440 Chemistry of Food and Drinks - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/ugeb2440/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/ugeb2440/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/ugeb2440/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/ugeb2440/</guid>
       <description>Term Taken: 2019 Spring
 Instructor (Class B): Kendrew Kin Wah Mak
 Grading Scheme  Short Writings x2 (10%) (English: 2000 words, Chinese: 3500 characters) Essay (40%) Final Exam (50%)  Topics Covered Food Constituents:
@@ -327,10 +327,10 @@ Grading Scheme  Short Writings x2 (10%) (English: 2000 words, Chinese: 3500 char
     
     <item>
       <title>UGED2133 Music in Film - CUHK Course Review</title>
-      <link>chrome://newtab/cuhk-course-review/uged2133/</link>
+      <link>https://shinerightstudio.com/cuhk-course-review/uged2133/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/cuhk-course-review/uged2133/</guid>
+      <guid>https://shinerightstudio.com/cuhk-course-review/uged2133/</guid>
       <description>Term Taken: 2019 Spring
 Instructor: Prof. Brian C. Thompson
 Grading Scheme  Online Discussion Participation (20%) Quiz (10%) Project (30%) Final Exam (40%)  Syllabus Terminology:
@@ -340,46 +340,46 @@ Grading Scheme  Online Discussion Participation (20%) Quiz (10%) Project (30%) F
     
     <item>
       <title>Knights Rubbish - Keshia Erasia</title>
-      <link>chrome://newtab/knights-rubbish-heroes/keshia-erasia/</link>
+      <link>https://shinerightstudio.com/knights-rubbish-heroes/keshia-erasia/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/knights-rubbish-heroes/keshia-erasia/</guid>
+      <guid>https://shinerightstudio.com/knights-rubbish-heroes/keshia-erasia/</guid>
       <description>Lore Keshia Erasia was once the happiest eraser in the world. His owner Bobby had always placed him inside an exquisite aluminum box after using him. Though becoming smaller everyday, Keshia still enjoyed the time with Bobby…until one day, Bobby tripped on a crossbar and dropped his aluminum box on the sidewalk. The pain was enough for Bobby to forget the aluminum box and left. Keshia thus became just another forsaken rubbish on the side walk.</description>
     </item>
     
     <item>
       <title>Knights Rubbish - Othox Codox</title>
-      <link>chrome://newtab/knights-rubbish-heroes/othox-codox/</link>
+      <link>https://shinerightstudio.com/knights-rubbish-heroes/othox-codox/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/knights-rubbish-heroes/othox-codox/</guid>
+      <guid>https://shinerightstudio.com/knights-rubbish-heroes/othox-codox/</guid>
       <description>Lore Othox Codox was once a magic codex written by the famous sorcerer Bobbington. Unfortunately, Bobbington was executed because he stole a loaf of bread. All Bobbington’s precious publications were torn and ripped, some burnt in the merciless flames. Othox, though almost ripped into shreds, called for the Blessings of Rabimouchinus and granted a wheel chair to aid him. He practiced the magic written inside him as he ran away from the murderers and gradually became one of the greatest magic codex in the world.</description>
     </item>
     
     <item>
       <title>Knights Rubbish - Ranawato Plato</title>
-      <link>chrome://newtab/knights-rubbish-heroes/ranawato-plato/</link>
+      <link>https://shinerightstudio.com/knights-rubbish-heroes/ranawato-plato/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/knights-rubbish-heroes/ranawato-plato/</guid>
+      <guid>https://shinerightstudio.com/knights-rubbish-heroes/ranawato-plato/</guid>
       <description>Lore Ranawato Plato was once the most beloved plate of a famous philosopher, Bobus. As bad luck would have it, Bobus committed suicide due to the pain of existence. Ranawato then became an unused plate on the shelf (aka. rubbish). Overwhelmed by sad emotions, Ranawato dreamed of her deceased owner every night…until one day, a handsome spoon came and introduced himself. Ranawato thus forgot her past owner and ran away with the spoon.</description>
     </item>
     
     <item>
       <title>Knights Rubbish - Sirurueruerue Senyesuensuesue &amp; Sugsesugsem Sosas</title>
-      <link>chrome://newtab/knights-rubbish-heroes/bross/</link>
+      <link>https://shinerightstudio.com/knights-rubbish-heroes/bross/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/knights-rubbish-heroes/bross/</guid>
+      <guid>https://shinerightstudio.com/knights-rubbish-heroes/bross/</guid>
       <description>Lore Sirurueruerue Senyesuensuesue &amp;amp; Sugsesugsem Sosas were once the best selling mp3 players. However, smart phones became a thing and they were thrown into the recycle bin by their owner Bobs. They joined the local gang inside the bin and became the SS brothers (even though they had no genetic ties). The gang leader Big Brother had good relationship with the founder of Knights Rubbish, Keshia Erasia, so he referred the SS brothers to Keshia.</description>
     </item>
     
     <item>
       <title>Knights Rubbish - The Knights</title>
-      <link>chrome://newtab/knights-rubbish-heroes/the-knights/</link>
+      <link>https://shinerightstudio.com/knights-rubbish-heroes/the-knights/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/knights-rubbish-heroes/the-knights/</guid>
+      <guid>https://shinerightstudio.com/knights-rubbish-heroes/the-knights/</guid>
       <description>Keshia Erasia
 Wendy Floopy
 Ranawato Plato
@@ -396,10 +396,10 @@ Back to Knights Rubbish project page</description>
     
     <item>
       <title>Knights Rubbish - Wendy Floopy</title>
-      <link>chrome://newtab/knights-rubbish-heroes/wendy-floopy/</link>
+      <link>https://shinerightstudio.com/knights-rubbish-heroes/wendy-floopy/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/knights-rubbish-heroes/wendy-floopy/</guid>
+      <guid>https://shinerightstudio.com/knights-rubbish-heroes/wendy-floopy/</guid>
       <description>Lore Wendy Floopy was once the 6th installation floppy disk of a famous operating system. However, then came CDs, USB drives, and well, cloud downloads as replacements of floppies, so her owner Bobates the Software Engineer tossed her in the recycling box without another glimpse. Bored, Wendy’s biggest interest became collecting CDs in the recycling box.
 
 One day, Keshia Erasia, the founder of Knights Rubbish happened to pass by and fall in love with Wendy, but Wendy refused Keshia because he is ugly.</description>
@@ -407,10 +407,10 @@ One day, Keshia Erasia, the founder of Knights Rubbish happened to pass by and f
     
     <item>
       <title>Quantum Game</title>
-      <link>chrome://newtab/quantum-game/</link>
+      <link>https://shinerightstudio.com/quantum-game/</link>
       <pubDate>Thu, 19 Jul 2018 00:02:39 +0800</pubDate>
       
-      <guid>chrome://newtab/quantum-game/</guid>
+      <guid>https://shinerightstudio.com/quantum-game/</guid>
       <description>THIS GAME IS A PROTOTYPE. IT WAS IMPLEMENTED ONLY TO TEST OUT AND DEMONSTRATE THE CORE IDEA, SO MOST OF THE GRAPHICS AND GAME ASSETS ARE PLACEHOLDERS.
 Play Online On Itch.io
 Core Idea Quantum Game is an action game which the players should switch between being an electron or a proton to overcome obstacles in the level.
@@ -420,10 +420,10 @@ Electron and proton have difference sets of abilities, and are attracted/repelle
     
     <item>
       <title>Inter-dimensional Time</title>
-      <link>chrome://newtab/inter-dimensional-time/</link>
+      <link>https://shinerightstudio.com/inter-dimensional-time/</link>
       <pubDate>Thu, 19 Jul 2018 00:01:39 +0800</pubDate>
       
-      <guid>chrome://newtab/inter-dimensional-time/</guid>
+      <guid>https://shinerightstudio.com/inter-dimensional-time/</guid>
       <description>Purchase On Amazon Paperback
 eBook
 Sample Chapters Recipe ． Movies ． News ． Life Pro Tips ． Ads 1 ． Ads 2
@@ -434,19 +434,19 @@ Inter-dimensional Time is a cross dimensional pseudo-periodical published by Sch
     
     <item>
       <title>Sudkolimaca Answer</title>
-      <link>chrome://newtab/sudkolimaca/</link>
+      <link>https://shinerightstudio.com/sudkolimaca/</link>
       <pubDate>Mon, 16 Jul 2018 13:23:39 +0800</pubDate>
       
-      <guid>chrome://newtab/sudkolimaca/</guid>
+      <guid>https://shinerightstudio.com/sudkolimaca/</guid>
       <description>Did you do it correctly?</description>
     </item>
     
     <item>
       <title>Tuner &amp; Music Training</title>
-      <link>chrome://newtab/tuner-music-training/</link>
+      <link>https://shinerightstudio.com/tuner-music-training/</link>
       <pubDate>Mon, 02 Apr 2018 10:51:18 +0800</pubDate>
       
-      <guid>chrome://newtab/tuner-music-training/</guid>
+      <guid>https://shinerightstudio.com/tuner-music-training/</guid>
       <description>A minimalistic tuner &amp;amp; music training app.
 Download On App Store (iOS)
 Description This is an extremely wonderful app that not only makes the world a better place but relieves the pain of existence.
@@ -461,10 +461,10 @@ BEHOLD!!! This app fulfills your biggest childhood dream, that is, it creatively
     
     <item>
       <title>Knights Rubbish</title>
-      <link>chrome://newtab/knights-rubbish/</link>
+      <link>https://shinerightstudio.com/knights-rubbish/</link>
       <pubDate>Sun, 12 Nov 2017 15:38:45 +0800</pubDate>
       
-      <guid>chrome://newtab/knights-rubbish/</guid>
+      <guid>https://shinerightstudio.com/knights-rubbish/</guid>
       <description>Store Page Steam
 Description A co-op platformer fighter game made with real photos, featuring our beloved character Keshia Erasia and his friends. They have risen from the rubbish and they seek for adventures. Exciting, eh?
 The Knights Keshia Erasia
@@ -479,10 +479,10 @@ Features  5 hilarious heroes to choose from. Local co-op arcade. Cool combo skil
     
     <item>
       <title>Free Diving Apnea Training App</title>
-      <link>chrome://newtab/apnea-app/</link>
+      <link>https://shinerightstudio.com/apnea-app/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:58 +0800</pubDate>
       
-      <guid>chrome://newtab/apnea-app/</guid>
+      <guid>https://shinerightstudio.com/apnea-app/</guid>
       <description>An apnea training app for free divers.
 Download On App Store (iOS)
 Google Play (Android)
@@ -496,10 +496,10 @@ Features  Customizable training tables. Record training histories. Breath holdin
     
     <item>
       <title>Recordable Launchpad</title>
-      <link>chrome://newtab/recordable-launchpad/</link>
+      <link>https://shinerightstudio.com/recordable-launchpad/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:58 +0800</pubDate>
       
-      <guid>chrome://newtab/recordable-launchpad/</guid>
+      <guid>https://shinerightstudio.com/recordable-launchpad/</guid>
       <description>A launchpad app with recordable slots.
 Download On App Store (iOS)
 Google Play (Android)
@@ -511,10 +511,10 @@ Source Code View On GitHub</description>
     
     <item>
       <title>Privacy Policy</title>
-      <link>chrome://newtab/privacy-policy/</link>
+      <link>https://shinerightstudio.com/privacy-policy/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:50 +0800</pubDate>
       
-      <guid>chrome://newtab/privacy-policy/</guid>
+      <guid>https://shinerightstudio.com/privacy-policy/</guid>
       <description>What types of information do I collect Unity Analytics
 I use Unity Analytics as my analytics tool for some games and apps to collect information about how you play my games or how you use my apps.
 
@@ -524,10 +524,10 @@ I use Google Analytics as my analytics tool for this website. It tracks the regi
     
     <item>
       <title>Boots Cuts</title>
-      <link>chrome://newtab/boots-cuts/</link>
+      <link>https://shinerightstudio.com/boots-cuts/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:39 +0800</pubDate>
       
-      <guid>chrome://newtab/boots-cuts/</guid>
+      <guid>https://shinerightstudio.com/boots-cuts/</guid>
       <description>THIS GAME IS A PROTOTYPE. IT WAS IMPLEMENTED ONLY TO TEST OUT AND DEMONSTRATE THE CORE IDEA, SO MOST OF THE GRAPHICS, SOUNDTRACKS, AND OTHER GAME ASSETS ARE PLACEHOLDERS.
 Screenshot (Demo Screenshot)
 Download On Itch.io
@@ -538,10 +538,10 @@ Source Code View On GitHub</description>
     
     <item>
       <title>Tall as the Sky</title>
-      <link>chrome://newtab/tall-as-the-sky/</link>
+      <link>https://shinerightstudio.com/tall-as-the-sky/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:27 +0800</pubDate>
       
-      <guid>chrome://newtab/tall-as-the-sky/</guid>
+      <guid>https://shinerightstudio.com/tall-as-the-sky/</guid>
       <description>Download On App Store (iOS)
 Google Play (Android)
 Dev Diary This game is created to attend a developer challenge held by a Taiwanese online forum. Participants of the challenge have to write articles about technology &amp;ndash; which I chose the Unity game engine as my topic &amp;ndash; daily for a 30 days streak. This game was made within the 30 days, and a daily diary had been kept during the project.</description>
@@ -549,10 +549,10 @@ Dev Diary This game is created to attend a developer challenge held by a Taiwane
     
     <item>
       <title>kQq</title>
-      <link>chrome://newtab/kqq/</link>
+      <link>https://shinerightstudio.com/kqq/</link>
       <pubDate>Sun, 22 Oct 2017 17:57:18 +0800</pubDate>
       
-      <guid>chrome://newtab/kqq/</guid>
+      <guid>https://shinerightstudio.com/kqq/</guid>
       <description>Download On App Store (iOS)
 Google Play (Android)
 Description kQq is a physics puzzle game where player should Guide Lil&amp;rsquo; Neg &amp;ndash; the main character &amp;ndash; to the Worm Hole by placing positive, negative or neutral charges on each game levels. The game consists of unique original soundtracks and artworks.
@@ -561,10 +561,10 @@ Features  Original Background music. Experience TRUE LOVE. Well, just kidding. F
     
     <item>
       <title>Projects</title>
-      <link>chrome://newtab/projects/</link>
+      <link>https://shinerightstudio.com/projects/</link>
       <pubDate>Sun, 22 Oct 2017 17:56:58 +0800</pubDate>
       
-      <guid>chrome://newtab/projects/</guid>
+      <guid>https://shinerightstudio.com/projects/</guid>
       <description>Games Knights Rubbish
 kQq
 Mobile Apps Free Diving Apnea Training
@@ -583,19 +583,19 @@ Know Your Rights</description>
     
     <item>
       <title>About</title>
-      <link>chrome://newtab/about/</link>
+      <link>https://shinerightstudio.com/about/</link>
       <pubDate>Sat, 21 Oct 2017 23:32:39 +0800</pubDate>
       
-      <guid>chrome://newtab/about/</guid>
+      <guid>https://shinerightstudio.com/about/</guid>
       <description>This blog is deprecated.</description>
     </item>
     
     <item>
       <title>Customized 2D Following Camera in Godot</title>
-      <link>chrome://newtab/posts/customized-2d-following-camera-in-godot/</link>
+      <link>https://shinerightstudio.com/posts/customized-2d-following-camera-in-godot/</link>
       <pubDate>Sun, 15 Oct 2017 16:40:00 +0800</pubDate>
       
-      <guid>chrome://newtab/posts/customized-2d-following-camera-in-godot/</guid>
+      <guid>https://shinerightstudio.com/posts/customized-2d-following-camera-in-godot/</guid>
       <description>Two weeks ago, I wrote an article about some camera moving schemes used in Metal Slug 3. In this article, I will show you how to actually implement such a camera.
 
 I will be using the open source Godot Engine with GDScript since I believe any programmer with could understand GDScript quite easily, so let&amp;rsquo;s get started.
@@ -606,10 +606,10 @@ First, let&amp;rsquo;s define some variables we&amp;rsquo;ll use later.
     
     <item>
       <title>Camera Moving Scene Scrolling in Metal Slug 3</title>
-      <link>chrome://newtab/posts/camera-moving-scene-scrolling-in-metal-slug-3/</link>
+      <link>https://shinerightstudio.com/posts/camera-moving-scene-scrolling-in-metal-slug-3/</link>
       <pubDate>Sun, 01 Oct 2017 17:01:00 +0800</pubDate>
       
-      <guid>chrome://newtab/posts/camera-moving-scene-scrolling-in-metal-slug-3/</guid>
+      <guid>https://shinerightstudio.com/posts/camera-moving-scene-scrolling-in-metal-slug-3/</guid>
       <description>I&amp;rsquo;ve started to work on my first 2D side scrolling platformer recently. However, before diving into designing my own game, I did some quick research on various topics about 2D platformers. One of them is camera controlling (aka. scene scrolling).
 
 I find some interesting camera controlling technique used in the Metal Slug series, so I would like to share my observations and analysis of how and when to apply those camera controlling schemes.</description>
@@ -617,10 +617,10 @@ I find some interesting camera controlling technique used in the Metal Slug seri
     
     <item>
       <title>Music Syncing in Rhythm Games</title>
-      <link>chrome://newtab/posts/music-syncing-in-rhythm-games/</link>
+      <link>https://shinerightstudio.com/posts/music-syncing-in-rhythm-games/</link>
       <pubDate>Sun, 12 Mar 2017 23:12:00 +0800</pubDate>
       
-      <guid>chrome://newtab/posts/music-syncing-in-rhythm-games/</guid>
+      <guid>https://shinerightstudio.com/posts/music-syncing-in-rhythm-games/</guid>
       <description>Recently, I&amp;rsquo;ve started my beatbox rhythm game project Boots-Cut using Unity. When prototyping the basic game mechanics, I found that it is quite tricky to sync the music notes with the music correctly. However, there are very little articles on the web concerning this subject. So, I will try to point out some important tips when developing a rhythm game (especially in Unity) in this article.
 
 Among all, I found the following three points with most importance:</description>
@@ -628,10 +628,10 @@ Among all, I found the following three points with most importance:</description
     
     <item>
       <title>Sashimi Sweets Hiring Elite 烏魚子公司 精英招募</title>
-      <link>chrome://newtab/sashimi-sweets/</link>
+      <link>https://shinerightstudio.com/sashimi-sweets/</link>
       <pubDate>Fri, 24 Nov 1995 00:00:00 +0800</pubDate>
       
-      <guid>chrome://newtab/sashimi-sweets/</guid>
+      <guid>https://shinerightstudio.com/sashimi-sweets/</guid>
       <description>Click this link to apply 點此連結申請</description>
     </item>
     
