@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on New Tab</title>
-    <link>https://shinerightstudio.com/posts/</link>
+    <link>https://identity2.github.io/posts/</link>
     <description>Recent content in Posts on New Tab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Nov 2021 11:11:11 +0800</lastBuildDate>
     
-	<atom:link href="https://shinerightstudio.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://identity2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Google Taiwan 2021 Campus Hire Interview Experience</title>
-      <link>https://shinerightstudio.com/posts/google-taiwan-2021-campus-hire-interview-experience/</link>
+      <link>https://identity2.github.io/posts/google-taiwan-2021-campus-hire-interview-experience/</link>
       <pubDate>Thu, 11 Nov 2021 11:11:11 +0800</pubDate>
       
-      <guid>https://shinerightstudio.com/posts/google-taiwan-2021-campus-hire-interview-experience/</guid>
+      <guid>https://identity2.github.io/posts/google-taiwan-2021-campus-hire-interview-experience/</guid>
       <description>I was hunting for a new grad software engineering role over the last few months and quite fortunately, Google invited me for a technical phone interview one week after I submitted my resume through their job portal. I will write down the full process of my application in this article. Verbosely.
 
 My application process, ordered chronologically:
@@ -25,10 +25,10 @@ My application process, ordered chronologically:
     
     <item>
       <title>Proving NP-Completeness by Restriction</title>
-      <link>https://shinerightstudio.com/posts/prove-np-complete-by-restriction/</link>
+      <link>https://identity2.github.io/posts/prove-np-complete-by-restriction/</link>
       <pubDate>Sat, 06 Jul 2019 21:29:47 +0800</pubDate>
       
-      <guid>https://shinerightstudio.com/posts/prove-np-complete-by-restriction/</guid>
+      <guid>https://identity2.github.io/posts/prove-np-complete-by-restriction/</guid>
       <description>Proving NP-Completeness is a core topic in the studies of algorithms. For most of the algorithms textbooks, they show some complicated tricks which reduce a known NP-Complete problem to another problem, say Q, to prove that Q is NP-Complete. This works because if problem A reduces to problem B, then B is at least as difficult as A. And since A is NP-Complete, B is also NP-Complete.
 
 However, many problem reduction methods are extremely subtle and often require some &amp;ldquo;divine instincts&amp;rdquo; to come up with in the first place.</description>
@@ -36,20 +36,20 @@ However, many problem reduction methods are extremely subtle and often require s
     
     <item>
       <title>Music in Film Terminology</title>
-      <link>https://shinerightstudio.com/posts/music-in-film-terminology/</link>
+      <link>https://identity2.github.io/posts/music-in-film-terminology/</link>
       <pubDate>Sat, 22 Jun 2019 09:23:30 +0800</pubDate>
       
-      <guid>https://shinerightstudio.com/posts/music-in-film-terminology/</guid>
+      <guid>https://identity2.github.io/posts/music-in-film-terminology/</guid>
       <description>Just took an interesting gen-eds course Music in Film last semester. Though I publish mostly technical or game dev articles on this blog, I really enjoyed the materials in the course and I&amp;rsquo;d love to share the basics (that is, the terminology) of the course here. (Note we refer &amp;ldquo;music in film&amp;rdquo; as the score music of films rather than the sound effects.)
 Tonality vs. Atonality Tonality is a principle which the music is composed to center around a tonic central.</description>
     </item>
     
     <item>
       <title>Customized 2D Following Camera in Godot</title>
-      <link>https://shinerightstudio.com/posts/customized-2d-following-camera-in-godot/</link>
+      <link>https://identity2.github.io/posts/customized-2d-following-camera-in-godot/</link>
       <pubDate>Sun, 15 Oct 2017 16:40:00 +0800</pubDate>
       
-      <guid>https://shinerightstudio.com/posts/customized-2d-following-camera-in-godot/</guid>
+      <guid>https://identity2.github.io/posts/customized-2d-following-camera-in-godot/</guid>
       <description>Two weeks ago, I wrote an article about some camera moving schemes used in Metal Slug 3. In this article, I will show you how to actually implement such a camera.
 
 I will be using the open source Godot Engine with GDScript since I believe any programmer with could understand GDScript quite easily, so let&amp;rsquo;s get started.
@@ -60,10 +60,10 @@ First, let&amp;rsquo;s define some variables we&amp;rsquo;ll use later.
     
     <item>
       <title>Camera Moving Scene Scrolling in Metal Slug 3</title>
-      <link>https://shinerightstudio.com/posts/camera-moving-scene-scrolling-in-metal-slug-3/</link>
+      <link>https://identity2.github.io/posts/camera-moving-scene-scrolling-in-metal-slug-3/</link>
       <pubDate>Sun, 01 Oct 2017 17:01:00 +0800</pubDate>
       
-      <guid>https://shinerightstudio.com/posts/camera-moving-scene-scrolling-in-metal-slug-3/</guid>
+      <guid>https://identity2.github.io/posts/camera-moving-scene-scrolling-in-metal-slug-3/</guid>
       <description>I&amp;rsquo;ve started to work on my first 2D side scrolling platformer recently. However, before diving into designing my own game, I did some quick research on various topics about 2D platformers. One of them is camera controlling (aka. scene scrolling).
 
 I find some interesting camera controlling technique used in the Metal Slug series, so I would like to share my observations and analysis of how and when to apply those camera controlling schemes.</description>
@@ -71,10 +71,10 @@ I find some interesting camera controlling technique used in the Metal Slug seri
     
     <item>
       <title>Music Syncing in Rhythm Games</title>
-      <link>https://shinerightstudio.com/posts/music-syncing-in-rhythm-games/</link>
+      <link>https://identity2.github.io/posts/music-syncing-in-rhythm-games/</link>
       <pubDate>Sun, 12 Mar 2017 23:12:00 +0800</pubDate>
       
-      <guid>https://shinerightstudio.com/posts/music-syncing-in-rhythm-games/</guid>
+      <guid>https://identity2.github.io/posts/music-syncing-in-rhythm-games/</guid>
       <description>Recently, I&amp;rsquo;ve started my beatbox rhythm game project Boots-Cut using Unity. When prototyping the basic game mechanics, I found that it is quite tricky to sync the music notes with the music correctly. However, there are very little articles on the web concerning this subject. So, I will try to point out some important tips when developing a rhythm game (especially in Unity) in this article.
 
 Among all, I found the following three points with most importance:</description>
